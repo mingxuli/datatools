@@ -1,8 +1,9 @@
-#summary One-sentence summary of this page.
 #labels Python,GoogleEarth,KMZ,Picture
+#How to use Picture2KMZ.py
 
 = Introduction =
-How to use Picture2KMZ.py
+The Picture2KMZ.py is tools for convert local pictures to Google Earth kmz file.
+if you want to share this file,just copy one file!
 
 
 = Details =
