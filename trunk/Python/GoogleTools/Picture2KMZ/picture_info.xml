@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pictures_Info>
+  <Picture_path>D:\Python\pictures\files</Picture_path>
+  <Copyright>Photo: Sharad P. Joshi, ICIMOD</Copyright>
+  <Template>Default</Template>
+  <Picture>
+    <Filename>Amphu Lake.jpg</Filename>
+    <Title>Amphu Lake, Solukhumbu,Nepal</Title>
+    <Latitude unit="DD">27.896371</Latitude>
+    <Longitude unit="DD">86.913710</Longitude>
+    <Elevation unit="meter">5030</Elevation>
+    <Description>Date of Pictured: 11 May, 2009</Description>
+  </Picture>
+  <Picture>
+    <Filename>DigTsho Glacial Lake.jpg</Filename>
+    <Title>Dig Tsho Glacial Lake, Solukhumbu,Nepal</Title>
+    <Latitude unit="DD">27.878625</Latitude>
+    <Longitude unit="DD">86.585135</Longitude>
+    <Elevation unit="meter">4513</Elevation>
+    <Description>Date of Pictured: 24 April, 2009</Description>
+  </Picture>
+  <Picture>
+    <Filename>Lukla Airport.jpg</Filename>
+    <Title>Lukla Air Port "Getway to Mt. Everest Top of World"</Title>
+    <Latitude unit="DD">27.687105</Latitude>
+    <Longitude unit="DD">86.729349</Longitude>
+    <Elevation unit="meter">2820</Elevation>
+    <Description>Date of Pictured: 24 April, 2009</Description>
+  </Picture>
+  <Picture>
+    <Filename>TshoRolpa Glacial Lake.JPG</Filename>
+    <Title>Tsho Rolpa Glacial Lake and Rolwalling Valley</Title>
+    <Latitude unit="DD">27.880808</Latitude>
+    <Longitude unit="DD">86.454634</Longitude>
+    <Elevation unit="meter">4584</Elevation>
+    <Description>Date of Pictured: 24 April, 2009</Description>
+  </Picture>
+  <Picture>
+    <Filename>LamBagar.JPG</Filename>
+    <Title>LamBagar</Title>
+    <Latitude unit="DD">27.909307</Latitude>
+    <Longitude unit="DD">86.208271</Longitude>
+    <Elevation unit="meter">2000</Elevation>
+    <Description>Date of Pictured: 24 April, 2009</Description>
+  </Picture>
+  <Picture>
+    <Filename>Tengboch Gompa.jpg</Filename>
+    <Title>Tengboche Gompa</Title>
+    <Latitude unit="DD">27.835281</Latitude>
+    <Longitude unit="DD">86.763691</Longitude>
+    <Elevation unit="meter">3839</Elevation>
+    <Description>Date of Pictured: 31 May, 2009</Description>
+  </Picture>
+  <Picture>
+    <Filename>Amadablam form Chhukung.jpg</Filename>
+    <Title>Mt. Amadablam and surroundings View from Chhukung</Title>
+    <Latitude unit="DD">27.905052</Latitude>
+    <Longitude unit="DD">86.870455</Longitude>
+    <Elevation unit="meter">4730</Elevation>
+    <Description>Date of Pictured: 27 May, 2009</Description>
+  </Picture>
+</Pictures_Info>
