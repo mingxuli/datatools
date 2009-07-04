@@ -49,6 +49,7 @@ def writekml(picture,kmzfile):
     basename=string.join(basename[0:-1],'_')
     kmlfile=pathname+os.sep+basename+'.kml'
     zipfilename=pathname+os.sep+basename+'.zip'
+    kmzfilename=pathname+os.sep+basename+'.kmz'
     z=zipfile.ZipFile(zipfilename, 'w',zipfile.ZIP_DEFLATED)        
     
     ##for create new kml file
@@ -98,9 +99,12 @@ def writekml(picture,kmzfile):
     dom.writexml(writer, encoding='utf-8')
     writer.close()
     f.close()
-    z.write(kmlfile,'doc.kml')
-    
+    z.write(kmlfile,'doc.kml')    
     z.close()
+    ## delete temp kml file
+    os.system('del '+kmlfile)
+    ## rename zip to kmz    
+    os.rename(zipfilename,kmzfilename)
 class Picture:
     Copyright=''
     template=''
