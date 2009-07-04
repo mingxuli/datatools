@@ -11,5 +11,18 @@ if you want to share this file,just copy one file!
 The tool include 3 files :
   * _picture_info.xml_
     this file description infomation about your picture.You need to modify this file.
+<?xml version="1.0" encoding="utf-8"?>
+<Pictures_Info>
+  <Picture_path>D:\Python\pictures\files</Picture_path>
+  <Copyright>Photo: Sharad P. Joshi, ICIMOD</Copyright>
+  <Template>Default</Template>
+  <Picture>
+    <Filename>Amphu Lake.jpg</Filename>
+    <Title>Amphu Lake, Solukhumbu,Nepal</Title>
+    <Latitude unit="DD">27.896371</Latitude>
+    <Longitude unit="DD">86.913710</Longitude>
+    <Elevation unit="meter">5030</Elevation>
+    <Description>Date of Pictured: 11 May, 2009</Description>
+  </Picture>
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
