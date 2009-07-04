@@ -9,7 +9,7 @@ if you want to share this file,just copy one file!
 = Details =
 
 The tool include 3 files :
-  * 1._picture_info.xml_
-    this file description infomation about your picture.You Text in *bold* or _italic_
+  * _picture_info.xml_
+    this file description infomation about your picture.You need to modify this file.
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
