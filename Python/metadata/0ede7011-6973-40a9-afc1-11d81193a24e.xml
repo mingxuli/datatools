@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metadata>
+  <mdFileID>0ede7011-6973-40a9-afc1-11d81193a24e</mdFileID>
+  <mdLang>
+    <languageCode value="zh"/>
+  </mdLang>
+  <mdChar>
+    <CharSetCd value="utf8"/>
+  </mdChar>
+  <mdHrLv>
+    <ScopeCd value="dataset"/>
+  </mdHrLv>
+  <mdHrLvName>WATER</mdHrLvName>
+  <mdContact>
+    <rpIndName>孙青松</rpIndName>
+    <rpOrgName>北京师范大学</rpOrgName>
+    <rpCntInfo>
+      <cntPhone>
+        <voiceNum>010-58802092</voiceNum>
+      </cntPhone>
+      <cntAddress>
+        <delPoint>海淀区新街口外大街19号</delPoint>
+        <city>北京</city>
+        <adminArea>北京市</adminArea>
+        <postCode>100875</postCode>
+        <country>中国</country>
+        <eMailAdd>qso_sun@qq.com</eMailAdd>
+      </cntAddress>
+    </rpCntInfo>
+    <role>
+      <RoleCd value="author"/>
+    </role>
+  </mdContact>
+  <mdContact>
+    <rpIndName>宋怡</rpIndName>
+    <rpOrgName>中国科学院寒区旱区环境与工程研究所</rpOrgName>
+    <rpCntInfo>
+      <cntPhone>
+        <voiceNum>0931-4967259</voiceNum>
+      </cntPhone>
+      <cntAddress>
+        <delPoint>东岗西路320号</delPoint>
+        <city>兰州</city>
+        <adminArea>甘肃省</adminArea>
+        <postCode>730000</postCode>
+        <country>中国</country>
+        <eMailAdd>songyi05@sohu.com</eMailAdd>
+      </cntAddress>
+    </rpCntInfo>
+    <role>
+      <RoleCd value="author"/>
+    </role>
+  </mdContact>
+  <mdContact>
+    <rpIndName>吴立宗</rpIndName>
+    <rpOrgName>中国科学院寒区旱区环境与工程研究所</rpOrgName>
+    <rpPosName>副研</rpPosName>
+    <rpCntInfo>
+      <cntPhone>
+        <voiceNum>0931-4967298</voiceNum>
+        <faxNum>0931-8279161</faxNum>
+      </cntPhone>
+      <cntAddress>
+        <delPoint>兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所</delPoint>
+        <city>兰州市</city>
+        <adminArea>甘肃省</adminArea>
+        <postCode>730000</postCode>
+        <country>中国</country>
+        <eMailAdd>wulizong@lzb.ac.cn</eMailAdd>
+      </cntAddress>
+    </rpCntInfo>
+    <role>
+      <RoleCd value="publisher"/>
+    </role>
+  </mdContact>
+  <mdDateSt>2009-01-20</mdDateSt>
+  <mdStanName>ISO 19115</mdStanName>
+  <mdStanVer>FDIS</mdStanVer>
+  <dataIdInfo>
+    <idCitation>
+      <resTitle>黑河综合遥感联合试验:临泽站Asar&amp;Palsar卫星同步地面观测数据集(2008年5月24日)</resTitle>
+      <resAltTitle>WATER:the manual LAI dataset of Simultaneous Observation with Asar&amp;Palsar at Linze in May 24, 2008</resAltTitle>
+      <resRefDate>
+        <refDate>2008-03-12</refDate>
+        <refDateType>
+          <DateTypCd value="creation"/>
+        </refDateType>
+      </resRefDate>
+      <citRespParty>
+        <rpIndName>屈永华</rpIndName>
+        <rpOrgName>北京师范大学</rpOrgName>
+        <rpCntInfo>
+          <cntPhone>
+            <voiceNum>暂缺</voiceNum>
+          </cntPhone>
+          <cntAddress>
+            <delPoint>海淀区新街口外大街19号</delPoint>
+            <city>北京</city>
+            <adminArea>北京市</adminArea>
+            <postCode>100875</postCode>
+            <country>中国</country>
+            <eMailAdd>qyh@bnu.edu.cn</eMailAdd>
+          </cntAddress>
+        </rpCntInfo>
+        <role>
+          <RoleCd value="pointOfContact"/>
+        </role>
+      </citRespParty>
+      <citRespParty>
+        <rpIndName>肖志强</rpIndName>
+        <rpOrgName>北京师范大学</rpOrgName>
+        <rpCntInfo>
+          <cntPhone>
+            <voiceNum>暂缺</voiceNum>
+          </cntPhone>
+          <cntAddress>
+            <delPoint>海淀区新街口外大街19号</delPoint>
+            <city>北京</city>
+            <adminArea>北京市</adminArea>
+            <postCode>100875</postCode>
+            <country>中国</country>
+            <eMailAdd>zhqxiao@bnu.edu.cn</eMailAdd>
+          </cntAddress>
+        </rpCntInfo>
+        <role>
+          <RoleCd value="pointOfContact"/>
+        </role>
+      </citRespParty>
+      <citRespParty>
+        <rpIndName>马明国</rpIndName>
+        <rpOrgName>中国科学院寒区旱区环境与工程研究所</rpOrgName>
+        <rpCntInfo>
+          <cntPhone>
+            <voiceNum>0931-4967250</voiceNum>
+          </cntPhone>
+          <cntAddress>
+            <delPoint>东岗西路320号</delPoint>
+            <city>兰州</city>
+            <adminArea>甘肃省</adminArea>
+            <postCode>730000</postCode>
+            <country>中国</country>
+            <eMailAdd>mmg@lzb.ac.cn </eMailAdd>
+          </cntAddress>
+        </rpCntInfo>
+        <role>
+          <RoleCd value="pointOfContact"/>
+        </role>
+      </citRespParty>
+      <citRespParty>
+        <rpIndName>孙进霞</rpIndName>
+        <rpOrgName>中国科学院地理科学与资源研究所</rpOrgName>
+        <rpCntInfo>
+          <cntAddress>
+            <delPoint>北京市朝阳区大屯路甲11号</delPoint>
+            <city>北京</city>
+            <adminArea>北京市</adminArea>
+            <postCode>100101</postCode>
+            <country>中国</country>
+          </cntAddress>
+        </rpCntInfo>
+        <role>
+          <RoleCd value="principalInvestigator"/>
+        </role>
+      </citRespParty>
+      <citRespParty>
+        <rpIndName>丁松爽,朱仕杰,汪洋,潘小多,白艳芬</rpIndName>
+        <rpOrgName>中国科学院寒区旱区环境与工程研究所</rpOrgName>
+        <rpCntInfo>
+          <cntAddress>
+            <delPoint>东岗西路320号</delPoint>
+            <city>兰州</city>
+            <adminArea>甘肃省</adminArea>
+            <postCode>730000</postCode>
+            <country>中国</country>
+          </cntAddress>
+        </rpCntInfo>
+        <role>
+          <RoleCd value="principalInvestigator"/>
+        </role>
+      </citRespParty>
+      <citRespParty>
+        <rpIndName>李静,肖志强</rpIndName>
+        <rpOrgName>北京师范大学</rpOrgName>
+        <rpCntInfo>
+          <cntAddress>
+            <delPoint>海淀区新街口外大街19号</delPoint>
+            <city>北京</city>
+            <adminArea>北京市</adminArea>
+            <postCode>100875</postCode>
+            <country>中国</country>
+          </cntAddress>
+        </rpCntInfo>
+        <role>
+          <RoleCd value="principalInvestigator"/>
+        </role>
+      </citRespParty>
+      <presForm>
+        <PresFormCd value="mapDigital"/>
+      </presForm>
+    </idCitation>
+    <idAbs>请王树果添加
+2008年5月24日在临泽站开展Asar&amp;Palsar卫星地面同步观测,共进行了土壤水分,地表温度观测.其中土壤水分观测在3个样地展开,分别为农田样方,南北样带和东西样带.观测内容为卫星过境时的土壤水分,采用环刀法测量(环刀体积50cc),农田样方同时还用TDR(Delta TDR 4针)进行土壤水分观测.
+2008年5月24日在临泽站开展Asar&amp;Palsar卫星地面同步观测,共进行了土壤水分,地表温度观测.其中地表温度观测在2个样地展开,分别为过渡带南北和东西样带.观测内容为卫星过境时的地表温度,采用红外温度计测量.
+2008年5月24日在临泽站开展Asar&amp;Palsar卫星地面同步观测,进行了土壤水分,地表温度,手工LAI等观测。
+在临泽的五里墩农田样方使用直尺和三角板手工测量LAI。数据文档中所存放的是在实验样方中抽取的4到5 株样本所有叶片的长和宽，另有样方调查文档存放每个样方的株数。用LI-3100测量部分样本叶面积并与手工测量叶面积进行比较，得到修正系数，对手工测量值进行修正。</idAbs>
+    <resConst>
+      <useLimit>本数据是由"黑河综合遥感联合试验"产生的,用户在使用数据时请：首先在正文中明确声明数据的来源,在参考文献文献部分引用本元数据提供的引用格式。</useLimit>
+    </resConst>
+    <descKeys>
+      <keyword>Asar</keyword>
+      <keyword>LAI</keyword>
+      <keyword>Palsar</keyword>
+      <keyword>土壤</keyword>
+      <keyword>土壤水分</keyword>
+      <keyword>地表温度</keyword>
+      <keyword>手工测量</keyword>
+      <keyword>温度</keyword>
+      <keyword>遥感影像</keyword>
+      <keyTyp>
+        <KeyTypCd value="theme"/>
+      </keyTyp>
+    </descKeys>
+    <descKeys>
+      <keyword>"黑河综合遥感联合试验"试验区</keyword>
+      <keyword>中游旱区水文试验区</keyword>
+      <keyword>临泽五里墩农田样方</keyword>
+      <keyword>临泽国家站</keyword>
+      <keyword>临泽荒漠过渡带东西样带</keyword>
+      <keyword>临泽荒漠过渡带南北样带</keyword>
+      <keyword>黑河流域</keyword>
+      <keyTyp>
+        <KeyTypCd value="place"/>
+      </keyTyp>
+    </descKeys>
+    <descKeys>
+      <keyword>2008-05-24</keyword>
+      <keyTyp>
+        <KeyTypCd value="temporal"/>
+      </keyTyp>
+    </descKeys>
+    <graphOver>
+      <bgFileName>http://heihe.westgis.ac.cn/water/thumb.jpg</bgFileName>
+      <bgFileDesc>thumbnail</bgFileDesc>
+    </graphOver>
+    <spatRpType>
+      <SpatRepTypCd value="textTable"/>
+    </spatRpType>
+    <dataLang>
+      <languageCode value="zh"/>
+    </dataLang>
+    <tpCat>
+      <TopicCatCd value="geoscientificInformation"/>
+    </tpCat>
+    <geoBox>
+      <westBL>97.399</westBL>
+      <eastBL>102.125</eastBL>
+      <southBL>37.868</southBL>
+      <northBL>42.685</northBL>
+    </geoBox>
+    <suppInfo>本试验的开展及数据的整理、管理与发布获得了以下项目的支持:
+
+    1.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号)
+
+    2.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号）
+    </suppInfo>
+  </dataIdInfo>
+  <refSysInfo>
+    <RefSystem>
+      <refSysID>
+        <identCode>4326</identCode>
+      </refSysID>
+    </RefSystem>
+  </refSysInfo>
+  <distInfo>
+    <distributor>
+      <distorCont>
+        <rpIndName>李红星</rpIndName>
+        <rpOrgName>中国科学院寒区旱区环境与工程研究所</rpOrgName>
+        <rpPosName>研习员</rpPosName>
+        <rpCntInfo>
+          <cntPhone>
+            <voiceNum>0931-4967287</voiceNum>
+            <faxNum>0931-8279161</faxNum>
+          </cntPhone>
+          <cntAddress>
+            <delPoint>兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所</delPoint>
+            <city>兰州市</city>
+            <adminArea>甘肃省</adminArea>
+            <postCode>730000</postCode>
+            <country>中国</country>
+            <eMailAdd>westdc@lzb.ac.cn</eMailAdd>
+          </cntAddress>
+        </rpCntInfo>
+        <role>
+          <RoleCd value="distributor"/>
+        </role>
+      </distorCont>
+      <distorFormat>
+        <formatName/>
+      </distorFormat>
+    </distributor>
+    <distTranOps>
+      <transSize>1.0</transSize>
+      <onLineSrc>
+        <linkage>http://water.westgis.ac.cn</linkage>
+        <protocol>WWW:LINK-1.0-http--link</protocol>
+        <orName>“黑河流域遥感－地面观测同步试验与综合模拟平台建设”项目网站</orName>
+        <orDesc>项目网站</orDesc>
+        <orFunct>
+          <OnFunctCd value="information"/>
+        </orFunct>
+        <linkage>http://www.bnu.cn</linkage>
+        <protocol>WWW:LINK-1.0-http--link</protocol>
+        <orName>”陆表生态环境要素主被动遥感协同反演理论与方法”项目网站</orName>
+        <orDesc>项目网站</orDesc>
+        <orFunct>
+          <OnFunctCd value="information"/>
+        </orFunct>
+        <linkage>http://heihe.westgis.ac.cn/water</linkage>
+        <protocol>WWW:LINK-1.0-http--link</protocol>
+        <orName>“黑河综合遥感联合试验”数据发布平台</orName>
+        <orDesc>数据发布</orDesc>
+        <orFunct>
+          <OnFunctCd value="order"/>
+        </orFunct>
+        <linkage>http://www.bnu.cn/water</linkage>
+        <protocol>WWW:LINK-1.0-http--link</protocol>
+        <orName>“黑河综合遥感联合试验”数据发布平台(北京师范大学镜像站点)</orName>
+        <orDesc>数据发布</orDesc>
+        <orFunct>
+          <OnFunctCd value="order"/>
+        </orFunct>
+        <linkage>http://westdc.westgis.ac.cn</linkage>
+        <protocol>WWW:LINK-1.0-http--link</protocol>
+        <orName>基金委“中国西部环境与生态数据中心”</orName>
+        <orDesc>数据搜索</orDesc>
+        <orFunct>
+          <OnFunctCd value="search"/>
+        </orFunct>
+        <linkage>http://doi.china.cn</linkage>
+        <protocol>WWW:LINK-1.0-http--link</protocol>
+        <orName>中国DOI注册查询平台</orName>
+        <orDesc>数据搜索</orDesc>
+        <orFunct>
+          <OnFunctCd value="search"/>
+        </orFunct>
+        <linkage>../water/documents/exper1.pdf</linkage>
+        <protocol>WWW:LINK-1.0-http--related</protocol>
+        <orName>科学目标与试验内容</orName>
+        <orDesc>数据文档</orDesc>
+        <orFunct>
+          <OnFunctCd value="download"/>
+        </orFunct>
+        <linkage>../water/documents/exper1.pdf</linkage>
+        <protocol>WWW:LINK-1.0-http--related</protocol>
+        <orName>科学目标与试验内容</orName>
+        <orDesc>数据文档</orDesc>
+        <orFunct>
+          <OnFunctCd value="download"/>
+        </orFunct>
+        <linkage>../water/documents/exper2.pdf</linkage>
+        <protocol>WWW:LINK-1.0-http--related</protocol>
+        <orName>试验区与观测系统布置</orName>
+        <orDesc>数据文档</orDesc>
+        <orFunct>
+          <OnFunctCd value="download"/>
+        </orFunct>
+        <linkage>../water/documents/exper2.pdf</linkage>
+        <protocol>WWW:LINK-1.0-http--related</protocol>
+        <orName>观测要素与观测方法</orName>
+        <orDesc>数据文档</orDesc>
+        <orFunct>
+          <OnFunctCd value="download"/>
+        </orFunct>
+        <linkage>../water/documents/exper2.pdf</linkage>
+        <protocol>WWW:LINK-1.0-http--related</protocol>
+        <orName>观测仪器与仪器标定</orName>
+        <orDesc>数据文档</orDesc>
+        <orFunct>
+          <OnFunctCd value="download"/>
+        </orFunct>
+        <linkage>../water/documents/exper2.pdf</linkage>
+        <protocol>WWW:LINK-1.0-http--related</protocol>
+        <orName>试验组织与项目支持信息</orName>
+        <orDesc>数据文档</orDesc>
+        <orFunct>
+          <OnFunctCd value="download"/>
+        </orFunct>
+        <linkage>../water/documents/exper2.pdf</linkage>
+        <protocol>WWW:LINK-1.0-http--related</protocol>
+        <orName>试验日志</orName>
+        <orDesc>数据文档</orDesc>
+        <orFunct>
+          <OnFunctCd value="download"/>
+        </orFunct>
+        <linkage>ftp://westdc.westgis.ac.cn/water/datasets/data1.dat</linkage>
+        <protocol>WWW:DOWNLOAD-1.0-ftp--download</protocol>
+        <orName>数据名称1</orName>
+        <orDesc>数据下载</orDesc>
+        <orFunct>
+          <OnFunctCd value="download"/>
+        </orFunct>
+        <linkage>http://maps.westgis.ac.cn/water/heiheexp.wms?</linkage>
+        <protocol>OGC:WMS-1.1.1-http-get-map</protocol>
+        <orName>"黑河综合遥感联合试验"试验区及观测位置分布图</orName>
+        <orDesc>在线地图</orDesc>
+        <orFunct>
+          <OnFunctCd value="information"/>
+        </orFunct>
+      </onLineSrc>
+    </distTranOps>
+  </distInfo>
+</Metadata>
