@@ -545,7 +545,7 @@ if __name__=="__main__":
                     
                 f=open(outfile,'w')
                 writer = codecs.lookup('utf-8')[3](f)
-                new_dom.writexml(writer,encoding='utf8')
+                new_dom.writexml(writer,encoding='utf-8')
                 writer.close()
                 f.close()
             if string.lower(file_format)=='xml':
@@ -605,10 +605,13 @@ if __name__=="__main__":
 
                 f=open(outfile,'w')
                 writer = codecs.lookup('utf-8')[3](f)
-                new_dom.writexml(writer,encoding='utf8')
+                new_dom.writexml(writer,encoding='utf-8')
                 writer.close()
                 f.close()
-                             
+            if string.lower(file_format)=='tml':
+                for i in range(len(new_index)):
+                    htmlfile=fullname_list[new_index[i]]
+                    shutil.copyfile(htmlfile, outfile)             
 
                     
                     
