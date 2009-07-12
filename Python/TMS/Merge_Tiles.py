@@ -27,7 +27,7 @@
 # Boston, MA 02111-1307, USA.
 ###############################################################################
 
-import os,string,glob,sys,shutil
+import os,string,glob,sys,shutil,codecs
 from xml.dom import minidom
 try:
     from osgeo import gdal
@@ -518,7 +518,8 @@ if __name__=="__main__":
                     dom=minidom.parse(kmlfile)
                     root=dom.documentElement
                     if i==0:
-                        new_root=root
+                        new_dom=dom
+                        new_root=new_dom.documentElement
                         Document_Node=new_root.getElementsByTagName('Document')[0]
                     else:
                         new_NetworkLink_nodelist=new_root.getElementsByTagName('NetworkLink')
@@ -537,23 +538,26 @@ if __name__=="__main__":
                     name=name_node.firstChild.data
                     url=kml_url+name
                     url=string.replace(url,'png','kml')
-                    Text=dom.createTextNode(url)
+                    Text=new_dom.createTextNode(url)
                     Old_Text=href_node.firstChild
                     href_node.replaceChild(Text,Old_Text)
                 
                     
-                writer=open(outfile,'w')
-                new_root.writexml(writer)
+                f=open(outfile,'w')
+                writer = codecs.lookup('utf-8')[3](f)
+                new_dom.writexml(writer,encoding='utf8')
                 writer.close()
+                f.close()
             if string.lower(file_format)=='xml':
                 for i in range(len(new_index)):
                     xmlfile=fullname_list[new_index[i]]
                     dom=minidom.parse(xmlfile)
                     root=dom.documentElement
                     if i==0:
-                        new_root=root
+                        new_dom=dom
+                        new_root=new_dom.documentElement
                         Title_Node=new_root.getElementsByTagName('Title')[0]
-                        Text=dom.createTextNode('ETM Mosaic 2000')
+                        Text=new_dom.createTextNode('ETM Mosaic 2000')
                         Old_Text=Title_Node.firstChild
                         Title_Node.replaceChild(Text,Old_Text)
                         BoundingBox=new_root.getElementsByTagName('BoundingBox')[0]
@@ -564,7 +568,11 @@ if __name__=="__main__":
                         
                         Origin=new_root.getElementsByTagName('Origin')[0]
                         start_x=float(Origin.getAttribute('x'))
-                        start_y=float(Origin.getAttribute('y'))                        
+                        start_y=float(Origin.getAttribute('y'))
+                        TileSet=new_root.getElementsByTagName('TileSet')
+                        for node in TileSet:
+                            order=node.getAttribute('order')
+                            node.setAttribute('href',kml_url+order)
                     else:
                         temp_BoundingBox=root.getElementsByTagName('BoundingBox')[0]
                         temp_minx=float(temp_BoundingBox.getAttribute('minx'))
@@ -595,9 +603,11 @@ if __name__=="__main__":
                 Origin.setAttribute('x',str(start_x))
                 Origin.setAttribute('y',str(start_y))
 
-                writer=open(outfile,'w')
-                new_root.writexml(writer)
+                f=open(outfile,'w')
+                writer = codecs.lookup('utf-8')[3](f)
+                new_dom.writexml(writer,encoding='utf8')
                 writer.close()
+                f.close()
                              
 
                     
