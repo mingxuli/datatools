@@ -11,7 +11,7 @@
 程序代码位于:http://code.google.com/p/datatools/source/browse/trunk/Python/GoogleTools/kml2shp.py
 以下是主程序代码：
 {{{
-#！python
+# python code
 if __name__=="__main__":
     ##defined the input and output file    
     outpath='F:\\KML\\data_resource\\'
@@ -22,7 +22,7 @@ if __name__=="__main__":
     kmlfile=u'F:\\KML\\data_resource\\datasource.kml'
     result=kml2shp(kmlfile,outpath)
     print result
-    ##for batch model
+    ##for batch mode
 ##    workspace=u'C:\\TDDOWNLOAD\\kml\\地名\\kml\\'
 ##    filelist=glob(workspace+'*.kml')
 ##    for kmlfile in filelist:
@@ -34,7 +34,10 @@ if __name__=="__main__":
  * 修改outpath 定义输出的shapefile存储地址地址.不需要定义文件名，文件名自动定义为kml文件名+几何类型+.shp.
  * 修改look,定义输出的shapefile编码，如果包括汉字，在windows环境下建议使用gbk或gb2312编码
  * 修改for single file 部分，对单个kml文件进行处理
- * 修改kmlfile，定义输入的kml文件名
+  * 修改kmlfile，定义输入的kml文件名
+ * 修改for batch mode部分，进行批处理.记着要把前面的for single file 注释掉啊
+  * 修改kml存储路径即可
+
 
 = 存在问题 =
   *GB2312和UTF8编码问题
