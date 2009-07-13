@@ -11,6 +11,7 @@
 程序代码位于:http://code.google.com/p/datatools/source/browse/trunk/Python/GoogleTools/kml2shp.py
 以下是主程序代码：
 {{{
+#！python
 if __name__=="__main__":
     ##defined the input and output file    
     outpath='F:\\KML\\data_resource\\'
