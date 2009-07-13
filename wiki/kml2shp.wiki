@@ -9,6 +9,26 @@
 
 = 使用说明 =
    程序代码位于 http://code.google.com/p/datatools/source/browse/trunk/Python/GoogleTools/kml2shp.py .下载或拷贝该代码到python编辑器中，修改相关参数即可运行,这些参数包括：
+<div>
+if __name__=="__main__":
+    ##defined the input and output file    
+    outpath='F:\\KML\\data_resource\\'
+    ##define the encoding for chinese character
+    look=codecs.lookup('gbk')
+    
+    ##for single file
+    kmlfile=u'F:\\KML\\data_resource\\datasource.kml'
+    result=kml2shp(kmlfile,outpath)
+    print result
+    ##for batch model
+##    workspace=u'C:\\TDDOWNLOAD\\kml\\地名\\kml\\'
+##    filelist=glob(workspace+'*.kml')
+##    for kmlfile in filelist:
+##        print kmlfile+' is exporting...'
+##        result=kml2shp(kmlfile,outpath)
+##        print result
+</div>
+
 
   * kml文件地址
   * 出处地址
