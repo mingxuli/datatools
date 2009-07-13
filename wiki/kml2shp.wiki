@@ -8,11 +8,11 @@
   * 汉字编码问题，有些工具不支持汉字，不支持GB2312编码;
 
 = 使用说明 =
+   程序代码位于http://code.google.com/p/datatools/source/browse/trunk/Python/GoogleTools/kml2shp.py.下载或拷贝该代码到python编辑器中，修改相关参数即可运行,这些参数包括：
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * kml文件地址
+  * 出处地址
+  * 编码,默认为utf8,但在windows环境下，ArcView和ArcGIS不支持UTF8的汉子显示，建议改为GBK或GB2312编码
 = 存在问题 =
   *GB2312和UTF8编码问题
   *
