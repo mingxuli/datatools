@@ -8,7 +8,7 @@
   * 汉字编码问题，有些工具不支持汉字，不支持GB2312编码;
 
 = 使用说明 =
-   程序代码位于http://code.google.com/p/datatools/source/browse/trunk/Python/GoogleTools/kml2shp.py.下载或拷贝该代码到python编辑器中，修改相关参数即可运行,这些参数包括：
+   程序代码位于 http://code.google.com/p/datatools/source/browse/trunk/Python/GoogleTools/kml2shp.py .下载或拷贝该代码到python编辑器中，修改相关参数即可运行,这些参数包括：
 
   * kml文件地址
   * 出处地址
