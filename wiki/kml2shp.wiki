@@ -9,7 +9,7 @@
 
 = 使用说明 =
  程序代码位于 http://code.google.com/p/datatools/source/browse/trunk/Python/GoogleTools/kml2shp.py .下载或拷贝该代码到python编辑器中，修改相关参数即可运行,这些参数包括：
-{{{ # python
+{{{#!python
 
 if __name__=="__main__":
     ##defined the input and output file    
