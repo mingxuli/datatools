@@ -8,9 +8,8 @@
   * 汉字编码问题，有些工具不支持汉字，不支持GB2312编码;
 
 = 使用说明 =
- 程序代码位于 http://code.google.com/p/datatools/source/browse/trunk/Python/GoogleTools/kml2shp.py .下载或拷贝该代码到python编辑器中，修改相关参数即可运行,这些参数包括：
-{{{#!python
-
+ 程序代码位于 http://code.google.com/p/datatools/source/browse/trunk/Python/GoogleTools/kml2shp.py ,下载或拷贝该代码到python编辑器中.以下是主程序代码：
+ {{{#!python
 if __name__=="__main__":
     ##defined the input and output file    
     outpath='F:\\KML\\data_resource\\'
@@ -28,9 +27,8 @@ if __name__=="__main__":
 ##        print kmlfile+' is exporting...'
 ##        result=kml2shp(kmlfile,outpath)
 ##        print result
-
 }}}
-
+ 修改相关参数即可运行,这些参数包括
   * kml文件地址
   * 出处地址
   * 编码,默认为utf8,但在windows环境下，ArcView和ArcGIS不支持UTF8的汉子显示，建议改为GBK或GB2312编码
