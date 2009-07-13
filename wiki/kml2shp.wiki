@@ -1,4 +1,4 @@
-#将kml文件转换为shapefile的工具.
+一个用python开发的将kml文件转换为shapefile的小工具.
 
 = 介绍 =
 目前已经存在很多种将kml和shapefile格式进行相互转换的工具,在ArcView3.x环境下可以再ESRI网站下载相关扩展，ArcGIS可以直接利用数据互操作工具，导入导出数据，利用QGIS的OGC Convert工具也可以进行相互转换。之所以开发这个工具基于以下考虑：
@@ -29,11 +29,11 @@ if __name__=="__main__":
 ##        result=kml2shp(kmlfile,outpath)
 ##        print result
 }}}
- 修改相关参数即可运行,这些参数包括
-  * 修改outpath 定义输出的shapefile存储地址地址.不需要定义文件名，文件名自动定义为kml文件名+几何类型+.shp.
-  * 修改look,定义输出的shapefile编码，如果包括汉字，在windows环境下建议使用gbk或gb2312编码
-  * 修改for single file 部分，对单个kml文件进行处理
-  * 修改kmlfile，定义输入的kml文件名
+修改相关参数即可运行,这些参数包括
+ * 修改outpath 定义输出的shapefile存储地址地址.不需要定义文件名，文件名自动定义为kml文件名+几何类型+.shp.
+ * 修改look,定义输出的shapefile编码，如果包括汉字，在windows环境下建议使用gbk或gb2312编码
+ * 修改for single file 部分，对单个kml文件进行处理
+ * 修改kmlfile，定义输入的kml文件名
 
 = 存在问题 =
   *GB2312和UTF8编码问题
