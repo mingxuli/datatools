@@ -30,9 +30,11 @@ if __name__=="__main__":
 ##        print result
 }}}
  修改相关参数即可运行,这些参数包括
-  * kml文件地址
-  * 出处地址
-  * 编码,默认为utf8,但在windows环境下，ArcView和ArcGIS不支持UTF8的汉子显示，建议改为GBK或GB2312编码
+  * 修改outpath 定义输出的shapefile存储地址地址.不需要定义文件名，文件名自动定义为kml文件名+几何类型+.shp.
+  * 修改look,定义输出的shapefile编码，如果包括汉字，在windows环境下建议使用gbk或gb2312编码
+  * 修改for single file 部分，对单个kml文件进行处理
+  * 修改kmlfile，定义输入的kml文件名
+
 = 存在问题 =
   *GB2312和UTF8编码问题
   *
