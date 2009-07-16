@@ -1,30 +1,74 @@
 ﻿#conding=utf8
 #!/usr/bin/env python
-##merge tiles image
 ###############################################################################
-# $Id: gdal_merge.py 12993 2007-11-24 19:22:11Z hobu $
+# Merge_Tiles.py
 #
-# Project:  InSAR Peppers
-# Purpose:  Module to extract data from many rasters into one output.
-# Author:   Frank Warmerdam, warmerdam@pobox.com
-#
-###############################################################################
-# Copyright (c) 2000, Atlantis Scientific Inc. (www.atlsci.com)
-# 
-# This library is free software; you can redistribute it and/or
-# modify it under the terms of the GNU Library General Public
-# License as published by the Free Software Foundation; either
-# version 2 of the License, or (at your option) any later version.
-# 
-# This library is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# Library General Public License for more details.
-# 
-# You should have received a copy of the GNU Library General Public
-# License along with this library; if not, write to the
-# Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-# Boston, MA 02111-1307, USA.
+# 作者: Wu Lizong
+# 邮件: wulizong@lzb.ac.cn
+# 单位: 中国科学院寒区旱区环境与工程研究所
+# 项目: 中国基金委西部环境与生态数据中心
+# 目的: 将GDAL2Tiles工具产生（gdal2tiles.py) 的分幅结果拼成一个大图.
+#       程序使用了gdal_merge.py源代码,修改了参数输入方式,以便python可以直接调用
+# 使用说明：
+#     1. 需要用到gdal模块和PYNumic模块,可在python网站下载
+#     2. 程序参数说明：在主程序部分(即__name__="__main__"部分),修改:
+#        2.1    workspace=u"D:\\website\\TMS\\" #输入文件目录
+#        2.2    outpath=u"D:\\website\\out\\"   #输出文件目录
+#        2.3    gdal_translate=u"C:\\gdalwin32-1.6\\bin\\gdal_translate.exe" #gdal_translate工具的目录
+#        2.4    #kml_url="files:///" ##KML文件的超级链接路径,如果是本地浏览则用files,如果是服务器则用
+#               kml_url="http://map.westgis.ac.cn/tms/test/"
+#               为了在大多数服务器下有效,请注意大小写                 
+#        2.2 输入路径和输出路径
+#     3. 输入路径的文件夹结构,如输入目录为d:\input,Tile输出结果应该并列的位于该目录下,且该目录下不应有其他文件,
+#        另外在拼接前清确认所有待拼接的分幅数据的缩放等级是一样的(目录中5,6,7,8即为缩放等级):
+#        D:\input\
+#        ├─N-46-30
+#        │  ├─5
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─6
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─7
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─8
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─x
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─doc.kml
+#        │  ├─googlemaps.html
+#        │  ├─openlayers.html
+#        │  └─tilemapresource.xml
+#        ├─N-46-35
+#        │  ├─5
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─6
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─7
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─8
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─x
+#        │  │  ├─xx
+#        │  │  └─xx
+#        │  ├─doc.kml
+#        │  ├─googlemaps.html
+#        │  ├─openlayers.html
+#        │  └─tilemapresource.xml
+#     4.输出路径不应放在输入路径的下面,否则的话，程序可能陷入死循环.
+#     5.部分拼接结果如果要与其他分幅数据继续拼接,则可将部分拼接结果作为一个目录，与其他分幅目录并列,再行拼接皆可
+#     6.如果只修改kml的服务器地址,则将原来的输出目录作为输入目录，再行本程序即可
+#代码修改日志:
+#   2009-7-1 v0.1  可以进行拼接了,输出结果合并了kml文件和xml元数据文件,googlemap和openlayer没有合并,仅用随意选取了一个
+
+
 ###############################################################################
 
 import os,string,glob,sys,shutil,codecs
@@ -36,7 +80,7 @@ except ImportError:
 
 global verbose,gdal_translate
 verbose = 0
-
+## 以下为gdalmerge.py的代码
 # =============================================================================
 def raster_copy( s_fh, s_xoff, s_yoff, s_xsize, s_ysize, s_band_n,
                  t_fh, t_xoff, t_yoff, t_xsize, t_ysize, t_band_n,
@@ -352,8 +396,7 @@ def gdal_merge(argv):
     if len(names) == 0:
         print 'No input files selected.'
         Usage()
-        sys.exit( 1 )
-    
+        sys.exit( 1 )   
     
     
     Driver = gdal.GetDriverByName(format)
@@ -363,7 +406,8 @@ def gdal_merge(argv):
 
     DriverMD = Driver.GetMetadata()
     if not DriverMD.has_key('DCAP_CREATE'):
-        print """GDAL不支持%s格式精确输出,程序将创建一个临时GTiff文件,然后转换为目标格式""" % format
+        if verbose != 0:
+            print """GDAL不支持%s格式精确输出,程序将创建一个临时GTiff文件,然后转换为目标格式""" % format
         out_file=out_file+'.tif'
         temp_format='GTiff'
         Driver=gdal.GetDriverByName(temp_format)
@@ -455,15 +499,7 @@ def gdal_merge(argv):
         output_file=string.replace(input_file,'.tif','')
         out_format=format
         format_translate(input_file,output_file,out_format)
-    
-if __name__=="__main__":
-    workspace="D:\\Python\\data\\TMS\\"
-    outpath="D:\website\TMS\Geocover_2k\\"    
-    gdal_translate=u"C:\\gdalwin32-1.6\\bin\\gdal_translate.exe"
-    ##
-    #kml_url="files:///" ##for local file
-    kml_url="http://localhost/TMS/Geocover_2k/"
-
+def Merge_Tiles(workspace,outpath,gdal_translate,kml_url):
     folder_list=[]
     fullname_list=[]
     basename_list=[]
@@ -504,13 +540,15 @@ if __name__=="__main__":
             if string.lower(file_format)=='png':                
                 ##如果有多个同名文件，则合并                
                 if len(new_index)>1:
-                    print u'合并形成',outfile
+                    if verbose != 0:
+                        print u'合并形成',outfile
                     inputfiles=[fullname_list[i] for i in new_index]
                     inputfiles=string.join(inputfiles,' ')                    
                     argv="-o "+outfile+" -n 0 -of PNG "+inputfiles                    
                     gdal_merge(argv)
                 if len(new_index)==1:
-                    print u'复制转移',outfile
+                    if verbose != 0:
+                        print u'复制转移',outfile
                     shutil.copyfile(fullname_list[new_index[0]], outfile)
             if string.lower(file_format)=='kml':
                 for i in range(len(new_index)):
@@ -611,12 +649,15 @@ if __name__=="__main__":
             if string.lower(file_format)=='tml':
                 for i in range(len(new_index)):
                     htmlfile=fullname_list[new_index[i]]
-                    shutil.copyfile(htmlfile, outfile)             
-
-                    
-                    
-
+                    shutil.copyfile(htmlfile, outfile)
     print 'Totla file count is',len(fullname_list)
     print len(folder_list)
     print len(set(folder_list))
+if __name__=="__main__":
+    workspace=u"D:\\website\\TMS\\"
+    outpath=u"D:\\website\\out\\"    
+    gdal_translate=u"C:\\gdalwin32-1.6\\bin\\gdal_translate.exe" 
+    #kml_url="files:///" ##for local file   #针对本地文件
+    kml_url="http://map.westgis.ac.cn/tms/test/"
+    Merge_Tiles(workspace,outpath,gdal_translate,kml_url)
     print 'end'
