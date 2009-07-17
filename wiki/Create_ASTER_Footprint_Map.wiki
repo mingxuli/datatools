@@ -1,12 +1,7 @@
 #labels IDL,ASTER,Footprint
 #用IDL编写的生成ASTER遥感影像索引图的程序
 = 概要 =
-本程序需要在IDL环境下运行，可在IDL6.X-7.x环境下的测试。
-请尽量不要修改程序文件名称，如需修改，请将程序名称与程序文件名称保持一致，否则会导致程序无法正常运行。
- * Author:wulizong
- * data:2006-7
- * Email:wulizong@lzb.ac.cn
- * 单位:中国科学院寒区旱区环境与工程研究所
+ 这是一个2007年写的一个程序，用来把从HDF格式的Aster数据中生成shapefile格式的索引图.现在转移到代码库中。程序需要在IDL环境下运行，可在IDL6.X-7.x环境下的测试。请尽量不要修改程序文件名称，如需修改，请将程序名称与程序文件名称保持一致，否则会导致程序无法正常运行。
 = 代码修改日志 =
  * v0.1  /2006-7-30:export shapefile using 'ENVI_EVF_TO_SHAPEFILE' Routines
  * v0.2  /2006-7-30:export shapefile using IDL's 'IDLffShape' object,only read attribute of aster data
@@ -14,8 +9,8 @@
  * v0.4  /2007-2-1:在filename字段中只存储文件名，去掉了前面的路径，可以保证filename长度不会过长
  * v0.5  /2007-12-10:优化了部分，修订了输出shapefile文件无法在arcgis中打开的问题,增加了aster所属UTM分区的字段和aster中心位置字段
 
-= 说明 =
-图像四个角的位置信息是存放在hdf的全局属性表中，具体的表达格式如下
+= ASTER属性信息说明 =
+ HDF格式处理包括数据外，还包括属性信息，包括全局属性和每个层（波段）的属性。对于Aster数据，其图像四个角的位置信息存放在全局属性表中，本程序就是利用提取这些信息，然后生成shapefile文件的。
 {{{
 GROUP                  = SCENEFOURCORNERS
 
@@ -41,3 +36,4 @@ GROUP                  = SCENEFOURCORNERS
 
 END_GROUP              = SCENEFOURCORNERS
 }}}
+= 使用说明 =
