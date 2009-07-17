@@ -1,14 +1,12 @@
 #labels IDL,ASTER,Footprint
 #用IDL编写的生成ASTER遥感影像索引图的程序
-
 = 概要 =
-
- 本程序需要在IDL环境下运行，可在IDL6.X-7.x环境下的测试。
+本程序需要在IDL环境下运行，可在IDL6.X-7.x环境下的测试。
 请尽量不要修改程序文件名称，如需修改，请将程序名称与程序文件名称保持一致，否则会导致程序无法正常运行。
-Author:wulizong
-data:2006-7
-e-mail:wulizong@lzb.ac.cn
-中国科学院寒区旱区环境与工程研究所
+ * Author:wulizong
+ * data:2006-7
+ * Email:wulizong@lzb.ac.cn
+ * 单位:中国科学院寒区旱区环境与工程研究所
 = 代码修改日志 =
  * v0.1  /2006-7-30:export shapefile using 'ENVI_EVF_TO_SHAPEFILE' Routines
  * v0.2  /2006-7-30:export shapefile using IDL's 'IDLffShape' object,only read attribute of aster data
