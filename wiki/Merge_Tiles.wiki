@@ -1,3 +1,4 @@
+#labels Python,TileMapServer
 #利用python和GDAL开发的金字塔图片镶嵌处理工具，可以将GDAL2Tiles切割后的数据进行拼接.
 
 = 功能说明 =
