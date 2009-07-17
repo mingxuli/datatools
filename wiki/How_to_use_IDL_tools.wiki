@@ -1,3 +1,4 @@
+#labels IDL
 #如何使用IDL编写的工具
 
 = Introduction =
