@@ -1,0 +1,54 @@
+#summary One-sentence summary of this page.
+#labels IDL,ASTER,Footprint
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+;=======================================================================
+;本程序需要在IDL环境下运行，可在IDL6.X-7.x环境下的测试。
+;请尽量不要修改程序文件名称，如需修改，请将程序名称与程序文件名称保持一致，否则会导致程序无法正常运行。
+;Author:wulizong
+;data:2006-7
+;e-mail:wulizong@lzb.ac.cn
+;中国科学院寒区旱区环境与工程研究所
+;History:v0.1  /2006-7-30:export shapefile using 'ENVI_EVF_TO_SHAPEFILE' Routines
+;        v0.2  /2006-7-30:export shapefile using IDL's 'IDLffShape' object,only read attribute of aster data
+;        v0.3.1/2006-8-6:增加处理错误的代码
+;        v0.4  /2007-2-1:在filename字段中只存储文件名，去掉了前面的路径，可以保证filename长度不会过长
+;        v0.5  /2007-12-10:优化了部分，修订了输出shapefile文件无法在arcgis中打开的问题,
+;               增加了aster所属UTM分区的字段和aster中心位置字段
+
+;===========说明=====================
+;图像四个角的位置信息是存放在hdf的全局属性表中，具体的表达格式如下
+;GROUP                  = SCENEFOURCORNERS
+
+;      OBJECT                 = UPPERLEFT
+;        NUM_VAL              = 2
+;        VALUE                = (37.5778999276982, 103.791291574291)
+;      END_OBJECT             = UPPERLEFT
+;
+;      OBJECT                 = UPPERRIGHT
+;        NUM_VAL              = 2
+;        VALUE                = (37.4517375704332, 104.621551361705)
+;      END_OBJECT             = UPPERRIGHT
+;
+;      OBJECT                 = LOWERLEFT
+;        NUM_VAL              = 2
+;        VALUE                = (37.0196378138701, 103.661625220573)
+;      END_OBJECT             = LOWERLEFT
+;
+;      OBJECT                 = LOWERRIGHT
+;        NUM_VAL              = 2
+;        VALUE                = (36.8943161860939, 104.485971865434)
+;      END_OBJECT             = LOWERRIGHT
+;
+;END_GROUP              = SCENEFOURCORNERS
+
+;=======================================================================
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
