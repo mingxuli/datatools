@@ -1,7 +1,8 @@
-#labels IDL,ASTER,Footprint
-#用IDL编写的生成ASTER遥感影像索引图的程序
+#labels IDL,ASTER,Footprint,HDF
+用IDL编写的生成ASTER遥感影像索引图的程序
 = 概要 =
  这是一个2007年写的一个程序，用来把从HDF格式的Aster数据中生成shapefile格式的索引图.现在转移到代码库中。程序需要在IDL环境下运行，可在IDL6.X-7.x环境下的测试。请尽量不要修改程序文件名称，如需修改，请将程序名称与程序文件名称保持一致，否则会导致程序无法正常运行。
+ * 源代码位置:http://code.google.com/p/datatools/source/browse/trunk/IDL/Aster/aster_footprint.pro
 = 代码修改日志 =
  * v0.1  /2006-7-30:export shapefile using 'ENVI_EVF_TO_SHAPEFILE' Routines
  * v0.2  /2006-7-30:export shapefile using IDL's 'IDLffShape' object,only read attribute of aster data
