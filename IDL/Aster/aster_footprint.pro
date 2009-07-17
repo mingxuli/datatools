@@ -1,19 +1,19 @@
-;=======================================================================
-;±¾³ÌÐòÐèÒªÔÚIDL»·¾³ÏÂÔËÐÐ£¬¿ÉÔÚIDL6.X-7.x»·¾³ÏÂµÄ²âÊÔ¡£
-;Çë¾¡Á¿²»ÒªÐÞ¸Ä³ÌÐòÎÄ¼þÃû³Æ£¬ÈçÐèÐÞ¸Ä£¬Çë½«³ÌÐòÃû³ÆÓë³ÌÐòÎÄ¼þÃû³Æ±£³ÖÒ»ÖÂ£¬·ñÔò»áµ¼ÖÂ³ÌÐòÎÞ·¨Õý³£ÔËÐÐ¡£
+ï»¿;=======================================================================
+;æœ¬ç¨‹åºéœ€è¦åœ¨IDLçŽ¯å¢ƒä¸‹è¿è¡Œï¼Œå¯åœ¨IDL6.X-7.xçŽ¯å¢ƒä¸‹çš„æµ‹è¯•ã€‚
+;è¯·å°½é‡ä¸è¦ä¿®æ”¹ç¨‹åºæ–‡ä»¶åç§°ï¼Œå¦‚éœ€ä¿®æ”¹ï¼Œè¯·å°†ç¨‹åºåç§°ä¸Žç¨‹åºæ–‡ä»¶åç§°ä¿æŒä¸€è‡´ï¼Œå¦åˆ™ä¼šå¯¼è‡´ç¨‹åºæ— æ³•æ­£å¸¸è¿è¡Œã€‚
 ;Author:wulizong
 ;data:2006-7
 ;e-mail:wulizong@lzb.ac.cn
-;ÖÐ¹ú¿ÆÑ§Ôºº®ÇøºµÇø»·¾³Óë¹¤³ÌÑÐ¾¿Ëù
+;ä¸­å›½ç§‘å­¦é™¢å¯’åŒºæ—±åŒºçŽ¯å¢ƒä¸Žå·¥ç¨‹ç ”ç©¶æ‰€
 ;History:v0.1  /2006-7-30:export shapefile using 'ENVI_EVF_TO_SHAPEFILE' Routines
 ;        v0.2  /2006-7-30:export shapefile using IDL's 'IDLffShape' object,only read attribute of aster data
-;        v0.3.1/2006-8-6:Ôö¼Ó´¦Àí´íÎóµÄ´úÂë
-;        v0.4  /2007-2-1:ÔÚfilename×Ö¶ÎÖÐÖ»´æ´¢ÎÄ¼þÃû£¬È¥µôÁËÇ°ÃæµÄÂ·¾¶£¬¿ÉÒÔ±£Ö¤filename³¤¶È²»»á¹ý³¤
-;        v0.5  /2007-12-10:ÓÅ»¯ÁË²¿·Ö£¬ÐÞ¶©ÁËÊä³öshapefileÎÄ¼þÎÞ·¨ÔÚarcgisÖÐ´ò¿ªµÄÎÊÌâ,
-;               Ôö¼ÓÁËasterËùÊôUTM·ÖÇøµÄ×Ö¶ÎºÍasterÖÐÐÄÎ»ÖÃ×Ö¶Î
+;        v0.3.1/2006-8-6:å¢žåŠ å¤„ç†é”™è¯¯çš„ä»£ç 
+;        v0.4  /2007-2-1:åœ¨filenameå­—æ®µä¸­åªå­˜å‚¨æ–‡ä»¶åï¼ŒåŽ»æŽ‰äº†å‰é¢çš„è·¯å¾„ï¼Œå¯ä»¥ä¿è¯filenameé•¿åº¦ä¸ä¼šè¿‡é•¿
+;        v0.5  /2007-12-10:ä¼˜åŒ–äº†éƒ¨åˆ†ï¼Œä¿®è®¢äº†è¾“å‡ºshapefileæ–‡ä»¶æ— æ³•åœ¨arcgisä¸­æ‰“å¼€çš„é—®é¢˜,
+;               å¢žåŠ äº†asteræ‰€å±žUTMåˆ†åŒºçš„å­—æ®µå’Œasterä¸­å¿ƒä½ç½®å­—æ®µ
 
-;===========ËµÃ÷=====================
-;Í¼ÏñËÄ¸ö½ÇµÄÎ»ÖÃÐÅÏ¢ÊÇ´æ·ÅÔÚhdfµÄÈ«¾ÖÊôÐÔ±íÖÐ£¬¾ßÌåµÄ±í´ï¸ñÊ½ÈçÏÂ
+;===========è¯´æ˜Ž=====================
+;å›¾åƒå››ä¸ªè§’çš„ä½ç½®ä¿¡æ¯æ˜¯å­˜æ”¾åœ¨hdfçš„å…¨å±€å±žæ€§è¡¨ä¸­ï¼Œå…·ä½“çš„è¡¨è¾¾æ ¼å¼å¦‚ä¸‹
 ;GROUP                  = SCENEFOURCORNERS
 
 ;      OBJECT                 = UPPERLEFT
@@ -41,10 +41,10 @@
 ;=======================================================================
 Pro aster_footprint
 
-  ;*****************ÐÞ¸ÄÎÄ¼þÊäÈëÊä³öÉèÖÃ**************************
-  workspace='D:\IDLWorkspace\aster\data\'                       ;AsterÓ°ÏñµÄ´æ·ÅµØÖ·
-  logfile='D:\IDLWorkspace\aster\data\errlog.txt'               ;ÔËÐÐÈÕÖ¾ÎÄ¼þÃû¼°Æä´æ´¢Î»ÖÃ
-  shapefile='D:\IDLWorkspace\aster\data\ASTER_L1A_Indexmap.shp' ;Êä³öµÄshapefileÎÄ¼þÃû¼°Æä´æ´¢Î»ÖÃ
+  ;*****************ä¿®æ”¹æ–‡ä»¶è¾“å…¥è¾“å‡ºè®¾ç½®**************************
+  workspace='D:\IDLWorkspace\aster\data\'                       ;Asterå½±åƒçš„å­˜æ”¾åœ°å€
+  logfile='D:\IDLWorkspace\aster\data\errlog.txt'               ;è¿è¡Œæ—¥å¿—æ–‡ä»¶ååŠå…¶å­˜å‚¨ä½ç½®
+  shapefile='D:\IDLWorkspace\aster\data\ASTER_L1A_Indexmap.shp' ;è¾“å‡ºçš„shapefileæ–‡ä»¶ååŠå…¶å­˜å‚¨ä½ç½®
   boundary_file='D:\IDLWorkspace\boundary\boundary_poly.shp'
   ;*************************************************************
   
@@ -54,14 +54,14 @@ Pro aster_footprint
     RETURN
   Endif
   
-  ;´ò¿ª´íÎóÈÕÖ¾ÎÄ¼þ£¬×¼±¸ÍùÀïÃæÐ´ÐÅÏ¢
+  ;æ‰“å¼€é”™è¯¯æ—¥å¿—æ–‡ä»¶ï¼Œå‡†å¤‡å¾€é‡Œé¢å†™ä¿¡æ¯
   OPENW,lun,logfile,/get_lun
-  ;´ò¿ªÖÐ¹ú±ß½çÊý¾Ý£¬ÓÃÓÚÅÐ¶ÏasterÎ»ÓÚÄÇ¸öÊ¡·Ý
+  ;æ‰“å¼€ä¸­å›½è¾¹ç•Œæ•°æ®ï¼Œç”¨äºŽåˆ¤æ–­asterä½äºŽé‚£ä¸ªçœä»½
   obound=OBJ_NEW('IDLffShape',boundary_file)
   obound->GetProperty,N_Entities=n_bound_ent
   
   oshp=OBJ_NEW('IDLffShape',shapefile,/update,ENTITY_TYPE=5)
-  ;´´½¨shapeÊôÐÔ±íÎÄ¼þ
+  ;åˆ›å»ºshapeå±žæ€§è¡¨æ–‡ä»¶
   oshp->AddAttribute, 'ID', 3, 4,PRECISION=0
   oshp->AddAttribute, 'FileName',7, 50,PRECISION=0
   oshp->AddAttribute, 'FileSize',7,10,PRECISION=0
@@ -75,30 +75,30 @@ Pro aster_footprint
   j=0L
   
   For i=0,n-1 Do Begin
-    fileid=HDF_OPEN(filelist[i],/read) ;²âÊÔhdfÊý¾ÝÊÇ·ñÓÐÐ§£¬ÊÇ·ñ¿ÉÒÔ´ò¿ª£¬Èç¹û²»ÄÜ´ò¿ªÔò½«ÎÄ¼þÃû¼ÇÂ¼µ½ÈÕÖ¾ÎÄ¼þÖÐ
+    fileid=HDF_OPEN(filelist[i],/read) ;æµ‹è¯•hdfæ•°æ®æ˜¯å¦æœ‰æ•ˆï¼Œæ˜¯å¦å¯ä»¥æ‰“å¼€ï¼Œå¦‚æžœä¸èƒ½æ‰“å¼€åˆ™å°†æ–‡ä»¶åè®°å½•åˆ°æ—¥å¿—æ–‡ä»¶ä¸­
     If (fileid Eq -1) Then Begin
       PRINT,'The error file name is: ' + filelist[i]
       PRINTF,  lun,filelist[i]+'can not open!'
       Continue
     Endif Else Begin
-      hdfid=HDF_SD_START(filelist[i],/read);´ò¿ªhdf¸ñÊ½µÄÎÄ¼þ,»ñÈ¡idÖµ
+      hdfid=HDF_SD_START(filelist[i],/read);æ‰“å¼€hdfæ ¼å¼çš„æ–‡ä»¶,èŽ·å–idå€¼
       
       metaindex=HDF_SD_ATTRFIND(hdfid,'productmetadata.0')               ;
       
-      HDF_SD_ATTRINFO,hdfid,metaindex,DATA=meta;»ñÈ¡µÄÔªÊý¾Ý´æ´¢ÔÚmete±äÁ¿ÖÐ
+      HDF_SD_ATTRINFO,hdfid,metaindex,DATA=meta;èŽ·å–çš„å…ƒæ•°æ®å­˜å‚¨åœ¨meteå˜é‡ä¸­
       HDF_SD_END,hdfid
       HDF_CLOSE,fileid
-      ;ËÄ½Ç×ø±ê
+      ;å››è§’åæ ‡
       firstpos=STRPOS(meta,'SCENEFOURCORNERS')
       lastpos=STRPOS(meta,'SCENEFOURCORNERS',/REVERSE_SEARCH)
       Scene4Corners=STRMID(meta,firstpos,lastpos-firstpos)
-      ;ÌáÈ¡4¸ö½Ç×ø±êµÄ×Ö·û
+      ;æå–4ä¸ªè§’åæ ‡çš„å­—ç¬¦
       upperleft=STRMID(Scene4Corners,STRPOS(Scene4Corners,'UPPERLEFT'),STRPOS(Scene4Corners,'UPPERLEFT',/REVERSE_SEARCH)-STRPOS(Scene4Corners,'UPPERLEFT'))
       upperright=STRMID(Scene4Corners,STRPOS(Scene4Corners,'UPPERRIGHT'),STRPOS(Scene4Corners,'UPPERRIGHT',/REVERSE_SEARCH)-STRPOS(Scene4Corners,'UPPERRIGHT'))
       lowerleft=STRMID(Scene4Corners,STRPOS(Scene4Corners,'LOWERLEFT'),STRPOS(Scene4Corners,'LOWERLEFT',/REVERSE_SEARCH)-STRPOS(Scene4Corners,'LOWERLEFT'))
       lowerright=STRMID(Scene4Corners,STRPOS(Scene4Corners,'LOWERRIGHT'),STRPOS(Scene4Corners,'LOWERRIGHT',/REVERSE_SEARCH)-STRPOS(Scene4Corners,'LOWERRIGHT'))
       
-      ;ÌáÈ¡¾­Î³¶ÈÖµ,×¢ÒâÔªÊý¾ÝÖÐ×ø±êÊÇÒÔ(y,x)±íÊ¾µÄ
+      ;æå–ç»çº¬åº¦å€¼,æ³¨æ„å…ƒæ•°æ®ä¸­åæ ‡æ˜¯ä»¥(y,x)è¡¨ç¤ºçš„
       upperleft_x=FLOAT(STRMID(upperleft,STRPOS(upperleft,',')+1,STRPOS(upperleft,')')-STRPOS(upperleft,',')-1))
       upperleft_y=FLOAT(STRMID(upperleft,STRPOS(upperleft,'(')+1,STRPOS(upperleft,',')-STRPOS(upperleft,'(')-1))
       
@@ -110,20 +110,20 @@ Pro aster_footprint
       
       lowerright_x=FLOAT(STRMID(lowerright,STRPOS(lowerright,',')+1,STRPOS(lowerright,')')-STRPOS(lowerright,',')-1))
       lowerright_y=FLOAT(STRMID(lowerright,STRPOS(lowerright,'(')+1,STRPOS(lowerright,',')-STRPOS(lowerright,'(')-1))
-      ;Í¼·ùÖÐÐÄµã×ø±ê
+      ;å›¾å¹…ä¸­å¿ƒç‚¹åæ ‡
       firstpos=STRPOS(meta,'SCENECENTER')
       lastpos=STRPOS(meta,'SCENECENTER',/REVERSE_SEARCH)
       center_string=STRMID(meta,firstpos,lastpos-firstpos)
       
-      ;ÌáÈ¡¾­Î³¶ÈÖµ,×¢ÒâÔªÊý¾ÝÖÐ×ø±êÊÇÒÔ(y,x)±íÊ¾µÄ
+      ;æå–ç»çº¬åº¦å€¼,æ³¨æ„å…ƒæ•°æ®ä¸­åæ ‡æ˜¯ä»¥(y,x)è¡¨ç¤ºçš„
       center_x = FLOAT(STRMID(center_string,STRPOS(center_string,',')+1,STRPOS(center_string,')')-STRPOS(center_string,',')-1))
       center_y = FLOAT(STRMID(center_string,STRPOS(center_string,'(')+1,STRPOS(center_string,',')-STRPOS(center_string,'(')-1))
       
       Zone = STRTRIM(STRING(FIX(center_x/6)+31),2)
-      ;ÅÐ¶ÏasterÊôÓÚÄÇ¸öÊ¡·Ý,Òª¾­¹ýÁ½²ãÅÐ¶Ï£¬
-      ;Ê¡½çÓëaster±ß½çÓÐ¼¸ÖÖ¹ØÏµ£¬1£©asterÍ¼¿ò°üº¬ÔÚÄ³Ò»Ê¡½çÄÚ£¬2£©Ê¡½çÓëasterÊ¡½çÏà½»£¬3£©Ä³Ò»Ê¡½ç°üº¬ÔÚasterÍ¼¿ò·¶Î§
+      ;åˆ¤æ–­asterå±žäºŽé‚£ä¸ªçœä»½,è¦ç»è¿‡ä¸¤å±‚åˆ¤æ–­ï¼Œ
+      ;çœç•Œä¸Žasterè¾¹ç•Œæœ‰å‡ ç§å…³ç³»ï¼Œ1ï¼‰asterå›¾æ¡†åŒ…å«åœ¨æŸä¸€çœç•Œå†…ï¼Œ2ï¼‰çœç•Œä¸Žasterçœç•Œç›¸äº¤ï¼Œ3ï¼‰æŸä¸€çœç•ŒåŒ…å«åœ¨asterå›¾æ¡†èŒƒå›´
       
-      name='ÖÐ¹úÒÔÍâÇøÓò'
+      name='ä¸­å›½ä»¥å¤–åŒºåŸŸ'
       points=[[upperleft_x,upperleft_y],[upperright_x,upperright_y],[lowerleft_x,lowerleft_y],[lowerright_x,lowerright_y]]
       oROI_1=OBJ_NEW('IDLanROI',[[upperleft_x,upperleft_y],[upperright_x,upperright_y],$
         [lowerleft_x,lowerleft_y],[lowerright_x,lowerright_y],[upperleft_x,upperleft_y]])
@@ -134,7 +134,7 @@ Pro aster_footprint
         res=WHERE(index Eq 1,num )
         If num Gt 0 Then Begin
           bound_attr=obound->GetAttributes(k)
-          temp_name=bound_attr.(6)             ;6´ú±íÊ¡ÃûËùÔÚµÄ×Ö¶ÎÐòºÅ£¬Èç¹û²»ÊÇÊ¹ÓÃ³ÌÐòÌá¹©µÄ±ß½çÊý¾Ý£¬ÐèÒªÖØÐÂÉè¶¨¸ÃÐòºÅ
+          temp_name=bound_attr.(6)             ;6ä»£è¡¨çœåæ‰€åœ¨çš„å­—æ®µåºå·ï¼Œå¦‚æžœä¸æ˜¯ä½¿ç”¨ç¨‹åºæä¾›çš„è¾¹ç•Œæ•°æ®ï¼Œéœ€è¦é‡æ–°è®¾å®šè¯¥åºå·
           name=[name,temp_name]
         Endif
         oROI = OBJ_NEW('IDLanROI',vert)
@@ -143,7 +143,7 @@ Pro aster_footprint
         
         If num Gt 0 Then Begin
           bound_attr=obound->GetAttributes(k)
-          temp_name=bound_attr.(6)             ;6´ú±íÊ¡ÃûËùÔÚµÄ×Ö¶ÎÐòºÅ£¬Èç¹û²»ÊÇÊ¹ÓÃ³ÌÐòÌá¹©µÄ±ß½çÊý¾Ý£¬ÐèÒªÖØÐÂÉè¶¨¸ÃÐòºÅ
+          temp_name=bound_attr.(6)             ;6ä»£è¡¨çœåæ‰€åœ¨çš„å­—æ®µåºå·ï¼Œå¦‚æžœä¸æ˜¯ä½¿ç”¨ç¨‹åºæä¾›çš„è¾¹ç•Œæ•°æ®ï¼Œéœ€è¦é‡æ–°è®¾å®šè¯¥åºå·
           name=[name,temp_name]
         Endif
       Endfor
@@ -161,7 +161,7 @@ Pro aster_footprint
       Endfor
       
       
-      ;Ð´Èëshapefile
+      ;å†™å…¥shapefile
       
       attr= oshp->GetAttributes(/ATTRIBUTE_STRUCTURE)
       entity.ISHAPE = j
@@ -192,7 +192,7 @@ Pro aster_footprint
     Endelse
   Endfor
   oshp->DestroyEntity, entity
-  OBJ_DESTROY, oshp;ÊÍ·Å¶ÔÏó
+  OBJ_DESTROY, oshp;é‡Šæ”¾å¯¹è±¡
   OBJ_DESTROY,obound
   FREE_LUN,lun
   print,'=====end====='
