@@ -7,7 +7,7 @@ Pro GPS_DEM
   ENVI, /RESTORE_BASE_SAVE_FILES
   ENVI_BATCH_INIT, LOG_FILE = ‘batch.log’
   
-  ENVI_OPEN_DATA_FILE,demfile,r_fid=fid, /ESRI_GRID ;读取ESRI arcvew GRID 格式
+  ENVI_OPEN_DATA_FILE,demfile,r_fid=fid, /ESRI_GRID ;读取ESRI arcview GRID 格式
   
   ENVI_FILE_QUERY,fid,ns=ns,nl=nl,dims=dims
   dem=envi_get_data(fid=fid,dims=dims,pos=0)
