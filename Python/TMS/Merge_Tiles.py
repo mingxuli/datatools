@@ -392,7 +392,7 @@ def gdal_merge(argv):
             names.append( arg )
             
         i = i + 1
-
+    
     if len(names) == 0:
         print 'No input files selected.'
         Usage()
@@ -654,8 +654,8 @@ def Merge_Tiles(workspace,outpath,gdal_translate,kml_url):
     print len(folder_list)
     print len(set(folder_list))
 if __name__=="__main__":
-    workspace=u"D:\\website\\TMS\\"
-    outpath=u"D:\\website\\out\\"    
+    workspace="D:\\Python\\data\\TMS\\"
+    outpath="D:\\website\\out\\"    
     gdal_translate=u"C:\\gdalwin32-1.6\\bin\\gdal_translate.exe" 
     #kml_url="files:///" ##for local file   #针对本地文件
     kml_url="http://map.westgis.ac.cn/tms/test/"
