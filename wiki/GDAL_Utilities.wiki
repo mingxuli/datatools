@@ -6,7 +6,7 @@ GDAL使用工具，GDAL发布包、FWTools以及OSGeo4W都包含了这些工具�
     * gdaltindex - Build a MapServer raster tileindex.
     * gdalbuildvrt - Build a VRT from a list of datasets.
     * gdal_contour - Contours from DEM.
-    * gdaldem - Tools to analyze and visualize DEMs.
+    * [[gdaldem]] - Tools to analyze and visualize DEMs.
     * rgb2pct.py - Convert a 24bit RGB image to 8bit paletted.
     * pct2rgb.py - Convert an 8bit paletted image to 24bit RGB.
     * gdal_merge.py - Build a quick mosaic from a set of images.
