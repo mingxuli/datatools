@@ -1,11 +1,12 @@
 mosaics a set of images
 =SYNOPSIS=
-<pre>{{{
+{{{
 gdal_merge.py [-o out_filename] [-of out_format] [-co NAME=VALUE]*
                      [-ps pixelsize_x pixelsize_y] [-separate] [-v] [-pct]
                      [-ul_lr ulx uly lrx lry] [-n nodata_value] [-init value]
                      [-ot datatype] [-createonly] input_files
-}}}</pre>
+}}}
+<pre>test</pre>
 =DESCRIPTION=
 This utility will automatically mosaic a set of images. All the images must be in the same coordinate system and have a matching number of bands, but they may be overlapping, and at different resolutions. In areas of overlap, the last image will be copied over earlier ones.
 
