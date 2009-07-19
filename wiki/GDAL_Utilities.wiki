@@ -1,26 +1,26 @@
 GDAL使用工具，GDAL发布包、FWTools以及OSGeo4W都包含了这些工具，具体包括：
-    * gdalinfo - 提取文件信息的工具.
-    * gdal_translate - 一个栅格文件转换工具，可实现格式转换、范围切割和缩放等功能.
-    * gdaladdo - Add overviews to a file.
-    * gdalwarp - Warp an image into a new coordinate system.
-    * gdaltindex - Build a MapServer raster tileindex.
-    * gdalbuildvrt - Build a VRT from a list of datasets.
-    * gdal_contour - Contours from DEM.
-    * [gdaldem] - Tools to analyze and visualize DEMs.
-    * rgb2pct.py - Convert a 24bit RGB image to 8bit paletted.
-    * pct2rgb.py - Convert an 8bit paletted image to 24bit RGB.
-    * gdal_merge.py - Build a quick mosaic from a set of images.
-    * gdal2tiles.py - Create a TMS tile structure, KML and simple web viewer.
-    * gdal_rasterize - Rasterize vectors into raster file.
-    * gdaltransform - Transform coordinates.
-    * nearblack - Convert nearly black/white borders to exact value.
-    * gdal_retile.py - Retiles a set of tiles and/or build tiled pyramid levels.
-    * gdal_grid - Create raster from the scattered data.
-    * gdal_proximity.py - Compute a raster proximity map.
-    * gdal_polygonize.py - Generate polygons from raster.
-    * gdal_sieve.py - Raster Sieve filter.
-    * gdal_fillnodata.py - Interpolate in nodata regions.
-    * gdal-config - Get options required to build software using GDAL.
+ * [gdalinfo] - 提取文件信息的工具.
+ * gdal_translate - 一个栅格文件转换工具，可实现格式转换、范围切割和缩放等功能.
+ * gdaladdo - Add overviews to a file.
+ * gdalwarp - Warp an image into a new coordinate system.
+ * gdaltindex - Build a MapServer raster tileindex.
+ * gdalbuildvrt - Build a VRT from a list of datasets.
+ * gdal_contour - Contours from DEM.
+ * [gdaldem] - Tools to analyze and visualize DEMs.
+ * rgb2pct.py - Convert a 24bit RGB image to 8bit paletted.
+ * pct2rgb.py - Convert an 8bit paletted image to 24bit RGB.
+ * gdal_merge.py - Build a quick mosaic from a set of images.
+ * gdal2tiles.py - Create a TMS tile structure, KML and simple web viewer.
+ * gdal_rasterize - Rasterize vectors into raster file.
+ * gdaltransform - Transform coordinates.
+ * nearblack - Convert nearly black/white borders to exact value.
+ * gdal_retile.py - Retiles a set of tiles and/or build tiled pyramid levels.
+ * gdal_grid - Create raster from the scattered data.
+ * gdal_proximity.py - Compute a raster proximity map.
+ * gdal_polygonize.py - Generate polygons from raster.
+ * gdal_sieve.py - Raster Sieve filter.
+ * gdal_fillnodata.py - Interpolate in nodata regions.
+ * gdal-config - Get options required to build software using GDAL.
 
 Creating New Files
 Access an existing file to read it is generally quite simple. Just indicate the name of the file or dataset on the commandline. However, creating a file is more complicated. It may be necessary to indicate the the format to create, various creation options affecting how it will be created and perhaps a coordinate system to be assigned. Many of these options are handled similarly by different GDAL utilities, and are introduced here.
