@@ -77,3 +77,70 @@ All GDAL command line utility programs support the following "general" options.
 
 --help-general
     Gives a brief usage message for the generic GDAL commandline options and exit. 
+2. 创建新的文件
+
+存取一个已存在的文件来读取是一件很容易的事情，只要在命令行中指定文件或者数据集的名字。但是，创建一个文件是一件非常复杂的事情。你可能需要指定创建格式，各种创建参数，以及指定一个坐标系统。在不同的GDAL工具中有许多参数都是差不多的，这里列举出来。
+
+-of format
+
+    * 选择要创建新的文件的格式。这个格式被指定为类似GTiff（GeoTIFF格式）或者HFA（ERDAS格式）。所有的格式列表可以用--formats 参数列出来。只有格式列表“(rw)”可以被写入。许多工具如果没有指定，默认是创建GeoTIFF文件。文件扩展名不能用来猜测输出格式，如果没有指定文件名，gdal一般不会添加任何扩展名。 
+
+-co NAME=VALUE
+
+    * 许多格式会有一个或者更多的创建参数来控制文件创建的细节。比如GeoTIFF可以用创建参数控制压缩，或者控制是否用分片还是分带来进行存储。
+
+      可以使用的创建参数根据格式驱动不同而不同。而一些简单的格式根本就没有创建参数。虽然某个格式可以用"--format <format>"参数列出所有可用的参数列表，但是更详细的信息可以在格式介绍网页中查到。 
+
+-a_srs SRS
+
+    * 有几个工具(gdal_translate,gdalwarp)可以在命令行中通过类似-a_srs(分配输出SRS)、-s_srs(源SRS)、-t_srs(目标SRS)来指定坐标系统 这些工具允许以一系列格式定义坐标系统（SRS就是空间参考系统）。
+    *
+
+      NAD27/NAD83/WGS84/WGS72:这些常见的地理坐标系统可以通过名字来直接使用。
+    *
+
+      EPSG:n坐标系统（投影或者地理坐标）可以通过EPSG码来选择。例如EPSG 27700是英国国家网格。一系列的EPSG坐标系统可以在GDAL数据文件gcs.csv和pcs.csv中找到。
+    *
+
+      PROJ.4定义： 一个PROJ4定义字符串可以用作坐标系统定义。例如“+proj=utm +zone=11 +datum=WGS84”。注意在命令行中要保持Proj4字符串在一起作为一个单独的参数（一般用双引号引起来）。
+    *
+
+      OpenGIS 知名文本: OpenGIS标准定义了一个文本格式来描述坐标系统作为简单要素规范的一个部分。这个格式是gdal中使用的坐标系统的内部工作格式。包含wkt坐标系统描述的文件的文件名可以被用来作为坐标系统参数，或者坐标系统元素本身也可以被用来作为命令行参数（虽然wkt中释放所有引号是很有争议的）。
+    *
+
+      ESRI知名文本：ESRI 在他们的ArcGIS产品（ArcGIS .prj文件）中使用了一种经过精简OGC WKT的格式，而且这个格式被用在一个和wkt相似的风格的文件中。但是文件名要被加以ESRI::前缀。比如"ESRI::NAD 1927 StatePlane Wyoming West FIPS 4904.prj"。 
+
+3. 总的命令行参数
+
+所有的GDAL命令行工具程序都支持下面的“总的”命令行参数。
+
+--version
+
+    * 登记gdal版本并退出。 
+
+--formats
+
+    *
+
+      列出所有gdal支持的栅格格式（只读和读写的）并退出。格式支持描述如下："ro"是只读驱动，'rw'是读写驱动（比如支持CreateCopy）；"rw+"是读写和更新驱动（比如支持Create）。 
+
+--format format
+
+    * 列出单个格式驱动的细节信息。格式名需要是在--formats 中列出的格式名。比如GTiff。 
+
+--optfile file
+
+    * 读取指定名称的文件并把其中的内容当成参数传入命令行列表。行首以#开头的行将被忽略。多字组成的参数需要用双引号来保正其为单一的参数。 
+
+--config key value
+
+    * 设置配置把指定键设置为某个值，而不必把他们设置为环境变量。一些命令参数键是GDAL_CACHEMAX(用于缓存的内存有多少M)以及GDAL_DATA（gdal的数据路径）。单一的驱动会被其他配置参数影响。 
+
+--debug value
+
+    * 控制调试信息的打印。ON值表示允许调试信息输出，OFF值表示不要输出调试信息。只有在调试信息包含了调试前缀编码中的字符串后其他值才会有选择。 
+
+--help-general
+
+    * 给出一个简短的普通的GDAL命令行参数用法信息然后退出。 
+部分翻译参考python啄木鸟社区(http://wiki.woodpecker.org.cn/moin/lilin/gdal-utils)
