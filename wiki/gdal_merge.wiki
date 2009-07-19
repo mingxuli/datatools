@@ -14,11 +14,11 @@ gdal_merge.py [-o out_filename] [-of out_format] [-co NAME=VALUE]*
 -of 输出数据的格式:
  输出文件的格式，默认是GeoTIFF(GTiff)格式. 
 -co NAME=VALUE:
-    Creation option for output file. Multiple options can be specified. 
+ 设置输出数据的各种参数，可以同时设置多个参数. 
 -ot datatype:
-    Force the output image bands to have a specific type. Use type names (ie. Byte, Int16,...) 
+ 定义输出数据(波段)的数据类型，用类型名称表示，如Byte, Int16,... 
 -ps pixelsize_x pixelsize_y:
-    Pixel size to be used for the output file. If not specified the resolution of the first input file will be used. 
+ 定义输出数据的像元大小，可以用距离单位表示也可以用百分比表示。如原像元大小为30×30米，输出图像分辨率为原来的一半，可以用 -ps 60 60 或-ps 50% 50% 两种方法表示.默认值为第一个图像的分辨率。 
 -ul_lr ulx uly lrx lry:
     The extents of the output file. If not specified the aggregate extents of all input files will be used. 
 -v:
