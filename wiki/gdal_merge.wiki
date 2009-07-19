@@ -1,4 +1,4 @@
-图像镶嵌工具
+#summary 图像镶嵌工具
 = 语法 =
 {{{
 gdal_merge.py [-o out_filename] [-of out_format] [-co NAME=VALUE]*
