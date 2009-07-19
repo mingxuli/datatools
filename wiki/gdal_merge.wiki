@@ -18,20 +18,20 @@ gdal_merge.py [-o out_filename] [-of out_format] [-co NAME=VALUE]*
 -ot datatype:
  定义输出数据(波段)的数据类型，用类型名称表示，如Byte, Int16,... 
 -ps pixelsize_x pixelsize_y:
- 定义输出数据的像元大小，可以用距离单位表示也可以用百分比表示。如原像元大小为30×30米，输出图像分辨率为原来的一半，可以用 -ps 60 60 或-ps 50% 50% 两种方法表示.默认值为第一个图像的分辨率。 
+ 定义输出数据的像元大小，可以用距离单位表示也可以用百分比表示。如原像元大小为30×30米，输出图像分辨率为原来的一半，可以用 -ps 60 60 或-ps 50% 50% 两种方法表示.默认值为第一个输入图像的图像分辨率。 
 -ul_lr ulx uly lrx lry:
-    The extents of the output file. If not specified the aggregate extents of all input files will be used. 
+  输出图像的范围，用左上角坐标和右下角坐标表示，默认范围为全部输入图像的总范围. 
 -v:
-    Generate verbose output of mosaicing operations as they are done. 
+  在程序执行过程中是否要显示中间处理信息. 
 -separate:
-    Place each input file into a separate stacked band. 
+ 把输入图像组合为一个多波段的数据，如Landsat的7个波段，可以用这个参数把七个分波段的数据合并为一个数据. 
 -pct:
-    Grab a pseudocolor table from the first input image, and use it for the output. Merging pseudocolored images this way assumes that all input files use the same color table. 
+ 提取第一个输入图像的颜色表作为输出数据的颜色表，镶嵌假彩色数据时，程序默认所有的输入数据都有一样的颜色表. 
 -n nodata_value:
-    Ignore pixels from files being merged in with this pixel value. 
+ 设置输入图像的无数据区的数值，在镶嵌数据时会自动忽略这些值.如果输入数据已经标识了无数据区，则不需要单独设置这个参数，如果没有标示需要设置，否则输出数据可能被无数据区覆盖. 
 -init value:
     Pre-initialize the output file with this value. However, it is not marked as the nodata value in the output file. 
 -createonly:
     The output file is created (and potentially pre-initialized) but no input image data is copied into it. 
 
-NOTE: gdal_merge.py is a Python script, and will only work if GDAL was built with Python support. 
+备注: 这是一个Python脚本，运行时需要用到Python. 
