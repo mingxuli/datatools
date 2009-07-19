@@ -1,0 +1,37 @@
+mosaics a set of images
+SYNOPSIS
+
+gdal_merge.py [-o out_filename] [-of out_format] [-co NAME=VALUE]*
+                     [-ps pixelsize_x pixelsize_y] [-separate] [-v] [-pct]
+                     [-ul_lr ulx uly lrx lry] [-n nodata_value] [-init value]
+                     [-ot datatype] [-createonly] input_files
+
+DESCRIPTION
+This utility will automatically mosaic a set of images. All the images must be in the same coordinate system and have a matching number of bands, but they may be overlapping, and at different resolutions. In areas of overlap, the last image will be copied over earlier ones.
+
+-o out_filename:
+    The name of the output file, which will be created if it does not already exist (defaults to "out.tif"). 
+-of format:
+    Output format, defaults to GeoTIFF (GTiff). 
+-co NAME=VALUE:
+    Creation option for output file. Multiple options can be specified. 
+-ot datatype:
+    Force the output image bands to have a specific type. Use type names (ie. Byte, Int16,...) 
+-ps pixelsize_x pixelsize_y:
+    Pixel size to be used for the output file. If not specified the resolution of the first input file will be used. 
+-ul_lr ulx uly lrx lry:
+    The extents of the output file. If not specified the aggregate extents of all input files will be used. 
+-v:
+    Generate verbose output of mosaicing operations as they are done. 
+-separate:
+    Place each input file into a separate stacked band. 
+-pct:
+    Grab a pseudocolor table from the first input image, and use it for the output. Merging pseudocolored images this way assumes that all input files use the same color table. 
+-n nodata_value:
+    Ignore pixels from files being merged in with this pixel value. 
+-init value:
+    Pre-initialize the output file with this value. However, it is not marked as the nodata value in the output file. 
+-createonly:
+    The output file is created (and potentially pre-initialized) but no input image data is copied into it. 
+
+NOTE: gdal_merge.py is a Python script, and will only work if GDAL was built with Python support. 
