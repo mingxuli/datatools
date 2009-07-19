@@ -1,3 +1,4 @@
+{{link|MozTW 专案|Main Page}}
 GDAL使用工具，GDAL发布包、FWTools以及OSGeo4W都包含了这些工具，具体包括：
     * gdalinfo - 提取文件信息的工具.
     * gdal_translate - 一个栅格文件转换工具，可实现格式转换、范围切割和缩放等功能.
