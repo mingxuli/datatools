@@ -35,3 +35,5 @@ gdal_merge.py [-o out_filename] [-of out_format] [-co NAME=VALUE]*
     The output file is created (and potentially pre-initialized) but no input image data is copied into it. 
 
 备注: 这是一个Python脚本，运行时需要用到Python. 
+== 示例 ==
+ 在
