@@ -73,38 +73,35 @@ output_xxx_map:
  坡度为0的平地，方位角用0表示，而不是用-9999表示（ArcGIS就是用0表示）。 
 
 ===高程分色渲染模式===
-This command outputs a 3-band (RGB) raster with values are computed from the elevation and a text-based color configuration file, containing the association between various elevation values and the corresponding wished color. The colors between the given elevation values are blended smoothly and the result is a nice colorized DEM.
-
-The following specifics options are available :
-
+给不同的DEM高度，设定一个特殊的颜色，以此来获得一个彩色的DEM图像，输出结果是一个RGB3波段栅格数据，高程颜色配置方法存储在文本文件中.一下是相关参数:
 color_text_file:
-    text-based color configuration file 
+ 一个文本的高程颜色配置文件 
 -alpha :
-    add an alpha channel to the output raster 
+ 为支持透明效果，在输出文件中增加一个alpha通道。 
 
-The text-based color configuration file generally contains 4 columns per line : the elevation value and the corresponding Red, Green, Blue component (between 0 and 255). The elevation value can be any floating point value, or the nv keyword for the nodata value.. The elevation can also be expressed as a percentage : 0% being the minimum value found in the raster, 100% the maximum value.
-
-An extra column can be optionnaly added for the alpha component. If it is not specified, full opacity (255) is assumed.
-
-Various field separators are accepted : comma, tabulation, spaces, ':'.
-
-Common colors used by GRASS can also be specified by using their name, instead of the RGB triplet. The supported list is : white, black, red, green, blue, yellow, magenta, cyan, aqua, grey/gray, orange, brown, purple/violet and indigo.
-
-备注: the syntax of the color configuration file is derived from the one supported by GRASS r.colors utility. The alpha component and the support of tablulations and commma as separators are GDAL specific extensions.
-
-For example :
+颜色配置数据的格式为：
+{{{高度值,红色分量值，绿色分量值，蓝色分量值
+}}}
+红绿蓝分量的值在0-255之间，高程值可用绝对值表示也可用百分比表示，也可混用。如设置了alpha通道，可再增加一列，如果没有定义，默认值是不透明的full opacity (255).
+分隔符支持逗号(半角,):Tab,空格和冒号(:).
+颜色值也可以用颜色名称代替，支持white, black, red, green, blue, yellow, magenta, cyan, aqua, grey/gray, orange, brown, purple/violet and indigo等颜色名称.
+示例:
 3500   white
 2500   235:220:175
 50%   190 185 135
 700    240 250 150
 0      50  180  50
 nv     0   0   0   0 
+备注: 颜色语法配置方案来源于GRASS的r.colors工具.The alpha component and the support of tablulations and commma as separators are GDAL specific extensions.
 -------
-* AUTHORS
-Matthew Perry <perrygeo@gmail.com>, Even Rouault <even.rouault@mines-paris.org>, Howard Butler <hobu.inc@gmail.com>
-Derived from code by Michael Shapiro, Olga Waupotitsch, Marjorie Larson, Jim Westervelt : U.S. Army CERL, 1993. GRASS 4.1 Reference Manual. U.S. Army Corps of Engineers, Construction Engineering Research Laboratories, Champaign, Illinois, 1-425.
-See also
-* Documentation of related GRASS utilities :
-http://grass.osgeo.org/grass64/manuals/html64_user/r.slope.aspect.html
-http://grass.osgeo.org/grass64/manuals/html64_user/r.shaded.relief.html
-http://grass.osgeo.org/grass64/manuals/html64_user/r.colors.html 
+ * 作者信息
+ Matthew Perry <perrygeo@gmail.com>
+ Even Rouault <even.rouault@mines-paris.org>,
+ Howard Butler <hobu.inc@gmail.com>
+ * 参考文献
+ Derived from code by Michael Shapiro, Olga Waupotitsch, Marjorie Larson, Jim Westervelt : U.S. Army CERL, 1993. GRASS 4.1 Reference Manual. U.S. Army Corps of Engineers, Construction Engineering Research Laboratories, Champaign, Illinois, 1-425.
+ * 其他信息
+ GRASS相关工具的文档:
+ http://grass.osgeo.org/grass64/manuals/html64_user/r.slope.aspect.html
+ http://grass.osgeo.org/grass64/manuals/html64_user/r.shaded.relief.html
+ http://grass.osgeo.org/grass64/manuals/html64_user/r.colors.html 
