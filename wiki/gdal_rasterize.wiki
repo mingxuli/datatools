@@ -1,12 +1,14 @@
 #summary burns vector polygons into a raster
 #labels GDAL,FWTools
-SYNOPSIS
+==概要==
 
-Usage: gdal_rasterize [-b band] [-i] [-at]
+===用法:===
+{{{
+gdal_rasterize [-b band] [-i] [-at]
        [-burn value] | [-a attribute_name] | [-3d]
        [-l layername]* [-where expression] [-sql select_statement]
        <src_datasource> <dst_filename>
-
+}}}
 DESCRIPTION
 This program burns vector polygons into the raster band(s) of a raster image. Vectors are read from OGR supported vector formats.
 
@@ -51,4 +53,3 @@ gdal_rasterize -b 1 -b 2 -b 3 -burn 255 -burn 0 -burn 0 -l mask mask.shp work.ti
 The following would burn all "class A" buildings into the output elevation file, pulling the top elevation from the ROOF_H attribute.
 
 gdal_rasterize -a ROOF_H -where 'class="A"' -l footprints footprints.shp city_dem.tif
-
