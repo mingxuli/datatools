@@ -1,5 +1,5 @@
 #summary DEM分析与可视化工具(GDAL 1.7.0以上版本包含此工具，FWTools2.4以上版本)
-#labels DEM
+#labels DEM,GDAL,FWTools
 == 语法 ==
 * 生成山影效果图
 {{{    
