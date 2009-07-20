@@ -80,7 +80,8 @@ color_text_file:
  为支持透明效果，在输出文件中增加一个alpha通道。 
 
 颜色配置数据的格式为：
-{{{高度值,红色分量值，绿色分量值，蓝色分量值
+{{{
+高度值,红色分量值，绿色分量值，蓝色分量值
 }}}
 红绿蓝分量的值在0-255之间，高程值可用绝对值表示也可用百分比表示，也可混用。如设置了alpha通道，可再增加一列，如果没有定义，默认值是不透明的full opacity (255).
 分隔符支持逗号(半角,):Tab,空格和冒号(:).
@@ -99,9 +100,9 @@ nv     0   0   0   0
  Even Rouault <even.rouault@mines-paris.org>,
  Howard Butler <hobu.inc@gmail.com>
  * 参考文献
- Derived from code by Michael Shapiro, Olga Waupotitsch, Marjorie Larson, Jim Westervelt : U.S. Army CERL, 1993. GRASS 4.1 Reference Manual. U.S. Army Corps of Engineers, Construction Engineering Research Laboratories, Champaign, Illinois, 1-425.
+Derived from code by Michael Shapiro, Olga Waupotitsch, Marjorie Larson, Jim Westervelt : U.S. Army CERL, 1993. GRASS 4.1 Reference Manual. U.S. Army Corps of Engineers, Construction Engineering Research Laboratories, Champaign, Illinois, 1-425.
  * 其他信息
- GRASS相关工具的文档:
- http://grass.osgeo.org/grass64/manuals/html64_user/r.slope.aspect.html
- http://grass.osgeo.org/grass64/manuals/html64_user/r.shaded.relief.html
- http://grass.osgeo.org/grass64/manuals/html64_user/r.colors.html 
+GRASS相关工具的文档:
+http://grass.osgeo.org/grass64/manuals/html64_user/r.slope.aspect.html
+http://grass.osgeo.org/grass64/manuals/html64_user/r.shaded.relief.html
+http://grass.osgeo.org/grass64/manuals/html64_user/r.colors.html 
