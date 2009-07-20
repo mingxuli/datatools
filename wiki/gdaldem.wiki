@@ -1,26 +1,25 @@
 #summary DEM分析工具(GDAL 1.7.0版以后)
 == 语法 ==
- * 生成山影图
+* 生成山影图
 {{{    
 gdaldem hillshade input_dem output_hillshade
                 [-z ZFactor (default=1)] [-s scale* (default=1)]
                 [-az Azimuth (default=315)] [-alt Altitude (default=45)]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
- * 生成坡度图
+* 生成坡度图
 {{{
 gdaldem slope input_dem output_slope_map
                 [-p use percent slope (default=degrees)] [-s scale* (default=1)]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
- * 生成坡向图
-输出一个32比特的浮点型栅格数据，坡向值范围为0-360
+* 生成坡向图，输出一个32比特的浮点型栅格数据，坡向值范围为0-360
 {{{
 gdaldem aspect input_dem output_aspect_map
                 [-trigonometric] [-zero_for_flat]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
- * 按高度进行分色渲染
+* 按高度进行分色渲染
 {{{
 gdaldem color-relief input_dem color_text_file output_color_relief_map
                 [-alpha]
@@ -29,9 +28,8 @@ gdaldem color-relief input_dem color_text_file output_color_relief_map
 
 高度分色方案文件(color_text_file)的格式为:高度值 Red Green Blue
 
-===备注===:
- Scale is the ratio of vertical units to horizontal
- for Feet:Latlong use scale=370400, for Meters:LatLong use scale=111120)
+备注:
+ Scale为DEM高度单位与长度单位的比值，如水平长度单位为十进制度,高度单位为Feet，则scale=370400,如果是Meters:LatLong，则scale=111120
 
 == 参数说明 ==
 === 公共参数 ===
@@ -49,19 +47,16 @@ output_xxx_map:
  安静模式,Suppress progress monitor and other non-error output. 
 
 ===山影模式===
-This command outputs an 8-bit raster with a nice shaded relief effect. It’s very useful for visualizing the terrain. You can optionally specify the azimuth and altitude of the light source, a vertical exaggeration factor and a scaling factor to account for differences between vertical and horizontal units.
-
-The following specific options are available :
-
+产生山地阴影效果图，输出结果为8比特的栅格数据，对于地形可视化非常有用。可以自定义太阳高度角和方位角、高度放大因子，以及垂向和水平方向的比值.
+相关参数如下:
 -z zFactor:
-    vertical exaggeration used to pre-multiply the elevations 
+ 高程缩放因子，可以夸大或缩小地形起伏程度。 
 -s scale:
-    ratio of vertical units to horizontal. If the horizontal unit of the source DEM is degrees (e.g Lat/Long WGS84 projection), you can use scale=111120 if the vertical units are meters (or scale=370400 if they are in feet) 
+ 高度和水平方向单位比值,当地图采用经纬度投影时十分有用，当水平长度单位为十进制度,高度单位为英尺(Feet)是，则scale=370400,如果高度单位为Meters，水平长度为度，则scale=111120.
 -az azimuth:
-    azimuth of the light, in degrees. 0 if it comes from the top of the raster, 90 from the east, ... The default value, 315, should rarely be changed as it is the value generally used to generate shaded maps. 
+ 太阳方位角，单位度，起始方向为正北方，顺时针方向，东方为90度，南方为180度，以此类推.默认值为315度,一般情况下不需要改变该值. 
 -alt altitude:
-    altitude of the light, in degrees. 90 if the light comes from above the DEM, 0 if it is raking light. 
-
+ 太阳高度角,单位度，水平方向为0度，头顶方向为90度。默认值是45度. 
 ===slope模式===
 This command will take a DEM raster and output a 32-bit float raster with slope values. You have the option of specifying the type of slope value you want: degrees or percent slope. In cases where the horizontal units differ from the vertical units, you can also supply a scaling factor.
 
@@ -111,12 +106,11 @@ For example :
 0      50  180  50
 nv     0   0   0   0 
 -------
-AUTHORS
+* AUTHORS
 Matthew Perry <perrygeo@gmail.com>, Even Rouault <even.rouault@mines-paris.org>, Howard Butler <hobu.inc@gmail.com>
-
 Derived from code by Michael Shapiro, Olga Waupotitsch, Marjorie Larson, Jim Westervelt : U.S. Army CERL, 1993. GRASS 4.1 Reference Manual. U.S. Army Corps of Engineers, Construction Engineering Research Laboratories, Champaign, Illinois, 1-425.
 See also
-Documentation of related GRASS utilities :
+* Documentation of related GRASS utilities :
 http://grass.osgeo.org/grass64/manuals/html64_user/r.slope.aspect.html
 http://grass.osgeo.org/grass64/manuals/html64_user/r.shaded.relief.html
 http://grass.osgeo.org/grass64/manuals/html64_user/r.colors.html 
