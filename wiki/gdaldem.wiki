@@ -1,32 +1,36 @@
 #summary Tools to analyze and visualize DEMs. (since GDAL 1.7.0)
 == 语法 ==
 
- * To generate a shaded relief map from any GDAL-supported elevation raster :
+ * To generate a shaded relief map from any GDAL-supported elevation raster:
 {{{    
 gdaldem hillshade input_dem output_hillshade
                 [-z ZFactor (default=1)] [-s scale* (default=1)]"
                 [-az Azimuth (default=315)] [-alt Altitude (default=45)]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
- * To generate a slope map from any GDAL-supported elevation raster :
+
+ * To generate a slope map from any GDAL-supported elevation raster:
 {{{    gdaldem slope input_dem output_slope_map"
                 [-p use percent slope (default=degrees)] [-s scale* (default=1)]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
+
  * To generate an aspect map from any GDAL-supported elevation raster
   Outputs a 32-bit float raster with pixel values from 0-360 indicating azimuth :
 {{{    gdaldem aspect input_dem output_aspect_map"
                 [-trigonometric] [-zero_for_flat]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
+
   * To generate a color relief map from any GDAL-supported elevation raster
 {{{    gdaldem color-relief input_dem color_text_file output_color_relief_map
                 [-alpha]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
+
     where color_text_file contains lines of the format "elevation_value red green blue"
 
-备注:
+===备注===:
   Scale is the ratio of vertical units to horizontal
    for Feet:Latlong use scale=370400, for Meters:LatLong use scale=111120)
 
