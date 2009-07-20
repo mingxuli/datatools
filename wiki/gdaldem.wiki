@@ -1,7 +1,7 @@
-#summary Tools to analyze and visualize DEMs. (since GDAL 1.7.0)
+#summary DEM分析工具(GDAL 1.7.0版以后)
 == 语法 ==
 
- * To generate a shaded relief map from any GDAL-supported elevation raster:
+ * 生成山影图
 {{{    
 gdaldem hillshade input_dem output_hillshade
                 [-z ZFactor (default=1)] [-s scale* (default=1)]"
@@ -9,32 +9,35 @@ gdaldem hillshade input_dem output_hillshade
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
 
- * To generate a slope map from any GDAL-supported elevation raster:
-{{{    gdaldem slope input_dem output_slope_map"
+ * 生成坡度图
+{{{
+gdaldem slope input_dem output_slope_map
                 [-p use percent slope (default=degrees)] [-s scale* (default=1)]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
 
- * To generate an aspect map from any GDAL-supported elevation raster
+ * 生成坡向图
   Outputs a 32-bit float raster with pixel values from 0-360 indicating azimuth :
-{{{    gdaldem aspect input_dem output_aspect_map"
+{{{
+gdaldem aspect input_dem output_aspect_map
                 [-trigonometric] [-zero_for_flat]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
 
-  * To generate a color relief map from any GDAL-supported elevation raster
-{{{    gdaldem color-relief input_dem color_text_file output_color_relief_map
+  * 按高度进行分色渲染
+{{{
+gdaldem color-relief input_dem color_text_file output_color_relief_map
                 [-alpha]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
 
-    where color_text_file contains lines of the format "elevation_value red green blue"
+where color_text_file contains lines of the format "elevation_value red green blue"
 
 ===备注===:
-  Scale is the ratio of vertical units to horizontal
-   for Feet:Latlong use scale=370400, for Meters:LatLong use scale=111120)
+ Scale is the ratio of vertical units to horizontal
+ for Feet:Latlong use scale=370400, for Meters:LatLong use scale=111120)
 
-
+== 使用说明 ==
 This utility has 4 different modes :
 
 hillshade
