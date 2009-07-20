@@ -2,18 +2,18 @@
 GDAL发布包、FWTools以及OSGeo4W都包含了这些工具，具体包括：
  * [gdalinfo] - 提取文件信息的工具.
  * [gdal_translate] - 一个栅格文件转换工具，可实现格式转换、范围切割和缩放等功能.
- * [gdaladdo] - Add overviews to a file.
- * [gdalwarp] - Warp an image into a new coordinate system.
+ * [gdaladdo] - 在文件内建立金字塔，提高文件打开和浏览速度.
+ * [gdalwarp] - 图像或栅格数据投影转换工具.
  * [gdaltindex] - Build a MapServer raster tileindex.
  * [gdalbuildvrt] - Build a VRT from a list of datasets.
- * [gdal_contour] - Contours from DEM.
- * [gdaldem] - Tools to analyze and visualize DEMs.
- * [rgb2pct.py] - Convert a 24bit RGB image to 8bit paletted.
- * pct2rgb.py - Convert an 8bit paletted image to 24bit RGB.
+ * [gdal_contour] - 从DEM中生成等高线.
+ * [gdaldem] - DEM分析与可视化工具,可进行坡度、坡向和山影分析，以及高程分色渲染功能.
+ * [rgb2pct].py - 将24bit的RGB图像转换为8bit颜色表图像.
+ * [pct2rgb].py - 将8bit颜色表图像转换为24bit的RGB图像.
  * [gdal_merge].py - Build a quick mosaic from a set of images.
- * gdal2tiles.py - Create a TMS tile structure, KML and simple web viewer.
- * gdal_rasterize - Rasterize vectors into raster file.
- * gdaltransform - Transform coordinates.
+ * [gdal2tiles].py - 生成 TMS瓦片结构，可用Google Earth(KML)或一般web浏览器进行浏览.
+ * gdal_rasterize - 将矢量数据栅格化.
+ * gdaltransform - 坐标转换工具.
  * nearblack - Convert nearly black/white borders to exact value.
  * gdal_retile.py - Retiles a set of tiles and/or build tiled pyramid levels.
  * gdal_grid - Create raster from the scattered data.
