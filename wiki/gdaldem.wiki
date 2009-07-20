@@ -87,18 +87,20 @@ color_text_file:
 分隔符支持逗号(半角,):Tab,空格和冒号(:).
 颜色值也可以用颜色名称代替，支持white, black, red, green, blue, yellow, magenta, cyan, aqua, grey/gray, orange, brown, purple/violet and indigo等颜色名称.
 示例:
+{{{
 3500   white
 2500   235:220:175
 50%   190 185 135
 700    240 250 150
 0      50  180  50
 nv     0   0   0   0 
+}}}
 备注: 颜色语法配置方案来源于GRASS的r.colors工具.The alpha component and the support of tablulations and commma as separators are GDAL specific extensions.
 -------
- * 作者信息
- Matthew Perry <perrygeo@gmail.com>
- Even Rouault <even.rouault@mines-paris.org>,
- Howard Butler <hobu.inc@gmail.com>
+=== 作者信息 ===
+ * Matthew Perry <perrygeo@gmail.com>
+ * Even Rouault <even.rouault@mines-paris.org>,
+ * Howard Butler <hobu.inc@gmail.com>
  * 参考文献
 Derived from code by Michael Shapiro, Olga Waupotitsch, Marjorie Larson, Jim Westervelt : U.S. Army CERL, 1993. GRASS 4.1 Reference Manual. U.S. Army Corps of Engineers, Construction Engineering Research Laboratories, Champaign, Illinois, 1-425.
  * 其他信息
