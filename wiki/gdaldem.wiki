@@ -1,6 +1,7 @@
-#summary DEM分析工具(GDAL 1.7.0版以后)
+#summary DEM分析与可视化工具(GDAL 1.7.0以上版本包含此工具，FWTools2.4以上版本)
+#labels DEM
 == 语法 ==
-* 生成山影图
+* 生成山影效果图
 {{{    
 gdaldem hillshade input_dem output_hillshade
                 [-z ZFactor (default=1)] [-s scale* (default=1)]
@@ -19,7 +20,7 @@ gdaldem aspect input_dem output_aspect_map
                 [-trigonometric] [-zero_for_flat]
                 [-b Band (default=1)] [-of format] [-co "NAME=VALUE"]* [-quiet]
 }}}
-* 按高度进行分色渲染
+* 对DEM进行高程分色渲染
 {{{
 gdaldem color-relief input_dem color_text_file output_color_relief_map
                 [-alpha]
@@ -46,7 +47,7 @@ output_xxx_map:
 -quiet:
  安静模式,Suppress progress monitor and other non-error output. 
 
-===山影模式===
+===山影效果模式===
 产生山地阴影效果图，输出结果为8比特的栅格数据，对于地形可视化非常有用。可以自定义太阳高度角和方位角、高度放大因子，以及垂向和水平方向的比值.
 相关参数如下:
 -z zFactor:
@@ -57,28 +58,21 @@ output_xxx_map:
  太阳方位角，单位度，起始方向为正北方，顺时针方向，东方为90度，南方为180度，以此类推.默认值为315度,一般情况下不需要改变该值. 
 -alt altitude:
  太阳高度角,单位度，水平方向为0度，头顶方向为90度。默认值是45度. 
-===slope模式===
-This command will take a DEM raster and output a 32-bit float raster with slope values. You have the option of specifying the type of slope value you want: degrees or percent slope. In cases where the horizontal units differ from the vertical units, you can also supply a scaling factor.
-
-The following specific options are available :
-
--p :
-    if specified, the slope will be expressed as percent slope. Otherwise, it is expressed as degrees 
+===坡度模式===
+产生一个32比特的栅格图，每个栅格代表本地的坡度，浮点型.可以定义坡度类型，如度或百分比.如果水平单位为度，还可以设置高度长度比值(scaling).具体参数说明如下:
+-p:
+ 如果选择该参数，则坡度单位为百分比，默认值为度。 
 -s scale:
-    ratio of vertical units to horizontal. If the horizontal unit of the source DEM is degrees (e.g Lat/Long WGS84 projection), you can use scale=111120 if the vertical units are meters (or scale=370400 if they are in feet) 
+ 高度和水平方向单位比值,当地图采用经纬度投影时十分有用，当水平长度单位为十进制度,高度单位为英尺(Feet)是，则scale=370400,如果高度单位为Meters，水平长度为度，则scale=111120.
 
-===aspect模式===
-This command outputs a 32-bit float raster with values between 0° and 360° representing the azimuth that slopes are facing. The definition of the azimuth is such that : 0° means that the slope is facing the North, 90° it's facing the East, 180° it's facing the South and 270° it's facing the West (provided that the top of your input raster is north oriented). The aspect value -9999 is used as the nodata value to indicate undefined aspect in flat areas with slope=0.
-
-The following specifics options are available :
-
+===坡向模式===
+ 输出一个32比特的浮点型栅格数据，坡向值在0-360°之间，0表示正北方，90°表示南方.-9999用来代表无值区，也代表坡度为0的平面区域.具体参数如下:
 -trigonometric:
-    return trigonometric angle instead of azimuth. Thus 0° means East, 90° North, 180° West, 270° South 
+ 用三角函数度代替方位角.即起点在东方，第一象元为0-90度，第二象元为90-180度，以此类推。
 -zero_for_flat:
-    return 0 for flat areas with slope=0, instead of -9999 
+ 坡度为0的平地，方位角用0表示，而不是用-9999表示（ArcGIS就是用0表示）。 
 
-By using those 2 options, the aspect returned by gdaldem aspect should be identical to the one of GRASS r.slope.aspect. Otherwise, it's identical to the one of Matthew Perry's aspect.cpp utility.
-===color-relief模式===
+===高程分色渲染模式===
 This command outputs a 3-band (RGB) raster with values are computed from the elevation and a text-based color configuration file, containing the association between various elevation values and the corresponding wished color. The colors between the given elevation values are blended smoothly and the result is a nice colorized DEM.
 
 The following specifics options are available :
