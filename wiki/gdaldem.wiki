@@ -98,13 +98,13 @@ nv     0   0   0   0
 备注: 颜色语法配置方案来源于GRASS的r.colors工具.The alpha component and the support of tablulations and commma as separators are GDAL specific extensions.
 -------
 === 作者信息 ===
- * Matthew Perry <perrygeo@gmail.com>
- * Even Rouault <even.rouault@mines-paris.org>,
- * Howard Butler <hobu.inc@gmail.com>
- * 参考文献
+* Matthew Perry <perrygeo@gmail.com>
+* Even Rouault <even.rouault@mines-paris.org>,
+* Howard Butler <hobu.inc@gmail.com>
+=== 参考文献 ===
 Derived from code by Michael Shapiro, Olga Waupotitsch, Marjorie Larson, Jim Westervelt : U.S. Army CERL, 1993. GRASS 4.1 Reference Manual. U.S. Army Corps of Engineers, Construction Engineering Research Laboratories, Champaign, Illinois, 1-425.
- * 其他信息
+=== 其他信息 ===
 GRASS相关工具的文档:
-http://grass.osgeo.org/grass64/manuals/html64_user/r.slope.aspect.html
-http://grass.osgeo.org/grass64/manuals/html64_user/r.shaded.relief.html
-http://grass.osgeo.org/grass64/manuals/html64_user/r.colors.html 
+* http://grass.osgeo.org/grass64/manuals/html64_user/r.slope.aspect.html
+* http://grass.osgeo.org/grass64/manuals/html64_user/r.shaded.relief.html
+* http://grass.osgeo.org/grass64/manuals/html64_user/r.colors.html 
