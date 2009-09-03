@@ -306,21 +306,21 @@ if __name__=='__main__':
     user='postgres'
     password='glacier'    
     #table_name='hkh_glacier_lakes'
-    table_name='hkh_glacier_lakes'
+    table_name='hkh_glacial_lakes'
     lake_id='gid'
     attr='lake_name'
     ##define the geosystem code,default value is 4326 (=WGS84)
     srid='4326'
     ## defin the input and output kml file
-    kmlfile='F:\\kml\\glake_22June.kml'
+    kmlfile='d:\\kml\\hkh_glacier_lake_21_Aug.kml'
     out_kmlfile=kmlfile[0:-4]+'_'+string.replace(str(date.today()),':','')+'.kml'
     field_name='datasource'    
     
     result=import2pg(host,dbname,user,password,kmlfile,table_name)
     print result
     ##
-    result=export2kml(host,dbname,user,password,table_name,out_kmlfile,field_name)
-    print result
+    ##result=export2kml(host,dbname,user,password,table_name,out_kmlfile,field_name)
+    ##print result
 print "---end---"
 
 
