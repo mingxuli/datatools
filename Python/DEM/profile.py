@@ -5,7 +5,7 @@ try:
     from osgeo import ogr,gdal
 except:
     import ogr,gdal
-import numpy
+from numpy import *
 from pychartdir import *
 shapefile='D:\SRTM\line.shp'
 srtm='D:\SRTM\srtm_54_07.tif'
@@ -41,7 +41,8 @@ chart.setRoundedFrame()
 chart.setPlotArea(60,20,520,320)
 data=[]
 x_array=[]
-max_data=[]
+
+
 for i in range(num_Feature):
     feature=layer.GetFeature(i)
     geom= feature.GetGeometryRef()
@@ -52,18 +53,25 @@ for i in range(num_Feature):
         y_offset=int((y - y0)/ps_y)
         value=band.ReadAsArray(x_offset,y_offset,1,1)
         data.append(value[0,0])
-        x_array.append(x)
-    for index in range(cols):
-        value=band.ReadAsArray(index,0,1,rows)
-        max_data.append(max(value))
+        x_array.append(x) 
     feature.Destroy()
 dataSource.Destroy()
+value=band.ReadAsArray(0,0,cols,rows)
+max_data=list(amax(value,axis=0))
+layer2_mark=list(x0+arange(cols)*ps_x)
+mean_data=list(mean(value,axis=0))
+
 chart.xAxis().setTitle("Longitude/ °","Arialbd.ttf",10)
 chart.yAxis().setTitle("Elevation/m","Arialbd.ttf",10) 
-layer=chart.addLineLayer2()
-layer.addDataSet(data)
-layer.addDataSet(max_data)
-layer.setXData(x_array)
+layer1=chart.addLineLayer2()
+layer1.addDataSet(data)
+layer1.setXData(x_array)
+layer2=chart.addLineLayer2()
+layer2.addDataSet(max_data)
+layer2.setXData(layer2_mark)
+layer3=chart.addLineLayer2()
+layer3.addDataSet(mean_data)
+layer3.setXData(layer2_mark)
 chart.makeChart(chartfile)
-  
+
 print 'end'
