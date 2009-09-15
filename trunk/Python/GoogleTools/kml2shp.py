@@ -227,12 +227,12 @@ def kml2shp(kmlfile,outpath,look=codecs.lookup('gbk')):
 
 if __name__=="__main__":
     ##defined the input and output file    
-    outpath='F:\\KML\\'
+    outpath='d:\\glof\\'
     ##define the encoding for chinese character
     look=codecs.lookup('gbk')
     
     ##for single file
-    kmlfile=u'F:\\KML\\hkh_glacier_lake_21_Aug.kml'
+    kmlfile=u'd:\\glof\\profile.kml'
     result=kml2shp(kmlfile,outpath)
     print result
     ##for batch model
