@@ -521,13 +521,14 @@ def Merge_Tiles(workspace,outpath,gdal_translate,kml_url):
         kml_url=kml_url+'/'
     
     ##进行拼接
+    
     for tile in set(folder_list):
-        ##创建输出目录
+        ##创建输出目录        
         if os.path.exists(outpath+tile) is False:        
             folder=string.split(tile,os.sep)
             out_dir=outpath
             for i in range(len(folder)):
-                out_dir=out_dir+folder[i]+os.sep
+                out_dir=out_dir+folder[i]+os.sep  
                 if os.path.exists(out_dir) is False:
                     os.mkdir(out_dir) 
         index = [i for i in range(len(folder_list)) if folder_list[i]==tile]    
@@ -537,6 +538,7 @@ def Merge_Tiles(workspace,outpath,gdal_translate,kml_url):
             file_format=shortname[len_filename-3:len_filename]        
             outfile=outpath+tile+os.sep+shortname
             new_index=[i for i in index if basename_list[i]==shortname]
+            ## 对图像文件
             if string.lower(file_format)=='png':                
                 ##如果有多个同名文件，则合并                
                 if len(new_index)>1:
@@ -550,6 +552,7 @@ def Merge_Tiles(workspace,outpath,gdal_translate,kml_url):
                     if verbose != 0:
                         print u'复制转移',outfile
                     shutil.copyfile(fullname_list[new_index[0]], outfile)
+            ##对kml文件
             if string.lower(file_format)=='kml':
                 for i in range(len(new_index)):
                     kmlfile=fullname_list[new_index[i]]   
@@ -575,11 +578,23 @@ def Merge_Tiles(workspace,outpath,gdal_translate,kml_url):
                     href_node=Node.getElementsByTagName('href')[0]
                     name=name_node.firstChild.data
                     url=kml_url+name
+                   
                     url=string.replace(url,'png','kml')
+                    url=string.replace(url,'\\',"/")                    
                     Text=new_dom.createTextNode(url)
                     Old_Text=href_node.firstChild
                     href_node.replaceChild(Text,Old_Text)
-                
+                GroundOverlay_nodelist=new_root.getElementsByTagName('GroundOverlay')
+                for Node in GroundOverlay_nodelist:
+                    name_node=Document_Node.getElementsByTagName('name')[0]
+                    href_node=Node.getElementsByTagName('href')[0]
+                    name=name_node.firstChild.data
+                    url=kml_url+name
+                    url=string.replace(url,'kml','png')
+                    url=string.replace(url,'\\',"/")                    
+                    Text=new_dom.createTextNode(url)
+                    Old_Text=href_node.firstChild
+                    href_node.replaceChild(Text,Old_Text)
                     
                 f=open(outfile,'w')
                 writer = codecs.lookup('utf-8')[3](f)
@@ -610,7 +625,7 @@ def Merge_Tiles(workspace,outpath,gdal_translate,kml_url):
                         TileSet=new_root.getElementsByTagName('TileSet')
                         for node in TileSet:
                             order=node.getAttribute('order')
-                            node.setAttribute('href',kml_url+order)
+                            node.setAttribute('href',kml_url+order)                            
                     else:
                         temp_BoundingBox=root.getElementsByTagName('BoundingBox')[0]
                         temp_minx=float(temp_BoundingBox.getAttribute('minx'))
@@ -654,10 +669,10 @@ def Merge_Tiles(workspace,outpath,gdal_translate,kml_url):
     print len(folder_list)
     print len(set(folder_list))
 if __name__=="__main__":
-    workspace="D:\\Python\\data\\TMS\\"
-    outpath="D:\\website\\out\\"    
+    workspace="D:\\SRTM\\tms\\"
+    outpath="D:\\srtm\\out\\"    
     gdal_translate=u"C:\\gdalwin32-1.6\\bin\\gdal_translate.exe" 
     #kml_url="files:///" ##for local file   #针对本地文件
-    kml_url="http://map.westgis.ac.cn/tms/test/"
+    kml_url="http://map.westgis.ac.cn/tms/2x_heihe_hillshade/"
     Merge_Tiles(workspace,outpath,gdal_translate,kml_url)
     print 'end'

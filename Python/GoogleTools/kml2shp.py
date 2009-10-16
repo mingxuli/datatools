@@ -226,13 +226,14 @@ def kml2shp(kmlfile,outpath,look=codecs.lookup('gbk')):
     return message
 
 if __name__=="__main__":
+    ##请不要在路径中使用中文名称
     ##defined the input and output file    
-    outpath='d:\\glof\\'
+    outpath=u'D:\\working\\heihe\\'
     ##define the encoding for chinese character
     look=codecs.lookup('gbk')
     
     ##for single file
-    kmlfile=u'd:\\glof\\profile.kml'
+    kmlfile=u'D:\\working\\heihe\\heihe_new_boundary_26.kml'
     result=kml2shp(kmlfile,outpath)
     print result
     ##for batch model
