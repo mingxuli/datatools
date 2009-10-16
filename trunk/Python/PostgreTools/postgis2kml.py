@@ -50,7 +50,7 @@ def postgis2kml(host,dbname,user,password,table_name,kmlfile,field_name,folder_n
     
     ##get table oid
     sql_str="""select attname from pg_attribute where attrelid=(select oid from pg_class where
-relname='"""+table_name+"""') and attnum >-1 order by attnum;"""
+relname='"""+table_name+"""') and attnum >-1 and atttypid >0 order by attnum;"""
     curs.execute(sql_str)
     rows=curs.fetchall()
     attrname=[rec[0] for rec in rows]
@@ -109,9 +109,10 @@ if __name__=='__main__':
     dbname='postgis'
     user='postgres'
     password='postgres'
-    table_name='hkh_glacial_lakes_type'
-    field_name='gl_type'
-    kmlfile='d:\\glof\\hkh_glacial_lakes_type.kml'
+    table_name='hkh_glacial_lake_21_sep'
+    field_name='gid'
+    kmlfile='d:\\glof\\hkh_glacial_lake_21_sep.kml'
     
     result=postgis2kml(host,dbname,user,password,table_name,kmlfile,field_name)
+    print 'end'
     
