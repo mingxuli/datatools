@@ -1,0 +1,15 @@
+## not run draw glacial size level
+library(RPostgreSQL)
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv,user="postgres",password="welcome",dbname="GLOF")
+
+
+data <- dbGetQuery(con,statement=paste(
+	"select \"Class\",count(\"Class\"),sum(\"Gl_Area\")",
+	"from \"Nepal_Glacial_Lake_Sharad_final\"",
+	"group by \"Class\"",
+	"order by \"Class\""))
+
+pie(data[[2]],labels=data[[1]],col=rainbow(11))
+
+## end run
