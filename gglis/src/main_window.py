@@ -23,13 +23,13 @@ class MainWindow(QMainWindow):
         self.attributeTable = AttributesView(self)
         self.buildDockWidget(self.attributeTable, "Attributes", Qt.BottomDockWidgetArea)
         self.initAction()
-        self.buildMenus()
-        self.buildToolbar()
+        self.sizeLabel = QLabel("Latitude:Longtitude")
+        self.sizeLabel.setFrameStyle(QFrame.StyledPanel | QFrame.Sunken)
+        status = self.statusBar()
+        status.setSizeGripEnabled(False)
+        status.addPermanentWidget(self.sizeLabel)
+        status.showMessage("Ready", 5000)
         QTimer.singleShot(0, self.loadInitialLayers)
-
-    def buildMenus(self):
-        layerMenu = self.menuBar().addMenu("&Layer")
-        self.addActions(layerMenu, (self.actionOpenTable, ))
 
     def addActions(self, target, actions):
         for action in actions:
@@ -38,7 +38,7 @@ class MainWindow(QMainWindow):
             else:
                 target.addAction(action)
 
-    def loadInitialFile(self):
+    def loadInitialLayers(self):
         dataFile = QgsApplication.prefixPath() + "//data//nepal.sqlite"
         if not QFile.exists(dataFile):return
         layer1 = QgsVectorLayer("dbname='" + dataFile + "' table=\"nepal_boundary\" (Geometry) sql=", "nepal_boundary", "spatialite")
@@ -50,7 +50,7 @@ class MainWindow(QMainWindow):
         QgsMapLayerRegistry.instance().addMapLayer(layer3)
         QgsMapLayerRegistry.instance().addMapLayer(layer2)
         QgsMapLayerRegistry.instance().addMapLayer(layer1)
-        self.canvas.setExtent(layer3.extent())
+        self.canvas.setExtent(layer2.extent())
         self.layers = []
         self.layers.append(layer3)
         self.layers.append(layer2)
@@ -107,17 +107,14 @@ class MainWindow(QMainWindow):
         return features
 
     def initAction(self):
-
-        self.actionOpenTable = QAction(QIcon(":mActionOpenTable.png"), "Attribute Table", self)
-        self.connect(self.actionOpenTable, SIGNAL("activated()"), self.updateTable)
+        pass
+#        self.actionOpenTable = QAction(QIcon(":mActionOpenTable.png"), "Attribute Table", self)
+#        self.connect(self.actionOpenTable, SIGNAL("activated()"), self.updateTable)
 #        self.connect(self, SIGNAL("newLayer"), self.clear)
 
     def printOk(self):
         print "OK"
 
-    def buildToolbar(self):
-        attributeToolbar = self.addToolBar("Attribute")
-        attributeToolbar.addAction(self.actionOpenTable)
 
     def buildDockWidget(self, dockedWidget, name, align=Qt.LeftDockWidgetArea):
         dock = QDockWidget(name, self)
