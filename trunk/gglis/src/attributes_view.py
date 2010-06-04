@@ -11,8 +11,15 @@ class AttributesView(QTableView):
         self.parent = parent
         self.model = AttributesModel()
         self.setModel(self.model)
+        self.actionOpenTable = QAction(QIcon(":mActionOpenTable.png"), "Attribute Table", self)
+        self.connect(self.actionOpenTable, SIGNAL("activated()"), self.updateModel)
+        layerMenu = self.parent.menuBar().addMenu("&Layer")
+        self.parent.addActions(layerMenu, (self.actionOpenTable,))
+        attributeToolbar = self.parent.addToolBar("Attribute")
+        attributeToolbar.addAction(self.actionOpenTable)
 
-    def actionOpenTable(self):
+    def updateModel(self):
+        pass
 
 
 
