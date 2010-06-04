@@ -1,0 +1,13 @@
+## Histogram map of glacial lake type
+library("RPostgreSQL")
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv,user="postgres",password="welcome",dbname="GLOF")
+total_area<-64.78
+data <- dbGetQuery(con,statement=paste(
+	"select round(\"Gl_Area\"*10),sum(\"Gl_Area\")",
+	"from \"Nepal_Glacial_Lake_Sharad_final\"",
+	"group by round(\"Gl_Area\"*10)",
+	"order by round(\"Gl_Area\"*10)"))
+
+data
+plot((data[[1]]+0.5)/10,data[[2]],type='h',lwd=5,col="blue",xlim=c(0,5),ylim=c(0,20),xlab="Area /sq.km",ylab="Total Area /sq.km")
