@@ -23,6 +23,8 @@ class CanvasWidget(QgsMapCanvas):
         self.connect(self.actionZoomFull, SIGNAL("activated()"), self.zoomFull)
         self.actionPan = QAction(QIcon(":mActionPan.png"), "Pan", self)
         self.connect(self.actionPan, SIGNAL("activated()"), self.pan)
+        self.connect(self.parent, SIGNAL("afterLoadingLayers"), self.setCanvasLayerSet)
+        self.connect(self,SIGNAL("xyCoordinates(QgsPoint)"),self.showCoordinates)
 
         explorMenu = parent.menuBar().addMenu("&Explor")
         parent.addActions(explorMenu, self.mapActions())
@@ -44,3 +46,10 @@ class CanvasWidget(QgsMapCanvas):
 
     def mapActions(self):
         return (self.actionZoomIn, self.actionZoomOut, self.actionZoomFull, self.actionPan)
+
+    def setCanvasLayerSet(self, layers):
+        canvasLayers = [QgsMapCanvasLayer(layer) for layer in layers]
+        self.setLayerSet(canvasLayers)
+
+    def showCoordinates(self,point):
+        self.parent.sizeLabel.setText("Coordinate: %.5f,%.5f" % (point.x(),point.y()))
