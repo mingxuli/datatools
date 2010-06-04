@@ -1,0 +1,22 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file alias="icon.png">images/icon.png</file>
+<file alias="mActionZoomOut.png">images/mActionZoomOut.png</file>
+<file alias="mActionZoomIn.png">images/mActionZoomIn.png</file>
+<file alias="mActionZoomFullExtent.png">images/mActionZoomFullExtent.png</file>
+<file alias="mActionPan.png">images/mActionPan.png</file>
+<file alias="mActionOpenTable.png">images/mActionOpenTable.png</file>
+<file alias="mActionProperties.png">images/mActionProperties.png</file>
+<file alias="action.png">images/propertyicons/action.png</file>
+<file alias="attributes.png">images/propertyicons/attributes.png</file>
+<file alias="general.png">images/propertyicons/general.png</file>
+<file alias="labels.png">images/propertyicons/labels.png</file>
+<file alias="metadata.png">images/propertyicons/metadata.png</file>
+<file alias="symbology.png">images/propertyicons/symbology.png</file>
+<file alias="mActionNewAttribute.png">images/propertyicons/mActionNewAttribute.png</file>
+<file alias="mActionDeleteAttribute.png">images/propertyicons/mActionDeleteAttribute.png</file>
+<file alias="point.png">images/point.png</file>
+<file alias="polyline.png">images/polyline.png</file>
+<file alias="polygon.png">images/polygon.png</file>
+</qresource>
+</RCC>
