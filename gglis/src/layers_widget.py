@@ -17,8 +17,8 @@ class LayersWidget(QListWidget):
         self.setAcceptDrops(True)
         self.setDragEnabled(True)
         self.dropAction = Qt.MoveAction
-
         self.connect(self, SIGNAL("currentRowChanged(int)"), self.changeCurrentLayer)
+        self.connect(self.parent, SIGNAL("afterLoadingLayers"), self.initItems)
 
     def initItems(self, layers):
         for layer in layers:

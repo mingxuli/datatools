@@ -16,19 +16,19 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Glacier & Glacial Lake Information System")
         self.resize(800, 600)
         self.menuBar().addMenu("&File")
+        self.layers = []
         self.canvas = CanvasWidget(self)
         self.setCentralWidget(self.canvas)
         self.layersWidget = LayersWidget(self)
         self.buildDockWidget(self.layersWidget, "Layers")
         self.attributeTable = AttributesView(self)
         self.buildDockWidget(self.attributeTable, "Attributes", Qt.BottomDockWidgetArea)
-        self.initAction()
-        self.sizeLabel = QLabel("Latitude:Longtitude")
+        self.sizeLabel = QLabel()
         self.sizeLabel.setFrameStyle(QFrame.StyledPanel | QFrame.Sunken)
-        status = self.statusBar()
-        status.setSizeGripEnabled(False)
-        status.addPermanentWidget(self.sizeLabel)
-        status.showMessage("Ready", 5000)
+        self.status = self.statusBar()
+        self.status.setSizeGripEnabled(False)
+        self.status.addPermanentWidget(self.sizeLabel)
+        self.connect(self, SIGNAL("afterLoadingLayers"), self.showMessage)
         QTimer.singleShot(0, self.loadInitialLayers)
 
     def addActions(self, target, actions):
@@ -40,26 +40,17 @@ class MainWindow(QMainWindow):
 
     def loadInitialLayers(self):
         dataFile = QgsApplication.prefixPath() + "//data//nepal.sqlite"
-        if not QFile.exists(dataFile):return
-        layer1 = QgsVectorLayer("dbname='" + dataFile + "' table=\"nepal_boundary\" (Geometry) sql=", "nepal_boundary", "spatialite")
-        layer2 = QgsVectorLayer("dbname='" + dataFile + "' table=\"nepal_major_rivers\" (Geometry) sql=", "nepal_major_rivers", "spatialite")
-        layer3 = QgsVectorLayer("dbname='" + dataFile + "' table=\"nepal_glacial_lake_2009\" (Geometry) sql=", "nepal_glacial_lake_2009", "spatialite")
-        if not layer1.isValid():return
-        print "loading..."
-
-        QgsMapLayerRegistry.instance().addMapLayer(layer3)
-        QgsMapLayerRegistry.instance().addMapLayer(layer2)
-        QgsMapLayerRegistry.instance().addMapLayer(layer1)
-        self.canvas.setExtent(layer2.extent())
-        self.layers = []
-        self.layers.append(layer3)
-        self.layers.append(layer2)
-        self.layers.append(layer1)
-        self.setCanvasLayerSet(self.layers)
-        self.layersWidget.initItems(self.layers)
+        if not QFile.exists(dataFile): return
+        parameters = "dbname='%s' table=\"%s\"(Geometry) sql="
+        for name in ("nepal_glacial_lake_2009", "nepal_major_rivers", "nepal_boundary"):
+            layer = QgsVectorLayer(parameters % (dataFile,name),name,"spatialite")
+            if layer.isValid():
+                QgsMapLayerRegistry.instance().addMapLayer(layer)
+                self.layers.append(layer)
+                self.canvas.setExtent(layer.extent())
         self.canvas.setVisible(True);
         self.canvas.refresh();
-#        self.emit(SIGNAL("newLayer"), self.attributeTable)
+        self.emit(SIGNAL("afterLoadingLayers"),self.layers)
 
 
     def updateTable(self):
@@ -106,12 +97,6 @@ class MainWindow(QMainWindow):
             features.append(f)
         return features
 
-    def initAction(self):
-        pass
-#        self.actionOpenTable = QAction(QIcon(":mActionOpenTable.png"), "Attribute Table", self)
-#        self.connect(self.actionOpenTable, SIGNAL("activated()"), self.updateTable)
-#        self.connect(self, SIGNAL("newLayer"), self.clear)
-
     def printOk(self):
         print "OK"
 
@@ -123,14 +108,6 @@ class MainWindow(QMainWindow):
         dock.setWidget(dockedWidget)
         self.addDockWidget(align, dock);
 
+    def showMessage(self):
+        self.status.showMessage("Loaded layers", 5000)
 
-    def openProperties(self):
-        if self.canvas.isDrawing():
-            return
-        properties = MyLayerProperties(self.currentLayer, self)
-        properties.show()
-
-
-    def setCanvasLayerSet(self, layers):
-        canvasLayers = [QgsMapCanvasLayer(layer) for layer in layers]
-        self.canvas.setLayerSet(canvasLayers)
