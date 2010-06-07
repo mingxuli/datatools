@@ -2,9 +2,9 @@
 from pychartdir import *
 from math import *
 import string
-conn=connect("host=localhost dbname=glof user= postgres password=glacier")
+conn=connect("host=localhost dbname=GGLIS user= postgres password=glacier")
 curs=conn.cursor()
-sql_str="select area,astext(st_centroid(the_geom)) from hkh_glacial_lakes where area<10000000;"
+sql_str="select \"Gl_Area\",astext(st_centroid(the_geom)) from \"HKH_Glacial_Lakes_final\";"
 curs.execute(sql_str)
 rows=curs.fetchall()
 area=[]
@@ -50,5 +50,5 @@ c.addScatterLayer(coor_x, area,"Glacial lake area", DiamondSymbol, 3,
 #c.addScatterLayer(dataX1, dataY1, "Natural", TriangleSymbol, 11, 0x33ff33)
 
 # Output the chart
-c.makeChart("d://scatter.png")
+c.makeChart("c://workspace//scatter.png")
 print 'end'
