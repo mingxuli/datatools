@@ -51,9 +51,11 @@ def postgis2kml(host,dbname,user,password,table_name,kmlfile,field_name,folder_n
     ##get table oid
     sql_str="""select attname from pg_attribute where attrelid=(select oid from pg_class where
 relname='"""+table_name+"""') and attnum >-1 and atttypid >0 order by attnum;"""
+    print sql_str
     curs.execute(sql_str)
     rows=curs.fetchall()
     attrname=[rec[0] for rec in rows]
+    print attrname
     attrname.remove('the_geom')
     attr_name=string.join(attrname,',')
     if folder_name <> '':
@@ -93,7 +95,7 @@ relname='"""+table_name+"""') and attnum >-1 and atttypid >0 order by attnum;"""
             kml_node=kml_dom.documentElement
             Placemark_node.appendChild(kml_node)       
                   
-    
+    print kml_dom.toxml()
     f=open(kmlfile,'w')
     writer=codecs.lookup('utf8')[3](f)
     dom.writexml(writer,encoding='utf8')
@@ -106,12 +108,12 @@ relname='"""+table_name+"""') and attnum >-1 and atttypid >0 order by attnum;"""
 if __name__=='__main__':
     ## variale for connect postgre
     host='localhost'
-    dbname='postgis'
+    dbname=r"GLOF"
     user='postgres'
-    password='postgres'
-    table_name='hkh_glacial_lake_21_sep'
-    field_name='gid'
-    kmlfile='d:\\glof\\hkh_glacial_lake_21_sep.kml'
+    password='welcome'
+    table_name='Nepal_Glacial_Lake_2009_CD'
+    field_name='"Gl_Code"'
+    kmlfile='D:\\sharedata\\Nepal_Glacial_Lake_2009.kml'
     
     result=postgis2kml(host,dbname,user,password,table_name,kmlfile,field_name)
     print 'end'
