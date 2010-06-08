@@ -102,11 +102,11 @@ if __name__=='__main__':
     dbname="GGLIS"
     user='postgres'
     password='postgres'    
-    table_name="\"HKH_Glacial_Lakes_final\""
+    table_name="\"Nepal_Glacial_Lake_wu_v2\""
     gid='gid'
     ##define the geosystem code,default value is 4326 (=WGS84)
     srid='4326'
-    kml_file='C:\\workspace\\gl_1201.kml'
+    kml_file='C:\\workspace\\gl_wu_v3.kml'
     insert_polygon(host,dbname,user,password,kml_file,table_name)
     
 
