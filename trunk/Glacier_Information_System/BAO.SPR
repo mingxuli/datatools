@@ -1,0 +1,232 @@
+:000:ÖÐ¹ú±ù´¨±àÄ¿
+:001:C:\Program Files\ÖÐ¹ú ±ù´¨±àÄ¿
+:002:Uninstaller
+:003:ÖÐ¹ú±ù´¨±àÄ¿
+:004:                 ·ñÔò½«×·¾¿·¨ÂÉÔðÈÎ
+:005:Setup
+:006:ÖÐ¹ú±ù´¨±àÄ¿
+:007:ÇëÈÏÕæ¶ÁÏÂÁÐÐ­Òé.
+:008:ÏÂÒ»²½
+:009:ÉÏÒ»²½
+:010:¹Ø±Õ
+:011:¹Ø±Õ
+:012:°²×°
+:013:°²×°³ÌÐò½«½øÐÐ°²×°
+:014:³ÌÐò½«±»°²×°
+:015:Çë¹Ø±ÕËùÓÐÕýÔÚÔËÐÐµÄ³ÌÐò
+:016:ºóÔÙ°²×°¡£
+:017:µã»÷"ÏÂÒ»²½"¼ÌÐø°²×°
+:018:µã»÷"¹Ø±Õ"ÍË³ö°²×°
+:019:¾¯¸æ£¡     ´Ë³ÌÐòÑÏ½û·Ç·¨¿½±´¡£
+:020:http://wdcdgg.westgis.ac.cn
+:021:°²×°³ÌÐò½«°²×°µ½ÏÂÁÐÎÄ¼þ¼ÐÖÐ£º
+:022:
+:023:½«°²×°³ÌÐò°²×°µ½Ä¬ÈÏÎÄ¼þ¼Ð,
+:024:µã»÷"°²×°".
+:025:
+:026:ÒªÑ¡ÔñÐÂµÄÂ·¾¶Çëµã»÷"ä¯ÀÀ"Ñ¡ÔñÂ·¾¶
+:027:ä¯ÀÀ
+:028:
+:029:Ð»Ð»Ê¹ÓÃ£¡
+:030: ÏÖÔÚÔËÐÐÓ¦ÓÃ³ÌÐò±êÌâ
+:031:Confirmation
+:032:Warning
+:033:Setup will be cancelled!
+:034:cannot be found.
+:035:The folder cannot be created.
+:036:N
+:037:Copy Failed. Please close all programs and try again.
+:038:
+:039:
+:040:There is insuficient space to install the program.
+:041:Do you want to cancel the installation?
+:042:0
+:043:Ð¶ÔØ³ÌÐò
+:044:Ð¶ÔØ
+:045:µã»÷'Ð¶ÔØ'°´Å¥½«Ð¶ÔØ³ÌÐò.
+:046:µã»÷'¹Ø±Õ'°´Å¥ÍË³öÐ¶ÔØ.
+:047:Do you want to cancel the uninstallation?
+:048:Are you sure you want to completely remove
+:049:and all of its components?
+:050:Confirm File Deletion
+:051:was successfully removed from your computer.
+:052:Information
+:053:, but some elements could not be removed. You should manually remove the folder:
+:054:The directory
+:055:Y
+:056:ÔÚ×ÀÃæ½¨Á¢¿ì½Ý·½Ê½
+:057:
+:058:
+:059:ÇëÉÔºó........
+:060:°²×°³ÌÐòÕýÔÚ¸´ÖÆÎÄ¼þ.
+:061:$00FF0000
+:062:$00FF8080
+:063:$00008000
+:064:$00000000
+:065:Y
+:066:Y
+:067:N
+:068:Y
+:069:Mo22rt.EXE
+:070:N
+:071:
+:072:Y
+:073:Y
+:074:Y
+:075:Y
+:076:N
+:077:
+:078:
+:079:
+:080:A folder name cannot contain any of the following characters:
+:081:Please correct it or cancel.
+:082:already exists. Do you want to install the program in that directory?
+:083:Y
+:084:Y
+:085:Agree
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Glacier.sbn123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Glacier.dbf123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Glacier.sbx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Glacier.shp123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Glacier.shx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Glbasin.dbf123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Glbasin.shp123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Glbasin.shx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Lake.dbf123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Lake.sbn123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Lake.sbx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Lake.shp123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Lake.shx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\River.dbf123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\River.sbn123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\River.sbx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\River.shp123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\River.shx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Rivern.dbf123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Rivern.sbn123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Rivern.sbx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Rivern.shp123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Rivern.shx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Road.dbf123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Road.sbn123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Road.sbx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Road.shp123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\VECTOR\Road.shx123AppFolder:vector\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Vb5db.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Vb6chs.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Vb6stkit.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Vbajet32.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Tabctchs.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Tabctl32.ocx123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Rdocurs.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\MO21Legend.ocx123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\MO21ScaleBar.ocx123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msadodc.ocx123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msbind.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Mscmcchs.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Mscomctl.ocx123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msdatgrd.ocx123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msdatlst.ocx123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msdbrptr.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msderun.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msexcl35.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msjet35.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msjint35.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msjter35.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msrd2x35.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msrdo20.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msrepl35.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msstdfmt.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msvbvm60.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msvcrt40.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Msxbse35.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Oleaut32.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Olepro32.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Rdo20chs.dll123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Mo20.ocx123Program Files:common files\esri\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Expsrv.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Asycfilt.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Cmdlgchs.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Comcat.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Comdlg32.ocx123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Dao350.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Datgdchs.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Datlschs.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Dbrprchs.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\AA\Support\Adodcchs.dll123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Zoomout.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Annfangd.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Annsuox.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Arcinfo.ico123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\boxSel.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Cdl.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Check.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Class.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Edit.ico123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Fangd.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\fangdaann.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Find.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\full extent.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Ge.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Gjl.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Help.ico123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\helpwendang1.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\helpwendang2.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\helpwendang3.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\helpwendang4.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\helpwendang5.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\helpwendang6.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\helpwendang7.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\helpwendang8.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\helpwendang9.JPG123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Id.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Jsgongju.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Jsnr.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Label.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\map contents.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Pan.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Pointin.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Pointout.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Poly.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Print.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Prodc.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\properties.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Rec.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\rectangle.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Save.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Select.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Shouye.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Text.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Thumbs.db123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\toolcolor.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Tuxing.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Tuxing1.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Txxsh.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Xshshx.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Xshshxqy.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Xshtc.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Yuan.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Zhtl.jpg123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Zoom.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\Zoomin.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Bitmaps\1.bmp123AppFolder:Bitmaps\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Caidanl.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Dtjmsm.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Fddt.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Gjlanshy.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Gongjul.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Jiansnr.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Txllqy.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\xianshishx.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Xshsx.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Xshtxmb.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Zhuangtl.htm123AppFolder:Help\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\Help\Anniusx.htm123AppFolder:Help\4Always overwrite
+C:\Program Files\Common Files\ODBC\Data Sources\Glacier.mdb123Program Files:Common Files\ODBC\Data Sources\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\setup9.exe1ÖÐ¹ú±ù´¨±àÄ¿23AppFolder4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\anzhuang file\Mo22rt.EXE123Windows4Always overwrite
+C:\Program Files\Common Files\ODBC\Data Sources\ge.dsn123Program Files:Common Files\ODBC\Data Sources\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\anzhuang file\esri\MO21Legend.ocx123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\anzhuang file\esri\MO21ScaleBar.ocx123Windows:System32\4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\anzhuang file\Glacier.mdb123AppFolder4Always overwrite
+C:\WINDOWS\Desktop\WuLiZong\anzhuang file\system32\Msstdfmt.dep123Program Files:Common Files\ESRI\4Always overwrite

@@ -1,0 +1,1170 @@
+[Root]
+Most Recent Package=标准安装软件包 6
+
+
+[Package|标准安装软件包 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=G:\GlacierDemo\新建文件夹 (2)
+
+[Package|标准安装软件包 1|Configure DAO ISAMs]
+Applicable=Yes
+Xbase=No
+Excel=No
+Exchange=No
+Text=No
+Jet 2.x=No
+Lotus=No
+Paradox=No
+
+[Package|标准安装软件包 1|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|标准安装软件包 1|Files Found]
+
+[Package|标准安装软件包 1|Files Released]
+
+[Package|标准安装软件包 1|Missing Dependency Information]
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=
+C:\Program Files\Common Files\ESRI\Mo20.ocx=
+G:\GlacierDemo\WuLiZong\stup file\Mo22rt.EXE=
+
+[Package|标准安装软件包 1|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\tabctl32.ocx=
+C:\WINDOWS\system32\Comdlg32.ocx=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|标准安装软件包 1|Files Added]
+g:\glacierdemo\wulizong\stup file\mo22rt.exe=
+
+[Package|标准安装软件包 1|Files Removed]
+
+[Package|标准安装软件包 1|Files In Project]
+G:\GlacierDemo\WuLiZong\glacier.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\VB6CHS.DLL=Yes
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=Yes
+C:\WINDOWS\system32\MSBIND.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\STDFTCHS.DLL=Yes
+C:\WINDOWS\system32\MSDBRPTR.DLL=Yes
+C:\WINDOWS\system32\DBRPRCHS.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINDOWS\system32\msjet35.dll=Yes
+C:\WINDOWS\system32\msjter35.dll=Yes
+C:\WINDOWS\system32\msjint35.dll=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\msrd2x35.dll=Yes
+C:\WINDOWS\system32\msrepl35.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\system32\vb5db.dll=Yes
+C:\Program Files\Common Files\ESRI\Mo20.ocx=Yes
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\MSCMCCHS.DLL=Yes
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=Yes
+C:\WINDOWS\system32\Comdlg32.ocx=Yes
+C:\WINDOWS\system32\CMDLGCHS.DLL=Yes
+C:\WINDOWS\system32\MSADODC.OCX=Yes
+C:\WINDOWS\system32\ADODCCHS.DLL=Yes
+C:\WINDOWS\system32\tabctl32.ocx=Yes
+C:\WINDOWS\system32\TABCTCHS.DLL=Yes
+C:\WINDOWS\system32\MSDATGRD.OCX=Yes
+C:\WINDOWS\system32\DATGDCHS.DLL=Yes
+C:\WINDOWS\system32\MSDATLST.OCX=Yes
+C:\WINDOWS\system32\DATLSCHS.DLL=Yes
+C:\WINDOWS\system32\MSRDO20.DLL=Yes
+C:\WINDOWS\system32\RDOCURS.DLL=Yes
+C:\WINDOWS\system32\RDO20CHS.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+G:\GlacierDemo\WuLiZong\stup file\Mo22rt.EXE=Yes
+C:\Program Files\Common Files\ESRI\AF20.dll=Yes
+C:\Program Files\Common Files\ESRI\aiimage20.dll=Yes
+C:\Program Files\Common Files\ESRI\dforrt.dll=Yes
+C:\Program Files\Common Files\ESRI\efileio.dll=Yes
+C:\Program Files\Common Files\ESRI\elib.dll=Yes
+C:\Program Files\Common Files\ESRI\ergxlib.dll=Yes
+C:\Program Files\Common Files\ESRI\ethrlib.dll=Yes
+C:\Program Files\Common Files\ESRI\ISO8211.dll=Yes
+C:\Program Files\Common Files\ESRI\libtiff.dll=Yes
+C:\Program Files\Common Files\ESRI\mobase.dll=Yes
+C:\Program Files\Common Files\ESRI\mofeat.dll=Yes
+C:\Program Files\Common Files\ESRI\mogridio.dll=Yes
+C:\Program Files\Common Files\ESRI\mtch.dll=Yes
+C:\Program Files\Common Files\ESRI\Pe81.dll=Yes
+C:\Program Files\Common Files\ESRI\Sg81.dll=Yes
+C:\Program Files\Common Files\ESRI\Shape20.dll=Yes
+
+[Package|标准安装软件包 1|Configure Registry Files]
+Applicable=No
+
+[Package|标准安装软件包 1|Configure Remote Servers]
+Applicable=No
+
+[Package|标准安装软件包 1|Install Locations]
+G:\GlacierDemo\WuLiZong\glacier.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6CHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\STDFTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINDOWS\system32\DBRPRCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\system32\msjet35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjter35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjint35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd2x35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrepl35.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vb5db.dll=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\Mo20.ocx=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCMCCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=$(WinSysPath)
+C:\WINDOWS\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\CMDLGCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\ADODCCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\tabctl32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\TABCTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\DATGDCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATLST.OCX=$(WinSysPath)
+C:\WINDOWS\system32\DATLSCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSRDO20.DLL=$(WinSysPath)
+C:\WINDOWS\system32\RDOCURS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\RDO20CHS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+G:\GlacierDemo\WuLiZong\stup file\Mo22rt.EXE=$(AppPath)
+C:\Program Files\Common Files\ESRI\AF20.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\aiimage20.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\dforrt.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\efileio.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\elib.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\ergxlib.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\ethrlib.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\ISO8211.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\libtiff.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\mobase.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\mofeat.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\mogridio.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\mtch.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\Pe81.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\Sg81.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\Shape20.dll=$(CommonFiles)\ESRI
+
+[Package|标准安装软件包 1|Configure Shared Files]
+Applicable=Yes
+G:\GlacierDemo\WuLiZong\glacier.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+G:\GlacierDemo\WuLiZong\stup file\Mo22rt.EXE=No
+C:\Program Files\Common Files\ESRI\efileio.dll=No
+C:\Program Files\Common Files\ESRI\ergxlib.dll=No
+C:\Program Files\Common Files\ESRI\ethrlib.dll=No
+C:\Program Files\Common Files\ESRI\ISO8211.dll=No
+C:\Program Files\Common Files\ESRI\libtiff.dll=No
+
+[Package|标准安装软件包 1|Distribution]
+Type=single
+Size=
+Title=新中国冰川编目
+
+[Package|标准安装软件包 1|Package]
+PackageFolder=G:\GlacierDemo\新建文件夹 (2)
+ProjectFolder=G:\GlacierDemo\WuLiZong
+ServerSideCab=
+File1=G:\GlacierDemo\新建文件夹 (2)\setup.exe
+File2=G:\GlacierDemo\新建文件夹 (2)\Setup.Lst
+File3=G:\GlacierDemo\新建文件夹 (2)\glacier.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|标准安装软件包 1|IconGroups]
+Group0=新中国冰川编目
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|标准安装软件包 1|新中国冰川编目]
+Icon1=glacier.exe
+Title1=新中国冰川编目
+StartIn1=$(AppPath)
+Key1=Icon1
+
+
+[Package|标准安装软件包 2|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=G:\GlacierDemo\WuLiZong\包
+
+[Package|标准安装软件包 2|Configure DAO ISAMs]
+Applicable=Yes
+Xbase=No
+Excel=No
+Exchange=No
+Text=No
+Jet 2.x=No
+Lotus=No
+Paradox=No
+
+[Package|标准安装软件包 2|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|标准安装软件包 2|Files Found]
+
+[Package|标准安装软件包 2|Files Released]
+
+[Package|标准安装软件包 2|Missing Dependency Information]
+
+[Package|标准安装软件包 2|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\tabctl32.ocx=
+C:\WINDOWS\system32\Comdlg32.ocx=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|标准安装软件包 2|Files Added]
+
+[Package|标准安装软件包 2|Files Removed]
+
+[Package|标准安装软件包 2|Files In Project]
+G:\GlacierDemo\WuLiZong\glacier.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\VB6CHS.DLL=Yes
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=Yes
+C:\WINDOWS\system32\MSBIND.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\STDFTCHS.DLL=Yes
+C:\WINDOWS\system32\MSDBRPTR.DLL=Yes
+C:\WINDOWS\system32\DBRPRCHS.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINDOWS\system32\msjet35.dll=Yes
+C:\WINDOWS\system32\msjter35.dll=Yes
+C:\WINDOWS\system32\msjint35.dll=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\msrd2x35.dll=Yes
+C:\WINDOWS\system32\msrepl35.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\system32\vb5db.dll=Yes
+C:\Program Files\Common Files\ESRI\Mo20.ocx=Yes
+C:\Program Files\Common Files\ESRI\AF20.dll=Yes
+C:\Program Files\Common Files\ESRI\aiimage20.dll=Yes
+C:\Program Files\Common Files\ESRI\dforrt.dll=Yes
+C:\Program Files\Common Files\ESRI\efileio.dll=Yes
+C:\Program Files\Common Files\ESRI\elib.dll=Yes
+C:\Program Files\Common Files\ESRI\ergxlib.dll=Yes
+C:\Program Files\Common Files\ESRI\ethrlib.dll=Yes
+C:\Program Files\Common Files\ESRI\ISO8211.dll=Yes
+C:\Program Files\Common Files\ESRI\libtiff.dll=Yes
+C:\Program Files\Common Files\ESRI\mobase.dll=Yes
+C:\Program Files\Common Files\ESRI\mofeat.dll=Yes
+C:\Program Files\Common Files\ESRI\mogridio.dll=Yes
+C:\Program Files\Common Files\ESRI\mtch.dll=Yes
+C:\Program Files\Common Files\ESRI\Pe81.dll=Yes
+C:\Program Files\Common Files\ESRI\Sg81.dll=Yes
+C:\Program Files\Common Files\ESRI\Shape20.dll=Yes
+C:\WINDOWS\system32\MO21Legend.ocx=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\MSCMCCHS.DLL=Yes
+C:\WINDOWS\system32\MO21ScaleBar.ocx=Yes
+C:\WINDOWS\system32\Comdlg32.ocx=Yes
+C:\WINDOWS\system32\CMDLGCHS.DLL=Yes
+C:\WINDOWS\system32\MSADODC.OCX=Yes
+C:\WINDOWS\system32\ADODCCHS.DLL=Yes
+C:\WINDOWS\system32\tabctl32.ocx=Yes
+C:\WINDOWS\system32\TABCTCHS.DLL=Yes
+C:\WINDOWS\system32\MSDATGRD.OCX=Yes
+C:\WINDOWS\system32\DATGDCHS.DLL=Yes
+C:\WINDOWS\system32\MSDATLST.OCX=Yes
+C:\WINDOWS\system32\DATLSCHS.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\WINDOWS\system32\MSRDO20.DLL=Yes
+C:\WINDOWS\system32\RDOCURS.DLL=Yes
+C:\WINDOWS\system32\RDO20CHS.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|标准安装软件包 2|Configure Registry Files]
+Applicable=No
+
+[Package|标准安装软件包 2|Configure Remote Servers]
+Applicable=No
+
+[Package|标准安装软件包 2|Install Locations]
+G:\GlacierDemo\WuLiZong\glacier.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6CHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\STDFTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINDOWS\system32\DBRPRCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\system32\msjet35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjter35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjint35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd2x35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrepl35.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vb5db.dll=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\Mo20.ocx=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\AF20.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\aiimage20.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\dforrt.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\efileio.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\elib.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\ergxlib.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\ethrlib.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\ISO8211.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\libtiff.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\mobase.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\mofeat.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\mogridio.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\mtch.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\Pe81.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\Sg81.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\Shape20.dll=$(CommonFiles)\ESRI
+C:\WINDOWS\system32\MO21Legend.ocx=$(CommonFiles)\ESRI
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCMCCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MO21ScaleBar.ocx=$(CommonFiles)\ESRI
+C:\WINDOWS\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\CMDLGCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\ADODCCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\tabctl32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\TABCTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\DATGDCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATLST.OCX=$(WinSysPath)
+C:\WINDOWS\system32\DATLSCHS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\WINDOWS\system32\MSRDO20.DLL=$(WinSysPath)
+C:\WINDOWS\system32\RDOCURS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\RDO20CHS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|标准安装软件包 2|Configure Shared Files]
+Applicable=Yes
+G:\GlacierDemo\WuLiZong\glacier.exe=No
+C:\Program Files\Common Files\ESRI\efileio.dll=No
+C:\Program Files\Common Files\ESRI\ergxlib.dll=No
+C:\Program Files\Common Files\ESRI\ethrlib.dll=No
+C:\Program Files\Common Files\ESRI\ISO8211.dll=No
+C:\Program Files\Common Files\ESRI\libtiff.dll=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|标准安装软件包 2|Distribution]
+Type=single
+Size=
+Title=新中国冰川编目
+
+[Package|标准安装软件包 2|IconGroups]
+Group0=新中国冰川编目
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|标准安装软件包 2|新中国冰川编目]
+Icon1=glacier.exe
+Title1=新中国冰川编目
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|标准安装软件包 2|Package]
+PackageFolder=G:\GlacierDemo\WuLiZong\包
+ProjectFolder=G:\GlacierDemo\WuLiZong
+ServerSideCab=
+File1=G:\GlacierDemo\WuLiZong\包\setup.exe
+File2=G:\GlacierDemo\WuLiZong\包\Setup.Lst
+File3=G:\GlacierDemo\WuLiZong\包\glacier.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|标准安装软件包 3|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=I:\GlacierDemo\WuLiZong\包
+
+[Package|标准安装软件包 3|Configure DAO ISAMs]
+Applicable=Yes
+Xbase=No
+Excel=No
+Exchange=No
+Text=No
+Jet 2.x=No
+Lotus=No
+Paradox=No
+
+[Package|标准安装软件包 3|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|标准安装软件包 3|Files Found]
+
+[Package|标准安装软件包 3|Files Released]
+
+[Package|标准安装软件包 3|Missing Dependency Information]
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+I:\GlacierDemo\WuLiZong\anzhuang.exe=
+
+[Package|标准安装软件包 3|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSRDO20.DLL=
+C:\WINDOWS\system32\tabctl32.ocx=
+C:\WINDOWS\system32\comdlg32.ocx=
+
+[Package|标准安装软件包 3|Files Added]
+I:\GlacierDemo\WuLiZong\anzhuang.exe=
+I:\GlacierDemo\WuLiZong\GLACIER.MDB=
+
+[Package|标准安装软件包 3|Files Removed]
+
+[Package|标准安装软件包 3|Files In Project]
+I:\GlacierDemo\WuLiZong\glacier.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\VB6CHS.DLL=Yes
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=Yes
+C:\WINDOWS\system32\MSBIND.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\MSDBRPTR.DLL=Yes
+C:\WINDOWS\system32\DBRPRCHS.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINDOWS\system32\msjet35.dll=Yes
+C:\WINDOWS\system32\msjter35.dll=Yes
+C:\WINDOWS\system32\msjint35.dll=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\msrd2x35.dll=Yes
+C:\WINDOWS\system32\msrepl35.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+C:\Program Files\Common Files\ESRI\Mo20.ocx=Yes
+C:\Program Files\Common Files\ESRI\AF20.dll=Yes
+C:\Program Files\Common Files\ESRI\aiimage20.dll=Yes
+C:\Program Files\Common Files\ESRI\dforrt.dll=Yes
+C:\Program Files\Common Files\ESRI\efileio.dll=Yes
+C:\Program Files\Common Files\ESRI\elib.dll=Yes
+C:\Program Files\Common Files\ESRI\ergxlib.dll=Yes
+C:\Program Files\Common Files\ESRI\ethrlib.dll=Yes
+C:\Program Files\Common Files\ESRI\ISO8211.dll=Yes
+C:\Program Files\Common Files\ESRI\libtiff.dll=Yes
+C:\Program Files\Common Files\ESRI\mobase.dll=Yes
+C:\Program Files\Common Files\ESRI\mofeat.dll=Yes
+C:\Program Files\Common Files\ESRI\mogridio.dll=Yes
+C:\Program Files\Common Files\ESRI\mtch.dll=Yes
+C:\Program Files\Common Files\ESRI\Pe81.dll=Yes
+C:\Program Files\Common Files\ESRI\Sg81.dll=Yes
+C:\Program Files\Common Files\ESRI\Shape20.dll=Yes
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\MSCMCCHS.DLL=Yes
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=Yes
+C:\WINDOWS\system32\comdlg32.ocx=Yes
+C:\WINDOWS\system32\CMDLGCHS.DLL=Yes
+C:\WINDOWS\system32\MSADODC.OCX=Yes
+C:\WINDOWS\system32\ADODCCHS.DLL=Yes
+C:\WINDOWS\system32\tabctl32.ocx=Yes
+C:\WINDOWS\system32\TABCTCHS.DLL=Yes
+C:\WINDOWS\system32\MSDATGRD.OCX=Yes
+C:\WINDOWS\system32\DATGDCHS.DLL=Yes
+C:\WINDOWS\system32\MSDATLST.OCX=Yes
+C:\WINDOWS\system32\DATLSCHS.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\WINDOWS\system32\MSRDO20.DLL=Yes
+C:\WINDOWS\system32\rdocurs.dll=Yes
+C:\WINDOWS\system32\RDO20CHS.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+I:\GlacierDemo\WuLiZong\anzhuang.exe=Yes
+I:\GlacierDemo\WuLiZong\GLACIER.MDB=Yes
+
+[Package|标准安装软件包 3|Configure Registry Files]
+Applicable=No
+
+[Package|标准安装软件包 3|Configure Remote Servers]
+Applicable=No
+
+[Package|标准安装软件包 3|Install Locations]
+I:\GlacierDemo\WuLiZong\glacier.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6CHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINDOWS\system32\DBRPRCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\system32\msjet35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjter35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjint35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd2x35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrepl35.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\Mo20.ocx=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\AF20.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\aiimage20.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\dforrt.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\efileio.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\elib.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\ergxlib.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\ethrlib.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\ISO8211.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\libtiff.dll=$(AppPath)
+C:\Program Files\Common Files\ESRI\mobase.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\mofeat.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\mogridio.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\mtch.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\Pe81.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\Sg81.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\Shape20.dll=$(CommonFiles)\ESRI
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=$(CommonFiles)\ESRI
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCMCCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=$(CommonFiles)\ESRI
+C:\WINDOWS\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\CMDLGCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\ADODCCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\tabctl32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\TABCTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\DATGDCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATLST.OCX=$(WinSysPath)
+C:\WINDOWS\system32\DATLSCHS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\WINDOWS\system32\MSRDO20.DLL=$(WinSysPath)
+C:\WINDOWS\system32\rdocurs.dll=$(WinSysPath)
+C:\WINDOWS\system32\RDO20CHS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+I:\GlacierDemo\WuLiZong\anzhuang.exe=$(AppPath)
+I:\GlacierDemo\WuLiZong\GLACIER.MDB=$(AppPath)
+
+[Package|标准安装软件包 3|Configure Shared Files]
+Applicable=Yes
+I:\GlacierDemo\WuLiZong\glacier.exe=No
+C:\Program Files\Common Files\ESRI\efileio.dll=No
+C:\Program Files\Common Files\ESRI\ergxlib.dll=No
+C:\Program Files\Common Files\ESRI\ethrlib.dll=No
+C:\Program Files\Common Files\ESRI\ISO8211.dll=No
+C:\Program Files\Common Files\ESRI\libtiff.dll=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+I:\GlacierDemo\WuLiZong\anzhuang.exe=No
+I:\GlacierDemo\WuLiZong\GLACIER.MDB=No
+
+[Package|标准安装软件包 3|Distribution]
+Type=single
+Size=
+Title=新中国冰川编目
+
+[Package|标准安装软件包 3|IconGroups]
+Group0=新中国冰川编目
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|标准安装软件包 3|新中国冰川编目]
+Icon1=glacier.exe
+Title1=新中国冰川编目
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|标准安装软件包 3|Package]
+PackageFolder=I:\GlacierDemo\WuLiZong\包
+ProjectFolder=I:\GlacierDemo\WuLiZong
+ServerSideCab=
+File1=I:\GlacierDemo\WuLiZong\包\setup.exe
+File2=I:\GlacierDemo\WuLiZong\包\Setup.Lst
+File3=I:\GlacierDemo\WuLiZong\包\glacier.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|标准安装软件包 4|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=H:\GlacierDemo\WuLiZong\包 (2)
+
+[Package|标准安装软件包 4|Configure DAO ISAMs]
+Applicable=Yes
+Xbase=Yes
+Excel=Yes
+Exchange=No
+Text=No
+Jet 2.x=No
+Lotus=No
+Paradox=No
+
+[Package|标准安装软件包 4|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=Yes
+
+[Package|标准安装软件包 4|Files Found]
+
+[Package|标准安装软件包 4|Files Released]
+
+[Package|标准安装软件包 4|Missing Dependency Information]
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=
+C:\Program Files\Common Files\ESRI\Mo20.ocx=
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+
+[Package|标准安装软件包 4|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSRDO20.DLL=
+C:\WINDOWS\system32\Comdlg32.ocx=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|标准安装软件包 4|Files Added]
+
+[Package|标准安装软件包 4|Files Removed]
+
+[Package|标准安装软件包 4|Files In Project]
+H:\GlacierDemo\WuLiZong\glacier.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\VB6CHS.DLL=Yes
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=Yes
+C:\WINDOWS\system32\MSBIND.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\MSDBRPTR.DLL=Yes
+C:\WINDOWS\system32\DBRPRCHS.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINDOWS\system32\msjet35.dll=Yes
+C:\WINDOWS\system32\msjter35.dll=Yes
+C:\WINDOWS\system32\msjint35.dll=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\msrd2x35.dll=Yes
+C:\WINDOWS\system32\msrepl35.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\system32\vb5db.dll=Yes
+C:\Program Files\Common Files\ESRI\Mo20.ocx=Yes
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\MSCMCCHS.DLL=Yes
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=Yes
+C:\WINDOWS\system32\Comdlg32.ocx=Yes
+C:\WINDOWS\system32\CMDLGCHS.DLL=Yes
+C:\WINDOWS\system32\MSADODC.OCX=Yes
+C:\WINDOWS\system32\ADODCCHS.DLL=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\WINDOWS\system32\TABCTCHS.DLL=Yes
+C:\WINDOWS\system32\MSDATGRD.OCX=Yes
+C:\WINDOWS\system32\DATGDCHS.DLL=Yes
+C:\WINDOWS\system32\MSDATLST.OCX=Yes
+C:\WINDOWS\system32\DATLSCHS.DLL=Yes
+C:\WINDOWS\system32\msexcl35.dll=Yes
+C:\WINDOWS\system32\MSRDO20.DLL=Yes
+C:\WINDOWS\system32\RDOCURS.DLL=Yes
+C:\WINDOWS\system32\RDO20CHS.DLL=Yes
+C:\WINDOWS\system32\msxbse35.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|标准安装软件包 4|Configure Registry Files]
+Applicable=No
+
+[Package|标准安装软件包 4|Configure Remote Servers]
+Applicable=No
+
+[Package|标准安装软件包 4|Install Locations]
+H:\GlacierDemo\WuLiZong\glacier.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6CHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINDOWS\system32\DBRPRCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\system32\msjet35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjter35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjint35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd2x35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrepl35.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vb5db.dll=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\Mo20.ocx=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCMCCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=$(WinSysPath)
+C:\WINDOWS\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\CMDLGCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\ADODCCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\TABCTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\DATGDCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATLST.OCX=$(WinSysPath)
+C:\WINDOWS\system32\DATLSCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\msexcl35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSRDO20.DLL=$(WinSysPath)
+C:\WINDOWS\system32\RDOCURS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\RDO20CHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\msxbse35.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|标准安装软件包 4|Configure Shared Files]
+Applicable=Yes
+H:\GlacierDemo\WuLiZong\glacier.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|标准安装软件包 4|Distribution]
+Type=single
+Size=
+Title=新中国冰川编目
+
+[Package|标准安装软件包 4|IconGroups]
+Group0=新中国冰川编目
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|标准安装软件包 4|新中国冰川编目]
+Icon1=glacier.exe
+Title1=新中国冰川编目
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|标准安装软件包 4|Package]
+PackageFolder=H:\GlacierDemo\WuLiZong\包 (2)
+ProjectFolder=H:\GlacierDemo\WuLiZong
+ServerSideCab=
+File1=H:\GlacierDemo\WuLiZong\包 (2)\setup.exe
+File2=H:\GlacierDemo\WuLiZong\包 (2)\Setup.Lst
+File3=H:\GlacierDemo\WuLiZong\包 (2)\glacier.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|标准安装软件包 5|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\WINDOWS\Desktop\WuLiZong\包
+
+[Package|标准安装软件包 5|Configure DAO ISAMs]
+Applicable=Yes
+Lotus=Yes
+Exchange=Yes
+Text=Yes
+Paradox=Yes
+Excel=Yes
+Xbase=Yes
+Jet 2.x=Yes
+
+[Package|标准安装软件包 5|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|标准安装软件包 5|Files Found]
+
+[Package|标准安装软件包 5|Files Released]
+
+[Package|标准安装软件包 5|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\MSEXCH35.DLL=
+
+[Package|标准安装软件包 5|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=
+
+[Package|标准安装软件包 5|Files Added]
+
+[Package|标准安装软件包 5|Files Removed]
+
+[Package|标准安装软件包 5|Files In Project]
+C:\WINDOWS\Desktop\WuLiZong\setup.exe=Yes
+C:\WINDOWS\SYSTEM\msvbvm60.dll=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\olepro32.dll=Yes
+C:\WINDOWS\SYSTEM\asycfilt.dll=Yes
+C:\WINDOWS\SYSTEM\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\VB6CHS.DLL=Yes
+C:\Program Files\Common Files\designer\MSDERUN.DLL=Yes
+C:\WINDOWS\SYSTEM\MSBIND.DLL=Yes
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDFTCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSDBRPTR.DLL=Yes
+C:\WINDOWS\SYSTEM\DBRPRCHS.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINDOWS\SYSTEM\MSJET35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSJTER35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSJINT35.DLL=Yes
+C:\WINDOWS\SYSTEM\VBAJET32.DLL=Yes
+C:\WINDOWS\SYSTEM\expsrv.dll=Yes
+C:\WINDOWS\SYSTEM\MSRD2X35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSREPL35.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\SYSTEM\VB5DB.DLL=Yes
+C:\Program Files\Common Files\ESRI\Mo20.ocx=Yes
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCMCCHS.DLL=Yes
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=Yes
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=Yes
+C:\WINDOWS\SYSTEM\CMDLGCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSADODC.OCX=Yes
+C:\WINDOWS\SYSTEM\ADODCCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=Yes
+C:\WINDOWS\SYSTEM\TABCTCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=Yes
+C:\WINDOWS\SYSTEM\DATGDCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSDATLST.OCX=Yes
+C:\WINDOWS\SYSTEM\DATLSCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSEXCL35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSEXCH35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSLTUS35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSRDO20.DLL=Yes
+C:\WINDOWS\SYSTEM\RDOCURS.DLL=Yes
+C:\WINDOWS\SYSTEM\RDO20CHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSPDOX35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSTEXT35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSXBSE35.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|标准安装软件包 5|Configure Registry Files]
+Applicable=No
+
+[Package|标准安装软件包 5|Configure Remote Servers]
+Applicable=No
+
+[Package|标准安装软件包 5|Install Locations]
+C:\WINDOWS\Desktop\WuLiZong\setup.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VB6CHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\STDFTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\DBRPRCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\SYSTEM\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VBAJET32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VB5DB.DLL=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\Mo20.ocx=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCMCCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\CMDLGCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\ADODCCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\DATGDCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDATLST.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\DATLSCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSEXCL35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSEXCH35.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSLTUS35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSRDO20.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\RDOCURS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\RDO20CHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSPDOX35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSTEXT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSXBSE35.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|标准安装软件包 5|Configure Shared Files]
+Applicable=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|标准安装软件包 5|Distribution]
+Type=single
+Size=
+Title=新中国冰川编目
+
+[Package|标准安装软件包 5|IconGroups]
+Group0=新中国冰川编目
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|标准安装软件包 5|新中国冰川编目]
+Icon1=setup.exe
+Title1=新中国冰川编目
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|标准安装软件包 5|Package]
+PackageFolder=C:\WINDOWS\Desktop\WuLiZong\包
+ProjectFolder=C:\WINDOWS\Desktop\WuLiZong
+ServerSideCab=
+File1=C:\WINDOWS\Desktop\WuLiZong\包\setup.exe
+File2=C:\WINDOWS\Desktop\WuLiZong\包\Setup.Lst
+File3=C:\WINDOWS\Desktop\WuLiZong\包\setup.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|标准安装软件包 6|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\WINDOWS\Desktop\WuLiZong\包 (2)
+
+[Package|标准安装软件包 6|Configure DAO ISAMs]
+Applicable=Yes
+Lotus=Yes
+Exchange=Yes
+Text=Yes
+Paradox=Yes
+Excel=Yes
+Xbase=Yes
+Jet 2.x=Yes
+
+[Package|标准安装软件包 6|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|标准安装软件包 6|Files Found]
+
+[Package|标准安装软件包 6|Files Released]
+
+[Package|标准安装软件包 6|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\MSEXCH35.DLL=
+
+[Package|标准安装软件包 6|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=
+
+[Package|标准安装软件包 6|Files Added]
+
+[Package|标准安装软件包 6|Files Removed]
+
+[Package|标准安装软件包 6|Files In Project]
+C:\WINDOWS\Desktop\WuLiZong\setup6.exe=Yes
+C:\WINDOWS\SYSTEM\msvbvm60.dll=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\olepro32.dll=Yes
+C:\WINDOWS\SYSTEM\asycfilt.dll=Yes
+C:\WINDOWS\SYSTEM\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\VB6CHS.DLL=Yes
+C:\Program Files\Common Files\designer\MSDERUN.DLL=Yes
+C:\WINDOWS\SYSTEM\MSBIND.DLL=Yes
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDFTCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSDBRPTR.DLL=Yes
+C:\WINDOWS\SYSTEM\DBRPRCHS.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINDOWS\SYSTEM\MSJET35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSJTER35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSJINT35.DLL=Yes
+C:\WINDOWS\SYSTEM\VBAJET32.DLL=Yes
+C:\WINDOWS\SYSTEM\expsrv.dll=Yes
+C:\WINDOWS\SYSTEM\MSRD2X35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSREPL35.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\SYSTEM\VB5DB.DLL=Yes
+C:\Program Files\Common Files\ESRI\Mo20.ocx=Yes
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCMCCHS.DLL=Yes
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=Yes
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=Yes
+C:\WINDOWS\SYSTEM\CMDLGCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSADODC.OCX=Yes
+C:\WINDOWS\SYSTEM\ADODCCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=Yes
+C:\WINDOWS\SYSTEM\TABCTCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=Yes
+C:\WINDOWS\SYSTEM\DATGDCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSDATLST.OCX=Yes
+C:\WINDOWS\SYSTEM\DATLSCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSEXCL35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSEXCH35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSLTUS35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSRDO20.DLL=Yes
+C:\WINDOWS\SYSTEM\RDOCURS.DLL=Yes
+C:\WINDOWS\SYSTEM\RDO20CHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSPDOX35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSTEXT35.DLL=Yes
+C:\WINDOWS\SYSTEM\MSXBSE35.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|标准安装软件包 6|Configure Registry Files]
+Applicable=No
+
+[Package|标准安装软件包 6|Configure Remote Servers]
+Applicable=No
+
+[Package|标准安装软件包 6|Install Locations]
+C:\WINDOWS\Desktop\WuLiZong\setup6.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VB6CHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\STDFTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\DBRPRCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\SYSTEM\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VBAJET32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VB5DB.DLL=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\Mo20.ocx=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\MO21Legend.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCMCCHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\ESRI\MO21ScaleBar.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\CMDLGCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\ADODCCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\DATGDCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDATLST.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\DATLSCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSEXCL35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSEXCH35.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSLTUS35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSRDO20.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\RDOCURS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\RDO20CHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSPDOX35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSTEXT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSXBSE35.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|标准安装软件包 6|Configure Shared Files]
+Applicable=Yes
+C:\WINDOWS\Desktop\WuLiZong\setup6.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|标准安装软件包 6|Distribution]
+Type=single
+Size=
+Title=新中国冰川编目
+
+[Package|标准安装软件包 6|IconGroups]
+Group0=新中国冰川编目
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|标准安装软件包 6|新中国冰川编目]
+Icon1=setup6.exe
+Title1=新中国冰川编目
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|标准安装软件包 6|Package]
+PackageFolder=C:\WINDOWS\Desktop\WuLiZong\包 (2)
+ProjectFolder=C:\WINDOWS\Desktop\WuLiZong
+ServerSideCab=
+File1=C:\WINDOWS\Desktop\WuLiZong\包 (2)\setup.exe
+File2=C:\WINDOWS\Desktop\WuLiZong\包 (2)\Setup.Lst
+File3=C:\WINDOWS\Desktop\WuLiZong\包 (2)\setup6.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
