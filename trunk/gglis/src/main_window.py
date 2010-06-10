@@ -5,6 +5,7 @@ from PyQt4.QtGui import *
 from attributes_view import AttributesView
 from canvas_widget import CanvasWidget
 from layers_widget import LayersWidget
+from statistics_widget import StatisticsWidget
 from qgis.core import *
 from qgis.gui import *
 from qrc_resources import *
@@ -16,6 +17,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Glacier & Glacial Lake Information System")
         self.resize(800, 600)
         self.menuBar().addMenu("&File")
+        self.dataFile = QgsApplication.prefixPath() + "//data//nepal.sqlite"
         self.layers = []
         self.canvas = CanvasWidget(self)
         self.setCentralWidget(self.canvas)
@@ -27,7 +29,11 @@ class MainWindow(QMainWindow):
         self.sizeLabel.setFrameStyle(QFrame.StyledPanel | QFrame.Sunken)
         self.status = self.statusBar()
         self.status.setSizeGripEnabled(False)
-        self.status.addPermanentWidget(self.sizeLabel)
+        self.status.addPermanentWidget(self.sizeLabel)        
+        self.menuBar().addMenu("&Detection")
+        self.menuBar().addMenu("&Post process")
+        self.statistics = StatisticsWidget(self)
+        self.menuBar().addMenu("&Help")
         self.connect(self, SIGNAL("afterLoadingLayers"), self.showMessage)
         QTimer.singleShot(0, self.loadInitialLayers)
 
@@ -38,68 +44,26 @@ class MainWindow(QMainWindow):
             else:
                 target.addAction(action)
 
-    def loadInitialLayers(self):
-        dataFile = QgsApplication.prefixPath() + "//data//nepal.sqlite"
-        if not QFile.exists(dataFile): return
+    def loadInitialLayers(self):        
+        if not QFile.exists(self.dataFile): return
         parameters = "dbname='%s' table=\"%s\"(Geometry) sql="
-        for name in ("nepal_glacial_lake_2009", "nepal_major_rivers", "nepal_boundary"):
-            layer = QgsVectorLayer(parameters % (dataFile,name),name,"spatialite")
+        for name in ("nepal_glacial_lake_2009", "nepal_major_rivers", "nepal_sub_basin_boundary", "nepal_boundary"):
+            layer = QgsVectorLayer(parameters % (self.dataFile,name),name,"spatialite")
             if layer.isValid():
                 QgsMapLayerRegistry.instance().addMapLayer(layer)
                 self.layers.append(layer)
                 self.canvas.setExtent(layer.extent())
+#        fileName = "D://ICIMOD//v2//data//dem//nepal_color_shade.tif"
+#        fileInfo = QFileInfo(fileName)
+#        baseName = fileInfo.baseName()
+#        self.rlayer = QgsRasterLayer(fileName, baseName)
+#        if self.rlayer.isValid():
+#            QgsMapLayerRegistry.instance().addMapLayer(self.rlayer)
+#        self.layers.append(self.rlayer)
+#        self.connect(self.rlayer, SIGNAL("repaintRequested()"), self.canvas, SLOT("refresh()"));
         self.canvas.setVisible(True);
         self.canvas.refresh();
         self.emit(SIGNAL("afterLoadingLayers"),self.layers)
-
-
-    def updateTable(self):
-        if self.canvas.isDrawing():
-            return
-        fieldCount, fields = self.getFieldsMetaInfo()
-        featureCount = self.currentLayer.dataProvider().featureCount()
-        self.attributeTable.clear()
-        self.attributeTable.setRowCount(featureCount)
-        self.attributeTable.setColumnCount(fieldCount)
-        self.attributeTable.setHorizontalHeaderLabels(fields)
-        self.attributeTable.setAlternatingRowColors(True)
-        self.attributeTable.setEditTriggers(QTableWidget.NoEditTriggers)
-        self.attributeTable.setSelectionBehavior(QTableWidget.SelectRows)
-        self.attributeTable.setSelectionMode(QTableWidget.SingleSelection)
-        features = self.selectFeatures()
-        for row, feature in enumerate(features):
-            attributes = feature.attributeMap()
-            for index, field in enumerate(fields):
-                item = QTableWidgetItem()
-                item.setData(Qt.DisplayRole, attributes.get(index))
-                self.attributeTable.setItem(row, index, item)
-        self.attributeTable.resizeColumnsToContents()
-
-    def getFieldsMetaInfo(self):
-        fields = []
-        if not self.currentLayer:
-            return 0, fields
-        fieldMap = self.currentLayer.dataProvider().fields()
-        for k, v in fieldMap.iteritems():
-            fields.append(v.name())
-        return len(fieldMap.keys()), fields
-
-    def clear(self, table):
-        table.clear()
-        table.setRowCount(0)
-        table.setColumnCount(0)
-
-    def selectFeatures(self):
-        features = []
-        self.currentLayer.select(self.currentLayer.pendingAllAttributesList(), QgsRectangle(), False);
-        f = QgsFeature()
-        while(self.currentLayer.nextFeature(f)):
-            features.append(f)
-        return features
-
-    def printOk(self):
-        print "OK"
-
 
     def buildDockWidget(self, dockedWidget, name, align=Qt.LeftDockWidgetArea):
         dock = QDockWidget(name, self)
@@ -110,4 +74,5 @@ class MainWindow(QMainWindow):
 
     def showMessage(self):
         self.status.showMessage("Loaded layers", 5000)
+
 
