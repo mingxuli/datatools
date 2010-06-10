@@ -4,10 +4,10 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 
 class AttributesModel(QAbstractTableModel):
-    def __init__(self,parent=None):
+    def __init__(self,headerFields,datas,parent=None):
         super(AttributesModel,self).__init__(parent)
-        self.datas = [[1,2,3,4],[6,7,8,9]]
-        self.headerFields = ['a','b','c','d']
+        self.headerFields = headerFields
+        self.datas = datas
 
     def rowCount(self, index=QModelIndex()):
         return len(self.datas)
@@ -31,7 +31,6 @@ class AttributesModel(QAbstractTableModel):
         if role != Qt.DisplayRole:
             return QVariant()
         if orientation == Qt.Horizontal:
-#            print section
             return QVariant(self.headerFields[section])
         else:
             return QVariant("%s" % (section + 1, ))

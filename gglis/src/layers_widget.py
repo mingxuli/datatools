@@ -24,12 +24,15 @@ class LayersWidget(QListWidget):
         for layer in layers:
             item = QListWidgetItem(layer.name())
             item.setSizeHint(QSize(-1, 25))
-            typeOfIcon = self.getIconByGeometry(layer.geometryType())
+            typeOfIcon = self.getIconByGeometry(layer)
             item.setIcon(QIcon(typeOfIcon))
             item.setCheckState(Qt.Checked)
             self.addItem(item)
+        self.setCurrentRow(0)
 
-    def getIconByGeometry(self, type):
+    def getIconByGeometry(self, layer):
+        if layer.type() == 1: return "mActionPan.png"
+        type =layer.geometryType()
         if type == 0: return ":point.png"
         elif type == 1: return ":polyline.png"
         elif type == 2: return ":polygon.png"
