@@ -44,15 +44,18 @@ if __name__ == "__main__":
         records=curs.fetchall()
         points_x.append(records[0][0])
         points_y.append(records[0][1])
+    plt.figure(figsize=(12,18))
     plt.subplot(421)
     for i in range(len(coors_x)):        
         plt.plot(coors_x[i],coors_y[i],color='g')
     plt.scatter(points_x,points_y,s=Area,marker='o',c='r')
     plt.xlabel('longitude')
     plt.ylabel('latitude')
+    plt.xlim(79.5,88.5)
     plt.text(80.5,26.2,'a. All Type',fontsize=12)
     plt.scatter(86,29.5,s=20,marker='o',c='r')
     plt.text(86.2,29.4,'Total area')
+    
     #Glacial erosion lake
     sql_str="select \"Sub_Basin\",sum(\"Gl_Area\"),avg(\"Gl_Area\")"\
              " from \"Nepal_Glacial_Lake_2009_final\" where \"Gl_Class\"='E(c)' or \"Gl_Class\"='E(v)' or \"Gl_Class\"='E(o)' group by \"Sub_Basin\" order by \"Sub_Basin\";"
@@ -232,7 +235,7 @@ if __name__ == "__main__":
     curs.close()
     conn.close()    
 
-    
+    plt.savefig('D:\GLOF\Documents\gl_distribution_basinwise.png',dpi=300,origentation='landscape')
     plt.show()
 
 

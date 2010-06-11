@@ -36,7 +36,7 @@ def bar_chart(records,size_level):
     Mo_Count_level=[]
     O_Area_level=[]
     O_Count_level=[]
-
+    plt.figure(figsize=(14,12))
     for value in size_level:
         temp_area=sum([a for a,b in records if a<value and b=='O'])/Total_Area*100
         temp_count=sum([1 for a,b in records if a<value and b=='O'])/float(Total_Number)*100
@@ -189,8 +189,8 @@ def bar_chart(records,size_level):
                 'Lateral moraine dammed lake',\
                 'Glacier with moraine dammed lake',\
                 'Non-glacial lake'),\
-               loc="upper left",ncol=4,bbox_to_anchor = (-0.05,2.45),markerscale=0.5)
-    
+               loc="upper left",ncol=3,bbox_to_anchor = (-0.05,2.48),markerscale=0.5)
+    plt.savefig('D:\\GLOF\\Documents\\glacial_lake_size_level.png',dpi=300)
     plt.show()
 
         
