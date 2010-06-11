@@ -83,9 +83,9 @@ def export_gl(basin_code,outpath):
     conn=connect("host=localhost dbname=GGLIS user=postgres password=postgres")
     curs=conn.cursor()
 
-##    sql_str="select a.gid,askml(a.the_geom) from \"HKH_Glacial_Lakes_final\" a, \"Ganges_Basin_Pfafsteeter_v2\" b "\
-##            "where st_within(centroid(a.the_geom),b.the_geom) and b.level_2='"+basin_code+"' order by a.gid;"
-    sql_str="select gid,askml(the_geom) from \"Nepal_Glacial_Lake_wu\" order by gid;"
+    sql_str="select a.gid,askml(a.the_geom) from \"HKH_Glacial_Lakes_final\" a, \"Ganges_Basin_Pfafsteeter_v2\" b "\
+            "where st_within(centroid(a.the_geom),b.the_geom) and b.level_2='"+basin_code+"' order by a.gid;"
+##    sql_str="select gid,askml(the_geom) from \"Nepal_Glacial_Lake_wu\" order by gid;"
     curs.execute(sql_str)
     rows=curs.fetchall()
     ##
@@ -153,7 +153,7 @@ def export_gl(basin_code,outpath):
     conn.close()
     print '---export glacial lake----'
 if __name__=='__main__':
-    basin_code='Nepal_glacial_lake_wu'
+    basin_code='1272'
     outpath='C:\\workspace\\'
     export_gl(basin_code,outpath)
     ##export_bound(basin_code,outpath)
