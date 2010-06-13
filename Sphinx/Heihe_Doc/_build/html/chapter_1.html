@@ -1,0 +1,157 @@
+
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>第一章 基础数据 &mdash; Digital_Heihe v0.1 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Digital_Heihe v0.1 documentation" href="index.html" />
+    <link rel="next" title="前言" href="chapter_2.html" />
+    <link rel="prev" title="前言" href="forework.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="index.html"><img src="_static/logo.png" border="0" alt="py4sci"/></a>
+</div>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="chapter_2.html" title="前言"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="forework.html" title="前言"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+       <li><a href="contents.html">documentation </a> &raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第一章 基础数据</a><ul>
+<li><a class="reference internal" href="#id2">1.流域边界数据</a><ul>
+<li><a class="reference internal" href="#id3">1.1黑河流域原有边界</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4">2.参考文献</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="forework.html"
+                        title="previous chapter">前言</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="chapter_2.html"
+                        title="next chapter">前言</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>第一章 基础数据<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>1.流域边界数据<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/1_heihe_basin_boundary.png" src="_images/1_heihe_basin_boundary.png" />
+<ul class="simple">
+<li>比例尺：来自25m DEM（SRTM DEM 和ASTER GDEM 重采样）</li>
+<li>有效时间：SRTM数据是2000 年左右、ASTER GDEM数据在 1999-2008年</li>
+<li>坐标系统：WGS84/ALBERS</li>
+<li>数据类型：矢量多边形</li>
+<li>存储格式：ESRI Coverage/E00/Shape</li>
+<li>覆盖范围：新黑河流域边界</li>
+<li>数据说明： “流域科学计划”将使用新划定的黑河流域边界[1]，包括子流域边界，该边界是根据SRTM DEM和ASTER GDEM对黑河流域进行水文分析模拟，结合流域实测河流数据确定了黑河流域的边界情况。主要属性数据包括黑河流域的面积和周长，流域编码，其中包括了各个子流域的面积、周长、流域编码等属性。</li>
+</ul>
+<div class="section" id="id3">
+<h3>1.1黑河流域原有边界<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>文献中常见的黑河流域边界主要有四种，分别是:</p>
+<ol class="arabic simple">
+<li>1985-1986年我国开始将黑河流域作为整体进行系统性的研究，在基础调查和掌握的大量资料的基础上，绘制了较早的黑河流域图（图 1a），流域面积 13.89 万 km^2。在水文单元划分中，整个流域被划分为三个水文平衡区，分别为黑河干流水系平衡区、北大河干流水系平衡区和马营-丰乐山前水系平衡区[2, 3]；</li>
+<li>“九五”国家重点科技攻关项目子专题“黑河流域水资源合理利用与经济社会和生态环境协调发展研究”，考虑了县级行政单元的完整性，在第一个流域边界的基础上利用当时的行政界线对流域边界进行了修订，形成了目前“数字黑河”信息系统(<a class="reference external" href="http://heihe.westgis.ac.cn">http://heihe.westgis.ac.cn</a>)公布的黑河流域边界（图 1b），流域面积 12.87 万 km^2。在水文单元的划分上继承了原有的思路，划分为三大水系，分别为东部水系、中部水系和西部水系[4, 5]；</li>
+</ol>
+<p>#. 针对朱镕基总理提出的关于黑河治理问题的指示，水利部在2000-2001年对黑河流域按水系进行了综合治理规划，在这次规划成果中，黑河流域面积 14.29 万 km2
+（图 1c）。水文单元划分中西部和东部两个独立的水系，面积分别为 2.7 万</p>
+<img src="_images\mathmpl/math-98ecf8427e.png" class="center" /><p>km^2
+和 11.6 万..math::km^2[6, 7];
+#. 在 2002-2006 年开展的全国水资源综合规划中，“黄河流域（片）水资源综合规划”编制工作组于 2005 年编制《西北诸河水资源及其开发利用调查评价简要报告》，以水资源二级区和三级区为单位，完成了一系列自然地理与社会经济的统计表格和图件。在这次综合规划中，黑河流域的面积约为15.17万 km2(图1d)，该方案并没有给出更加详细的子流域划分方案[7, 8]；</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>2.参考文献<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="chapter_2.html" title="前言"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="forework.html" title="前言"
+             >previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+       <li><a href="contents.html">documentation </a> &raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2010, Wu Lizong.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0b2.
+    </div>
+  </body>
+</html>
