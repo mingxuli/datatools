@@ -3,20 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-sampledoc tutorial
-==================
+Sphinx文档系统简明教程
+=======================
 
-This is a tutorial introduction to quickly get you up and running with
-your own sphinx documentation system.  We'll cover installing sphinx,
-customizing the look and feel, using custom extensions for embedding
-plots, inheritance diagrams, syntax highlighted ipython sessions and
-more.  If you follow along the tutorial, you'll start with nothing and
-end up with this site -- it's the bootstrapping documentation tutorial
+这是一个教你如何快速建立和编译sphinx文档的教程，包括安装、修改页面、定制扩展模块、inheritance diagrams,和ipython语法高亮显示等. 根据这个教程，你不需要准备任何材料，最后将获得和本站一模一样的网站。-- it's the bootstrapping documentation tutorial
 that writes itself!
 
-The source code for this tutorial lives in mpl svn (see
-:ref:`fetching-the-data`) and you can grab a harcopy of the the
-`sampledoc PDF <sampledoc.pdf>`_
+这个网站的源代码存放在google code系统中(:ref:`fetching-the-data`),你也可以下载本教程的pdf版 `sampledoc PDF <pdf/sampledoc.pdf>`_
 
 .. toctree::
    :maxdepth: 2
@@ -26,6 +19,7 @@ The source code for this tutorial lives in mpl svn (see
    extensions.rst
    cheatsheet.rst
    emacs_help.rst
+   restructuredtext_quickstart.rst
 
 Indices and tables
 ==================

@@ -3,32 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-"黑河综合遥感联合试验"数据文档
+欢迎访问"黑河综合遥感联合试验"数据文档
 =================================
-
-目 录
-
-.. toctree::
-   :maxdepth: 1
-   
-	前言 <foreword.rst>
-	科学目标与试验内容 <water_aims.rst>
-	试验区介绍 <water_experiment_area.rst>
-	观测系统布置 <water_observe_system.rst>
-	观测规范 <observe_standard.rst>	
-	阿柔试验区 <doc_arou.rst>
-	冰沟试验区 <doc_binggou.rst>
-	扁都口试验区 <doc_biandukou.rst>
-	大野口试验区 <doc_dayekou.rst>
-	临泽草地站试验区 <doc_linze_grass.rst>
-	临泽国家站试验区 <doc_linze.rst>
-	盈科绿洲-花寨子荒漠站试验区 <doc_yingke_huazhaizi.rst>
-	其他试验区 <doc_others.rst>
-	气象数据 <doc_metrology.rst>
-	水文数据 <doc_hydrology.rst>
-	遥感数据 <doc_satellite.rst>
-	试验日志 <water_blog.rst>
-	参加单位与试验人员 <water_partner.rst>
+下载pdf格式
 	
 项目标注
 ==========

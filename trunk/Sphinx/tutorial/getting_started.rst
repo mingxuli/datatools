@@ -2,48 +2,49 @@
 
 
 ***************
-Getting started
+开始
 ***************
 
 .. _installing-docdir:
 
-Installing your doc directory
-=============================
+安装
+================
 
-You may already have sphinx `sphinx <http://sphinx.pocoo.org/>`_
-installed -- you can check by doing::
+首选需要说明的是,本安装时在windows环境下执行的。如果你已经下载并安装了 `sphinx <http://sphinx.pocoo.org/>`_
+你可以在python环境下通过如下方式进行检验::
 
-  python -c 'import sphinx'
+  >>> import sphinx
+  
+如果没有错误的提示，说明你已经正确安装。否则的话，请安装python的sphinx模块。sphinx没有提供windows .exe安装包，必须通过easy_install工具进行安装。你可以通过`Python Package Index <http://pypi.python.org/pypi/Sphinx>`_ 下载 EGG文件进行安装,也可以直接在线安装::
 
-If that fails grab the latest version of and install it with::
+  > easy_install -U Sphinx
 
-  > sudo easy_install sphinx
-
-Now you are ready to build a template for your docs, using
-sphinx-quickstart::
+现在你可以使用sphinx-quickstart命令建立你自己的文档模板了,不过在此之前你需要建立一个目录来存放你的文档，如（d:\sampledoc）, 进入目录，在命令窗口中执行命令::
 
   > sphinx-quickstart
 
-accepting most of the defaults.  I choose "sampledoc" as the name of my
-project.  cd into your new directory and check the contents::
+然后回答相关的问题，如果你不知道该如何回答，可以直接按下回车键，接受默认设置. 本教程使用"sampledoc"作为文档工程的名称，默认情况下创建的文件和文件夹如下::
 
-  home:~/tmp/sampledoc> ls
-  Makefile	_static		conf.py
-  _build		_templates	index.rst
+  _build
+  _static
+  _templates
+  conf.py
+  index.rst
+  make.bat
+  Makefile
 
-The index.rst is the master ReST for your project, but before adding
-anything, let's see if we can build some html::
+index.rst文件就是这个文档的首页,在添加内容之前，我们先看看默认的界面是什么样子的，直接编译成html格式，在DOS命令行中执行命令::
 
-  make html
+  > make html
 
-If you now point your browser to :file:`_build/html/index.html`, you
-should see a basic sphinx site.
+点击浏览 :file:`d:\\sampledoc\\_build\\html\\index.html` 页面,你可以看到如下页面.
 
 .. image:: _static/basic_screenshot.png
 
+
 .. _fetching-the-data:
 
-Fetching the data
+下载实例代码
 -----------------
 
 Now we will start to customize out docs.  Grab a couple of files from
