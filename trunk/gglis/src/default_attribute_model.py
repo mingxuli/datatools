@@ -3,9 +3,9 @@
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 
-class AttributesModel(QAbstractTableModel):
+class AttributeModel(QAbstractTableModel):
     def __init__(self,headerFields,datas,parent=None):
-        super(AttributesModel,self).__init__(parent)
+        super(AttributeModel,self).__init__(parent)
         self.headerFields = headerFields
         self.datas = datas
 

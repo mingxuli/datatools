@@ -7,7 +7,7 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from qgis.core import *
 from qgis.gui import *
-from main_window import MainWindow
+from default_main_window import MainWindow
 
 def  homeDir():
     path = sys.path[0]
@@ -20,8 +20,6 @@ def  homeDir():
 def main(argv):
     qgisPrefix =  homeDir()
     app = QApplication(argv, True)
-    app.setApplicationName("Glacier & Glacial Lake Information System")
-    app.setWindowIcon(QIcon(":icon.png"))
     QgsApplication.setPrefixPath(qgisPrefix, True)
     QgsApplication.initQgis()
 
