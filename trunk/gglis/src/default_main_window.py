@@ -39,6 +39,8 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.connect(self.layerListView, SIGNAL("currentLayerChanged"), self.mapCanvas.changeCurrentLayer)
         self.connect(self.actionAttribute, SIGNAL("activated()"), self.showAttribute)
         self.connect(self.actionStatis, SIGNAL("activated()"), self.showStatis)
+        self.connect(self.mapCanvas, SIGNAL("xyCoordinates(QgsPoint)"), self.showCoordinates)
+
         QTimer.singleShot(0, self.mapCanvas.loadInitialLayers)
 
     def showAttribute(self):
@@ -63,6 +65,10 @@ class MainWindow(QMainWindow,Ui_MainWindow):
     def showErrorMessage(self):
         self.actionAttribute.setEnabled(True)
         self.status.showMessage("Oops, error occurs", 5000)
+
+    def showCoordinates(self, point):
+        self.sizeLabel.setText("Coordinate: %.5f,%.5f" % (point.x(), point.y()))
+
 
 
 

@@ -1,5 +1,7 @@
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
+import sqlite3
+
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from default_matplot_navigation_toolbar import NavigationToolbar
@@ -48,7 +50,7 @@ class StatisDialog(QDialog, Ui_StatisDialog):
         QObject.connect(self.chkUseTextFields, SIGNAL("stateChanged(int)"), self.updateFields)
 
 
-    def getLayersNames(self,layers):
+    def getLayersNames(self, layers):
         return [layer.name() for layer in layers]
 
 
@@ -99,12 +101,12 @@ class StatisDialog(QDialog, Ui_StatisDialog):
             QMessageBox.information(self, "Statist: Error", "Please specify target field first")
         else:
             vlayer = self.parent.layers[self.cmbLayers.currentIndex()]
-            self.calculate(vlayer, self.cmbFields.currentText())
+            self.calculate(vlayer.name(), self.cmbFields.currentText())
 
     def calculate(self, layer, fieldName):
         self.tblStatistics.clearContents()
         self.tblStatistics.setRowCount(0)
-        self.threadCalc = WorkThread(self.parent, self, layer, fieldName)
+        self.threadCalc = WorkThread(self.parent, self, layer, fieldName, self.parent.dataFile)
         QObject.connect(self.threadCalc, SIGNAL("runFinished(PyQt_PyObject)"), self.runFinishedFromThread)
         QObject.connect(self.threadCalc, SIGNAL("runStatus(PyQt_PyObject)"), self.runStatusFromThread)
         QObject.connect(self.threadCalc, SIGNAL("runRange(PyQt_PyObject)"), self.runRangeFromThread)
@@ -213,12 +215,13 @@ class StatisDialog(QDialog, Ui_StatisDialog):
         self.progressBar.setRange(range_vals[0], range_vals[1])
 
 class WorkThread(QThread):
-    def __init__(self, parentThread, parentObject, vlayer, fieldName):
+    def __init__(self, parentThread, parentObject, vlayer, fieldName, dataFile):
         QThread.__init__(self, parentThread)
         self.parent = parentObject
         self.running = False
         self.vlayer = vlayer
         self.fieldName = fieldName
+        self.dataFile = dataFile
 
     def run(self):
         self.running = True
@@ -231,49 +234,31 @@ class WorkThread(QThread):
 
     def statistics(self, vlayer, fieldName):
         self.emit(SIGNAL("runStatus(PyQt_PyObject)"), 0)
-        self.emit(SIGNAL("runRange(PyQt_PyObject)"), (0, 5000))
-        values = []
-        for i in range(5000):
-            self.emit(SIGNAL("runStatus(PyQt_PyObject)"), i)
-            values.append(i)
-
-        lstStats = []
-        lstStats.append( "Count:7")
-        lstStats.append("Unique values:6")
-        lstStats.append("Minimum value:1")
-        lstStats.append("Maximum value:6")
-        lstStats.append("Swing:4")
-        lstStats.append("Sum:48")
-        lstStats.append("Mean value:5")
-        lstStats.append("Median value:4")
-        lstStats.append("Standard deviation:2")
-        lstStats.append("Coefficient of Variation:8")
-        return (lstStats, [], values)
-
-    def getFieldType(self, vlayer, fieldName):
-        fields = vlayer.dataProvider().fields()
-        for name, field in fields.iteritems():
-            if field.name() == fieldName:
-                return field.typeName()
-    def getUniqueValsCount(self,vlayer, fieldIndex, useSelection):
-        vprovider = vlayer.dataProvider()
-        allAttrs = vprovider.attributeIndexes()
-        vprovider.select(allAttrs)
-        count = 0
-        values = []
-        if useSelection:
-            selection = vlayer.selectedFeatures()
-            for f in selection:
-                if f.attributeMap()[fieldIndex].toString() not in values:
-                    values.append(f.attributeMap()[fieldIndex].toString())
-                    count += 1
-        else:
-            feat = QgsFeature()
-            while vprovider.nextFeature(feat):
-                if feat.attributeMap()[fieldIndex].toString() not in values:
-                    values.append(feat.attributeMap()[fieldIndex].toString())
-                    count += 1
-        return count
+        self.emit(SIGNAL("runRange(PyQt_PyObject)"), (0, 100))
+        statisSql = '''
+            select 1 as order_by,'Count' as label,count(%s) as record from %s union
+            select 4 as order_by,'Sum' as label,sum(%s) as record from %s union
+            select 2 as order_by,'Maximum value' as label,max(%s) as record from %s union
+            select 3 as order_by,'Minimum value' as label,min(%s) as record from %s union
+            select 5 as order_by,'Mean value' as label,avg(%s) as record from %s
+        '''
+        self.emit(SIGNAL("runStatus(PyQt_PyObject)"), 10)
+        conn = sqlite3.connect(str(self.dataFile))
+        cur = conn.cursor()
+        cur.execute(statisSql % (fieldName, vlayer, fieldName, vlayer, fieldName, vlayer, fieldName, vlayer, fieldName, vlayer))
+        results = cur.fetchall()
+        lstStats = [unicode(result[1]) + ":" + unicode(result[2]) for result in results]
+        self.emit(SIGNAL("runStatus(PyQt_PyObject)"), 40)
+        recordSql = "select %s from %s order by gid"
+        cur.execute(recordSql % (fieldName,vlayer))
+        records = cur.fetchall()
+        self.emit(SIGNAL("runStatus(PyQt_PyObject)"), 80)
+        unifyRecords = []
+        [unifyRecords.append(i) for i in records if i not in unifyRecords]
+        self.emit(SIGNAL("runStatus(PyQt_PyObject)"), 90)
+        lstStats.append("Unique values:"+str(len(unifyRecords)))
+        self.emit(SIGNAL("runStatus(PyQt_PyObject)"), 100)
+        return (lstStats, [], records)
 
 
 if __name__ == "__main__":
