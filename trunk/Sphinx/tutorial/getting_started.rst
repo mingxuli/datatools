@@ -45,26 +45,13 @@ index.rst文件就是这个文档的首页,在添加内容之前，我们先看�
 .. _fetching-the-data:
 
 下载实例代码
------------------
+==============
 
-Now we will start to customize out docs.  Grab a couple of files from
-the `web site
+现在我们可以开始修改文档了，在此之前请下载本文档的代码，请从 `网站
 <http://matplotlib.svn.sourceforge.net/viewvc/matplotlib/trunk/sampledoc_tut/>`_
-or svn.  You will need :file:`getting_started.rst` and
-:file:`_static/basic_screenshot.png`.  All of the files live in the
-"completed" version of this tutorial, but since this is a tutorial,
-we'll just grab them one at a time, so you can learn what needs to be
-changed where.  Since we have more files to come, I'm going to grab
-the whole svn directory and just copy the files I need over for now.
-First, I'll cd up back into the directory containing my project, check
-out the "finished" product from svn, and then copy in just the files I
-need into my :file:`sampledoc` directory::
+或通过svn下载. 现在你需要 :file:`getting_started.rst` 和 :file:`_static/basic_screenshot.png`.
+所有的文件都在本文档的最终版本中,下面是所有文件的列表::
 
-  home:~/tmp/sampledoc> pwd
-  /Users/jdhunter/tmp/sampledoc
-  home:~/tmp/sampledoc> cd ..
-  home:~/tmp> svn co https://matplotlib.svn.sourceforge.net/svnroot/\
-  matplotlib/trunk/sampledoc_tut
   A    sampledoc_tut/cheatsheet.rst
   A    sampledoc_tut/_static
   A    sampledoc_tut/_static/basic_screenshot.png
@@ -74,14 +61,8 @@ need into my :file:`sampledoc` directory::
   A    sampledoc_tut/_build
   A    sampledoc_tut/getting_started.rst
   A    sampledoc_tut/index.rst
-  Checked out revision 7449.
-  home:~/tmp> cp sampledoc_tut/getting_started.rst sampledoc/
-  home:~/tmp> cp sampledoc_tut/_static/basic_screenshot.png \
-  sampledoc/_static/
 
-The last step is to modify :file:`index.rst` to include the
-:file:`getting_started.rst` file (be careful with the indentation, the
-"g" in "getting_started" should line up with the ':' in ``:maxdepth``::
+接下来是修改文件 :file:`index.rst`, 让他包含文件 :file:`getting_started.rst` ,修改的时候要注意，getting_started.rst的第一个字符g需要与:maxdepth: 2的第一个冒号对齐, 原始代码如下::
 
   Contents:
 
@@ -90,25 +71,16 @@ The last step is to modify :file:`index.rst` to include the
 
      getting_started.rst
 
-and then rebuild the docs::
+可以编译了，在命令行中，进入sampledoc文件夹，执行make 命令，编译为html格式的文档::
 
   cd sampledoc
   make html
 
 
-When you reload the page by refreshing your browser pointing to
-:file:`_build/html/index.html`, you should see a link to the
-"Getting Started" docs, and in there this page with the screenshot.
-`Voila!`
+刷新浏览器，或者打开文件 :file:`_build/html/index.html` ，你可以看到首页中已经链接了
+"Getting Started" 文档，并且相关的标题也自动进入进来了，很神奇吧。
 
-Note we used the image directive to include to the screenshot above
-with::
-
-  .. image:: _static/basic_screenshot.png
-
-
-Next we'll customize the look and feel of our site to give it a logo,
-some custom css, and update the navigation panels to look more like
-the `sphinx <http://sphinx.pocoo.org/>`_ site itself -- see
+下一节我们将参照 `sphinx <http://sphinx.pocoo.org/>`_ 网站的样子，对我们的文档进行修改 -- 请参阅
 :ref:`custom_look`.
+
 
