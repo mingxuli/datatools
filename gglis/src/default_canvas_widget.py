@@ -16,7 +16,6 @@ class CanvasWidget(QgsMapCanvas):
         self.zoomOutTool = QgsMapToolZoom(self, True)
         self.zoomPanTool = QgsMapToolPan(self)
         self.connect(self, SIGNAL("afterLoadingLayers"), self.setCanvasLayerSet)
-        self.connect(self, SIGNAL("xyCoordinates(QgsPoint)"), self.showCoordinates)        
 
     def loadInitialLayers(self):
         if not QFile.exists(self.dataFile): return
@@ -47,9 +46,6 @@ class CanvasWidget(QgsMapCanvas):
         print "setCanvasLayerSet"
         canvasLayers = [QgsMapCanvasLayer(layer) for layer in layers]
         self.setLayerSet(canvasLayers)
-
-    def showCoordinates(self, point):
-        self.parent.sizeLabel.setText("Coordinate: %.5f,%.5f" % (point.x(), point.y()))
 
     def changeCurrentLayer(self,currentLayer):
         print "mapcanvs change currentlayer"
