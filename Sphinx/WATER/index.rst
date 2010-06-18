@@ -4,13 +4,32 @@
    contain the root `toctree` directive.
 
 欢迎访问"黑河综合遥感联合试验"数据文档
-=================================
-下载pdf格式
+======================================
+
+目 录:
+
+.. toctree::
+   :maxdepth: 1
+   :numbered:
+   
+   foreword.rst
+   water_aims.rst
+   water_experiment_area.rst
+   water_observe_system.rst
+   observe_standard.rst
+   doc_datalist.rst
+   data_acquire.rst
+   water_blog.rst
+   water_partner.rst
+   fecd46b0-3390-4580-a415-2d49ba77f9bd.rst
 	
+
 项目标注
 ==========
+.. note::
 
-* 中文: 中国科学院西部行动计划（二期）项目“黑河流域遥感－地面观测同步试验与综合模拟平台建设”(项目号：KZCX2-XB2-09)资助
+ **中文:**
+ 中国科学院西部行动计划（二期）项目“黑河流域遥感－地面观测同步试验与综合模拟平台建设”(项目号：KZCX2-XB2-09)资助
 
-* 英文: This work is supported by the CAS (Chinese Academy of Sciences) Action Plan for West Development Project "Watershed Airborne Telemetry Experimental Research (WATER)" (grant number: KZCX2-XB2-09)
-
+ **英文:** 
+ This work is supported by the CAS (Chinese Academy of Sciences) Action Plan for West Development Project "Watershed Airborne Telemetry Experimental Research (WATER)" (grant number: KZCX2-XB2-09)
