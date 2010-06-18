@@ -1,0 +1,677 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Chapter Two &mdash; Sphinx_Tutorial v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="Sphinx_Tutorial v1.0 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li><a href="index.html">Sphinx_Tutorial v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">內容目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Chapter Two</a><ul>
+<li><a class="reference internal" href="#sphinx">Sphinx界面修改</a><ul>
+<li><a class="reference internal" href="#id2">Sphinx汉化</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>本页</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/custom_look.txt"
+           rel="nofollow">显示源代码</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>快速搜索</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="搜索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    输入相关的模块，术语，类或者函数名称进行搜索
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="chapter-two">
+<h1>Chapter Two<a class="headerlink" href="#chapter-two" title="永久链接至标题">¶</a></h1>
+<div class="section" id="sphinx">
+<h2>Sphinx界面修改<a class="headerlink" href="#sphinx" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="http://sphinx.pocoo.org/">sphinx</a> 网站的页面要比Sphinx默认的页面好看，那么我们就来尝试建立这样的网站吧.如果你已经
+下载了本教程的源代码(see <a class="reference internal" href="install.html#fetching-the-data"><em>牛刀小试&#8211;修改主页</em></a>)，请把 <tt class="file docutils literal"><span class="pre">_static/default.css</span></tt> 和 <tt class="file docutils literal"><span class="pre">_static/logo.png</span></tt> 两个文件拷贝到你的_static目录下,把 <tt class="file docutils literal"><span class="pre">_templates/layout.html</span></tt> 拷贝到_templates目录下。</p>
+<p>如果你没有下载，可以参考下面的代码，自己进行创建。其中default.css的代码为:</p>
+<div class="highlight-python"><pre>/**
+ * Alternate Sphinx design
+ * Originally created by Armin Ronacher for Werkzeug, adapted by Georg Brandl.
+ */
+
+body {
+        font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        line-height: 150%;
+        text-align: center;
+        /*background-color: #AFC1C4; */
+        background-color: #BFD1D4;
+        color: black;
+        padding: 0;
+        border: 1px solid #aaa;
+
+        margin: 0px 80px 0px 80px;
+        min-width: 740px;
+}
+
+a {
+        color: #CA7900;
+        text-decoration: none;
+}
+
+a:hover {
+        color: #2491CF;
+}
+
+pre {
+        font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+        font-size: 0.95em;
+        letter-spacing: 0.015em;
+        padding: 0.5em;
+        border: 1px solid #ccc;
+        background-color: #f8f8f8;
+}
+
+td.linenos pre {
+        padding: 0.5em 0;
+        border: 0;
+        background-color: transparent;
+        color: #aaa;
+}
+
+table.highlighttable {
+        margin-left: 0.5em;
+}
+
+table.highlighttable td {
+        padding: 0 0.5em 0 0.5em;
+}
+
+cite, code, tt {
+        font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+        font-size: 0.95em;
+        letter-spacing: 0.01em;
+}
+
+hr {
+        border: 1px solid #abc;
+        margin: 2em;
+}
+
+tt {
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+}
+
+tt.descname {
+        background-color: transparent;
+        font-weight: bold;
+        font-size: 1.2em;
+        border: 0;
+}
+
+tt.descclassname {
+        background-color: transparent;
+        border: 0;
+}
+
+tt.xref {
+        background-color: transparent;
+        font-weight: bold;
+        border: 0;
+}
+
+a tt {
+        background-color: transparent;
+        font-weight: bold;
+        border: 0;
+        color: #CA7900;
+}
+
+a tt:hover {
+        color: #2491CF;
+}
+
+dl {
+        margin-bottom: 15px;
+}
+
+dd p {
+        margin-top: 0px;
+}
+
+dd ul, dd table {
+        margin-bottom: 10px;
+}
+
+dd {
+        margin-top: 3px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+}
+
+.refcount {
+        color: #060;
+}
+
+dt:target,
+.highlight {
+        background-color: #fbe54e;
+}
+
+dl.class, dl.function {
+        border-top: 2px solid #888;
+}
+
+dl.method, dl.attribute {
+        border-top: 1px solid #aaa;
+}
+
+dl.glossary dt {
+        font-weight: bold;
+        font-size: 1.1em;
+}
+
+pre {
+        line-height: 120%;
+}
+
+pre a {
+        color: inherit;
+        text-decoration: underline;
+}
+
+.first {
+        margin-top: 0 !important;
+}
+
+div.document {
+        background-color: white;
+        text-align: left;
+        background-image: url(contents.png);
+        background-repeat: repeat-x;
+}
+
+/*
+div.documentwrapper {
+        width: 100%;
+}
+*/
+
+div.clearer {
+        clear: both;
+}
+
+div.related h3 {
+        display: none;
+}
+
+div.related ul {
+        background-image: url(navigation.png);
+        height: 2em;
+        list-style: none;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin: 0;
+        padding-left: 10px;
+}
+
+div.related ul li {
+        margin: 0;
+        padding: 0;
+        height: 2em;
+        float: left;
+}
+
+div.related ul li.right {
+        float: right;
+        margin-right: 5px;
+}
+
+div.related ul li a {
+        margin: 0;
+        padding: 0 5px 0 5px;
+        line-height: 1.75em;
+        color: #EE9816;
+}
+
+div.related ul li a:hover {
+        color: #3CA8E7;
+}
+
+div.body {
+        margin: 0;
+        padding: 0.5em 20px 20px 20px;
+}
+
+div.bodywrapper {
+        margin: 0 240px 0 0;
+        border-right: 1px solid #ccc;
+}
+
+div.body a {
+        text-decoration: underline;
+}
+
+div.sphinxsidebar {
+        margin: 0;
+        padding: 0.5em 15px 15px 0;
+        width: 210px;
+        float: right;
+        text-align: left;
+/*    margin-left: -100%; */
+}
+
+div.sphinxsidebar h4, div.sphinxsidebar h3 {
+        margin: 1em 0 0.5em 0;
+        font-size: 0.9em;
+        padding: 0.1em 0 0.1em 0.5em;
+        color: white;
+        border: 1px solid #86989B;
+        background-color: #AFC1C4;
+}
+
+div.sphinxsidebar ul {
+        padding-left: 1.5em;
+        margin-top: 7px;
+        list-style: none;
+        padding: 0;
+        line-height: 130%;
+}
+
+div.sphinxsidebar ul ul {
+        list-style: square;
+        margin-left: 20px;
+}
+
+p {
+        margin: 0.8em 0 0.5em 0;
+}
+
+p.rubric {
+        font-weight: bold;
+}
+
+h1 {
+        margin: 0;
+        padding: 0.7em 0 0.3em 0;
+        font-size: 1.5em;
+        color: #11557C;
+}
+
+h2 {
+        margin: 1.3em 0 0.2em 0;
+        font-size: 1.35em;
+        padding: 0;
+}
+
+h3 {
+        margin: 1em 0 -0.3em 0;
+        font-size: 1.2em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: black!important;
+}
+
+h1 a.anchor, h2 a.anchor, h3 a.anchor, h4 a.anchor, h5 a.anchor, h6 a.anchor {
+        display: none;
+        margin: 0 0 0 0.3em;
+        padding: 0 0.2em 0 0.2em;
+        color: #aaa!important;
+}
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor,
+h5:hover a.anchor, h6:hover a.anchor {
+        display: inline;
+}
+
+h1 a.anchor:hover, h2 a.anchor:hover, h3 a.anchor:hover, h4 a.anchor:hover,
+h5 a.anchor:hover, h6 a.anchor:hover {
+        color: #777;
+        background-color: #eee;
+}
+
+table {
+        border-collapse: collapse;
+        margin: 0 -0.5em 0 -0.5em;
+}
+
+table td, table th {
+        padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+div.footer {
+        background-color: #E3EFF1;
+        color: #86989B;
+        padding: 3px 8px 3px 0;
+        clear: both;
+        font-size: 0.8em;
+        text-align: right;
+}
+
+div.footer a {
+        color: #86989B;
+        text-decoration: underline;
+}
+
+div.pagination {
+        margin-top: 2em;
+        padding-top: 0.5em;
+        border-top: 1px solid black;
+        text-align: center;
+}
+
+div.sphinxsidebar ul.toc {
+        margin: 1em 0 1em 0;
+        padding: 0 0 0 0.5em;
+        list-style: none;
+}
+
+div.sphinxsidebar ul.toc li {
+        margin: 0.5em 0 0.5em 0;
+        font-size: 0.9em;
+        line-height: 130%;
+}
+
+div.sphinxsidebar ul.toc li p {
+        margin: 0;
+        padding: 0;
+}
+
+div.sphinxsidebar ul.toc ul {
+        margin: 0.2em 0 0.2em 0;
+        padding: 0 0 0 1.8em;
+}
+
+div.sphinxsidebar ul.toc ul li {
+        padding: 0;
+}
+
+div.admonition, div.warning {
+        font-size: 0.9em;
+        margin: 1em 0 0 0;
+        border: 1px solid #86989B;
+        background-color: #f7f7f7;
+}
+
+div.admonition p, div.warning p {
+        margin: 0.5em 1em 0.5em 1em;
+        padding: 0;
+}
+
+div.admonition pre, div.warning pre {
+        margin: 0.4em 1em 0.4em 1em;
+}
+
+div.admonition p.admonition-title,
+div.warning p.admonition-title {
+        margin: 0;
+        padding: 0.1em 0 0.1em 0.5em;
+        color: white;
+        border-bottom: 1px solid #86989B;
+        font-weight: bold;
+        background-color: #AFC1C4;
+}
+
+div.warning {
+        border: 1px solid #940000;
+}
+
+div.warning p.admonition-title {
+        background-color: #CF0000;
+        border-bottom-color: #940000;
+}
+
+div.admonition ul, div.admonition ol,
+div.warning ul, div.warning ol {
+        margin: 0.1em 0.5em 0.5em 3em;
+        padding: 0;
+}
+
+div.versioninfo {
+        margin: 1em 0 0 0;
+        border: 1px solid #ccc;
+        background-color: #DDEAF0;
+        padding: 8px;
+        line-height: 1.3em;
+        font-size: 0.9em;
+}
+
+
+a.headerlink {
+        color: #c60f0f!important;
+        font-size: 1em;
+        margin-left: 6px;
+        padding: 0 4px 0 4px;
+        text-decoration: none!important;
+        visibility: hidden;
+}
+
+h1:hover &gt; a.headerlink,
+h2:hover &gt; a.headerlink,
+h3:hover &gt; a.headerlink,
+h4:hover &gt; a.headerlink,
+h5:hover &gt; a.headerlink,
+h6:hover &gt; a.headerlink,
+dt:hover &gt; a.headerlink {
+        visibility: visible;
+}
+
+a.headerlink:hover {
+        background-color: #ccc;
+        color: white!important;
+}
+
+table.indextable td {
+        text-align: left;
+        vertical-align: top;
+}
+
+table.indextable dl, table.indextable dd {
+        margin-top: 0;
+        margin-bottom: 0;
+}
+
+table.indextable tr.pcap {
+        height: 10px;
+}
+
+table.indextable tr.cap {
+        margin-top: 10px;
+        background-color: #f2f2f2;
+}
+
+img.toggler {
+        margin-right: 3px;
+        margin-top: 3px;
+        cursor: pointer;
+}
+
+img.inheritance {
+        border: 0px
+}
+
+form.pfform {
+        margin: 10px 0 20px 0;
+}
+
+table.contentstable {
+        width: 90%;
+}
+
+table.contentstable p.biglink {
+        line-height: 150%;
+}
+
+a.biglink {
+        font-size: 1.3em;
+}
+
+span.linkdescr {
+        font-style: italic;
+        padding-top: 5px;
+        font-size: 90%;
+}
+
+ul.search {
+        margin: 10px 0 0 20px;
+        padding: 0;
+}
+
+ul.search li {
+        padding: 5px 0 5px 20px;
+        background-image: url(file.png);
+        background-repeat: no-repeat;
+        background-position: 0 7px;
+}
+
+ul.search li a {
+        font-weight: bold;
+}
+
+ul.search li div.context {
+        color: #888;
+        margin: 2px 0 0 30px;
+        text-align: left;
+}
+
+ul.keywordmatches li.goodmatch a {
+        font-weight: bold;
+}
+
+
+    {% extends "!layout.html" %}</pre>
+</div>
+<p>layout.html文件的代码为:</p>
+<div class="highlight-python"><pre>{% extends "!layout.html" %}
+
+
+{% block rootrellink %}
+                &lt;li&gt;&lt;a href="{{ pathto('index') }}"&gt;首页&lt;/a&gt;|&amp;nbsp;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="{{ pathto('search') }}"&gt;搜索&lt;/a&gt;|&amp;nbsp;&lt;/li&gt;
+           &lt;li&gt;&lt;a href="{{ pathto('contents') }}"&gt;文档 &lt;/a&gt; &amp;raquo;&lt;/li&gt;
+{% endblock %}
+
+
+{% block relbar1 %}
+
+&lt;div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px"&gt;
+&lt;a href="{{ pathto('index') }}"&gt;&lt;img src="{{
+pathto("_static/logo.png", 1) }}" border="0" alt="py4sci"/&gt;&lt;/a&gt;
+&lt;/div&gt;
+{{ super() }}
+{% endblock %}
+
+{# put the sidebar before the body #}
+{% block sidebar1 %}{{ sidebar() }}{% endblock %}
+{% block sidebar2 %}{% endblock %}</pre>
+</div>
+<p>这三个文件创建后，Sphinx能够自动的加载，执行 <tt class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></tt> 命令再编译一遍吧，修改后的效果如下：</p>
+<img alt="_images/fancy_screenshot.png" src="_images/fancy_screenshot.png" />
+<div class="section" id="id2">
+<h3>Sphinx汉化<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<ol class="arabic simple">
+<li>将sphinx安装目录下(默认为/usr/lib/python2.5/site-packages/Sphinx-0.5.1-py2.5.egg/sphinx)的templates拷贝到自己工程的src/.templates, 并且把里面html文档中有_(&#8216;some title&#8217;)的翻译成中文.</li>
+<li>将sphinx安装目录下(默认为/usr/lib/python2.5/site-packages/Sphinx-0.5.1-py2.5.egg/sphinx)的static拷贝到.static, 样式可以自定义, 这里也可以把sphinx官网文档的样式拷贝过来, 生成的html很类似她.</li>
+</ol>
+<p>3) src/index.rst及相关rst文件中, 修改成中文说明.
+到此大致上可以完成汉化. 只是还剩页面顶端的导航条和首页下方的索引表的特殊模块默认名字还是英文,因为这个是在源代码中涉及的, 所以对sphinx源码做了些修改:
+4) sphinx/builder.py中
+line428~430修改为:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">rellinks</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">html_use_index</span><span class="p">:</span>
+       <span class="n">rellinks</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s">&#39;genindex&#39;</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">u&#39;一般索引&#39;</span><span class="p">),</span> <span class="s">&#39;I&#39;</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">u&#39;索引&#39;</span><span class="p">)))</span><span class="c">#General Index index</span>
+<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">html_use_modindex</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">modules</span><span class="p">:</span>
+       <span class="n">rellinks</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s">&#39;modindex&#39;</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">u&#39;全局模块索引&#39;</span><span class="p">),</span> <span class="s">&#39;M&#39;</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">u&#39;模块&#39;</span><span class="p">)))</span><span class="c">#Global Module Index modules</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>line468修改为::</dt>
+<dd>rellinks.append((related[2], next[&#8216;title&#8217;], &#8216;N&#8217;, _(u&#8217;后一篇&#8217;)))</dd>
+<dt>line475修改为::</dt>
+<dd>rellinks.append((related[1], prev[&#8216;title&#8217;], &#8216;P&#8217;, _(u&#8217;前一篇&#8217;)))</dd>
+<dt>sphinx/environment.py中line291~293修改为::</dt>
+<dd>self.labels[&#8216;genindex&#8217;] = (&#8216;genindex&#8217;, &#8216;&#8217;, _(u&#8217;索引&#8217;))# Index
+self.labels[&#8216;modindex&#8217;] = (&#8216;modindex&#8217;, &#8216;&#8217;, _(u&#8217;模块索引&#8217;))# Module Index
+self.labels[&#8216;search&#8217;]   = (&#8216;search&#8217;, &#8216;&#8217;, _(u&#8217;搜索页面&#8217;))# Search Page</dd>
+</dl>
+<p>5) conf.py中修改项目名称为中文, 其中想自定义html_title为&lt;project&gt; v&lt;release&gt; 文档,
+直接将html_title = u&#8221;&lt;project&gt; v&lt;release&gt; documentation&#8221;修改中文无法在页面上正确显示, 所以修改sphinx/config.py中line54为</p>
+<blockquote>
+html_title = (lambda self: u&#8217;%s v%s 文档&#8217; %  (self.project, self.release), False),</blockquote>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             >索引</a></li>
+        <li><a href="index.html">Sphinx_Tutorial v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; 版权所有 2010, Wu Lizong.
+      最后更新日期是 Jun 17, 2010.
+      使用 <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0b2.
+    </div>
+  </body>
+</html>
