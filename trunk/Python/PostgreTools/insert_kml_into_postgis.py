@@ -106,7 +106,7 @@ if __name__=='__main__':
     gid='gid'
     ##define the geosystem code,default value is 4326 (=WGS84)
     srid='4326'
-    kml_file='C:\\workspace\\gl_1262_v4.kml'
+    kml_file='C:\\workspace\\lake.kml'
     insert_polygon(host,dbname,user,password,kml_file,table_name)
     
 
