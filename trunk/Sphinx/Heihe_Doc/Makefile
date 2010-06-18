@@ -72,17 +72,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Digital_Heihe.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/WATER.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Digital_Heihe.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/WATER.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/Digital_Heihe"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/Digital_Heihe"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/WATER"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/WATER"
 	@echo "# devhelp"
 
 epub:
@@ -128,3 +128,7 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+pdf:
+    $(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) _build/pdf
+	@echo
+    @echo "Build finished. The PDF files are in _build/pdf."

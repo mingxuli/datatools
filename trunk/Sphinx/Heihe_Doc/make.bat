@@ -17,6 +17,7 @@ if "%1" == "help" (
 	:help
 	echo.Please use `make ^<target^>` where ^<target^> is one of
 	echo.  html       to make standalone HTML files
+	echo.  pdf        to make a pdf file
 	echo.  dirhtml    to make HTML files named index.html in directories
 	echo.  singlehtml to make a single large HTML file
 	echo.  pickle     to make pickle files
@@ -45,6 +46,12 @@ if "%1" == "html" (
 	echo.
 	echo.Build finished. The HTML pages are in %BUILDDIR%/html.
 	goto end
+)
+if "%1" == "pdf" (
+    %SPHINXBUILD% -b pdf %ALLSPHINXOPTS% %BUILDDIR%/pdf
+    echo.
+    echo.Build finished. The PDF files are in %BUILDDIR%/pdf
+    goto end
 )
 
 if "%1" == "dirhtml" (
@@ -88,9 +95,9 @@ if "%1" == "qthelp" (
 	echo.
 	echo.Build finished; now you can run "qcollectiongenerator" with the ^
 .qhcp project file in %BUILDDIR%/qthelp, like this:
-	echo.^> qcollectiongenerator %BUILDDIR%\qthelp\Digital_Heihe.qhcp
+	echo.^> qcollectiongenerator %BUILDDIR%\qthelp\WATER.qhcp
 	echo.To view the help file:
-	echo.^> assistant -collectionFile %BUILDDIR%\qthelp\Digital_Heihe.ghc
+	echo.^> assistant -collectionFile %BUILDDIR%\qthelp\WATER.ghc
 	goto end
 )
 
