@@ -2,7 +2,7 @@
    sphinx-quickstart on Sun Jun 13 10:09:01 2010.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
-
+   Watershed Airborne Telemetry Experimental Research (Water)
 "黑河综合遥感联合试验"数据文档
 ======================================
 
@@ -20,13 +20,14 @@
    how_to_fetch_data
    exp_blog
    exp_partner
+   acknowledgements
 
 	
 
 .. todolist::
 
-.. note::
 **项目标注**
+
  **中文:**
  中国科学院西部行动计划（二期）项目“黑河流域遥感－地面观测同步试验与综合模拟平台建设”(项目号：KZCX2-XB2-09)资助
 
