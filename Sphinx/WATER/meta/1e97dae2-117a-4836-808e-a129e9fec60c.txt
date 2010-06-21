@@ -1,0 +1,203 @@
+.. _1e97dae2-117a-4836-808e-a129e9fec60c:
+
+*******************************************************
+黑河综合遥感联合试验:QuickBird遥感数据集
+*******************************************************
+
+**英文标题:**
+WATER: QuickBird Dataset
+
+1. 摘要
+============
+张掖市城区快鸟影像一景，拍摄日期为2004年3月22日。本数据集包括全色影像，地面分辨率为0.6m；多光谱影像，地面分辨率为2.4m。影像经过几何校正。影像投影及坐标信息如下：
+Coordinate System is:
+PROJCS["WGS 84 / UTM zone 47N",
+    GEOGCS["WGS 84",
+        DATUM["WGS_1984",
+            SPHEROID["WGS 84",6378137,298.2572235630016,
+                AUTHORITY["EPSG","7030"]],
+            AUTHORITY["EPSG","6326"]],
+        PRIMEM["Greenwich",0],
+        UNIT["degree",0.0174532925199433],
+        AUTHORITY["EPSG","4326"]],
+    PROJECTION["Transverse_Mercator"],
+    PARAMETER["latitude_of_origin",0],
+    PARAMETER["central_meridian",99],
+    PARAMETER["scale_factor",0.9996],
+    PARAMETER["false_easting",500000],
+    PARAMETER["false_northing",0],
+    UNIT["metre",1,
+        AUTHORITY["EPSG","9001"]],
+    AUTHORITY["EPSG","32647"]]
+Origin = (623433.599999999976717,4315420.799999999813735)
+Pixel Size = (0.600000000000000,-0.600000000000000)
+Metadata:
+  AREA_OR_POINT=Area
+  TIFFTAG_IMAGEDESCRIPTION={
+  bandList = 
+  [
+    5;
+  ]
+}
+  TIFFTAG_DATETIME=2004:03:23 21:03:36
+  TIFFTAG_COPYRIGHT=(C) COPYRIGHT 2002 EarthWatch Incorporated, Longmont CO USA 80501-6700
+  TIFFTAG_MINSAMPLEVALUE=0
+  TIFFTAG_MAXSAMPLEVALUE=2047
+Image Structure Metadata:
+  INTERLEAVE=BAND
+Corner Coordinates:
+Upper Left  (  623433.600, 4315420.800) (100d25'30.06"E, 38d58'44.69"N)
+Lower Left  (  623433.600, 4307568.000) (100d25'24.96"E, 38d54'30.01"N)
+Upper Right (  632467.200, 4315420.800) (100d31'45.38"E, 38d58'39.94"N)
+Lower Right (  632467.200, 4307568.000) (100d31'39.91"E, 38d54'25.27"N)
+Center      (  627950.400, 4311494.400) (100d28'35.08"E, 38d56'35.02"N)
+
+2. 关键词
+==============
+主题关键词:
+QuickBird,遥感影像,
+位置关键词:
+黑河流域,张掖市,
+时间关键词:
+2004-03-22,
+学科关键词:
+
+3. 本数据的引用
+====================
+中文引用：
+黑河综合遥感联合试验:QuickBird遥感数据集,中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0182.db
+
+英文引用：
+.WATER: QuickBird Dataset,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0182.db
+
+4.	数据调查者
+==================
+5. 数据联系人
+=====================
+
++ 姓名：冉有华
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：ranyh@lzb.ac.cn
++ 电话：0931-4967259
+
+6. 元数据作者
+======================
+
++ 姓名：盖春梅
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：gechm@lzb.ac.cn
++ 电话：0931-4967298
+
+7.	元数据发布者
+======================
+
++ 姓名：吴立宗
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：wulizong@lzb.ac.cn
++ 电话：0931-4967298
+
+8.	数据分发者
+======================
+
++ 姓名：李红星
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：westdc@lzb.ac.cn
++ 电话：0931-4967287
++ 传真：0931-8279161
+
+9.	地理范围
+=========================
+
++ 北：42.685
++ 南：37.868
++ 西：97.399
++ 东：102.125
+
+10.	项目支持信息
+=========================
+
+本试验的开展及数据的管理与发布获得了以下项目的支持:            
+
+ 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+
+ 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+
+11. 文件清单 
+=========================
+
+文件路径: :file:`/data/WATER/Level_1/Satellite/QuickBird`
+::
+	1./uuid.txt
+	2./QuickBird-20040322/
+	3./QuickBird-20040322/QuickBird_PAN/
+	4./QuickBird-20040322/QuickBird_MUL/
+	5./QuickBird-20040322/ordering GIS_FILES/
+	6./QuickBird-20040322/QuickBird_PAN/04MAR22040514-P2AS-000000097603_01_P001.TIL
+	7./QuickBird-20040322/QuickBird_PAN/04MAR22040514-P2AS-000000097603_01_P001.IMD
+	8./QuickBird-20040322/QuickBird_PAN/PAN_README.TXT
+	9./QuickBird-20040322/QuickBird_PAN/04MAR22040514-P2AS-000000097603_01_P001.RPB
+	10./QuickBird-20040322/QuickBird_PAN/SINGLE_ORGANIZATION.TXT
+	11./QuickBird-20040322/QuickBird_PAN/04MAR22040514-P2AS-000000097603_01_P001.sta
+	12./QuickBird-20040322/QuickBird_PAN/04MAR22040514-P2AS-000000097603_01_P001.TIF
+	13./QuickBird-20040322/QuickBird_PAN/04mar22040514-p2as-000000097603_01_p001-browse.aux
+	14./QuickBird-20040322/QuickBird_PAN/04mar22040514-p2as-000000097603_01_p001.rrd
+	15./QuickBird-20040322/QuickBird_PAN/metadata.txt
+	16./QuickBird-20040322/QuickBird_PAN/04MAR22040514-P2AS-000000097603_01_P001-BROWSE.JPG
+	17./QuickBird-20040322/QuickBird_PAN/04mar22040514-p2as-000000097603_01_p001.aux
+	18./QuickBird-20040322/QuickBird_MUL/04mar22040514-m2as-000000097603_01_p001.rrd
+	19./QuickBird-20040322/QuickBird_MUL/04MAR22040514-M2AS-000000097603_01_P001.TIF
+	20./QuickBird-20040322/QuickBird_MUL/04mar22040514-m2as-000000097603_01_p001.aux
+	21./QuickBird-20040322/QuickBird_MUL/SINGLE_ORGANIZATION.TXT
+	22./QuickBird-20040322/QuickBird_MUL/04MAR22040514-M2AS-000000097603_01_P001.TIL
+	23./QuickBird-20040322/QuickBird_MUL/04MAR22040514-M2AS-000000097603_01_P001.RPB
+	24./QuickBird-20040322/QuickBird_MUL/04MAR22040514-M2AS-000000097603_01_P001-BROWSE.JPG
+	25./QuickBird-20040322/QuickBird_MUL/04mar22040514-m2as-000000097603_01_p001-browse.aux
+	26./QuickBird-20040322/QuickBird_MUL/metadata.txt
+	27./QuickBird-20040322/QuickBird_MUL/04MAR22040514-M2AS-000000097603_01_P001.IMD
+	28./QuickBird-20040322/QuickBird_MUL/MUL_README.TXT
+	29./QuickBird-20040322/ordering GIS_FILES/000000097603_01_TILE_SHAPE.shp
+	30./QuickBird-20040322/ordering GIS_FILES/000000097603_01_SCENE_SHAPE.dbf
+	31./QuickBird-20040322/ordering GIS_FILES/000000097603_01_ORDER_SHAPE.shp
+	32./QuickBird-20040322/ordering GIS_FILES/000000097603_01_TILE_SHAPE.dbf
+	33./QuickBird-20040322/ordering GIS_FILES/000000097603_01_ORDER_SHAPE.shx
+	34./QuickBird-20040322/ordering GIS_FILES/000000097603_01_PRODUCT_SHAPE.shx
+	35./QuickBird-20040322/ordering GIS_FILES/000000097603_01_PRODUCT_SHAPE.shp
+	36./QuickBird-20040322/ordering GIS_FILES/000000097603_01_README.TXT
+	37./QuickBird-20040322/ordering GIS_FILES/000000097603_01_PRODUCT_SHAPE.dbf
+	38./QuickBird-20040322/ordering GIS_FILES/000000097603_01_LAYOUT.JPG
+	39./QuickBird-20040322/ordering GIS_FILES/000000097603_01_layout.aux
+	40./QuickBird-20040322/ordering GIS_FILES/000000097603_01_SCENE_SHAPE.shp
+	41./QuickBird-20040322/ordering GIS_FILES/processed/
+	42./QuickBird-20040322/ordering GIS_FILES/000000097603_01_TILE_SHAPE.shx
+	43./QuickBird-20040322/ordering GIS_FILES/000000097603_01_SCENE_SHAPE.shx
+	44./QuickBird-20040322/ordering GIS_FILES/000000097603_01_ORDER_SHAPE.dbf
+	45./QuickBird-20040322/ordering GIS_FILES/processed/danwei.sbx
+	46./QuickBird-20040322/ordering GIS_FILES/processed/quhua.shp
+	47./QuickBird-20040322/ordering GIS_FILES/processed/jianzhu.sbx
+	48./QuickBird-20040322/ordering GIS_FILES/processed/quhua.dbf
+	49./QuickBird-20040322/ordering GIS_FILES/processed/danwei.shp
+	50./QuickBird-20040322/ordering GIS_FILES/processed/quhua.shx
+	51./QuickBird-20040322/ordering GIS_FILES/processed/quhua.sbx
+	52./QuickBird-20040322/ordering GIS_FILES/processed/danwei.shx
+	53./QuickBird-20040322/ordering GIS_FILES/processed/jianzhu.shx
+	54./QuickBird-20040322/ordering GIS_FILES/processed/jianzhu.shp
+	55./QuickBird-20040322/ordering GIS_FILES/processed/jianzhugaus.dbf
+	56./QuickBird-20040322/ordering GIS_FILES/processed/quhua.sbn
+	57./QuickBird-20040322/ordering GIS_FILES/processed/danweigaus.shp
+	58./QuickBird-20040322/ordering GIS_FILES/processed/zhangye.apr
+	59./QuickBird-20040322/ordering GIS_FILES/processed/jianzhu.sbn
+	60./QuickBird-20040322/ordering GIS_FILES/processed/danwei.sbn
+	61./QuickBird-20040322/ordering GIS_FILES/processed/danweigaus.dbf
+	62./QuickBird-20040322/ordering GIS_FILES/processed/danwei.dbf
+	63./QuickBird-20040322/ordering GIS_FILES/processed/jianzhugaus.shx
+	64./QuickBird-20040322/ordering GIS_FILES/processed/jianzhugaus.shp
+	65./QuickBird-20040322/ordering GIS_FILES/processed/danweigaus.shx
+	66./QuickBird-20040322/ordering GIS_FILES/processed/jianzhu.dbf

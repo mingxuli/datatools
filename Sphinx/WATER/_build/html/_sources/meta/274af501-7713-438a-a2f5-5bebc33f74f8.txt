@@ -1,0 +1,387 @@
+.. _274af501-7713-438a-a2f5-5bebc33f74f8:
+
+***********************************************************************************************
+黑河综合遥感联合试验:阿柔试验区ASAR地面同步观测数据集(2008年3月15日)
+***********************************************************************************************
+
+**英文标题:**
+WATER: Simultaneous ASAR Satellite-Ground Observation Dataset in A'rou Experimental Area on March 15, 2008
+
+1. 摘要
+============
+2008年03月15日，在阿柔样方2和阿柔样方3开展了ASAR数据的地面同步观测试验。
+ASAR数据为AP模式，VV/VH极化组合方式，过境时间约为11：35。阿柔样方2和阿柔样方3均为4 Grid×4 Grid，每个Grid为30m×30m。为保证同步效率，仅在每个Grid的角点进行采样测量。
+在阿柔样方2采用POGO便携式土壤水分传感器获得土壤温度、土壤体积含水量、损耗正切、土壤电导率、土壤复介电常数实部及虚部；针式温度计获得0-5cm平均土壤温度；手持式红外温度计获得3次地表辐射温度；并采用100cm3环刀取土经烘干获得重量含水量、土壤容重及体积含水量。
+在阿柔样方3采用POGO便携式土壤水分传感器获得土壤温度、土壤体积含水量、损耗正切、土壤电导率、土壤复介电常数实部及虚部；ML2X土壤水分速测仪获取土壤体积含水量；针式温度计获得0-5cm平均土壤温度；手持式红外温度计获得3次地表辐射温度；并采用100cm3环刀取土经烘干获得重量含水量、土壤容重及体积含水量。此外，还在阿柔样方1开展了同步探地雷达观测。本数据可为发展和验证主动微波遥感反演土壤水分及冻融状态算法提供基本地面数据集。
+该数据集共包括4个文件或文件夹，分别是：
+ARou_2008-03-15_ARAS
+ARou_2008-03-15_messstation
+阿柔样方2（2008-3-15）.xls
+阿柔样方3（2008-3-15）.xls
+
+2. 关键词
+==============
+主题关键词:
+ASAR,地面同步观测,GPR探地雷达,土壤水分,POGO便携式土壤水分传感器,土壤温度,地表温度,ML2X土壤水分速测仪,针式温度计,手持式红外温度计,环刀,土壤电导率,介电常数,土壤容重,
+位置关键词:
+黑河流域,上游寒区水文试验区,阿柔试验区,
+时间关键词:
+2008-03-15,
+学科关键词:
+
+3. 本数据的引用
+====================
+中文引用：
+晋锐, 王维真, Patrick Klenk, 曹永攀, 顾娟, 韩旭军, 李哲, 历华, 吴月茹, 于梅艳, 袁小龙, 赵金. 黑河综合遥感联合试验: 阿柔试验区ASAR地面同步观测数据集(2008年3月15日), 中国西部环境与生态科学数据中心, 2008. doi:10.3972/water973.0006.db 
+
+英文引用：
+Jin Rui, Wang Weizhen, Patrick Klenk, Cao Yongpan, Gu Juan, Han Xujun, Li Zhe, Li Hua, Wu Yueru, Yu Meiyan, Yuan Xiaolong, Zhao Jin. WATER: Simultaneous ASAR Satellite-Ground Observation Dataset in A'rou Foci Experimental Area on March 15, 2008, Environmental and Ecological Science Data Center for West China, 2008. doi:10.3972/water973.0006.db
+
+4.	数据调查者
+==================
+
++ 姓名：曹永攀,顾娟,韩旭军,晋锐,李哲,王维真,吴月茹
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
+
+
++ 姓名：历华
++ 单位：中国科学院遥感应用研究所
++ 通讯地址：--北京市--兰州--北京市朝阳区大屯路中国科学院奥运村科学园区
++ 邮编：100101
+
+
++ 姓名：于梅艳,赵金
++ 单位：中国科学院新疆生态与地理研究所
++ 通讯地址：--新疆维吾尔自治区--兰州--乌鲁木齐市北京南路40-3号
++ 邮编：830011
+
+
++ 姓名：Patrick Klenk
++ 单位：Institute of Environmental Physics Heidelberg University
++ 通讯地址：----Heidelberg--Im Neuenheimer Feld 229 D- 69120 Heidelberg
++ 邮编：105760
+
+
++ 姓名：袁小龙
++ 单位：兰州大学
++ 通讯地址：--甘肃省--兰州--兰州市天水北路210号
++ 邮编：730000
+
+5. 数据联系人
+=====================
+
++ 姓名：晋锐
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：jinrui@lzb.ac.cn
++ 电话：0931-4967965
+
+6. 元数据作者
+======================
+
++ 姓名：晋锐
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：jinrui@lzb.ac.cn
++ 电话：0931-4967965
+
+7.	元数据发布者
+======================
+
++ 姓名：吴立宗
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：wulizong@lzb.ac.cn
++ 电话：0931-4967298
+
+8.	数据分发者
+======================
+
++ 姓名：李红星
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：westdc@lzb.ac.cn
++ 电话：0931-4967287
++ 传真：0931-8279161
+
+9.	地理范围
+=========================
+
++ 北：38.078
++ 南：38.015
++ 西：100.411
++ 东：100.550
+
+10.	项目支持信息
+=========================
+
+本试验的开展及数据的管理与发布获得了以下项目的支持:            
+
+ 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+
+ 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+
+11. 文件清单 
+=========================
+
+文件路径: :file:`/data/WATER/Level_1/Arou/ARou_Sync_2008-03-15_ASAR`
+::
+	1./阿柔样方2（2008-3-15）.xls
+	2./阿柔样方3（2008-3-15）.xls
+	3./ARou_2008-03-15_messstation/
+	4./uuid.txt
+	5./ARou_2008-03-15_ASAR/
+	6./ARou_2008-03-15_messstation/fig/
+	7./ARou_2008-03-15_messstation/prog/
+	8./ARou_2008-03-15_messstation/data/
+	9./ARou_2008-03-15_messstation/fig/kurzbeschreibung.txt~
+	10./ARou_2008-03-15_messstation/fig/profil2.pdf
+	11./ARou_2008-03-15_messstation/fig/profil19.pdf
+	12./ARou_2008-03-15_messstation/fig/profil22.pdf
+	13./ARou_2008-03-15_messstation/fig/profil17.pdf
+	14./ARou_2008-03-15_messstation/fig/profil3.pdf
+	15./ARou_2008-03-15_messstation/fig/profil12.pdf
+	16./ARou_2008-03-15_messstation/fig/profil1.pdf
+	17./ARou_2008-03-15_messstation/fig/profil21.pdf
+	18./ARou_2008-03-15_messstation/fig/profil5.pdf
+	19./ARou_2008-03-15_messstation/fig/profil16.pdf
+	20./ARou_2008-03-15_messstation/fig/profil24.pdf
+	21./ARou_2008-03-15_messstation/fig/profil13.pdf
+	22./ARou_2008-03-15_messstation/fig/profil20.pdf
+	23./ARou_2008-03-15_messstation/fig/profil9.pdf
+	24./ARou_2008-03-15_messstation/fig/kurzbeschreibung.txt
+	25./ARou_2008-03-15_messstation/fig/profil15.pdf
+	26./ARou_2008-03-15_messstation/fig/profil10.pdf
+	27./ARou_2008-03-15_messstation/fig/profil8.pdf
+	28./ARou_2008-03-15_messstation/fig/profil7.pdf
+	29./ARou_2008-03-15_messstation/fig/profil6.pdf
+	30./ARou_2008-03-15_messstation/fig/profil18.pdf
+	31./ARou_2008-03-15_messstation/fig/profil14.pdf
+	32./ARou_2008-03-15_messstation/fig/profil23.pdf
+	33./ARou_2008-03-15_messstation/fig/profil4.pdf
+	34./ARou_2008-03-15_messstation/fig/profil17b.pdf
+	35./ARou_2008-03-15_messstation/fig/profil11.pdf
+	36./ARou_2008-03-15_messstation/fig/profil10b.pdf
+	37./ARou_2008-03-15_messstation/data/Profile11_4.rad
+	38./ARou_2008-03-15_messstation/data/Profile4_1.rd3
+	39./ARou_2008-03-15_messstation/data/Profile3_2.rd3
+	40./ARou_2008-03-15_messstation/data/Profile24_4.rd3
+	41./ARou_2008-03-15_messstation/data/Profile15.mch
+	42./ARou_2008-03-15_messstation/data/Profile22_3.rad
+	43./ARou_2008-03-15_messstation/data/Profile6_2.rad
+	44./ARou_2008-03-15_messstation/data/Profile5_4.rd3
+	45./ARou_2008-03-15_messstation/data/Profile9_3.rad
+	46./ARou_2008-03-15_messstation/data/Profile4_4.rad
+	47./ARou_2008-03-15_messstation/data/Profile1_2.rd3
+	48./ARou_2008-03-15_messstation/data/Profile5_2.rad
+	49./ARou_2008-03-15_messstation/data/Profile8_3.rd3
+	50./ARou_2008-03-15_messstation/data/Profile20.mch
+	51./ARou_2008-03-15_messstation/data/Profile15_1.rad
+	52./ARou_2008-03-15_messstation/data/Profile5_4.rad
+	53./ARou_2008-03-15_messstation/data/Profile24_4.rad
+	54./ARou_2008-03-15_messstation/data/Profile11_2.rad
+	55./ARou_2008-03-15_messstation/data/Profile9_1.rad
+	56./ARou_2008-03-15_messstation/data/Profile8_4.rd3
+	57./ARou_2008-03-15_messstation/data/Profile14_3.rad
+	58./ARou_2008-03-15_messstation/data/Profile7_3.rd3
+	59./ARou_2008-03-15_messstation/data/Profile4_4.rd3
+	60./ARou_2008-03-15_messstation/data/Profile6_4.rad
+	61./ARou_2008-03-15_messstation/data/Profile22_1.rd3
+	62./ARou_2008-03-15_messstation/data/Profile22.mch
+	63./ARou_2008-03-15_messstation/data/Profile1_1.rad
+	64./ARou_2008-03-15_messstation/data/Profile7.mch
+	65./ARou_2008-03-15_messstation/data/Profile16_4.rd3
+	66./ARou_2008-03-15_messstation/data/Profile2_2.rad
+	67./ARou_2008-03-15_messstation/data/Profile17_3.rd3
+	68./ARou_2008-03-15_messstation/data/Profile14_2.rd3
+	69./ARou_2008-03-15_messstation/data/Profile8_1.rd3
+	70./ARou_2008-03-15_messstation/data/Profile21_3.rad
+	71./ARou_2008-03-15_messstation/data/Profile7_2.rd3
+	72./ARou_2008-03-15_messstation/data/Profile22_2.rd3
+	73./ARou_2008-03-15_messstation/data/Profile21_2.rad
+	74./ARou_2008-03-15_messstation/data/Profile9_3.rd3
+	75./ARou_2008-03-15_messstation/data/Profile14_2.rad
+	76./ARou_2008-03-15_messstation/data/Profile23.mch
+	77./ARou_2008-03-15_messstation/data/Profile21_1.rd3
+	78./ARou_2008-03-15_messstation/data/Profile16_3.rd3
+	79./ARou_2008-03-15_messstation/data/Profile1_3.rad
+	80./ARou_2008-03-15_messstation/data/Profile2_4.rad
+	81./ARou_2008-03-15_messstation/data/Profile6_2.rd3
+	82./ARou_2008-03-15_messstation/data/Profile23_3.rd3
+	83./ARou_2008-03-15_messstation/data/Profile20_3.rd3
+	84./ARou_2008-03-15_messstation/data/Profile6_1.rd3
+	85./ARou_2008-03-15_messstation/data/Profile23_1.rd3
+	86./ARou_2008-03-15_messstation/data/Profile6_3.rad
+	87./ARou_2008-03-15_messstation/data/Profile15_3.rad
+	88./ARou_2008-03-15_messstation/data/Profile19_1.rd3
+	89./ARou_2008-03-15_messstation/data/Profile19_4.rad
+	90./ARou_2008-03-15_messstation/data/Profile22_1.rad
+	91./ARou_2008-03-15_messstation/data/Profile15_3.rd3
+	92./ARou_2008-03-15_messstation/data/Profile22_2.rad
+	93./ARou_2008-03-15_messstation/data/Profile20_4.rad
+	94./ARou_2008-03-15_messstation/data/Profile9_1.rd3
+	95./ARou_2008-03-15_messstation/data/Profile15_2.rd3
+	96./ARou_2008-03-15_messstation/data/Profile13_2.rad
+	97./ARou_2008-03-15_messstation/data/Profile7_4.rd3
+	98./ARou_2008-03-15_messstation/data/Profile3_1.rad
+	99./ARou_2008-03-15_messstation/data/Profile4_2.rd3
+	100./ARou_2008-03-15_messstation/data/Profile18_3.rd3
+	101./ARou_2008-03-15_messstation/data/Profile23_4.rad
+	102./ARou_2008-03-15_messstation/data/Profile3_2.rad
+	103./ARou_2008-03-15_messstation/data/Profile21_2.rd3
+	104./ARou_2008-03-15_messstation/data/Profile13_3.rd3
+	105./ARou_2008-03-15_messstation/data/Profile13_3.rad
+	106./ARou_2008-03-15_messstation/data/Profile16_3.rad
+	107./ARou_2008-03-15_messstation/data/Profile10_2.rad
+	108./ARou_2008-03-15_messstation/data/Profile5_1.rd3
+	109./ARou_2008-03-15_messstation/data/Profile2_3.rd3
+	110./ARou_2008-03-15_messstation/data/Profile21.mch
+	111./ARou_2008-03-15_messstation/data/Profile17_2.rad
+	112./ARou_2008-03-15_messstation/data/Profile7_1.rad
+	113./ARou_2008-03-15_messstation/data/Profile2.mch
+	114./ARou_2008-03-15_messstation/data/Profile11_3.rd3
+	115./ARou_2008-03-15_messstation/data/Profile1_3.rd3
+	116./ARou_2008-03-15_messstation/data/Profile15_1.rd3
+	117./ARou_2008-03-15_messstation/data/Profile22_4.rad
+	118./ARou_2008-03-15_messstation/data/Profile1_4.rad
+	119./ARou_2008-03-15_messstation/data/Profile12_3.rad
+	120./ARou_2008-03-15_messstation/data/Profile23_1.rad
+	121./ARou_2008-03-15_messstation/data/Profile12_3.rd3
+	122./ARou_2008-03-15_messstation/data/Profile1_1.rd3
+	123./ARou_2008-03-15_messstation/data/Profile11_4.rd3
+	124./ARou_2008-03-15_messstation/data/Profile20_2.rad
+	125./ARou_2008-03-15_messstation/data/Profile14_1.rad
+	126./ARou_2008-03-15_messstation/data/Profile19_4.rd3
+	127./ARou_2008-03-15_messstation/data/Profile17_3.rad
+	128./ARou_2008-03-15_messstation/data/Profile17.mch
+	129./ARou_2008-03-15_messstation/data/Profile20_3.rad
+	130./ARou_2008-03-15_messstation/data/Profile19_2.rd3
+	131./ARou_2008-03-15_messstation/data/Profile10.mch
+	132./ARou_2008-03-15_messstation/data/Profile23_2.rad
+	133./ARou_2008-03-15_messstation/data/Profile4_3.rd3
+	134./ARou_2008-03-15_messstation/data/Profile23_3.rad
+	135./ARou_2008-03-15_messstation/data/Profile13_1.rad
+	136./ARou_2008-03-15_messstation/data/Profile10_1.rd3
+	137./ARou_2008-03-15_messstation/data/Profile3_1.rd3
+	138./ARou_2008-03-15_messstation/data/Profile5_3.rd3
+	139./ARou_2008-03-15_messstation/data/Profile6_1.rad
+	140./ARou_2008-03-15_messstation/data/Profile23_4.rd3
+	141./ARou_2008-03-15_messstation/data/Profile3_3.rad
+	142./ARou_2008-03-15_messstation/data/Profile7_1.rd3
+	143./ARou_2008-03-15_messstation/data/Profile20_1.rd3
+	144./ARou_2008-03-15_messstation/data/Profile16_1.rd3
+	145./ARou_2008-03-15_messstation/data/Profile18_2.rd3
+	146./ARou_2008-03-15_messstation/data/Profile13_1.rd3
+	147./ARou_2008-03-15_messstation/data/Profile15_4.rad
+	148./ARou_2008-03-15_messstation/data/Profile18_4.rd3
+	149./ARou_2008-03-15_messstation/data/Profile9.mch
+	150./ARou_2008-03-15_messstation/data/Profile7_2.rad
+	151./ARou_2008-03-15_messstation/data/Profile12.mch
+	152./ARou_2008-03-15_messstation/data/Profile13_4.rad
+	153./ARou_2008-03-15_messstation/data/Profile12_2.rd3
+	154./ARou_2008-03-15_messstation/data/Profile16_2.rd3
+	155./ARou_2008-03-15_messstation/data/Profile15_2.rad
+	156./ARou_2008-03-15_messstation/data/Profile17_2.rd3
+	157./ARou_2008-03-15_messstation/data/Profile14_4.rad
+	158./ARou_2008-03-15_messstation/data/Profile11_1.rd3
+	159./ARou_2008-03-15_messstation/data/Profile19_3.rad
+	160./ARou_2008-03-15_messstation/data/Profile22_3.rd3
+	161./ARou_2008-03-15_messstation/data/Profile12_1.rad
+	162./ARou_2008-03-15_messstation/data/Profile21_3.rd3
+	163./ARou_2008-03-15_messstation/data/Profile9_2.rad
+	164./ARou_2008-03-15_messstation/data/Profile4.mch
+	165./ARou_2008-03-15_messstation/data/Profile21_1.rad
+	166./ARou_2008-03-15_messstation/data/Profile8.mch
+	167./ARou_2008-03-15_messstation/data/Profile18_4.rad
+	168./ARou_2008-03-15_messstation/data/Profile5_3.rad
+	169./ARou_2008-03-15_messstation/data/Profile18_1.rd3
+	170./ARou_2008-03-15_messstation/data/Profile19_1.rad
+	171./ARou_2008-03-15_messstation/data/Profile10_1.rad
+	172./ARou_2008-03-15_messstation/data/Profile5.mch
+	173./ARou_2008-03-15_messstation/data/Profile6_3.rd3
+	174./ARou_2008-03-15_messstation/data/Profile24_3.rd3
+	175./ARou_2008-03-15_messstation/data/Profile16_2.rad
+	176./ARou_2008-03-15_messstation/data/Profile24.mch
+	177./ARou_2008-03-15_messstation/data/Profile4_1.rad
+	178./ARou_2008-03-15_messstation/data/Profile18_1.rad
+	179./ARou_2008-03-15_messstation/data/Profile24_2.rad
+	180./ARou_2008-03-15_messstation/data/Profile10_4.rad
+	181./ARou_2008-03-15_messstation/data/Profile3_4.rad
+	182./ARou_2008-03-15_messstation/data/Profile8_2.rd3
+	183./ARou_2008-03-15_messstation/data/Profile7_4.rad
+	184./ARou_2008-03-15_messstation/data/Profile11_3.rad
+	185./ARou_2008-03-15_messstation/data/Profile11_1.rad
+	186./ARou_2008-03-15_messstation/data/Profile14.mch
+	187./ARou_2008-03-15_messstation/data/Profile24_2.rd3
+	188./ARou_2008-03-15_messstation/data/Profile17_4.rad
+	189./ARou_2008-03-15_messstation/data/Profile5_1.rad
+	190./ARou_2008-03-15_messstation/data/Profile24_3.rad
+	191./ARou_2008-03-15_messstation/data/Profile12_4.rd3
+	192./ARou_2008-03-15_messstation/data/Profile15_4.rd3
+	193./ARou_2008-03-15_messstation/data/Profile12_2.rad
+	194./ARou_2008-03-15_messstation/data/Profile20_2.rd3
+	195./ARou_2008-03-15_messstation/data/Profile6_4.rd3
+	196./ARou_2008-03-15_messstation/data/Profile4_3.rad
+	197./ARou_2008-03-15_messstation/data/Profile6.mch
+	198./ARou_2008-03-15_messstation/data/Profile18.mch
+	199./ARou_2008-03-15_messstation/data/Profile2_1.rad
+	200./ARou_2008-03-15_messstation/data/Profile11_2.rd3
+	201./ARou_2008-03-15_messstation/data/Profile16.mch
+	202./ARou_2008-03-15_messstation/data/Profile3_3.rd3
+	203./ARou_2008-03-15_messstation/data/Profile19_3.rd3
+	204./ARou_2008-03-15_messstation/data/Profile4_2.rad
+	205./ARou_2008-03-15_messstation/data/Profile10_4.rd3
+	206./ARou_2008-03-15_messstation/data/Profile9_4.rd3
+	207./ARou_2008-03-15_messstation/data/Profile2_1.rd3
+	208./ARou_2008-03-15_messstation/data/Profile12_1.rd3
+	209./ARou_2008-03-15_messstation/data/Profile10_3.rad
+	210./ARou_2008-03-15_messstation/data/Profile18_2.rad
+	211./ARou_2008-03-15_messstation/data/Profile18_3.rad
+	212./ARou_2008-03-15_messstation/data/Profile16_1.rad
+	213./ARou_2008-03-15_messstation/data/Profile8_3.rad
+	214./ARou_2008-03-15_messstation/data/Profile9_4.rad
+	215./ARou_2008-03-15_messstation/data/Profile8_2.rad
+	216./ARou_2008-03-15_messstation/data/Profile14_4.rd3
+	217./ARou_2008-03-15_messstation/data/Profile13_2.rd3
+	218./ARou_2008-03-15_messstation/data/Profile12_4.rad
+	219./ARou_2008-03-15_messstation/data/Profile19_2.rad
+	220./ARou_2008-03-15_messstation/data/Profile13_4.rd3
+	221./ARou_2008-03-15_messstation/data/Profile20_1.rad
+	222./ARou_2008-03-15_messstation/data/Profile2_2.rd3
+	223./ARou_2008-03-15_messstation/data/Profile21_4.rad
+	224./ARou_2008-03-15_messstation/data/Profile9_2.rd3
+	225./ARou_2008-03-15_messstation/data/Profile2_4.rd3
+	226./ARou_2008-03-15_messstation/data/Profile24_1.rd3
+	227./ARou_2008-03-15_messstation/data/Profile3_4.rd3
+	228./ARou_2008-03-15_messstation/data/Profile1_2.rad
+	229./ARou_2008-03-15_messstation/data/Profile5_2.rd3
+	230./ARou_2008-03-15_messstation/data/Profile17_4.rd3
+	231./ARou_2008-03-15_messstation/data/Profile20_4.rd3
+	232./ARou_2008-03-15_messstation/data/Profile10_3.rd3
+	233./ARou_2008-03-15_messstation/data/Profile8_1.rad
+	234./ARou_2008-03-15_messstation/data/Profile10_2.rd3
+	235./ARou_2008-03-15_messstation/data/Profile24_1.rad
+	236./ARou_2008-03-15_messstation/data/Profile11.mch
+	237./ARou_2008-03-15_messstation/data/Profile7_3.rad
+	238./ARou_2008-03-15_messstation/data/Profile13.mch
+	239./ARou_2008-03-15_messstation/data/Profile14_1.rd3
+	240./ARou_2008-03-15_messstation/data/Profile19.mch
+	241./ARou_2008-03-15_messstation/data/Profile1.mch
+	242./ARou_2008-03-15_messstation/data/Profile21_4.rd3
+	243./ARou_2008-03-15_messstation/data/Profile16_4.rad
+	244./ARou_2008-03-15_messstation/data/Profile23_2.rd3
+	245./ARou_2008-03-15_messstation/data/Profile1_4.rd3
+	246./ARou_2008-03-15_messstation/data/Profile22_4.rd3
+	247./ARou_2008-03-15_messstation/data/Profile17_1.rd3
+	248./ARou_2008-03-15_messstation/data/Profile17_1.rad
+	249./ARou_2008-03-15_messstation/data/Profile2_3.rad
+	250./ARou_2008-03-15_messstation/data/Profile14_3.rd3
+	251./ARou_2008-03-15_messstation/data/Profile3.mch
+	252./ARou_2008-03-15_messstation/data/Profile8_4.rad
+	253./ARou_2008-03-15_ASAR/ASA_APP_1PNBEI20080315_033458_000000182066_00462_31578_3873.N1.56635
