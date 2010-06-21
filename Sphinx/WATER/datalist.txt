@@ -1,244 +1,467 @@
 ﻿.. _doc_datalist:
-
+.. |km2| replace:: km\ :sup:`2`\ 
+.. sectnum::
+   :start: 4
+   
 *********************************
 数据清单
 *********************************
 
+气象水文观测数据
+=================
+
 .. toctree::
    :maxdepth: 1
    
-   /meta/024a3d39-2643-4593-9da8-70629350182b
-   /meta/0293008c-c3f5-48b8-9521-50143aa3508b
-   /meta/0331e4d2-5019-4434-bfd5-79e15ca956bd
-   /meta/037de504-9556-4dd7-9bc3-bb79b48171df
-   /meta/03c888af-253a-474e-a5cb-a3eb9ff38f11
-   /meta/04b1feef-7868-4a8c-924a-4d0cc80cf82d
-   /meta/04cae9cb-7fa8-4ae6-9abe-97496b5ff59e
-   /meta/05a0ed36-b898-4bcf-b4d5-637f5e202085
-   /meta/05b5e032-b456-4fd3-a14f-dda8230bd65b
-   /meta/05f1efdb-5f11-4736-b93d-365130e3b84a
-   /meta/092c0803-891f-4edb-8878-754f01bbe0db
-   /meta/0ede7011-6973-40a9-afc1-11d81193a24e
-   /meta/0f2fb873-09ae-42a4-8f86-706f1ec7c7a2
-   /meta/105721d2-e0ce-4376-bdb3-8f2f06c53b7c
-   /meta/10851cb9-248b-42b0-914c-d1652d9ba33f
-   /meta/1122ff1e-32ea-4a3c-9226-ade87704fb1d
-   /meta/11ad1b56-3da0-4e27-bc78-08d1dd420325
-   /meta/11e52956-a321-4035-9cef-21fb4a035c1f
-   /meta/125dc87a-90f6-4577-9c3a-9f942c16bf15
-   /meta/14d212f0-0db8-484e-acdd-e0c9ec881879
-   /meta/16d578bf-58c5-410b-a3e8-4abb7856418e
-   /meta/16f8231e-4d83-4af3-bf30-4f8ebcaa5650
-   /meta/173aa132-670e-4fa8-9000-d87a8d85fb71
-   /meta/175fdc6f-bd2f-4243-8936-616165e9d348
-   /meta/1c52bf63-bb2c-49f5-a245-6a39f46d17b7
-   /meta/1cecba61-2f02-49b1-bcc4-d9b33558f784
-   /meta/1d40c68e-03c0-4836-adc9-14c73749110d
-   /meta/1d764cd6-14bc-4613-b670-41346f4c5dcd
-   /meta/1dc07d7b-b781-49f5-ab4a-c2079f415e1e
-   /meta/1e97dae2-117a-4836-808e-a129e9fec60c
-   /meta/20a1ea54-1988-4325-aabc-d805a4bdec3d
-   /meta/219f9d24-f9fe-49b2-81d3-03ae481cdc1c
-   /meta/224a78e7-e16a-4e7b-8f00-56cb388c8a7f
-   /meta/23eb5d21-9653-4d0c-8bd8-cc2d994871a6
-   /meta/245435d6-c19a-4e92-b78b-23097646973f
-   /meta/26af4cac-ce2d-4def-ae27-f1e8022ab68d
-   /meta/274af501-7713-438a-a2f5-5bebc33f74f8
-   /meta/27545797-2d66-4077-806d-5641f71249e6
-   /meta/2759b640-474c-4ef6-a836-9d0cc44e1cdd
-   /meta/284fecd9-76ce-4c95-b457-e6234879fa01
-   /meta/2b55aa9a-aa6f-48ce-8c0e-10928435927a
-   /meta/2f6d6f5f-15ba-4dfa-875e-1d29f098fc51
-   /meta/328bd833-0c95-44d3-bc32-f4dc5a830cc5
-   /meta/32e7fa9f-2c9f-40d9-8d32-d9275f76e688
-   /meta/33000d59-eab9-417b-909e-7579090f4085
-   /meta/33dc1dd0-9b33-45ee-ab55-1bfaf9f2e312
-   /meta/352c87d5-bd1a-4aec-85ec-24997e5900f1
-   /meta/3616fedb-e91c-4670-ab72-3d1dbfb5d191
-   /meta/36b15e6d-3430-4a06-88e9-06d426475f07
-   /meta/36c3207f-b972-421a-9bdd-db7afcd44d6e
-   /meta/37664664-6e2b-482d-8a34-a3fccfb4eb54
-   /meta/37e666bb-bd60-400c-80c5-cb2c672d2e1e
-   /meta/3a74079a-da0f-4102-b325-bb7c5853f908
-   /meta/3a74e536-51cf-4e3a-9c4f-34d3410f0b6a
-   /meta/3a86e516-2208-4926-a53d-ba9fd8358cc0
-   /meta/3c90ee7b-c981-4fd1-ba3f-568477755cc9
-   /meta/3d48abbf-fdd8-43c2-b952-953c213b3faa
-   /meta/3dc8b665-a587-49ee-923f-b1971c245831
-   /meta/3dcf2b8d-a3e3-4dac-bd31-f9053a65fe2c
-   /meta/3defea73-7e8a-465f-8665-c04c59836bf2
-   /meta/402f783a-3135-4734-89b9-34495ab8cd14
-   /meta/4195394f-6984-4782-8244-cfcb80faa3e3
-   /meta/424dcc8e-011a-4ddc-b96b-967fcfa5b322
-   /meta/429ae969-50b3-470b-8a61-f5043c448e05
-   /meta/456553d9-b91f-4b2c-95af-d08fea1814c0
-   /meta/47cfe79a-958c-4b86-9c7a-1c5c2533ce37
-   /meta/48bf0543-93c3-4736-8ae4-7e2378696311
-   /meta/48fdf83f-76b2-406a-b19c-58245e24f89d
-   /meta/4932f388-d884-40f7-b17c-613b78d593b6
-   /meta/4a5954fe-b01d-464f-81a6-5ec84e7a2412
-   /meta/4d60d570-0aa9-417b-8a9d-c32b73b564b9
-   /meta/4f20985c-efce-45ce-ba09-592c9873176b
-   /meta/4fb79875-918e-4ce4-aa47-8627c92e5f6e
-   /meta/51d01e46-d996-4e3b-b2ea-ffc1d613b01a
-   /meta/52745e8f-facb-4ebf-9581-3d000be02cb4
-   /meta/52db7c1a-046f-486e-8a2f-3128667f9f39
-   /meta/55667374-fe5c-4c98-8756-37e3b5496d5e
-   /meta/5640f39d-b77f-4526-9395-5a40ad8c8c1d
-   /meta/5819af9d-5274-4abc-bde0-282e5448b237
-   /meta/58434fd3-abcd-4b83-aeee-72a620a5421b
-   /meta/59c6df69-21ce-4c9c-a5d9-bc583e2c30cb
-   /meta/5b0deadb-0a4d-489a-b98d-23545fbb5d81
-   /meta/5b6e7a40-a59c-444f-9ced-32eac5a8a246
-   /meta/5c552ec7-528e-4a13-82cb-184cc731e7d4
-   /meta/5c786d32-5e1c-4088-abe8-24862639fe81
-   /meta/5d68328b-9090-42cb-b96d-10828866e94e
-   /meta/5e69207c-a6f5-40f9-b604-5896c18ff568
-   /meta/625d0e8e-df4c-4768-b528-c0a5e0a9291f
-   /meta/627651ed-9542-43bf-ad4b-6cb58261ebd4
-   /meta/634d2b78-37f1-47bd-a284-b7ac9a4e7d02
-   /meta/64cbce6a-060b-4004-8c9b-dbafbb2ea1e0
-   /meta/64dd741f-2f9a-4b99-bcb4-5c040c667eb0
-   /meta/67eff196-0f3d-4e97-be90-0702b8b48683
-   /meta/6827cb15-9091-4f89-acb0-5a414194e75d
-   /meta/6a1c1ca2-08e7-4fa2-81db-00ea505d6e83
-   /meta/6d5bfff4-256c-40ea-8f6f-f9304758214f
-   /meta/6e42828a-d4dc-455b-a0ec-dcf359150895
-   /meta/6ee14292-d8f4-4ef8-9a38-33bf5482edf7
-   /meta/70466076-0728-4699-b80c-98d40bfe8613
-   /meta/70f05f39-f2e3-43e0-87d4-e2a4cdee37ec
-   /meta/71539280-56ea-4467-a696-c26304ee960d
-   /meta/726fe99c-4423-4b73-94c4-8ed44990a6d0
-   /meta/752bdde1-cdb1-4e61-bc52-8aa49a6e601b
-   /meta/75aa679c-a599-4228-93bf-8f4e7cb0ff51
-   /meta/77405816-d412-47d4-8f46-fbd109f5611e
-   /meta/78bfa2b9-5456-4f21-9b8d-2b7dc964e5de
-   /meta/7a2ac26a-abc4-4fa7-b3a4-421f412014e5
-   /meta/7c2374cb-72a2-4521-a678-7ab7b2faa1eb
-   /meta/7fe4653f-d8eb-4940-9bf8-42b1e01fa8f0
-   /meta/8018f836-affe-4a6f-a305-8bbc3a06cf34
-   /meta/805f0290-c56f-429a-81a3-59a3bb184891
-   /meta/80d3e84d-683d-450a-9ec6-0c64f9266396
-   /meta/8157838d-e233-40b5-8603-5908334372a3
-   /meta/84073fd5-6107-4cd4-bf4b-74523ec62c4c
-   /meta/845b9492-2bdf-4199-b68a-f3e79664aad2
-   /meta/85994581-c108-4ab6-ba75-67cf3c240306
-   /meta/85a0f52b-8491-418b-8a2f-91e991e6d41c
-   /meta/85c6e90b-2ba0-4f0f-ab44-9e490b284225
-   /meta/8636b5ef-efbf-4ff1-b390-c86d97593702
-   /meta/87837073-0406-4279-9c8c-aef4f59b1a02
-   /meta/87aaa8b6-a8fa-4fc1-8fb8-2cc36f43df3b
-   /meta/87d053f1-a767-452e-ae74-c377d6c95819
-   /meta/89c96c04-0502-44a6-b3a1-91ddcbccb5b3
-   /meta/8ac735a6-e15b-45ab-a68e-bd752cf85c51
-   /meta/8b4e4ddf-c521-41dc-8a8b-b2c708253bac
-   /meta/8b8618ac-89d4-447c-8280-9d7f11577430
-   /meta/8bda89d9-d481-460a-a46d-819b141feaed
-   /meta/8be78218-8512-4064-9cbd-adce6b998e17
-   /meta/8c6b3e32-e133-4e90-bb6a-e45f457c17c4
-   /meta/8e26987d-baf7-4f12-b52b-a7b7da1b1ea4
-   /meta/8f3c1ee1-a0f4-454c-b2d7-8350d77af0c2
-   /meta/9116a7e9-0714-44ed-8137-9e2c56610f3a
-   /meta/917b94ac-25e1-4eb0-a0b9-32525acd9342
-   /meta/91d62eaf-2004-4b19-8281-b2ed9eef1e7c
-   /meta/91f66550-918f-41d2-bfff-a5471315b085
-   /meta/93360856-c7f3-4965-b140-cb6e374910d1
-   /meta/946df83a-d21e-4186-a5ae-2dbbea04b66a
-   /meta/95fa47eb-4aa5-4f7c-aae4-047d8d87a3cd
-   /meta/96319c10-c4c1-48bc-bdf3-ad99c844a51c
-   /meta/98e216b6-feb9-47ac-8d8f-f1c39f41bec6
-   /meta/9916fbad-e438-477a-bb1c-533d96e074fc
-   /meta/9b6ba0d9-16eb-4eec-9d9e-e98b5d529c35
-   /meta/9e5004ab-72a8-43e2-a312-5189d0fa3efd
-   /meta/a03a8a7d-7d88-40c2-b745-5fd844693d13
-   /meta/a3d37f77-276d-4ba2-9a45-be8dadc1647f
-   /meta/a3e77ea2-d770-49bd-b01b-6273b8c562f8
-   /meta/a5390396-7b8e-4c49-9d54-d995d6456d8b
-   /meta/a5cd089a-3086-4955-9b75-8f4c2eb925bd
-   /meta/a5e1410f-20ca-46c5-bfd1-b5394d7f24e7
-   /meta/a8c3b3bf-6eec-43bc-8e3d-728cc91d7ff3
-   /meta/a999c023-edee-4db3-9c9a-38fd752ffd99
-   /meta/ab15179f-6767-4399-8149-a4bc906b37b3
-   /meta/ac55b4f5-c9d2-45bd-aa9c-ed9c5daff81c
-   /meta/adae9d1e-440e-43da-a7e5-401a75d7ec2a
-   /meta/af9697c5-2090-4a67-bded-3329b0b1dc64
-   /meta/afc58b54-7e3b-44b2-85de-1f57c1a765e8
-   /meta/afe0dde3-834b-48e3-be49-c8c6f1b134b8
-   /meta/b0153696-32b0-44d8-8fb4-5a3753091d57
-   /meta/b18d294c-e844-4cd1-9681-ec7359353e86
-   /meta/b19a9dcf-9e3f-4a9c-8a2c-b39b7652f557
-   /meta/b2bbd9c5-1dcf-4df5-a050-30a20393d7bd
-   /meta/b65b0b46-a1ce-4e8d-abfc-d60077776498
-   /meta/b8504f8d-4f32-46b8-bb0a-b413bc0ad494
-   /meta/b8b40dc6-8175-4715-a40b-ef762417513c
-   /meta/b9852097-fc90-41e8-9b17-6befa4662a1d
-   /meta/bda9733f-e171-48c4-b195-1671e974aa8d
-   /meta/bf4aa64b-f460-4fc6-9cee-ababe14b4166
-   /meta/c0560cce-df46-4f73-8c30-d5a8ca5f7b79
-   /meta/c0b29cd8-9c3d-4256-a5b7-e73221837fd6
-   /meta/c0fb6acf-c52d-40f3-9c92-ba38e3a95983
-   /meta/c129f985-763e-4920-a74e-7b7da26c9b9d
-   /meta/c217ddc3-63d6-4749-8c90-db28ba01df1f
-   /meta/c2afae76-7067-4596-af61-c8a5ba2806e2
-   /meta/c343efe5-ea37-4ce2-82ad-75c34f5d7024
-   /meta/c38ed582-6d04-419e-9d71-54e2fd7da42f
-   /meta/c55b2f6f-5b3d-4862-9190-76f4703bb4ef
-   /meta/c7fc6139-dba8-4885-bb1b-998f511f6c7d
-   /meta/cf096667-de4c-49c2-a0ae-0b9792435a1e
-   /meta/d128a32a-fa1d-4a10-9dfe-7d0fca6aa8fc
-   /meta/d2098146-8655-40a8-b140-75066aaec12d
-   /meta/d32181be-eb11-4aa1-bd03-d8cc0dd1720b
-   /meta/d333a236-f775-4c57-9353-41993e4fd968
-   /meta/d55f7f2f-25e8-4dde-9948-08003f140799
-   /meta/d5840964-a652-4339-b92e-5dcee71902e8
-   /meta/d63ec007-ea18-4778-8124-a328aa1160e4
-   /meta/d80175b1-c359-4af9-9943-8e1bcf6d177d
-   /meta/d9103650-c435-489c-bb00-dd930a134512
-   /meta/d911e478-9d00-45e2-a210-bbbd16b4b39e
-   /meta/d987b157-4a83-4022-9c06-495cfdca8d77
-   /meta/d9ce6c85-9b10-4cfd-b63a-f8a18c446e34
-   /meta/dcb33eab-662c-476c-9839-d5de073885c4
-   /meta/ddcfa2a1-a099-413b-9d3f-8e30ed1fd334
-   /meta/df7cc061-53de-4f3b-9048-3d419cd70b34
-   /meta/e08c288d-9181-4e5f-a474-a05005206f47
-   /meta/e0c7b92e-46d8-4d81-89cb-9b83bb25a09a
-   /meta/e0f795b9-22e3-4e45-8e80-72c04372683a
-   /meta/e1da9ebc-c170-4012-848d-655faba3ee94
-   /meta/e347aef0-5c3b-40cd-9a08-7c0e89470898
-   /meta/e479498d-1d07-4a88-b05e-b6b093d2658d
-   /meta/e501101d-e785-47d5-b431-0806b17bbeaf
-   /meta/e6f16f7b-1b74-4cc7-b6af-ad15d713e6fa
-   /meta/e7c9f85c-d30f-4bd6-a3bf-167d5bf24ef0
-   /meta/e8bd2e67-457a-43a0-a5b1-0b16b99d072d
-   /meta/ea884fa8-0e1e-48a4-adc9-deb4e97f5d2c
-   /meta/ec9a43f0-6752-4170-8926-882fe6509071
-   /meta/ee100d3c-df4c-4a2d-bc0d-70431287ba3b
-   /meta/ee8493f3-2530-4ffc-befb-fbb808c3fe8b
-   /meta/efdcd3c4-57f6-4ca2-8ac6-f15a378b730b
-   /meta/f0d9b33a-5d03-4337-8599-740bcac8052e
-   /meta/f2a71030-23de-4648-bb1d-b529989fcddc
-   /meta/f36863d5-23af-4d21-951e-e0be75a3c9e9
-   /meta/f369135c-26ab-445d-8261-b6d7bfc14a1d
-   /meta/f39f64dc-5815-494e-9bf3-35074a87cb7a
-   /meta/f4ea6c49-2dfe-45c3-937e-7e4639461f6c
-   /meta/f4eb6e5e-0cf5-4140-8e29-b648482fdceb
-   /meta/f5ca933a-5655-4d4e-add7-17660d1847b7
-   /meta/f5f4b665-e5cc-4c1a-94c9-7675c6298d42
-   /meta/f857e7f0-dca2-41a9-8d19-07e1a1f51e4b
-   /meta/f9618ca6-6dc0-4fd7-88d4-dae0894719fd
-   /meta/f9ec9675-56f6-43aa-b21b-95388b9f8504
-   /meta/fa3f5d03-746b-47d3-add0-3f8faf54fb59
-   /meta/fa6eb4ad-45a5-4265-bd1e-0afe5aa3d239
-   /meta/fac7155b-29d3-40c5-97db-96686d56e2cf
-   /meta/faecfff8-3826-4a52-a3ab-b4624aa2120e
-   /meta/fb1622b0-9fc2-4fa3-b04d-b49d5aff90e9
-   /meta/fb656c0f-d46d-47fe-af6d-5789772c7415
-   /meta/fb65bc49-2428-4926-a0c5-6b08a558154c
-   /meta/fcc0d638-ef02-4413-b84c-d1e756200bfa(1)
-   /meta/fcc0d638-ef02-4413-b84c-d1e756200bfa
-   /meta/fecd46b0-3390-4580-a415-2d49ba77f9bd
-   /meta/ff12ecea-1e57-4843-b233-c9f698c2c0a8(1)
-   /meta/ff12ecea-1e57-4843-b233-c9f698c2c0a8
-   /meta/ff510913-83d8-409b-a253-63d8b3ead974
+   meta/1cecba61-2f02-49b1-bcc4-d9b33558f784
+   meta/37664664-6e2b-482d-8a34-a3fccfb4eb54
+   meta/48bf0543-93c3-4736-8ae4-7e2378696311
+   meta/fa3f5d03-746b-47d3-add0-3f8faf54fb59
+   meta/5c552ec7-528e-4a13-82cb-184cc731e7d4
+   meta/a03a8a7d-7d88-40c2-b745-5fd844693d13
+   meta/8157838d-e233-40b5-8603-5908334372a3
+   meta/84073fd5-6107-4cd4-bf4b-74523ec62c4c
+   meta/8e26987d-baf7-4f12-b52b-a7b7da1b1ea4
+   meta/d32181be-eb11-4aa1-bd03-d8cc0dd1720b
+   meta/e1da9ebc-c170-4012-848d-655faba3ee94
+   meta/04cae9cb-7fa8-4ae6-9abe-97496b5ff59e
+   meta/8018f836-affe-4a6f-a305-8bbc3a06cf34
+   meta/26af4cac-ce2d-4def-ae27-f1e8022ab68d
+   meta/faecfff8-3826-4a52-a3ab-b4624aa2120e
+   meta/47cfe79a-958c-4b86-9c7a-1c5c2533ce37
+   meta/3a86e516-2208-4926-a53d-ba9fd8358cc0
+   meta/8ac735a6-e15b-45ab-a68e-bd752cf85c51
+   meta/11ad1b56-3da0-4e27-bc78-08d1dd420325
+   meta/625d0e8e-df4c-4768-b528-c0a5e0a9291f
+   meta/3a74079a-da0f-4102-b325-bb7c5853f908
+
+机载遥感数据
+=============
+
+机载WiDAS数据集
+----------------
+
+.. toctree::
+   :maxdepth: 1
+   
+   meta/05f1efdb-5f11-4736-b93d-365130e3b84a
+   meta/98e216b6-feb9-47ac-8d8f-f1c39f41bec6
+   meta/024a3d39-2643-4593-9da8-70629350182b
+   meta/8c6b3e32-e133-4e90-bb6a-e45f457c17c4
+   meta/d9103650-c435-489c-bb00-dd930a134512
+   meta/3616fedb-e91c-4670-ab72-3d1dbfb5d191
+   meta/f2a71030-23de-4648-bb1d-b529989fcddc
+   meta/b8504f8d-4f32-46b8-bb0a-b413bc0ad494
+
+机载LIDAR数据集
+----------------
+.. toctree::
+   :maxdepth: 1  
+   
+   meta/c2afae76-7067-4596-af61-c8a5ba2806e2
+   meta/58434fd3-abcd-4b83-aeee-72a620a5421b
+   meta/37e666bb-bd60-400c-80c5-cb2c672d2e1e
+   meta/f39f64dc-5815-494e-9bf3-35074a87cb7a
+   
+机载OMIS数据集
+----------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/64cbce6a-060b-4004-8c9b-dbafbb2ea1e0
+   meta/3c90ee7b-c981-4fd1-ba3f-568477755cc9
+   meta/8636b5ef-efbf-4ff1-b390-c86d97593702
+   meta/f36863d5-23af-4d21-951e-e0be75a3c9e9
+   meta/89c96c04-0502-44a6-b3a1-91ddcbccb5b3
+   
+机载微波辐射计数据集
+----------------------
+.. toctree::
+   :maxdepth: 1   
+   
+   meta/11e52956-a321-4035-9cef-21fb4a035c1f
+   meta/125dc87a-90f6-4577-9c3a-9f942c16bf15
+   meta/726fe99c-4423-4b73-94c4-8ed44990a6d0
+   meta/32e7fa9f-2c9f-40d9-8d32-d9275f76e688
+   meta/c0560cce-df46-4f73-8c30-d5a8ca5f7b79
+   meta/10851cb9-248b-42b0-914c-d1652d9ba33f
+   meta/092c0803-891f-4edb-8878-754f01bbe0db
+   meta/429ae969-50b3-470b-8a61-f5043c448e05
+   meta/328bd833-0c95-44d3-bc32-f4dc5a830cc5
+   
+
+   
+卫星遥感数据
+==============
+.. toctree::
+   :maxdepth: 1   
+   
+   meta/afc58b54-7e3b-44b2-85de-1f57c1a765e8
+   meta/d987b157-4a83-4022-9c06-495cfdca8d77
+   meta/cf096667-de4c-49c2-a0ae-0b9792435a1e
+   meta/8bda89d9-d481-460a-a46d-819b141feaed
+   meta/224a78e7-e16a-4e7b-8f00-56cb388c8a7f
+   meta/bda9733f-e171-48c4-b195-1671e974aa8d
+   meta/78bfa2b9-5456-4f21-9b8d-2b7dc964e5de
+   meta/adae9d1e-440e-43da-a7e5-401a75d7ec2a
+   meta/d911e478-9d00-45e2-a210-bbbd16b4b39e
+   meta/4932f388-d884-40f7-b17c-613b78d593b6
+   meta/c217ddc3-63d6-4749-8c90-db28ba01df1f
+   meta/1d764cd6-14bc-4613-b670-41346f4c5dcd
+   meta/e479498d-1d07-4a88-b05e-b6b093d2658d
+   meta/1e97dae2-117a-4836-808e-a129e9fec60c
+
+上游预试验期数据
+==================
+
+阿柔试验区
+----------- 
+.. toctree::
+   :maxdepth: 1
+   
+   meta/85c6e90b-2ba0-4f0f-ab44-9e490b284225
+   meta/52745e8f-facb-4ebf-9581-3d000be02cb4
+   meta/7caf2778-4c60-4166-af66-9ed63fcde0b2
+   meta/d4c419a5-760e-44ef-ba19-9b725c7ea055
+   meta/71539280-56ea-4467-a696-c26304ee960d
+
+扁都口试验区
+--------------   
+.. toctree::
+   :maxdepth: 1
+   
+   meta/8be78218-8512-4064-9cbd-adce6b998e17
+   meta/d333a236-f775-4c57-9353-41993e4fd968
+   meta/96319c10-c4c1-48bc-bdf3-ad99c844a51c
+
+俄堡试验区
+---------------  
+.. toctree::
+   :maxdepth: 1
+   
+   meta/5d68328b-9090-42cb-b96d-10828866e94e
+   meta/36c3207f-b972-421a-9bdd-db7afcd44d6e 
+   meta/0996535e-a9a1-410c-ad62-fb2d580c3211
+   meta/2759b640-474c-4ef6-a836-9d0cc44e1cdd
+
+冰沟试验区
+---------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/e08c288d-9181-4e5f-a474-a05005206f47
+ 
+阿柔试验区
+============
+预试验
+-----------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/85c6e90b-2ba0-4f0f-ab44-9e490b284225
+   meta/52745e8f-facb-4ebf-9581-3d000be02cb4
+   meta/7caf2778-4c60-4166-af66-9ed63fcde0b2
+   meta/d4c419a5-760e-44ef-ba19-9b725c7ea055
+   meta/71539280-56ea-4467-a696-c26304ee960d
+
+同步观测
+-------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/b19a9dcf-9e3f-4a9c-8a2c-b39b7652f557
+   meta/afe0dde3-834b-48e3-be49-c8c6f1b134b8
+   meta/e0f795b9-22e3-4e45-8e80-72c04372683a
+   meta/9b6ba0d9-16eb-4eec-9d9e-e98b5d529c35
+   meta/d055519a-af80-42d4-9f76-39356e7af5f8
+   meta/274af501-7713-438a-a2f5-5bebc33f74f8
+   meta/fecd46b0-3390-4580-a415-2d49ba77f9bd
+   meta/8b8618ac-89d4-447c-8280-9d7f11577430
+   meta/a3e77ea2-d770-49bd-b01b-6273b8c562f8
+   meta/0293008c-c3f5-48b8-9521-50143aa3508b
+   meta/5b0deadb-0a4d-489a-b98d-23545fbb5d81
+   meta/6ee14292-d8f4-4ef8-9a38-33bf5482edf7
+   meta/04b1feef-7868-4a8c-924a-4d0cc80cf82d
+   meta/c0fb6acf-c52d-40f3-9c92-ba38e3a95983
+   meta/fac7155b-29d3-40c5-97db-96686d56e2cf
+   meta/1dc07d7b-b781-49f5-ab4a-c2079f415e1e
+   
+其他观测数据
+-------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/fb65bc49-2428-4926-a0c5-6b08a558154c
+   meta/1122ff1e-32ea-4a3c-9226-ade87704fb1d
+   meta/b9852097-fc90-41e8-9b17-6befa4662a1d
+   meta/4a5954fe-b01d-464f-81a6-5ec84e7a2412
+   meta/284fecd9-76ce-4c95-b457-e6234879fa01
+   meta/05b5e032-b456-4fd3-a14f-dda8230bd65b
+   meta/70f05f39-f2e3-43e0-87d4-e2a4cdee37ec
+
+
+
+扁都口试验区
+=============
+
+预实验
+---------
+.. toctree::
+   :maxdepth: 1 
+      
+   meta/96319c10-c4c1-48bc-bdf3-ad99c844a51c
+
+冬季同步观测
+-------------
+.. toctree::
+   :maxdepth: 1
+
+   meta/33000d59-eab9-417b-909e-7579090f4085
+   meta/52db7c1a-046f-486e-8a2f-3128667f9f39
+   meta/245435d6-c19a-4e92-b78b-23097646973f
+   meta/4195394f-6984-4782-8244-cfcb80faa3e3
+   meta/f369135c-26ab-445d-8261-b6d7bfc14a1d
+   meta/23eb5d21-9653-4d0c-8bd8-cc2d994871a6
+
+夏季同步观测
+-------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/05a0ed36-b898-4bcf-b4d5-637f5e202085
+   meta/16d578bf-58c5-410b-a3e8-4abb7856418e
+   meta/9116a7e9-0714-44ed-8137-9e2c56610f3a
+   meta/3a74e536-51cf-4e3a-9c4f-34d3410f0b6a
+   meta/2b55aa9a-aa6f-48ce-8c0e-10928435927a
+   meta/75aa679c-a599-4228-93bf-8f4e7cb0ff51
+
+其他观测
+-------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/fb656c0f-d46d-47fe-af6d-5789772c7415
+   meta/36b15e6d-3430-4a06-88e9-06d426475f07
+   meta/f9618ca6-6dc0-4fd7-88d4-dae0894719fd
+   meta/a5390396-7b8e-4c49-9d54-d995d6456d8b
+   meta/ee8493f3-2530-4ffc-befb-fbb808c3fe8b
+   
+冰沟试验区
+============
+预试验
+-------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/e08c288d-9181-4e5f-a474-a05005206f47
+
+同步观测
+-------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/64dd741f-2f9a-4b99-bcb4-5c040c667eb0
+   meta/c129f985-763e-4920-a74e-7b7da26c9b9d
+   meta/8f3c1ee1-a0f4-454c-b2d7-8350d77af0c2
+   meta/bf4aa64b-f460-4fc6-9cee-ababe14b4166
+   meta/93360856-c7f3-4965-b140-cb6e374910d1
+   meta/20a1ea54-1988-4325-aabc-d805a4bdec3d
+   meta/f0d9b33a-5d03-4337-8599-740bcac8052e
+   meta/dcb33eab-662c-476c-9839-d5de073885c4
+   meta/037de504-9556-4dd7-9bc3-bb79b48171df
+   meta/a5e1410f-20ca-46c5-bfd1-b5394d7f24e7
+   meta/fcc0d638-ef02-4413-b84c-d1e756200bfa
+   meta/af9697c5-2090-4a67-bded-3329b0b1dc64
+
+其他观测
+-------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/219f9d24-f9fe-49b2-81d3-03ae481cdc1c
+   meta/87aaa8b6-a8fa-4fc1-8fb8-2cc36f43df3b
+   meta/c0b29cd8-9c3d-4256-a5b7-e73221837fd6
+   
+大野口流域
+============
+.. toctree::
+   :maxdepth: 1
+   
+   meta/ab15179f-6767-4399-8149-a4bc906b37b3
+   meta/4fb79875-918e-4ce4-aa47-8627c92e5f6e  
+   meta/a3d37f77-276d-4ba2-9a45-be8dadc1647f
+   meta/7c2374cb-72a2-4521-a678-7ab7b2faa1eb
+   meta/845b9492-2bdf-4199-b68a-f3e79664aad2
+   meta/9e5004ab-72a8-43e2-a312-5189d0fa3efd
+   meta/fb1622b0-9fc2-4fa3-b04d-b49d5aff90e9
+   meta/85994581-c108-4ab6-ba75-67cf3c240306
+   meta/917b94ac-25e1-4eb0-a0b9-32525acd9342
+   meta/91d62eaf-2004-4b19-8281-b2ed9eef1e7c
+   meta/d55f7f2f-25e8-4dde-9948-08003f140799
+   meta/f5ca933a-5655-4d4e-add7-17660d1847b7
+   meta/5c786d32-5e1c-4088-abe8-24862639fe81
+   meta/ee100d3c-df4c-4a2d-bc0d-70431287ba3b
+   meta/df7cc061-53de-4f3b-9048-3d419cd70b34
+
+中游预试验期数据
+=================
+.. toctree::
+   :maxdepth: 1  
+
+   meta/3dc8b665-a587-49ee-923f-b1971c245831
+   meta/a999c023-edee-4db3-9c9a-38fd752ffd99
+   meta/2f6d6f5f-15ba-4dfa-875e-1d29f098fc51
+   meta/87837073-0406-4279-9c8c-aef4f59b1a02
+   
+盈科绿洲-花寨子荒漠站
+======================
+同步观测
+----------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/752bdde1-cdb1-4e61-bc52-8aa49a6e601b
+   meta/e8bd2e67-457a-43a0-a5b1-0b16b99d072d
+   meta/b8b40dc6-8175-4715-a40b-ef762417513c
+   meta/5e69207c-a6f5-40f9-b604-5896c18ff568
+   meta/33dc1dd0-9b33-45ee-ab55-1bfaf9f2e312
+   meta/4f20985c-efce-45ce-ba09-592c9873176b
+   meta/c55b2f6f-5b3d-4862-9190-76f4703bb4ef
+   meta/3defea73-7e8a-465f-8665-c04c59836bf2
+   meta/f9ec9675-56f6-43aa-b21b-95388b9f8504
+   meta/8b4e4ddf-c521-41dc-8a8b-b2c708253bac
+   meta/1c52bf63-bb2c-49f5-a245-6a39f46d17b7
+   meta/e0c7b92e-46d8-4d81-89cb-9b83bb25a09a
+   meta/85a0f52b-8491-418b-8a2f-91e991e6d41c
+   meta/7a2ac26a-abc4-4fa7-b3a4-421f412014e5
+
+其他观测
+----------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/14d212f0-0db8-484e-acdd-e0c9ec881879
+   meta/627651ed-9542-43bf-ad4b-6cb58261ebd4
+   meta/6d5bfff4-256c-40ea-8f6f-f9304758214f
+   meta/4d60d570-0aa9-417b-8a9d-c32b73b564b9
+   meta/c38ed582-6d04-419e-9d71-54e2fd7da42f
+   meta/f5f4b665-e5cc-4c1a-94c9-7675c6298d42
+   meta/d2098146-8655-40a8-b140-75066aaec12d
+   meta/fa6eb4ad-45a5-4265-bd1e-0afe5aa3d239
+   meta/ff12ecea-1e57-4843-b233-c9f698c2c0a8
+   meta/e7c9f85c-d30f-4bd6-a3bf-167d5bf24ef0
+   meta/105721d2-e0ce-4376-bdb3-8f2f06c53b7c
+   meta/5b6e7a40-a59c-444f-9ced-32eac5a8a246
+   meta/59c6df69-21ce-4c9c-a5d9-bc583e2c30cb
+   meta/e501101d-e785-47d5-b431-0806b17bbeaf
+   meta/55667374-fe5c-4c98-8756-37e3b5496d5e
+   meta/e347aef0-5c3b-40cd-9a08-7c0e89470898
+   meta/77405816-d412-47d4-8f46-fbd109f5611e
+   meta/95fa47eb-4aa5-4f7c-aae4-047d8d87a3cd
+   meta/f857e7f0-dca2-41a9-8d19-07e1a1f51e4b
+   meta/625d0e8e-df4c-4768-b528-c0a5e0a9291f
+
+临泽站
+===========
+预试验
+--------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/a999c023-edee-4db3-9c9a-38fd752ffd99
+   meta/2f6d6f5f-15ba-4dfa-875e-1d29f098fc51
+   meta/87837073-0406-4279-9c8c-aef4f59b1a02
+
+同步观测
+--------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/0ede7011-6973-40a9-afc1-11d81193a24e
+   meta/805f0290-c56f-429a-81a3-59a3bb184891
+   meta/d80175b1-c359-4af9-9943-8e1bcf6d177d
+   meta/ac55b4f5-c9d2-45bd-aa9c-ed9c5daff81c
+   meta/b0153696-32b0-44d8-8fb4-5a3753091d57
+   meta/173aa132-670e-4fa8-9000-d87a8d85fb71
+   meta/87d053f1-a767-452e-ae74-c377d6c95819
+   meta/c7fc6139-dba8-4885-bb1b-998f511f6c7d
+   meta/1d40c68e-03c0-4836-adc9-14c73749110d
+   meta/f4eb6e5e-0cf5-4140-8e29-b648482fdceb
+   meta/48fdf83f-76b2-406a-b19c-58245e24f89d
+   meta/a8c3b3bf-6eec-43bc-8e3d-728cc91d7ff3
+
+其他观测
+--------------
+.. toctree::
+   :maxdepth: 1
+   
+   meta/456553d9-b91f-4b2c-95af-d08fea1814c0
+   meta/4db3fee0-08d6-4f3d-aea0-d494c164f510
+   meta/d63ec007-ea18-4778-8124-a328aa1160e4
+   meta/ea884fa8-0e1e-48a4-adc9-deb4e97f5d2c
+   meta/d5840964-a652-4339-b92e-5dcee71902e8
+   meta/d9ce6c85-9b10-4cfd-b63a-f8a18c446e34
+   meta/6e42828a-d4dc-455b-a0ec-dcf359150895
+   meta/91f66550-918f-41d2-bfff-a5471315b085
+   meta/a5cd089a-3086-4955-9b75-8f4c2eb925bd
+   meta/c343efe5-ea37-4ce2-82ad-75c34f5d7024
+   meta/5819af9d-5274-4abc-bde0-282e5448b237
+   meta/70466076-0728-4699-b80c-98d40bfe8613
+   meta/67eff196-0f3d-4e97-be90-0702b8b48683
+
+临泽草地站
+===========
+同步观测数据
+--------------
+.. toctree::
+   :maxdepth: 1 
+   
+   meta/27545797-2d66-4077-806d-5641f71249e6
+   meta/efdcd3c4-57f6-4ca2-8ac6-f15a378b730b
+   meta/9916fbad-e438-477a-bb1c-533d96e074fc
+   meta/3d48abbf-fdd8-43c2-b952-953c213b3faa
+   meta/424dcc8e-011a-4ddc-b96b-967fcfa5b322
+   meta/51d01e46-d996-4e3b-b2ea-ffc1d613b01a
+   meta/352c87d5-bd1a-4aec-85ec-24997e5900f1
+   meta/6a1c1ca2-08e7-4fa2-81db-00ea505d6e83
+   meta/ddcfa2a1-a099-413b-9d3f-8e30ed1fd334
+   meta/634d2b78-37f1-47bd-a284-b7ac9a4e7d02
+   meta/ec9a43f0-6752-4170-8926-882fe6509071
+   meta/80d3e84d-683d-450a-9ec6-0c64f9266396
+   meta/b18d294c-e844-4cd1-9681-ec7359353e86
+   meta/f4ea6c49-2dfe-45c3-937e-7e4639461f6c
+   meta/5640f39d-b77f-4526-9395-5a40ad8c8c1d
+   meta/ff510913-83d8-409b-a253-63d8b3ead974
+   meta/402f783a-3135-4734-89b9-34495ab8cd14
+   meta/b65b0b46-a1ce-4e8d-abfc-d60077776498
+
+其他观测数据
+--------------
+.. toctree::
+   :maxdepth: 1  
+   
+   meta/03c888af-253a-474e-a5cb-a3eb9ff38f11
+   meta/d128a32a-fa1d-4a10-9dfe-7d0fca6aa8fc
+   meta/0f2fb873-09ae-42a4-8f86-706f1ec7c7a2
+   meta/3dcf2b8d-a3e3-4dac-bd31-f9053a65fe2c
+   meta/6827cb15-9091-4f89-acb0-5a414194e75d
+   meta/7fe4653f-d8eb-4940-9bf8-42b1e01fa8f0
+   meta/946df83a-d21e-4186-a5ae-2dbbea04b66a
+   meta/e6f16f7b-1b74-4cc7-b6af-ad15d713e6fa
+   meta/175fdc6f-bd2f-4243-8936-616165e9d348
+   meta/b2bbd9c5-1dcf-4df5-a050-30a20393d7bd
+
+
+
+张掖市区
+===========
+.. toctree::
+   :maxdepth: 1 
+   
+   meta/16f8231e-4d83-4af3-bf30-4f8ebcaa5650
+   meta/0331e4d2-5019-4434-bfd5-79e15ca956bd
+   
+
+
 
 
