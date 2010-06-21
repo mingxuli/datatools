@@ -26,7 +26,7 @@ import sys, os
 # If your extensions are in another directory, add it here. If the
 # directory is relative to the documentation root, use
 # os.path.abspath to make it absolute, like shown here.
-sys.path.append(os.path.abspath('sphinxext'))
+sys.path.append(os.path.abspath('my_sphinxext'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
@@ -244,7 +244,7 @@ man_pages = [
 # would mean that specific document would be compressed
 # regardless of the global pdf_compressed setting.
 pdf_documents = [
-    ('index', u'MyProject', u'My Project', u'Author Name'),
+    ('index', u'WATER', u'My Project', u'Author Name'),
 ]
 # A comma-separated list of custom stylesheets. Example:
 pdf_stylesheets = ['sphinx','kerning','a4']
