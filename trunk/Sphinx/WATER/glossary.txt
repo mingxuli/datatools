@@ -1,0 +1,61 @@
+﻿.. _glossary:
+
+.. sectnum::
+   :start: 3
+
+*******************
+专业术语
+*******************
+
+.. glossary::   
+   
+   AATSR 
+      Advanced Al ong2 Track Scanning Radi ometer, 高级沿轨扫描辐射计
+
+   AL I
+      Advanced Land I mager, 高级陆地成像仪
+
+   AMSR2 E
+      AdvancedMicr owave Scanning Radiometer Enhanced for EOS, 地球观测系统中的高级微波扫描辐射计
+
+   ASAR: Advanced Synthetic Aperture Radar, 高级合成孔径雷达
+
+   ASTER: Advanced Spaceborne Thermal Emissi on and Reflection Radi ometer, 先进的星载热发射与反射辐射计
+
+   AVNIR2 2: Advanced Visible and Near Infrared Radiometer type 2, 高级可见与近红外辐射计 2型
+
+   CBERS2 02B CCD: China - Brazil Earth Res ources Satellite 02B CCD, 中巴地球资源卫星 02B CCD相机
+
+   CBERS2 02B WF I : China2 Brazil Earth Res ources Satellite 02B Wide Field I mager, 中巴地球资源卫星 02B宽视场成像仪
+
+   CHRIS: Compact High Res oluti on I maging Spectrometer, 紧密型高分辨率成像光谱仪
+
+   GLAS: the Geoscience LaserAltimeter System, 地球科学激光高度计系统
+
+   Hyperion: 地球观测卫星 - 1上携带的高光谱成像仪
+
+   ICESat : I ce, Cl oud, and land Elevati on Satellite, 冰、 云和陆地高程卫星
+
+   IKONOS: IKONOS卫星,一颗商业化极高分辨率地球观测卫星
+
+   MERIS: MEdium Res olution I maging Spectr ometer, 中分辨率光谱仪
+
+   MISR: Multi2 angle I maging SpectroRadi ometer, 多角度成像光谱仪
+
+   MODIS: Moderate Res olution I maging Spectroradiometer, 中分辨率成像光谱仪
+
+   PALSAR: Phased Array type L - band Synthetic Aperture Radar, 相控阵 L波段合成孔径雷达
+
+   PRISM: Panchromatic Remote - sensing Instrument for StereoMapp ing, 立体制图全色遥感器
+
+   PROBA HRC: PROBA High Res oluti on Camera, PROBA卫星高分辨率相机
+
+   QuickBird: QuickBird卫星,一颗商业化极高分辨率地球观测卫星
+
+   RADARSAT2 2: 加拿大雷达卫星 2号
+
+   SPOT5 HRG: SPOT5 High Res oluti on Geometry, SPOT5卫星高分辨率几何装置
+
+   TerraSAR2 X: 德国 X波段合成孔径雷达卫星
+
+   TM: ThematicMapper, 专题制图仪   

@@ -1,0 +1,337 @@
+.. _8018f836-affe-4a6f-a305-8bbc3a06cf34:
+
+*******************************************************
+黑河综合遥感联合试验:滴谱仪观测数据集
+*******************************************************
+
+**英文标题:**
+WATER: Drop Spectrometer Observation Dataset
+
+1. 摘要
+============
+滴谱仪取样面积：5400mm2,液体粒子的直径范围：0.2-5mm，固体粒子的直径范围为：0.2-25mm。
+上游试验：青海省祁连县阿柔乡(39.06°N,100.44°E,海拔3002米)观测时间从2008年3月14日开始到2008年4月14日结束，采样间隔时间为30秒。
+中游试验：甘肃省张掖市甘州区小满镇(38.85°N,100.41°E,海拔1515米)，观测时间从2008年5月18日开始到2008年7月5日结束，采样间隔时间为30秒。
+数据格式：
+1 双极化雷达数据结构说明
+   为了对于雷达的数据结构必须有个较好的了解和便于开发系统，我们对本公司的双极化雷达原始数据格式作一个详细说明。
+2 双极化雷达数据结构的逻辑说明
+    标准的雷达数据结构用国家气象局给出的版本的雷达数据格式。
+    根据资料的性质不同，资料格式分为原始数据，衍生的产品数据，下面分别讲述原始数据和衍生数据的格式。
+2.1 雷达原始数据的格式
+      一个完整的雷达原始数据包含了文件头和数据区两部分，文件头记录了雷达的基本信息和观测参数，数据区包含了雷达的观测数据：
+  对于PPI和体扫，N=359 ,对于RHI而言,N=RHI最大仰角范围/0.175- 1。 
+   每一个原始资料包含一个文件头，文件头记录了雷达资料的基本信息，接下去是数据记录，从最低层体扫开始记录，一直到体扫完成，每一层的体扫是一个记录块。每一记录块由N根标准径向记录构成，每一根标准径向记录由径
+向数据头，1000个强度数据，速度数据，未校正强度数据,谱宽数据,ZDR,KDP,RHV和LDR数据组成，如果该层没有相应记录，则保持空缺不填。
+具体的数据结构定义参照3 的雷达数据结构定义。
+3 双极化雷达原始资料数据结构：
+该结构定义里面，包含了雷达原始资料数据格式
+具体内容如下：
+3.1  雷达原始数据格式：
+#ifndef __STYLE_DEFINE
+#define  __STYLE_DEFINE
+
+#pragma pack(1)
+#define NEWRADARHEADERLENGTH	1024
+struct LAYERPARAM {
+  unsigned char  ambiguousp; 	//本层退模糊状态
+			//	 0 = 无退模糊状态
+			//	 1 = 软件退模糊
+			//	 2 = 双T退模糊
+			//	 3 = 批式退模糊
+			//	 4 = 双T + 软件退模糊
+			//	 5 = 批式+ 软件退模糊
+			//	 6 = 双PPI退模糊
+			//	 9 = 其他方式
+unsigned short	 Arotate;	//	本层天线转速,计数单位:0.01度/秒
+unsigned short	 Prf1;		//	本层的第一种脉冲重复频率,计数单位: 1/10 Hz
+unsigned short	 Prf2;		//	本层的第二种脉冲重复频率,计数单位: 1/10 Hz
+unsigned short	 spulseW;	//	本层的脉冲宽度,计数单位:	微秒
+unsigned short	 MaxV;		//	本层的最大可测速度,计数单位:	厘米/秒
+unsigned short	 MaxL;		//	本层的最大可测距离，以米为计数单位
+unsigned short	 binWidth;	//	 本层数据的库长，以分米为计数单位
+unsigned short	 binnumber;	//	本层扫描线水平方向的点数。即库数
+unsigned short	 recordnumber;//	 本层扫描线垂直方向的点数，即纪录个数。
+short	 Swangles;//		本层的仰角，计数单位	：/100度
+};
+
+struct RADARSITE {
+char   country[30];//			国家名，文本格式输入
+char   province[20];//			省名，文本格式输入
+char   station[40];//			站名，文本格式输入
+char   stationnumber[10];//	区站号，文本格式输入
+char   radartype[20];//		雷达型号，文本格式输入
+char   longitude[16];//		天线所在经度，文本格式输入.书写格式例：E 115°′″
+char   latitude[16]	;//		天线所在纬度，文本格式输入.书写格式例：N 35°′″
+long int  longitudevalue;//	    天线所在经度的数值，以毫秒为计数单位（十进制）
+						//	东经（E）为正，西经（W）为负	 	
+long int  lantitudevalue;//		天线所在纬度的数值，以毫秒为计数单位（十进制）
+						//	北纬（N）为正，南纬（S）为负
+long int  height;	//			天线的海拔高度以毫米为计数单位
+short   Maxangle;	//			测站四周地物阻挡的最大仰角（以秒为计数单位）
+short   Opangle;	//			测站的最佳观测仰角（地物回波强度<10dbz，以秒为											计数单位）
+short   MangFreq;	//			磁控管频率（通过此频率可计算雷达波长）
+};
+
+
+struct RADARPERFORMANCEPARAM {
+	long  int	 AntennaG;//		天线增益，以.001db为计数单位
+	unsigned short  BeamH;//		垂直波束宽度，以微秒为计数单位
+	unsigned short  BeamL;// 		水平波束宽度，以微秒为计数单位
+	unsigned char  polarizations;/*	极化状况
+								 0 = 水平
+ 								 1 = 垂直
+								 2 = 双偏振
+								 3 = 圆偏振
+								 4 = 其他*/
+	char   sidelobe;//				第一旁瓣计数单位：db（注意：输入负号）
+	long int  Power;//			雷达脉冲峰值功率，以瓦为计数单位
+	long int  wavelength;//		波长，以微米为计数单位
+	unsigned short  logA;//		对数接收机动态范围,以.01db为计数单位
+	unsigned short  LineA;//		线性接收机动态范围,以.01为计数单位
+	unsigned short  AGCP;//		AGC延迟量，以微秒为计数单位
+	unsigned char 	 clutterT;//		杂波消除阀值，计数单位.01db
+	unsigned char 	 VelocityP;/*	速度处理方式
+	   							 0 = 无速度处理
+								 1 = PPP
+								 2 = FFT*/
+	unsigned char 	 filderP;/*		地物消除方式
+								 0 = 无地物消除
+								 1 = 地物杂波图扣除法
+								 2 = 地物杂波图+ 滤波器处理
+								 3 = 滤波器处理
+								 4 = 谱分析处理*/
+	unsigned char	 noiseT;//		噪声消除阀值	（-255）
+	unsigned char 	 SQIT;//		SQI阀值，以.01为计数单位
+	unsigned char 	 intensityC;/*	rvp强度值估算采用的通道
+								 1 = 对数通道
+								 2 = 线性通道*/
+	unsigned char	intensityR;/*	强度估算是否进行了距离订正
+								 0 = 无
+							 	 1 = 已进行了距离订正*/
+};
+
+struct RADAROBSERVATIONPARAM {
+unsigned char 	 stype;/*		扫描方式
+							 1 = RHI
+							 10 = PPI
+							 20=固定点扫描方式
+							 30=RHI扇扫
+							 40=PPI扇扫
+							 1XX = Vol 	XX为扫描圈数
+							 2XX = Vol扇扫	XX为扫描圈数
+							 */
+//unsigned char 	 syear1;//		观测记录开始时间的年的千位百位（-20）
+unsigned short 	 syear;//		观测记录开始时间的年的十位个位（-99）
+unsigned char 	 smonth;//		观测记录开始时间的月（-12）
+unsigned char 	 sday;//		观测记录开始时间的日（-31）
+unsigned char 	 shour;//		观测记录开始时间的时（-23）
+unsigned char 	 sminute;//		观测记录开始时间的分（-59）
+unsigned char 	 ssecond;//		观测记录开始时间的秒（-59）
+unsigned char 	 Timep;/*		时间来源
+							 0 = 计算机时钟，但一天内未进行对时
+							 1 = 计算机时钟，但一天内已进行对时
+							 2 = GPS
+							 3 = 其他*/
+unsigned long int smillisecond;// 		秒的小数位（计数单位微秒）
+unsigned char 	 calibration;/*	标校状态
+							 0 = 无标校
+							 1 = 自动标校
+							 2 = 1星期内人工标校
+							 3 = 1月内人工标校
+							其他码不用*/
+unsigned char 	 intensityI;//		强度积分次数（-128）
+unsigned char 	 VelocityP;//	速度处理样本数（-255）(样本数-1）
+struct LAYERPARAM LayerParam[30]; //各圈扫描状态设置
+//注：当扫描方式为RHI或PPI时，只在第一个元素中填写，其他元素为。
+unsigned short	 RHIA;//		作RHI时的所在方位角，计数单位为/100度
+					//			作PPI和立体扫描时为
+short	 RHIL;//				作RHI时的最低仰角，计数单位为/100度
+			//					作其他扫描时为-32768
+short	 RHIH;//				作RHI时的最高仰角，计数单位为/100度
+				//				作其他扫描时为-32768
+//unsigned char 	 Eyear1;//		观测结束时间的年的千位百位（-20）
+unsigned short 	 Eyear;//		观测结束时间的年的十位个位（-99）
+unsigned char 	 Emonth;//		观测结束时间的月（-12）
+unsigned char 	 Eday;//		观测结束时间的日（-31）
+unsigned char 	 Ehour;//		观测结束时间的时（-23）
+unsigned char 	 Eminute;//		观测结束时间的分（-59）
+unsigned char 	 Esecond;//		观测结束时间的秒（-59）
+unsigned char 	 Etenth;//		观测结束时间的/100秒（-59）
+};
+
+struct NewRadarHeader{
+	struct RADARSITE  SiteInfo;
+	struct RADARPERFORMANCEPARAM  PerformanceInfo;
+	struct RADAROBSERVATIONPARAM  ObservationInfo;
+	char datasign[30];
+//数据屏蔽位
+#define DBZ_O    0     //强度dBZ
+#define V_O        1	 // 速度
+#define W_O       2    // 谱宽
+#define DBT_O    3  //无地杂波抑制的强度
+#define ZDR_O    4  // ZDR
+#define KDP_O    5  // KDP
+#define RHV_O    6   // RHV
+#define LDR_O    7  //LDR
+
+	DWORD dataStyle;  //在原始记录中，相应位为，说明在记录中相应的要数据可用
+	char Reserved[129];
+};
+
+//  数据记录定义
+#define RAWITEM  8
+#define RAWRECORDLENGTH                 1000
+struct RVP7Data {
+	unsigned short startaz,startel,endaz,endel;
+	// 方位计算为= startaz(或endaz)*360/65536.0;
+	// 仰角计算为= startel(或endel)*120/65536.0;
+	union  {
+		struct 
+		{
+		    unsigned short m_dbz[RAWRECORDLENGTH];
+			//格式- 以分贝表示的从无符号字N中计算为：
+			//	 dBZ = (N-32768) / 100
+			//全部的范围以/100db表示的从-327.67Db到+327.66db步骤如下所示：
+			//0：指出在范围中没有反射率数据有效
+			//1：-327.67dBZ
+			//32768 : 0.00 dBZ
+			//65534 : +327.66 dBZ
+			//65535 : 保留的代码
+			unsigned short m_dbt[RAWRECORDLENGTH];
+			//同dbz的计算
+			unsigned short m_vel[RAWRECORDLENGTH];
+			//速度格式- 以米/秒表示的平均速度从无符号字N中计算为：
+			//V(m/s) = (N-32768) / 100
+			//全部的范围从-327.67米/秒到+327.66米/秒，其步骤如下：
+			//0：指出在该范围速度数据是无效的
+			//1：-327.67米/秒（朝向雷达）
+			//32768：.00米/秒
+			//65534：+327.66米/秒（离开雷达）
+			//	65535：保留的代码
+
+			unsigned short m_sw[RAWRECORDLENGTH];
+				//铺宽- 以米/秒表示的谱宽从无符号字节N计算为：
+			//	Wm/sec = N / 100
+			//全部的范围从.01米/秒到.34米/秒，其步骤如下：
+			//0：指出在该范围宽度数据是无效的
+			//1：.01米/秒
+			//65534：.34米/秒（离开雷达）
+			//65535：保留的代码
+
+			unsigned short m_zdr[RAWRECORDLENGTH];
+			//同dbz的计算,单位: db
+			unsigned short m_kdp[RAWRECORDLENGTH];
+			//同dbz的计算,单位: 度/公里
+		    unsigned short m_rhv[RAWRECORDLENGTH];
+		//格式- 相关系数在间隔.0到.0从无符号字N中线性计算为：
+//  
+ 	//		0：在范围中，指出无数据有效
+//			1：.0（无量纲）
+		//65534：.0
+//65535：保留代码。
+		    unsigned short m_LDR[RAWRECORDLENGTH];
+			//同dbz的计算,单位: db
+		};
+	struct 
+	{
+    unsigned short  rawdata[RAWITEM][RAWRECORDLENGTH];
+ 	};
+  };
+};
+#pragma pack()
+
+#ifdef __cplusplus
+}
+#endif
+#endif // __STYLE_DEFINE
+
+2. 关键词
+==============
+主题关键词:
+气象数据,滴谱仪,
+位置关键词:
+黑河流域,
+时间关键词:
+2008-04-01,
+学科关键词:
+
+3. 本数据的引用
+====================
+中文引用：
+楚荣忠，赵果，胡泽勇，张彤,贾伟.黑河综合遥感联合试验:滴谱仪观测数据集,中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0163.db
+
+英文引用：
+Chu Rongzhong,Zhao guo,Gao Hu Zeyong,Zhang Tang,Jia Wei. WATER: Drop Spectrometer Observation Dataset,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0163.db
+
+4.	数据调查者
+==================
+
++ 姓名：楚荣忠,赵果,胡泽勇,张彤,贾伟
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
+
+5. 数据联系人
+=====================
+
++ 姓名：赵果
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：guozh@lzb.ac.cn
++ 电话：0931-4967695
+
+6. 元数据作者
+======================
+
++ 姓名：赵果
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：guozh@lzb.ac.cn
++ 电话：0931-4967678
+
+7.	元数据发布者
+======================
+
++ 姓名：吴立宗
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：wulizong@lzb.ac.cn
++ 电话：0931-4967298
+
+8.	数据分发者
+======================
+
++ 姓名：李红星
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃--兰州--兰州市东岗西路320号
++ 邮编：730000
++ 电子邮件：westdc@lzb.ac.cn
++ 电话：0931-4967287
++ 传真：0931-8279161
+
+9.	地理范围
+=========================
+
++ 北：42.685
++ 南：37.868
++ 西：97.399
++ 东：102.125
+
+10.	项目支持信息
+=========================
+
+本试验的开展及数据的管理与发布获得了以下项目的支持:            
+
+ 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+
+ 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+
+11. 文件清单 
+=========================
+
+文件路径: :file:`/data/WATER/Level_1/Linze_Grass/Linze_Grass_Roughness`
+::
