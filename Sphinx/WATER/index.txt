@@ -14,7 +14,8 @@
    foreword
    exp_aims
    exp_area
-   observe_system   
+   observe_system 
+   report_image
    datalist
    how_to_fetch_data
    standard_list  
@@ -23,10 +24,6 @@
    publish
    acknowledgements
 
-	
-
-.. todolist::
-   :todo_include_todos: True
 
 **项目标注**
 
