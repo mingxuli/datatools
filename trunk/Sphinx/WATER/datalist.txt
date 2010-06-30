@@ -1,7 +1,7 @@
 ﻿.. _doc_datalist:
 .. |km2| replace:: km\ :sup:`2`\ 
 .. sectnum::
-   :start: 4
+   :start: 5
    
 *********************************
 数据清单
@@ -34,6 +34,14 @@
    meta/11ad1b56-3da0-4e27-bc78-08d1dd420325
    meta/625d0e8e-df4c-4768-b528-c0a5e0a9291f
    meta/3a74079a-da0f-4102-b325-bb7c5853f908
+   meta/e451aeda-1334-4c7e-ad3a-daf733eab35f
+   meta/a7f017d1-78e3-4a69-8043-65b756251334
+   meta/f1b355a4-e4e4-48c3-ad6e-4207ad6bc4c2
+   meta/3abfc0ae-8529-4b1a-bef7-115391d96d6c
+   meta/e6818915-e511-40c3-ba7b-26a10d4d1be3
+   meta/d840a65c-0e36-46bc-9126-b6b96d143c3a
+   meta/285c2603-4386-46e8-90d6-f3dbf9fe18c0
+   meta/9863dc5c-e0fe-4ab9-ae66-7165c5cf3353
 
 机载遥感数据
 =============
