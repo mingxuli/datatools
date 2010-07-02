@@ -1,0 +1,53 @@
+﻿.. _intro:
+
+***************
+Sphinx简介
+***************
+
+本文档介绍的是文档编制软件 Sphinx 。该工具可以将一系列 reStructuredText_ 源文本转换成各种不同的输出格式，并自动制作交叉引用（cross-references)和索引等。也就是说，如果某目录中有一系列的 reST 格式文档（可能子目录中也有）， Sphinx 可以制作一份组织得非常完美的 HTML 文件（在其它目录中），便于浏览和查找。但是从同一组源文件，它也可以制作一份 LaTex 文件，以便你将其转换为 PDF 格式的文档，或者使用 `rst2pdf <http://rst2pdf.googlecode.com>`_ 直接形成PDF格式的文档。
+
+本文档将重点介绍手写文档，而不是自动生成的 API 文档。尽管对自动生成的文档也提供了有限的支持（目的是为了与手写文档自由混合），但如果你需要纯 API 文档，可以尝试 `Epydoc <http://epydoc.sf.net/>`_，它也能够支持 reST。
+
+从其它系统转换
+===============
+
+本节对那些想将其他文档系统转换为 reStructuredText 或 Sphinx 的人提供了一些有用的提示。
+
+* Gerard Flanagan 写了一段脚本将纯 HTML 转换为 reST ；可在 `BitBucket
+  <http://bitbucket.org/djerdo/musette/src/tip/musette/html/html2rest.py>`_ 找到相关脚本。
+
+* 要将旧的 Python 文档转换为 Sphinx，可以从`Python SVN 仓库
+  <http://svn.python.org/projects/doctools/converter>`_  找到相关转换工具。它包括将 Python 文档风格的LaTex标记转换为 Sphinx reST 的通用代码。
+
+* Marcin Wojdyr 写了一个脚本，可以将 Docbook格式转换为Sphinx的reST格式标记，相关代码可以从 `Google Code <http://code.google.com/p/db2rst/>`_ 获得.
+
+使用其他系统
+===============
+
+请参考 :ref:`pertinent section in the FAQ list <usingwith>`.
+
+先决条件
+===============
+
+Sphinx needs at least **Python 2.4** to run.  If you like to have source code
+highlighting support, you must also install the Pygments_ library, which you can
+do via setuptools' easy_install.  Sphinx should work with docutils version 0.4
+or some (not broken) SVN trunk snapshot.
+
+
+
+Sphinx 需要 Python 2.4 以上才能运行。如果你喜欢源代码高亮显示支持，你还必须安装 Pygments_ 类库, 你可以通过安装工具 easy_install 来安装相关的模块。Sphinx 需要0.4版本的 docutils 或它的一些（可运行的） SVN 快速版本。
+
+.. _reStructuredText: http://docutils.sf.net/rst.html
+.. _Pygments: http://pygments.org
+
+使用说明
+===============
+
+如果你需要一份使用教程，请参考 :doc:`tutorial` . 本文档在相关主题开展讨论时，也提供了各种连接指向各种高级应用.
+
+
+
+
+
+

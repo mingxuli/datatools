@@ -11,21 +11,25 @@ Sphinx是一个文档生成系统，可以把reSturcturedText格式的文本转�
 感觉用它来写文档非常方便，但是发现网上相关的文档较少，因此决定写一个教程，详细的介绍Sphinx的使用。Google Sphinx的时候
 会发现一大堆关于Sphinx的东西，但很多都是关于Sphinx Search的(一个搜索引擎)。
 
+**目 录**
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    
    install
    starting_edit
-   restructuredtext_quickstart.rst
-   extensions.rst
-   cheatsheet.rst
-   emacs_help.rst
+   restructuredtext_quickstart
+   custom_look
+   domains
+   extensions
+   cheatsheet
+   emacs_help
    create_index
    
-   sphinx_document
-   sphinx_introduction.rst
+   sphinx_doc_cn_v1.0b2/contents   
    restructuredtext_primer
    restructuredtext
+   sphinx_doc_cn_v1.0b2/math
 
 Indices and tables
 ==================
