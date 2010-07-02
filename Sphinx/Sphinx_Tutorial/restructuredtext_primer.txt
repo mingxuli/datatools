@@ -12,50 +12,50 @@
 :翻译版本: $Revision: 4350 $
 :修订者: Wu Lizong
 
-.. contents:: 目录
 
 .. |rst| replace:: :emphasis:`re`\ :strong:`Structured`\ :sup:`Text`
 
-本文包含了一些类似于 "(quickref__)" 的链接. 他们指向了 `Quick reStructuredText`_ 用户快速参考. 
-如果这些链接不能正常工作,请参考 `master quick reference`_ 文档.
+    本文包含了一些类似于 "(quickref__)" 的链接. 他们指向了 `Quick reStructuredText`_ 用户快速参考. 
+    如果这些链接不能正常工作,请参考 `master quick reference`_ 文档.
 
 
 __
+
 .. _Quick reStructuredText: quickref.html
 .. _master quick reference:
    http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
-.. Note:: This document is an informal introduction to
-   reStructuredText.  The `下一步?`_ section below has links to
-   further resources, including a formal reference.
+    .. Note:: This document is an informal introduction to
+      reStructuredText.  The `下一步?`_ section below has links to
+      further resources, including a formal reference.
 
 
 结构(Structure)
 ================
 
-首先我们说"结构化文本"(Structured Text)可能有一点儿用词不当。它更像使用了前后一致的规则的"松散的文本"(Relaxed Text)。
-这些规则可以被一个HTML转换器转换为一个可以被Web浏览器浏览的非常结构化的文本。
+    首先我们说"结构化文本"(Structured Text)可能有一点儿用词不当。它更像使用了前后一致的规则的"松散的文本"(Relaxed Text)。
+    这些规则可以被一个HTML转换器转换为一个可以被Web浏览器浏览的非常结构化的文本。
 
-被认为最基本的规则是段落(paragraph)(quickref__)。段落是被空行(一行就够了)分割的开的一段文字。段落必须有相同的缩进,也就是说,
-他们必须左对齐。缩进的段落会导致缩进的引用段落 (Paragraphs that start indented will result in indented quote paragraphs.)。比如::
+    被认为最基本的规则是段落(paragraph)(quickref__)。段落是被空行(一行就够了)分割的开的一段文字。段落必须有相同的缩进,也就是说,
+    他们必须左对齐。缩进的段落会导致缩进的引用段落 (Paragraphs that start indented will result in indented quote paragraphs.)。比如:
+	::    
+    This is a paragraph.  It's quite
+    short.
 
-  This is a paragraph.  It's quite
-  short.
+        This paragraph will result in an indented block of
+        text, typically used for quoting other text.
 
-     This paragraph will result in an indented block of
-     text, typically used for quoting other text.
+    This is another one.
 
-  This is another one.
+    显示结果是:
 
-显示结果是:
+    This is a paragraph.  It's quite
+    short.
 
-  This is a paragraph.  It's quite
-  short.
+        This paragraph will result in an indented block of
+        text, typically used for quoting other text.
 
-     This paragraph will result in an indented block of
-     text, typically used for quoting other text.
-
-  This is another one.
+    This is another one.
 
 __ quickref.html#paragraphs
 
@@ -67,22 +67,25 @@ quickref__
 
 __ quickref.html#inline-markup
 
-在段落中或者其他文字块中,你可能会用 *italics* 来标记文本为斜体 "``*italics*``" ,
-或者 **bold** 来标记粗体 "``**bold**``",这称为"内置标记"(inline markup) 。
+    在段落中或者其他文字块中,你可能会用 *italics* 来标记文本为斜体 "``*italics*``" ,
+    或者 **bold** 来标记粗体 "``**bold**``",这称为"内置标记"(inline markup) 。
 
-如果你想显示为一个固定空格的文字,使用 "````两个反引号````".注意,
-在两个反引号中的字符不会被处理,所以,"``*``" 之类的符号会保持原样。
+    如果你想显示为一个固定空格的文字,使用 "````两个反引号````".注意,
+    在两个反引号中的字符不会被处理,所以,"``*``" 之类的符号会保持原样。
 
-如果你发现你想在文本中使用一个特殊字符,通常是可以的 --reStructuredText是足够聪明的。
-例如,在公式5*6=30中,单星号会被处理的很好。如果你确实想让文字用\*括起来,而**不是**让它变成斜体,
-那么你需要指出星号不是特殊字符。你可以在星号之前输入一个反斜杠,象这样 "``\*``" (quickref__),
-或者用两个反引号(内置 literals),象这样::
+    如果你发现你想在文本中使用一个特殊字符,通常是可以的 --reStructuredText是足够聪明的。
+    例如,在公式5*6=30中,单星号会被处理的很好。如果你确实想让文字用\*括起来,而**不是**让它变成斜体,
+    那么你需要指出星号不是特殊字符。你可以在星号之前输入一个反斜杠,象这样 "``\*``" (quickref__),
+    或者用两个反引号(内置 literals),象这样::
 
     ``*``
 
 __ quickref.html#escaping
 
-.. Tip:: 内置标记(inline markup)可以理解为一种括号, 在文字的前面和后面成对出现,内置标记本身(前后都有空格)或位于文字间(or in the middle of a word)不会被显示.详情请参考 `markup spec`__ .
+    .. Tip:: 
+	   内置标记(inline markup)可以理解为一种括号, 在文字的前面和后面成对出现,
+	   内置标记本身(前后都有空格)或位于文字间(or in the middle of a   word)不会被显示.
+	   详情请参考 `markup spec`__ .
 
 __ ../../ref/rst/restructuredtext.html#inline-markup
 

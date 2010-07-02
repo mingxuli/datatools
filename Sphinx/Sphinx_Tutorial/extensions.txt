@@ -1,42 +1,36 @@
 ﻿.. _extensions:
 
 
-****************************************************
-Sphinx extensions for embedded plots, math and more
-****************************************************
+************************
+Sphinx的扩展模块
+************************
 
-Sphinx is written in python, and supports the ability to write custom
-extensions.  We've written a few for the matplotlib documentation,
-some of which are part of matplotlib itself in the
-matplotlib.sphinxext module, some of which are included only in the
-sphinx doc directory, and there are other extensions written by other
-groups, eg numpy and ipython.  We're collecting these in this tutorial
-and showing you how to install and use them for your own project.
-First let's grab the python extension files from the :file:`sphinxext`
-directory from svn (see :ref:`fetching-the-data`), and install them in
-our :file:`sampledoc` project :file:`sphinxext` directory::
+Sphinx是利用Python语言开发的，因此也可以用Python开发各种扩展模块。
+我们在撰写matplotlib文档的是有开发了几个扩展模块，这些扩展模块一部分
+包含在matplotlib自己的matplotlib.sphinxext模块中，还有一部分包含在Sphinx目录中。
+还有一些扩展模块是其他小组开发的，如numpy和ipython。在本教程中，我们对这些模块进行了收集，
+同时也将向你展示如何安装和使用这些扩展模块。首先你需要获得这些模块，具体办法请参考 :ref:`fetching-the-data`
+数据下载完后请拷贝到你的 :file:`sphinxext` 目录中，相关的文件列表如下::
+	
+	apigen.py
+	inheritance_diagram.py
+	docscrape.py
+	ipython_console_highlighting.py
+	docscrape_sphinx.py
+	numpydoc.py
 
-    home:~/tmp/sampledoc> mkdir sphinxext
-    home:~/tmp/sampledoc> cp ../sampledoc_tut/sphinxext/*.py sphinxext/
-    home:~/tmp/sampledoc> ls sphinxext/
-    apigen.py             inheritance_diagram.py
-    docscrape.py          ipython_console_highlighting.py
-    docscrape_sphinx.py   numpydoc.py
+除了matplotlit内置的matplotlib扩展模块可以利用matplot本身的功能实现画图和数据公式显示外，
+我们还有扩展模块来实现ipython的语法高亮显示功能和绘制继承图的(inhertiance diagrams)的功能；
 
-In addition to the builtin matplotlib extensions for embedding pyplot
-plots and rendering math with matplotlib's native math engine, we also
-have extensions for syntax highlighting ipython sessions, making
-inhertiance diagrams, and more.
-
-We need to inform sphinx of our new extensions in the :file:`conf.py`
-file by adding the following.  First we tell it where to find the extensions::
+我们需要通过修改 :file:`conf.py` 告诉Sphinx我们有新的扩展模块，首先需要告诉sphinx在哪里找到这些模块,
+修改以下相关代码::
 
     # If your extensions are in another directory, add it here. If the
     # directory is relative to the documentation root, use
     # os.path.abspath to make it absolute, like shown here.
     sys.path.append(os.path.abspath('sphinxext'))
 
-And then we tell it what extensions to load::
+接下来告诉Sphinx我们需要加载哪些模块::
 
     # Add any Sphinx extension module names here, as strings. They can
     # be extensions coming with Sphinx (named 'sphinx.ext.*') or your
@@ -51,19 +45,17 @@ And then we tell it what extensions to load::
               'numpydoc']
 
 
-Now let's look at some of these in action.  You can see the literal
-source for this file at :ref:`extensions-literal`.
+现在我们看看怎么在Sphinx实现相关的功能.  相关源代码请参考 :ref:`extensions-literal`.
 
 
 .. _ipython-highlighting:
 
-ipython sessions
-================
+ipython会话高亮显示
+====================
 
-Michael Droettboom contributed a sphinx extension which does `pygments
-<http://pygments.org>`_ syntax highlighting on `ipython
-<http://ipython.scipy.org>`_ sessions.  Just use ipython as the
-language in the ``sourcecode`` directive::
+Michael Droettboom 开发的这个模块可以使用 `pygments <http://pygments.org>`_ 
+来高亮显示 `ipython <http://ipython.scipy.org>`_ 的会话. 你只需要使用 ``sourcecode`` 指令就可以了，
+如::
 
     .. sourcecode:: ipython
 
@@ -76,7 +68,7 @@ language in the ``sourcecode`` directive::
           ...snip
 
 
-and you will get the syntax highlighted output below.
+输出结果如下.
 
 .. sourcecode:: ipython
 
@@ -88,29 +80,26 @@ and you will get the syntax highlighted output below.
       antialiased or aa: [True | False]
       ...snip
 
-This support is included in this template, but will also be included
-in a future version of Pygments by default.
+在本教程中我们需要单独下载和加载这个模块，但在pygments未来版本中，可能会内置了这个模块，我们可以直接加载这个模块.
 
 .. _using-math:
 
-Using math
-==========
+使用数学公式
+=============
 
-In sphinx you can include inline math :math:`x\leftarrow y\ x\forall
-y\ x-y` or display math
+在Sphinx我们可以在一行文字的当中插入数据公式,如 :math:`a^2 + b^2 = c^2` ，也可以另起一行来显示数据公式，如：
 
 .. math::
 
   W^{3\beta}_{\delta_1 \rho_1 \sigma_2} = U^{3\beta}_{\delta_1 \rho_1} + \frac{1}{8 \pi 2} \int^{\alpha_2}_{\alpha_2} d \alpha^\prime_2 \left[\frac{ U^{2\beta}_{\delta_1 \rho_1} - \alpha^\prime_2U^{1\beta}_{\rho_1 \sigma_2} }{U^{0\beta}_{\rho_1 \sigma_2}}\right]
 
-To include math in your document, just use the math directive; here is
-a simpler equation::
+要在你的文档中插入公式，必须使用 math 指令，下面是一个简单数学公式的代码::
 
     .. math::
 
       W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
 
-which is rendered as
+显示结果：
 
 .. math::
 
@@ -203,8 +192,8 @@ See the matplotlib `pyplot tutorial
 the `gallery <http://matplotlib.sourceforge.net/gallery.html>`_ for
 lots of examples of matplotlib plots.
 
-Inheritance diagrams
-====================
+继承图
+============================
 
 Inheritance diagrams can be inserted directly into the document by
 providing a list of class or module names to the
@@ -221,9 +210,9 @@ produces:
 
 .. _extensions-literal:
 
-This file
-=========
+本文件的源代码
+===============
 
-.. literalinclude:: extensions.rst
+.. literalinclude:: extensions.txt
 
 

@@ -10,7 +10,7 @@
 #
 # All configuration values have a default; values that are commented out
 # serve to show the default.
-
+import sphinx
 import sys, os
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -30,21 +30,25 @@ sys.path.append(os.path.abspath('sphinxext'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['matplotlib.sphinxext.mathmpl',\
-            'matplotlib.sphinxext.only_directives',\
-            'matplotlib.sphinxext.plot_directive',\
-            'sphinx.ext.autodoc',\
-            'sphinx.ext.doctest',\
-            'ipython_console_highlighting',\
-            'inheritance_diagram',\
-            'numpydoc','rst2pdf.pdfbuilder']
+extensions = ['sphinx.ext.autodoc',
+              'sphinx.ext.doctest',
+              'sphinx.ext.todo',
+              'sphinx.ext.autosummary',
+              'sphinx.ext.extlinks',
+              'sphinx.ext.jsmath',
+              'ipython_console_highlighting',
+              'inheritance_diagram',
+              'numpydoc',
+              'rst2pdf.pdfbuilder']
 
+# Add jsMath path here.
+jsmath_path = 'jsMath/easy/load.js'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
 # The suffix of source filenames.
-source_suffix = '.rst'
+source_suffix = '.txt'
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -104,7 +108,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinxdoc'
+#html_theme = 'sphinxdoc'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -180,53 +184,6 @@ html_show_sourcelink = True
 htmlhelp_basename = 'Sphinx_Tutorial'
 
 
-# -- Options for LaTeX output --------------------------------------------------
-
-# The paper size ('letter' or 'a4').
-#latex_paper_size = 'letter'
-
-# The font size ('10pt', '11pt' or '12pt').
-#latex_font_size = '10pt'
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title, author, documentclass [howto/manual]).
-latex_documents = [
-  ('index', 'WATER.tex', u'WATER Documentation',
-   u'Wu Lizong', 'manual'),
-]
-
-# The name of an image file (relative to this directory) to place at the top of
-# the title page.
-#latex_logo = None
-
-# For "manual" documents, if this is true, then toplevel headings are parts,
-# not chapters.
-#latex_use_parts = False
-
-# If true, show page references after internal links.
-#latex_show_pagerefs = False
-
-# If true, show URL addresses after external links.
-#latex_show_urls = False
-
-# Additional stuff for the LaTeX preamble.
-#latex_preamble = ''
-
-# Documents to append as an appendix to all manuals.
-#latex_appendices = []
-
-# If false, no module index is generated.
-#latex_domain_indices = True
-
-
-# -- Options for manual page output --------------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    ('index', 'water', u'WATER Documentation',
-     [u'Wu Lizong'], 1)
-]
 
 
 # -- Options for PDF output --------------------------------------------------
