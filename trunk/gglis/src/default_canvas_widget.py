@@ -2,6 +2,7 @@
 # and open the template in the editor.
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+from default_trace_map_tool import TraceMapTool
 from qgis.core import *
 from qgis.gui import *
 
@@ -15,7 +16,8 @@ class CanvasWidget(QgsMapCanvas):
         self.zoomInTool = QgsMapToolZoom(self, False)
         self.zoomOutTool = QgsMapToolZoom(self, True)
         self.zoomPanTool = QgsMapToolPan(self)
-        self.connect(self, SIGNAL("afterLoadingLayers"), self.setCanvasLayerSet)
+        self.mapIndentify = TraceMapTool(self)
+        self.connect(self, SIGNAL("afterLoadingLayers"), self.setCanvasLayerSet)        
 
     def loadInitialLayers(self):
         if not QFile.exists(self.dataFile): return
@@ -26,6 +28,13 @@ class CanvasWidget(QgsMapCanvas):
                 QgsMapLayerRegistry.instance().addMapLayer(layer)
                 self.layers.append(layer)
                 self.setExtent(layer.extent())
+        fileName = "D://ICIMOD//v2//data//dem//ASTGTM_Nepal_color_shade.tif"
+        fileInfo = QFileInfo(fileName)
+        baseName = fileInfo.baseName()
+        self.rlayer = QgsRasterLayer(fileName, baseName)
+        QgsMapLayerRegistry.instance().addMapLayer(self.rlayer)
+        self.connect(self.rlayer, SIGNAL("repaintRequested()"), self, SLOT("refresh()"))
+        self.layers.append(self.rlayer)
         self.setVisible(True);
         self.refresh();
         self.emit(SIGNAL("afterLoadingLayers"), self.layers)
@@ -42,14 +51,16 @@ class CanvasWidget(QgsMapCanvas):
     def zoomFull(self):
         self.zoomToFullExtent()
 
-    def setCanvasLayerSet(self, layers):
-        print "setCanvasLayerSet"
+    def indentifyFeature(self):        
+        self.setMapTool(self.mapIndentify)
+
+    def setCanvasLayerSet(self, layers):        
         canvasLayers = [QgsMapCanvasLayer(layer) for layer in layers]
         self.setLayerSet(canvasLayers)
 
-    def changeCurrentLayer(self,currentLayer):
-        print "mapcanvs change currentlayer"
+    def changeCurrentLayer(self,currentLayer):        
         self.setCurrentLayer(currentLayer)
+
 
 if __name__ == "__main__":
     import sys
@@ -65,6 +76,9 @@ if __name__ == "__main__":
     form = CanvasWidget(parent)
     form.dataFile = "D://ICIMOD//GUI//v2//gglis//src//data//nepal.sqlite"
     form.loadInitialLayers()
+    emitPoint = QgsMapToolEmitPoint(form)
+    form.setMapTool(emitPoint)
+    QObject.connect(emitPoint, SIGNAL("canvasClicked(QgsPoint &, Qt::MouseButton)"), form.showTrace)
     layout = QVBoxLayout()
     layout.addWidget(form)
     parent.setLayout(layout)

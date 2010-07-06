@@ -17,10 +17,8 @@ class AttributeModel(QAbstractTableModel):
 
     def data(self, index=QModelIndex, role=Qt.DisplayRole):
         if not index.isValid():
-            print "not is valid"
             return QVariant()
         if index.row() >= len(self.datas):
-            print ">="
             return QVariant()
         if role == Qt.DisplayRole:
             return QVariant(self.datas[index.row()][index.column()])

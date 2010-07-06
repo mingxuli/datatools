@@ -1,11 +1,10 @@
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
-import sqlite3
-
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from default_attribute_model import AttributeModel
 from default_attribute_view import AttributeView
+from pysqlite2 import dbapi2 as sqlite3
 from qgis.core import *
 from qgis.gui import *
 from ui_attribute_dialog import Ui_AttributeDialog
@@ -65,6 +64,9 @@ class AttributeWork(QThread):
         columns = ",".join(names)
         if hasattr(self,"filter"):
             cur.execute("select %s from %s where %s='%s' order by gid" %(columns,self.currentLayer.name(),self.filter[0],self.filter[1]))
+        elif hasattr(self,"point"):
+            cur.execute("select %s from %s where MbrWithin(MakePoint(%f, %f,4326),Geometry)" %(columns,self.currentLayer.name(),self.point.x(), self.point.y()))
+            return cur.fetchone()
         else:
             cur.execute("select %s from %s order by gid" % (columns, self.currentLayer.name()))
         return cur.fetchall()
@@ -72,6 +74,8 @@ class AttributeWork(QThread):
     def run(self):
         if self.exiting: return
         conn = sqlite3.connect(str(self.dataFile))
+        conn.enable_load_extension(1)
+        conn.load_extension('libspatialite-1.dll')
         cur = conn.cursor()
         fields = self.getFieldsMetaInfo(cur)
         datas = self.getDatas(cur, fields)

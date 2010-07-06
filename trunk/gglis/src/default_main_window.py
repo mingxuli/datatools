@@ -9,6 +9,7 @@ from qgis.core import *
 from qgis.gui import *
 from default_attribute_dialog import AttributeDialog
 from default_statis_dialog import StatisDialog
+from default_trace_dialog import TraceDialog
 from ui_main_window import *
 
 
@@ -35,23 +36,23 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.connect(self.actionZoomOut, SIGNAL("activated()"), self.mapCanvas.zoomOut)
         self.connect(self.actionFullExten, SIGNAL("activated()"), self.mapCanvas.zoomFull)
         self.connect(self.actionZoomPan, SIGNAL("activated()"), self.mapCanvas.pan)
+        self.connect(self.actionTrace,SIGNAL("activated()"),self.mapCanvas.indentifyFeature)
         self.connect(self.mapCanvas, SIGNAL("afterLoadingLayers"), self.layerListView.initItems)
         self.connect(self.layerListView, SIGNAL("currentLayerChanged"), self.mapCanvas.changeCurrentLayer)
         self.connect(self.actionAttribute, SIGNAL("activated()"), self.showAttribute)
         self.connect(self.actionStatis, SIGNAL("activated()"), self.showStatis)
-        self.connect(self.mapCanvas, SIGNAL("xyCoordinates(QgsPoint)"), self.showCoordinates)
-
+        self.connect(self.mapCanvas, SIGNAL("xyCoordinates(QgsPoint)"), self.showCoordinates)        
+        self.connect(self.mapCanvas.mapIndentify, SIGNAL("indentifyTrace"), self.showTrace)
         QTimer.singleShot(0, self.mapCanvas.loadInitialLayers)
 
     def showAttribute(self):
         if self.mapCanvas.isDrawing(): return
-        if not hasattr(self,"dialog"):
-            self.dialog = AttributeDialog(self.mapCanvas)
+        dialog = AttributeDialog(self.mapCanvas)
         self.actionAttribute.setEnabled(False)
-        self.connect(self.dialog.thread, SIGNAL("finished()"), self.showOkayMessage)
-        self.connect(self.dialog.thread, SIGNAL("terminated()"), self.showErrorMessage)
-        self.dialog.loadingData()
-        self.dialog.show()
+        self.connect(dialog.thread, SIGNAL("finished()"), self.showOkayMessage)
+        self.connect(dialog.thread, SIGNAL("terminated()"), self.showErrorMessage)
+        dialog.loadingData()
+        dialog.show()
 
     def showStatis(self):
         if self.mapCanvas.isDrawing(): return
@@ -69,6 +70,10 @@ class MainWindow(QMainWindow,Ui_MainWindow):
     def showCoordinates(self, point):
         self.sizeLabel.setText("Coordinate: %.5f,%.5f" % (point.x(), point.y()))
 
+    def showTrace(self, point):
+        if self.mapCanvas.isDrawing(): return
+        dialog = TraceDialog(self.mapCanvas)
+        dialog.loadAttribute(point)
 
 
 
