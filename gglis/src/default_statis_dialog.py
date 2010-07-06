@@ -1,12 +1,11 @@
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
-import sqlite3
-
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from default_matplot_navigation_toolbar import NavigationToolbar
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
+from pysqlite2 import dbapi2 as sqlite3
 from qgis.core import *
 from qgis.gui import *
 from ui_statis_dialog import Ui_StatisDialog
@@ -213,6 +212,9 @@ class StatisDialog(QDialog, Ui_StatisDialog):
 
     def runRangeFromThread(self, range_vals):
         self.progressBar.setRange(range_vals[0], range_vals[1])
+
+    def closeEvent(self, e):
+        QApplication.restoreOverrideCursor()
 
 class WorkThread(QThread):
     def __init__(self, parentThread, parentObject, vlayer, fieldName, dataFile):
