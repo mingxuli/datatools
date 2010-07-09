@@ -4,10 +4,12 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from default_attribute_model import AttributeModel
 from default_attribute_view import AttributeView
-from pysqlite2 import dbapi2 as sqlite3
 from qgis.core import *
 from qgis.gui import *
 from ui_attribute_dialog import Ui_AttributeDialog
+from attribute_work import AttributeWork
+from attribute_load_compositor import AttributeLoadCompositor
+from attribute_search_compositor import AttributeSearchCompositor
 
 class AttributeDialog(QDialog, Ui_AttributeDialog):
     def __init__(self, parent=None):
@@ -25,64 +27,23 @@ class AttributeDialog(QDialog, Ui_AttributeDialog):
     def search(self):
         value = self.lineEdit.displayText()
         column = self.comboBox.currentText()
-        self.thread.setFilter([column,value])
-        self.loadingData()
+        compositor = AttributeSearchCompositor(self.parent.currentLayer.name(),(column,value))
+        self.thread.compositor = compositor
+        self.thread.start()
 
     def addItems(self, fields, datas):
         self.comboBox.clear()
         self.comboBox.addItems(fields)
 
-    def loadingData(self):        
-        self.thread.currentLayer = self.parent.currentLayer
+    def loadingData(self):
+        compositor = AttributeLoadCompositor(self.parent.currentLayer.name())
+        self.thread.compositor = compositor
         self.thread.start()
 
     def updateModel(self, fields, datas):
         self.model = AttributeModel(fields, datas)
         self.tableView.setModel(self.model)
         self.tableView.resizeColumnsToContents()
-
-class AttributeWork(QThread):
-    def __init__(self, dataFile, parent=None):
-        super(AttributeWork, self).__init__(parent)
-        self.exiting = False
-        self.dataFile = dataFile
-
-    def __del__(self):
-        self.exiting = True
-        self.wait()
-
-    def getFieldsMetaInfo(self, cur):
-        fields = []
-        cur.execute("PRAGMA table_info(%s)" % (self.currentLayer.name()))
-        columns = cur.fetchall()
-        for c in columns:
-            if c[1] != 'Geometry':
-                fields.append(c[1])
-        return fields
-
-    def getDatas(self, cur, names):
-        columns = ",".join(names)
-        if hasattr(self,"filter"):
-            cur.execute("select %s from %s where %s='%s' order by gid" %(columns,self.currentLayer.name(),self.filter[0],self.filter[1]))
-        elif hasattr(self,"point"):
-            cur.execute("select %s from %s where MbrWithin(MakePoint(%f, %f,4326),Geometry)" %(columns,self.currentLayer.name(),self.point.x(), self.point.y()))
-            return cur.fetchone()
-        else:
-            cur.execute("select %s from %s order by gid" % (columns, self.currentLayer.name()))
-        return cur.fetchall()
-
-    def run(self):
-        if self.exiting: return
-        conn = sqlite3.connect(str(self.dataFile))
-        conn.enable_load_extension(1)
-        conn.load_extension('libspatialite-1.dll')
-        cur = conn.cursor()
-        fields = self.getFieldsMetaInfo(cur)
-        datas = self.getDatas(cur, fields)
-        self.emit(SIGNAL("afterLoadingData"), fields, datas)
-
-    def setFilter(self,filter):
-        self.filter = filter
 
 if __name__ =="__main__":
     import sys

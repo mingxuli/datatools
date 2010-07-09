@@ -2,14 +2,16 @@
 # and open the template in the editor.
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
-from default_attribute_dialog import AttributeWork
+from attribute_work import AttributeWork
 from default_matplot_navigation_toolbar import NavigationToolbar
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
-from pysqlite2 import dbapi2 as sqlite3
+
 from qgis.core import *
 from qgis.gui import *
 from ui_trace_dialog import Ui_TraceDialog
+from attribute_geometry_compositor import AttributeGeometryCompositor
+from attribute_point_compositor import AttributePointCompositor
 
 
 class TraceDialog(QDialog, Ui_TraceDialog):
@@ -17,10 +19,6 @@ class TraceDialog(QDialog, Ui_TraceDialog):
         super(TraceDialog, self).__init__(parent)
         self.setupUi(self)
         self.parent = parent
-        self.attributeWork = AttributeWork(parent.dataFile)
-        self.highlightWork = HighlightWork(parent.dataFile)
-        self.connect(self.attributeWork, SIGNAL("afterLoadingData"), self.addItems)
-        self.connect(self.highlightWork,SIGNAL("afterLoadingGeometry"),self.highlight)
         self.figure = Figure()
         self.figure.suptitle("Trace")
         self.canvas = FigureCanvas(self.figure)
@@ -29,19 +27,21 @@ class TraceDialog(QDialog, Ui_TraceDialog):
         self.mpltoolbar.removeAction(lstActions[7])
         self.verticalLayout.addWidget(self.canvas)
         self.verticalLayout.addWidget(self.mpltoolbar)
+        self.attributeWork = AttributeWork(parent.dataFile)
+        self.highlightWork = AttributeWork(parent.dataFile)
+        self.connect(self.attributeWork, SIGNAL("afterLoadingData"), self.addItems)
+        self.connect(self.highlightWork, SIGNAL("afterLoadingData"), self.highlight)
 
 
     def loadAttribute(self,point):
-        #todo: need refactor
-        self.attributeWork.currentLayer = self.parent.currentLayer
-        self.attributeWork.point = point
+        attributeCompositor = AttributePointCompositor(self.parent.currentLayer.name(),(point.x(),point.y()))
+        self.attributeWork.compositor = attributeCompositor
         self.attributeWork.start()
-        
-        self.highlightWork.currentLayer = self.parent.currentLayer
-        self.highlightWork.point = point
+        geometryCompositor = AttributeGeometryCompositor(self.parent.currentLayer.name(),(point.x(),point.y()))
+        self.highlightWork.compositor = geometryCompositor
         self.highlightWork.start()
 
-    def highlight(self,datas):
+    def highlight(self,columns,datas):
         if not datas: return
         layer = self.parent.currentLayer
         g = QgsGeometry.fromWkt(datas[0])
@@ -71,29 +71,6 @@ class TraceDialog(QDialog, Ui_TraceDialog):
             self.rb.reset()
         QApplication.restoreOverrideCursor()
 
-#todo: refactor--get an abstract class from AttributeWork,HighlightWork
-class HighlightWork(QThread):
-    def __init__(self, dataFile, parent=None):
-        super(HighlightWork, self).__init__(parent)
-        self.exiting = False
-        self.dataFile = dataFile
-
-    def __del__(self):
-        self.exiting = True
-        self.wait()
-
-    def getDatas(self, cur):
-        cur.execute("select AsText(Geometry) from %s where MbrWithin(MakePoint(%f, %f,4326),Geometry)" % (self.currentLayer.name(), self.point.x(), self.point.y()))
-        return cur.fetchone()
-
-    def run(self):
-        if self.exiting: return
-        conn = sqlite3.connect(str(self.dataFile))
-        conn.enable_load_extension(1)
-        conn.load_extension('libspatialite-1.dll')
-        cur = conn.cursor()
-        datas = self.getDatas(cur)
-        self.emit(SIGNAL("afterLoadingGeometry"), datas)
 
 
 
