@@ -10,34 +10,37 @@ class CanvasWidget(QgsMapCanvas):
     def __init__(self,parent=None):
         super(CanvasWidget,self).__init__(parent)
         self.parent = parent
-        self.layers = []
-        self.dataFile = QgsApplication.prefixPath() + "//data//nepal.sqlite"
+        self.vectorLayers = []
+        settings = QSettings()
+        self.database = settings.value("Application/database", "").toString()
+        self.image = settings.value("Application/image","").toString()
         self.setCanvasColor(QColor(200, 200, 255))
         self.zoomInTool = QgsMapToolZoom(self, False)
         self.zoomOutTool = QgsMapToolZoom(self, True)
         self.zoomPanTool = QgsMapToolPan(self)
         self.mapIndentify = TraceMapTool(self)
-        self.connect(self, SIGNAL("afterLoadingLayers"), self.setCanvasLayerSet)        
+        self.connect(self, SIGNAL("afterLoadingLayers"), self.setCanvasLayerSet)  
 
     def loadInitialLayers(self):
-        if not QFile.exists(self.dataFile): return
+        if not QFile.exists(self.database): return
+        settings = QSettings();
+        layerNames = settings.value("Application/layers").toStringList()
         parameters = "dbname='%s' table=\"%s\"(Geometry) sql="
-        for name in ("nepal_glacial_lake_2009", "nepal_major_rivers", "nepal_sub_basin_boundary", "nepal_boundary"):
-            layer = QgsVectorLayer(parameters % (self.dataFile, name), name, "spatialite")
+        for name in layerNames:
+            layer = QgsVectorLayer(parameters % (self.database, name), name, "spatialite")
             if layer.isValid():
                 QgsMapLayerRegistry.instance().addMapLayer(layer)
-                self.layers.append(layer)
+                self.vectorLayers.append(layer)
                 self.setExtent(layer.extent())
-        fileName = "D://ICIMOD//v2//data//dem//ASTGTM_Nepal_color_shade.tif"
-        fileInfo = QFileInfo(fileName)
+                self.setStyle(layer)
+        fileInfo = QFileInfo(self.image)
         baseName = fileInfo.baseName()
-        self.rlayer = QgsRasterLayer(fileName, baseName)
-        QgsMapLayerRegistry.instance().addMapLayer(self.rlayer)
-        self.connect(self.rlayer, SIGNAL("repaintRequested()"), self, SLOT("refresh()"))
-        self.layers.append(self.rlayer)
-        self.setVisible(True);
-        self.refresh();
-        self.emit(SIGNAL("afterLoadingLayers"), self.layers)
+        self.rasterLayer = QgsRasterLayer(self.image, baseName)
+        QgsMapLayerRegistry.instance().addMapLayer(self.rasterLayer)
+        self.connect(self.rasterLayer, SIGNAL("repaintRequested()"), self, SLOT("refresh()"))
+        self.setVisible(True)
+        self.refresh()
+        self.emit(SIGNAL("afterLoadingLayers"), self.vectorLayers)
 
     def zoomIn(self):
         self.setMapTool(self.zoomInTool)
@@ -54,9 +57,15 @@ class CanvasWidget(QgsMapCanvas):
     def indentifyFeature(self):        
         self.setMapTool(self.mapIndentify)
 
-    def setCanvasLayerSet(self, layers):        
-        canvasLayers = [QgsMapCanvasLayer(layer) for layer in layers]
+    def setCanvasLayerSet(self, layers):      
+        canvasLayers = [QgsMapCanvasLayer(layer) for layer in layers]+[QgsMapCanvasLayer(self.rasterLayer)]
         self.setLayerSet(canvasLayers)
+
+    def setStyle(self,layer):
+        styleFolder = QgsApplication.prefixPath() + "//style//"
+        qmlFile = styleFolder + layer.name() + ".qml"
+        if QFile.exists(qmlFile):
+            layer.loadNamedStyle(qmlFile)
 
     def changeCurrentLayer(self,currentLayer):        
         self.setCurrentLayer(currentLayer)

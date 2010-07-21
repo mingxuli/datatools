@@ -40,7 +40,7 @@ class StatisDialog(QDialog, Ui_StatisDialog):
         QObject.connect(self.btnRefresh, SIGNAL("clicked()"), self.refreshPlot)
 
         self.cmbLayers.clear()
-        lstLayers = self.getLayersNames(self.parent.layers)
+        lstLayers = self.getLayersNames(self.parent.vectorLayers)
         self.cmbLayers.addItems(lstLayers)
 
         self.cmbFields.setCurrentIndex(-1)
@@ -71,7 +71,7 @@ class StatisDialog(QDialog, Ui_StatisDialog):
         QObject.connect(self.chkPlot, SIGNAL("stateChanged(int)"), self.refreshPlot)
 
         currentIndex = self.cmbLayers.currentIndex()
-        vLayer = self.parent.layers[currentIndex]
+        vLayer = self.parent.vectorLayers[currentIndex]
         lstFields = vLayer.dataProvider().fields()
         if self.chkUseTextFields.checkState(): # only numeric fields
             for i in lstFields:
@@ -99,13 +99,13 @@ class StatisDialog(QDialog, Ui_StatisDialog):
         elif self.cmbFields.currentText() == "":
             QMessageBox.information(self, "Statist: Error", "Please specify target field first")
         else:
-            vlayer = self.parent.layers[self.cmbLayers.currentIndex()]
+            vlayer = self.parent.vectorLayers[self.cmbLayers.currentIndex()]
             self.calculate(vlayer.name(), self.cmbFields.currentText())
 
     def calculate(self, layer, fieldName):
         self.tblStatistics.clearContents()
         self.tblStatistics.setRowCount(0)
-        self.threadCalc = WorkThread(self.parent, self, layer, fieldName, self.parent.dataFile)
+        self.threadCalc = WorkThread(self.parent, self, layer, fieldName, self.parent.database)
         QObject.connect(self.threadCalc, SIGNAL("runFinished(PyQt_PyObject)"), self.runFinishedFromThread)
         QObject.connect(self.threadCalc, SIGNAL("runStatus(PyQt_PyObject)"), self.runStatusFromThread)
         QObject.connect(self.threadCalc, SIGNAL("runRange(PyQt_PyObject)"), self.runRangeFromThread)

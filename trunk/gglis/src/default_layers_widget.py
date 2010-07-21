@@ -24,12 +24,10 @@ class LayersWidget(QListWidget):
             item.setSizeHint(QSize(-1, 25))
             typeOfIcon = self.getIconByGeometry(layer)
             item.setIcon(QIcon(typeOfIcon))
-            item.setCheckState(Qt.Checked)
             self.addItem(item)
         self.setCurrentRow(0)
 
     def getIconByGeometry(self, layer):
-        if layer.type() == 1: return "mActionPan.png"
         type = layer.geometryType()
         if type == 0: return ":/default/images/point.png"
         elif type == 1: return ":/default/images/line.png"
@@ -39,9 +37,9 @@ class LayersWidget(QListWidget):
     def changeCurrentLayer(self):
         index = self.currentRow()
         print "current row changed", index
-        if index not in range(len(self.parent.layers)):
+        if index not in range(len(self.parent.vectorLayers)):
             return
-        self.parent.currentLayer = self.parent.layers[index]
+        self.parent.currentLayer = self.parent.vectorLayers[index]
         self.setCurrentRow(index)
         self.emit(SIGNAL("currentLayerChanged"), self.parent.currentLayer)
 

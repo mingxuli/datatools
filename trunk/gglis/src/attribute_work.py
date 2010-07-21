@@ -5,10 +5,11 @@ from PyQt4.QtGui import *
 from pysqlite2 import dbapi2 as sqlite3
 class AttributeWork(QThread):
 
-    def __init__(self, dataFile, parent=None):
+    def __init__(self, parent=None):
         super(AttributeWork, self).__init__(parent)
         self.exiting = False
-        self.dataFile = dataFile
+        settings = QSettings()
+        self.dataFile = settings.value("Application/database", "").toString()
 
     def __del__(self):
         self.exiting = True
@@ -23,7 +24,7 @@ class AttributeWork(QThread):
         return datas
 
     def run(self):
-        if self.exiting: return
+        if self.exiting or (not self.dataFile): return
         conn = sqlite3.connect(str(self.dataFile))
         conn.enable_load_extension(1)
         conn.load_extension('libspatialite-1.dll')
