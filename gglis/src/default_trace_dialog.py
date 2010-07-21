@@ -2,19 +2,22 @@
 # and open the template in the editor.
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+from attribute_geometry_compositor import AttributeGeometryCompositor
+from attribute_point_compositor import AttributePointCompositor
 from attribute_work import AttributeWork
 from default_matplot_navigation_toolbar import NavigationToolbar
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
-
+from matplotlib.patches import Polygon
 from qgis.core import *
 from qgis.gui import *
 from ui_trace_dialog import Ui_TraceDialog
-from attribute_geometry_compositor import AttributeGeometryCompositor
-from attribute_point_compositor import AttributePointCompositor
 
 
 class TraceDialog(QDialog, Ui_TraceDialog):
+
+    verts = [(86.574611, 27.678998), (86.5741, 27.67854), (86.573587, 27.678417), (86.573141, 27.678842), (86.573174, 27.679176), (86.573891, 27.679392), (86.574611, 27.678998)]
+
     def __init__(self, parent=None):
         super(TraceDialog, self).__init__(parent)
         self.setupUi(self)
@@ -27,8 +30,8 @@ class TraceDialog(QDialog, Ui_TraceDialog):
         self.mpltoolbar.removeAction(lstActions[7])
         self.verticalLayout.addWidget(self.canvas)
         self.verticalLayout.addWidget(self.mpltoolbar)
-        self.attributeWork = AttributeWork(parent.dataFile)
-        self.highlightWork = AttributeWork(parent.dataFile)
+        self.attributeWork = AttributeWork()
+        self.highlightWork = AttributeWork()
         self.connect(self.attributeWork, SIGNAL("afterLoadingData"), self.addItems)
         self.connect(self.highlightWork, SIGNAL("afterLoadingData"), self.highlight)
 
@@ -65,6 +68,20 @@ class TraceDialog(QDialog, Ui_TraceDialog):
             self.attributeTableWidget.setItem(i, 0, field)
             self.attributeTableWidget.setItem(i,1,data)
         self.show()
+        for row in range(5):
+            row += 1
+            ax = self.figure.add_subplot(5, 1, row)
+            poly = Polygon(TraceDialog.verts, facecolor='0.8', edgecolor='k')
+            ax.add_patch(poly)
+            ax.axis([86.570, 86.579, 27.6780, 27.6799])
+            ax.set_yticks([])
+            ax.set_xticks([])
+            ax.grid(True)
+            ax.text(0.9, 0.5, row,
+                 horizontalalignment='right',
+                 verticalalignment='center',
+                 transform=ax.transAxes)
+            self.canvas.show()
 
     def closeEvent(self,e):
         if hasattr(self,"rb"):

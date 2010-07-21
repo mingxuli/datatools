@@ -2,12 +2,12 @@
 # and open the template in the editor.
 import sys
 
-import os
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+from default_main_window import MainWindow
+import os
 from qgis.core import *
 from qgis.gui import *
-from default_main_window import MainWindow
 
 def  homeDir():
     path = sys.path[0]
@@ -19,6 +19,10 @@ def  homeDir():
 
 def main(argv):
     qgisPrefix =  homeDir()
+    QApplication.setOrganizationName("ICIMOD");
+    QApplication.setOrganizationDomain("icimod.org");
+    QApplication.setApplicationName("GGLis");
+
     app = QApplication(argv, True)
     QgsApplication.setPrefixPath(qgisPrefix, True)
     QgsApplication.initQgis()

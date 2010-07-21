@@ -19,7 +19,7 @@ class AttributeDialog(QDialog, Ui_AttributeDialog):
         self.tableView = AttributeView(self)
         self.tableView.setObjectName("attributeView")
         self.gridLayout.addWidget(self.tableView, 0, 0, 1, 6)
-        self.thread = AttributeWork(parent.dataFile)
+        self.thread = AttributeWork()
         self.connect(self.thread, SIGNAL("afterLoadingData"), self.updateModel)
         self.connect(self.thread, SIGNAL("afterLoadingData"), self.addItems)
         self.connect(self.pushButton, SIGNAL("clicked()"), self.search)

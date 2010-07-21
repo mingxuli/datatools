@@ -10,6 +10,7 @@ from qgis.gui import *
 from default_attribute_dialog import AttributeDialog
 from default_statis_dialog import StatisDialog
 from default_trace_dialog import TraceDialog
+from default_settings_dialog import SettingsDialog
 from ui_main_window import *
 
 
@@ -32,6 +33,17 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.status = self.statusBar()
         self.status.setSizeGripEnabled(False)
         self.status.addPermanentWidget(self.sizeLabel)
+        mirrorGroup = QActionGroup(self)
+        self.actionZoomIn.setCheckable(True)
+        self.actionZoomOut.setCheckable(True)        
+        self.actionZoomPan.setCheckable(True)
+        self.actionTrace.setCheckable(True)
+        self.actionImport.setCheckable(True)
+        mirrorGroup.addAction(self.actionZoomIn)
+        mirrorGroup.addAction(self.actionZoomOut)        
+        mirrorGroup.addAction(self.actionZoomPan)
+        mirrorGroup.addAction(self.actionTrace)
+        mirrorGroup.addAction(self.actionImport)
         self.connect(self.actionZoomIn, SIGNAL("activated()"), self.mapCanvas.zoomIn)
         self.connect(self.actionZoomOut, SIGNAL("activated()"), self.mapCanvas.zoomOut)
         self.connect(self.actionFullExten, SIGNAL("activated()"), self.mapCanvas.zoomFull)
@@ -41,6 +53,8 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.connect(self.layerListView, SIGNAL("currentLayerChanged"), self.mapCanvas.changeCurrentLayer)
         self.connect(self.actionAttribute, SIGNAL("activated()"), self.showAttribute)
         self.connect(self.actionStatis, SIGNAL("activated()"), self.showStatis)
+        self.connect(self.actionImport,SIGNAL("activated()"),self.showImport)
+        self.connect(self.actionSetting,SIGNAL("activated()"),self.showSettings)
         self.connect(self.mapCanvas, SIGNAL("xyCoordinates(QgsPoint)"), self.showCoordinates)        
         self.connect(self.mapCanvas.mapIndentify, SIGNAL("indentifyTrace"), self.showTrace)
         QTimer.singleShot(0, self.mapCanvas.loadInitialLayers)
@@ -74,6 +88,18 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         if self.mapCanvas.isDrawing(): return
         dialog = TraceDialog(self.mapCanvas)
         dialog.loadAttribute(point)
+
+    def showImport(self):
+        dir =  "."
+        formats = ["*.%s" % unicode("shp")]
+        fileName = unicode(QFileDialog.getOpenFileName(self, "Image Changer - Choose Image", dir,"Image files (%s)" % " ".join(formats)))
+        if fileName:
+            QMessageBox.information(self,"The name",fileName);
+
+    def showSettings(self):
+        if self.mapCanvas.isDrawing(): return
+        dialog = SettingsDialog(self)
+        dialog.exec_()
 
 
 
