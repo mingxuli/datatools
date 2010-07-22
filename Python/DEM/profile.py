@@ -53,7 +53,7 @@ for i in range(num_Feature):
         y_offset=int((y - y0)/ps_y)
         value=band.ReadAsArray(x_offset,y_offset,1,1)
         data.append(value[0,0])
-        x_array.append(x) 
+        x_array.append(x)
     feature.Destroy()
 dataSource.Destroy()
 value=band.ReadAsArray(0,0,cols,rows)
