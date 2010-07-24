@@ -303,8 +303,9 @@ def export_gl_centroid(basin_code,outpath):
     conn.close()
     print '---glacial lake centroid exported!----'
 if __name__=='__main__':
-    basin_code='In71'
+    basin_code='In97'
     outpath='C:\\gl_class\\'
     export_gl_outline(basin_code,outpath)
     export_gl_centroid(basin_code,outpath)
     export_basin_boundary_line(outpath)
+    print 'end'
