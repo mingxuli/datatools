@@ -8,6 +8,8 @@
 = 安装 =
   # 安装python和pyqt
   # 测试安装是否正确在python commond line运行：
- import PyQt4.QtCore
+{{{
+import PyQt4.QtCore
+}}}
 
 = 开发 =
