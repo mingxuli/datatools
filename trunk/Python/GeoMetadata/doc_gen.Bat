@@ -1,1 +1,0 @@
-sphinx-build -b html -w D:\Sphinx_Out\GeoMetadata_log.txt doc D:\Sphinx_Out\GeoMetadata\
