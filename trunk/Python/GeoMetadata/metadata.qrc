@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="default">
+    <file>images/Users.png</file>
+    <file>images/Add.png</file>
+    <file>images/chat.png</file>
+    <file>images/Database.png</file>
+    <file>images/Delete.png</file>
+    <file>images/Edit.png</file>
+    <file>images/Invoice.png</file>
+    <file>images/Login.png</file>
+    <file>images/Register.png</file>
+    <file>images/Settings.png</file>
+  </qresource>
+</RCC>
