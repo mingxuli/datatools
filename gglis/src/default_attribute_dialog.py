@@ -27,7 +27,7 @@ class AttributeDialog(QDialog, Ui_AttributeDialog):
     def search(self):
         value = self.lineEdit.displayText()
         column = self.comboBox.currentText()
-        compositor = AttributeSearchCompositor(self.parent.currentLayer.name(),(column,value))
+        compositor = AttributeSearchCompositor(self.parent.currentLayer().name(),(column,value))
         self.thread.compositor = compositor
         self.thread.start()
 
@@ -36,7 +36,7 @@ class AttributeDialog(QDialog, Ui_AttributeDialog):
         self.comboBox.addItems(fields)
 
     def loadingData(self):
-        compositor = AttributeLoadCompositor(self.parent.currentLayer.name())
+        compositor = AttributeLoadCompositor(self.parent.currentLayer().name())
         self.thread.compositor = compositor
         self.thread.start()
 

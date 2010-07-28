@@ -37,16 +37,16 @@ class TraceDialog(QDialog, Ui_TraceDialog):
 
 
     def loadAttribute(self,point):
-        attributeCompositor = AttributePointCompositor(self.parent.currentLayer.name(),(point.x(),point.y()))
+        attributeCompositor = AttributePointCompositor(self.parent.currentLayer().name(),(point.x(),point.y()))
         self.attributeWork.compositor = attributeCompositor
         self.attributeWork.start()
-        geometryCompositor = AttributeGeometryCompositor(self.parent.currentLayer.name(),(point.x(),point.y()))
+        geometryCompositor = AttributeGeometryCompositor(self.parent.currentLayer().name(),(point.x(),point.y()))
         self.highlightWork.compositor = geometryCompositor
         self.highlightWork.start()
 
     def highlight(self,columns,datas):
         if not datas: return
-        layer = self.parent.currentLayer
+        layer = self.parent.currentLayer()
         g = QgsGeometry.fromWkt(datas[0])
         self.rb = QgsRubberBand(self.parent, g.type() == QGis.Polygon)
         self.rb.setToGeometry(g, layer)

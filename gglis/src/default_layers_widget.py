@@ -8,15 +8,13 @@ __date__ = "$2010-5-20 12:18:15$"
 
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+from qgis.core import *
+from qgis.gui import *
 
 class LayersWidget(QListWidget):
     def __init__(self, parent=None):
         super(LayersWidget, self).__init__(parent)
         self.parent = parent
-        self.setAcceptDrops(True)
-        self.setDragEnabled(True)
-        self.dropAction = Qt.MoveAction
-        self.connect(self, SIGNAL("currentRowChanged(int)"), self.changeCurrentLayer)
 
     def initItems(self, layers):
         for layer in layers:
@@ -28,20 +26,12 @@ class LayersWidget(QListWidget):
         self.setCurrentRow(0)
 
     def getIconByGeometry(self, layer):
+        if not isinstance(layer,QgsVectorLayer): return ""
         type = layer.geometryType()
         if type == 0: return ":/default/images/point.png"
         elif type == 1: return ":/default/images/line.png"
         elif type == 2: return ":/default/images/polygon.png"
         else: return ""
-
-    def changeCurrentLayer(self):
-        index = self.currentRow()
-        print "current row changed", index
-        if index not in range(len(self.parent.vectorLayers)):
-            return
-        self.parent.currentLayer = self.parent.vectorLayers[index]
-        self.setCurrentRow(index)
-        self.emit(SIGNAL("currentLayerChanged"), self.parent.currentLayer)
 
 if __name__ == "__main__":
     import sys

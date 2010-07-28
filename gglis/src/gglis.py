@@ -15,7 +15,6 @@ def  homeDir():
         return path
     elif os.path.isfile(path):
         return os.path.dirname(path)
-#    return "C:\\Program Files\\Quantum GIS Enceladus"
 
 def main(argv):
     qgisPrefix =  homeDir()
