@@ -2,9 +2,8 @@
 # and open the template in the editor.
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
-from default_canvas_widget import CanvasWidget
 from default_resources import *
-from default_layers_widget import LayersWidget
+from default_layers_dialog import LayersDialog
 from qgis.core import *
 from qgis.gui import *
 from default_attribute_dialog import AttributeDialog
@@ -18,16 +17,6 @@ class MainWindow(QMainWindow,Ui_MainWindow):
     def __init__(self,parent=None):
         super(MainWindow,self).__init__(parent)
         self.setupUi(self)        
-        self.mapCanvas = CanvasWidget(self)
-        self.mapCanvas.setBaseSize(QtCore.QSize(0, 0))
-        self.mapCanvas.setObjectName("mapCanvas")
-        self.layerListView = LayersWidget(self.mapCanvas)
-        self.layerListView.setMaximumSize(QtCore.QSize(200, 16777215))
-        self.layerListView.setBaseSize(QtCore.QSize(0, 0))
-        self.layerListView.setObjectName("layerListView")
-        self.horizontalLayout.addWidget(self.layerListView)
-        self.horizontalLayout.addWidget(self.mapCanvas)
-
         self.sizeLabel = QLabel("Coordinate")
         self.sizeLabel.setFrameStyle(QFrame.StyledPanel | QFrame.Sunken)
         self.status = self.statusBar()
@@ -49,14 +38,14 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.connect(self.actionFullExten, SIGNAL("activated()"), self.mapCanvas.zoomFull)
         self.connect(self.actionZoomPan, SIGNAL("activated()"), self.mapCanvas.pan)
         self.connect(self.actionTrace,SIGNAL("activated()"),self.mapCanvas.indentifyFeature)
-        self.connect(self.mapCanvas, SIGNAL("afterLoadingLayers"), self.layerListView.initItems)
-        self.connect(self.layerListView, SIGNAL("currentLayerChanged"), self.mapCanvas.changeCurrentLayer)
         self.connect(self.actionAttribute, SIGNAL("activated()"), self.showAttribute)
         self.connect(self.actionStatis, SIGNAL("activated()"), self.showStatis)
         self.connect(self.actionImport,SIGNAL("activated()"),self.showImport)
         self.connect(self.actionSetting,SIGNAL("activated()"),self.showSettings)
+        self.connect(self.actionLayers,SIGNAL("activated()"),self.showLayers)
         self.connect(self.mapCanvas, SIGNAL("xyCoordinates(QgsPoint)"), self.showCoordinates)        
         self.connect(self.mapCanvas.mapIndentify, SIGNAL("indentifyTrace"), self.showTrace)
+        self.connect(self.runSqlButton,SIGNAL("clicked()"),self.queryFeatures)
         QTimer.singleShot(0, self.mapCanvas.loadInitialLayers)
 
     def showAttribute(self):
@@ -100,6 +89,20 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         if self.mapCanvas.isDrawing(): return
         dialog = SettingsDialog(self)
         dialog.exec_()
+
+    def showLayers(self):
+        if self.mapCanvas.isDrawing(): return
+        dialog = LayersDialog(self.mapCanvas)
+        dialog.show()
+
+    def queryFeatures(self):
+        where = self.sqlConsole.text()
+        if not where: return
+        layer = self.mapCanvas.currentLayer()
+        sql = "select gid from %s where %s" % (layer.name(), where)
+        print sql
+        layer.setSubsetString(where)
+        layer.triggerRepaint()
 
 
 

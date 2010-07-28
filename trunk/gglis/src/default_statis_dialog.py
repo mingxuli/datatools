@@ -70,8 +70,7 @@ class StatisDialog(QDialog, Ui_StatisDialog):
         QObject.connect(self.chkGrid, SIGNAL("stateChanged(int)"), self.refreshPlot)
         QObject.connect(self.chkPlot, SIGNAL("stateChanged(int)"), self.refreshPlot)
 
-        currentIndex = self.cmbLayers.currentIndex()
-        vLayer = self.parent.vectorLayers[currentIndex]
+        vLayer = self.parent.currentLayer()
         lstFields = vLayer.dataProvider().fields()
         if self.chkUseTextFields.checkState(): # only numeric fields
             for i in lstFields:

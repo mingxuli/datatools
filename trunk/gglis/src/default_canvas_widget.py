@@ -19,10 +19,10 @@ class CanvasWidget(QgsMapCanvas):
         self.zoomOutTool = QgsMapToolZoom(self, True)
         self.zoomPanTool = QgsMapToolPan(self)
         self.mapIndentify = TraceMapTool(self)
-        self.connect(self, SIGNAL("afterLoadingLayers"), self.setCanvasLayerSet)  
 
     def loadInitialLayers(self):
         if not QFile.exists(self.database): return
+        layers = []
         settings = QSettings();
         layerNames = settings.value("Application/layers").toStringList()
         parameters = "dbname='%s' table=\"%s\"(Geometry) sql="
@@ -30,17 +30,18 @@ class CanvasWidget(QgsMapCanvas):
             layer = QgsVectorLayer(parameters % (self.database, name), name, "spatialite")
             if layer.isValid():
                 QgsMapLayerRegistry.instance().addMapLayer(layer)
-                self.vectorLayers.append(layer)
+                layers.append(layer)
                 self.setExtent(layer.extent())
-                self.setStyle(layer)
+                self.loadStyle(layer)
         fileInfo = QFileInfo(self.image)
         baseName = fileInfo.baseName()
-        self.rasterLayer = QgsRasterLayer(self.image, baseName)
-        QgsMapLayerRegistry.instance().addMapLayer(self.rasterLayer)
-        self.connect(self.rasterLayer, SIGNAL("repaintRequested()"), self, SLOT("refresh()"))
+        rasterLayer = QgsRasterLayer(self.image, baseName)
+        QgsMapLayerRegistry.instance().addMapLayer(rasterLayer)
+        self.addLayers(layers,[rasterLayer])        
+        self.setCurrentLayerByIndex(0)
+        self.connect(rasterLayer, SIGNAL("repaintRequested()"), self, SLOT("refresh()"))
         self.setVisible(True)
         self.refresh()
-        self.emit(SIGNAL("afterLoadingLayers"), self.vectorLayers)
 
     def zoomIn(self):
         self.setMapTool(self.zoomInTool)
@@ -57,19 +58,19 @@ class CanvasWidget(QgsMapCanvas):
     def indentifyFeature(self):        
         self.setMapTool(self.mapIndentify)
 
-    def setCanvasLayerSet(self, layers):      
-        canvasLayers = [QgsMapCanvasLayer(layer) for layer in layers]+[QgsMapCanvasLayer(self.rasterLayer)]
-        self.setLayerSet(canvasLayers)
+    def setCurrentLayerByIndex(self, index):
+        layer = self.layer(index)
+        self.setCurrentLayer(layer)
 
-    def setStyle(self,layer):
+    def addLayers(self,vectors,rasters):
+        layers = [QgsMapCanvasLayer(layer) for layer in vectors] + [QgsMapCanvasLayer(layer) for layer in rasters]
+        self.setLayerSet(layers)
+
+    def loadStyle(self,layer):
         styleFolder = QgsApplication.prefixPath() + "//style//"
         qmlFile = styleFolder + layer.name() + ".qml"
         if QFile.exists(qmlFile):
             layer.loadNamedStyle(qmlFile)
-
-    def changeCurrentLayer(self,currentLayer):        
-        self.setCurrentLayer(currentLayer)
-
 
 if __name__ == "__main__":
     import sys

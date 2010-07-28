@@ -2,13 +2,16 @@
 
 # Form implementation generated from reading ui file 'main_window.ui'
 #
-# Created: Thu Jun 10 11:51:23 2010
+# Created: Wed Jul 21 15:46:35 2010
 #      by: PyQt4 UI code generator 4.7.2
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore
 from PyQt4 import QtGui
+from default_canvas_widget import CanvasWidget
+from qgis.core import *
+from qgis.gui import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -19,15 +22,25 @@ class Ui_MainWindow(object):
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.horizontalLayout_2 = QtGui.QHBoxLayout(self.centralwidget)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.horizontalLayout = QtGui.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.horizontalLayout_2.addLayout(self.horizontalLayout)
+        self.mainLayout = QtGui.QVBoxLayout(self.centralwidget)
+        self.mainLayout.setObjectName("mainLayout")
+        self.mapCanvas = CanvasWidget(self.centralwidget)
+        self.mapCanvas.setBaseSize(QtCore.QSize(0, 0))
+        self.mapCanvas.setObjectName("mapCanvas")
+        self.mainLayout.addWidget(self.mapCanvas)
+        self.consoleLayout = QtGui.QHBoxLayout()
+        self.consoleLayout.setObjectName("consoleLayout")
+        self.label = QtGui.QLabel(self.centralwidget)
+        self.label.setObjectName("label")
+        self.consoleLayout.addWidget(self.label)
+        self.sqlConsole = QtGui.QLineEdit(self.centralwidget)
+        self.sqlConsole.setObjectName("sqlConsole")
+        self.consoleLayout.addWidget(self.sqlConsole)
+        self.runSqlButton = QtGui.QPushButton(self.centralwidget)
+        self.runSqlButton.setObjectName("runSqlButton")
+        self.consoleLayout.addWidget(self.runSqlButton)
+        self.mainLayout.addLayout(self.consoleLayout)
         MainWindow.setCentralWidget(self.centralwidget)
-        self.statusbar = QtGui.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
         self.toolBar = QtGui.QToolBar(MainWindow)
         self.toolBar.setAllowedAreas(QtCore.Qt.TopToolBarArea)
         self.toolBar.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)
@@ -49,6 +62,9 @@ class Ui_MainWindow(object):
         self.menuHelp = QtGui.QMenu(self.menubar)
         self.menuHelp.setObjectName("menuHelp")
         MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtGui.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
         self.actionSetting = QtGui.QAction(MainWindow)
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap(":/default/images/setting.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -60,6 +76,7 @@ class Ui_MainWindow(object):
         self.actionClose.setIcon(icon2)
         self.actionClose.setObjectName("actionClose")
         self.actionZoomIn = QtGui.QAction(MainWindow)
+        self.actionZoomIn.setCheckable(False)
         icon3 = QtGui.QIcon()
         icon3.addPixmap(QtGui.QPixmap(":/default/images/in.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionZoomIn.setIcon(icon3)
@@ -99,6 +116,11 @@ class Ui_MainWindow(object):
         icon10.addPixmap(QtGui.QPixmap(":/default/images/import.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionImport.setIcon(icon10)
         self.actionImport.setObjectName("actionImport")
+        self.actionLayers = QtGui.QAction(MainWindow)
+        self.actionLayers.setIcon(icon9)
+        self.actionLayers.setObjectName("actionLayers")
+        self.toolBar.addAction(self.actionLayers)
+        self.toolBar.addSeparator()
         self.toolBar.addAction(self.actionZoomIn)
         self.toolBar.addAction(self.actionZoomOut)
         self.toolBar.addAction(self.actionFullExten)
@@ -106,10 +128,10 @@ class Ui_MainWindow(object):
         self.toolBar.addSeparator()
         self.toolBar.addAction(self.actionAttribute)
         self.toolBar.addAction(self.actionStatis)
-	self.toolBar.addAction(self.actionTrace)
+        self.toolBar.addAction(self.actionTrace)
         self.toolBar.addSeparator()
         self.toolBar.addAction(self.actionSetting)
-	self.toolBar.addAction(self.actionImport)
+        self.toolBar.addAction(self.actionImport)
         self.toolBar.addAction(self.actionClose)
         self.menuFile.addAction(self.actionSetting)
         self.menuFile.addAction(self.actionClose)
@@ -134,6 +156,8 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "Glacier and Glacial Lake Information System", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("MainWindow", "Command:", None, QtGui.QApplication.UnicodeUTF8))
+        self.runSqlButton.setText(QtGui.QApplication.translate("MainWindow", "Run", None, QtGui.QApplication.UnicodeUTF8))
         self.toolBar.setWindowTitle(QtGui.QApplication.translate("MainWindow", "toolBar", None, QtGui.QApplication.UnicodeUTF8))
         self.menuFile.setTitle(QtGui.QApplication.translate("MainWindow", "&File", None, QtGui.QApplication.UnicodeUTF8))
         self.menuExplor.setTitle(QtGui.QApplication.translate("MainWindow", "&Explor", None, QtGui.QApplication.UnicodeUTF8))
@@ -141,17 +165,17 @@ class Ui_MainWindow(object):
         self.menuStatistics.setTitle(QtGui.QApplication.translate("MainWindow", "&Statistics", None, QtGui.QApplication.UnicodeUTF8))
         self.menuProcess.setTitle(QtGui.QApplication.translate("MainWindow", "&Process", None, QtGui.QApplication.UnicodeUTF8))
         self.menuHelp.setTitle(QtGui.QApplication.translate("MainWindow", "&Help", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionSetting.setText(QtGui.QApplication.translate("MainWindow", "&Setting", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionClose.setText(QtGui.QApplication.translate("MainWindow", "&Close", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionZoomIn.setText(QtGui.QApplication.translate("MainWindow", "&Zoom In", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionZoomOut.setText(QtGui.QApplication.translate("MainWindow", "&Zoom Out", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionFullExten.setText(QtGui.QApplication.translate("MainWindow", "&Full Extent", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionZoomPan.setText(QtGui.QApplication.translate("MainWindow", "&Zoom Pan", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionAttribute.setText(QtGui.QApplication.translate("MainWindow", "&Attribute", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionSetting.setText(QtGui.QApplication.translate("MainWindow", "Setting", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionClose.setText(QtGui.QApplication.translate("MainWindow", "Close", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionZoomIn.setText(QtGui.QApplication.translate("MainWindow", "Zoom In", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionZoomOut.setText(QtGui.QApplication.translate("MainWindow", "Zoom Out", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionFullExten.setText(QtGui.QApplication.translate("MainWindow", "Full Extent", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionZoomPan.setText(QtGui.QApplication.translate("MainWindow", "Zoom Pan", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionAttribute.setText(QtGui.QApplication.translate("MainWindow", "Attribute", None, QtGui.QApplication.UnicodeUTF8))
         self.actionStatis.setText(QtGui.QApplication.translate("MainWindow", "Statistics", None, QtGui.QApplication.UnicodeUTF8))
         self.actionStatis.setToolTip(QtGui.QApplication.translate("MainWindow", "Statistics", None, QtGui.QApplication.UnicodeUTF8))
         self.actionTrace.setText(QtGui.QApplication.translate("MainWindow", "Trace", None, QtGui.QApplication.UnicodeUTF8))
         self.actionImport.setText(QtGui.QApplication.translate("MainWindow", "Import", None, QtGui.QApplication.UnicodeUTF8))
-
+        self.actionLayers.setText(QtGui.QApplication.translate("MainWindow", "Layers", None, QtGui.QApplication.UnicodeUTF8))
 
 import default_resources

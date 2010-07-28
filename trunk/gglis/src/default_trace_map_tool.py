@@ -12,7 +12,7 @@ class TraceMapTool(QgsMapTool):
 
     def canvasReleaseEvent(self,e):
         if self.canvas().isDrawing(): return
-        layer = self.canvas().currentLayer
+        layer = self.canvas().currentLayer()
         point = self.toLayerCoordinates(layer,e.pos());        
         self.emit(SIGNAL("indentifyTrace"), point)
 
