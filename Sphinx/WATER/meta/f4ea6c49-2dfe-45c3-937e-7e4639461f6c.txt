@@ -1,24 +1,28 @@
 .. _f4ea6c49-2dfe-45c3-937e-7e4639461f6c:
 
-************************************************************************************************
-黑河综合遥感联合试验:临泽草地站机载WiDAS同步观测数据集(2008年6月29日)
-************************************************************************************************
+*****************************************************************************************************************
+黑河综合遥感联合试验：临泽草地加密观测区机载WiDAS地面同步观测数据集（2008年6月29日）
+*****************************************************************************************************************
 
 **英文标题:**
-WATER: Simultaneous Airborne WiDAS-Ground Observation Dataset at Linze Grassland Station on June 29, 2008
+WATER: Dataset of ground truth measurements synchronizing with airborne WiDAS mission in the Linze grassland foci experimental area on Jun. 29, 2008
 
 1. 摘要
 ============
-2008年6月29日，在临泽草地站开展了航空CCD+多角度热红外成像仪(WiDAS, 引用WiDAS传感器描述文档)航空飞行试验。地面同步观测变量主要为地表温度。本数据可为机载－星载遥感数据的地表温度反演和验证提供基本的数据集。
-在临泽草地站样方A（芦苇地），样方B（盐碱地），样方C（盐碱地）和样方E（大麦地）开展利用手持式红外温度计进行地表温度测量。同步样方包括120m×120m样方和30m×30m加密小样方两种，测量时沿东北方向行进中连续测量。
+2008年6月29日，在临泽草地加密观测区开展了航空CCD+多角度热红外成像仪（WiDAS, 引用WiDAS传感器描述文档）航空飞行试验。地面同步观测变量主要为地表温度。本数据可为机载－星载遥感数据的地表温度反演和验证提供基本的数据集。
+
+在临泽草地加密观测区样方A（芦苇地），样方B（盐碱地），样方C（盐碱地）和样方E（大麦地）开展利用手持式红外温度计进行地表温度测量。同步样方包括120m×120m样方和30m×30m加密小样方两种，测量时沿东北方向行进中连续测量。
+
 本数据集包括4个样方的地表温度测量数据excel表格。
+
+样方样带的分布信息请参见元数据“黑河综合遥感联合试验:临泽草地加密观测区样方样带布置”。
 
 2. 关键词
 ==============
 主题关键词:
 地表温度,WiDAS,多角度热红外与CCD相机,地面同步观测,手持式红外温度计,
 位置关键词:
-黑河流域,中游干旱区水文试验区,临泽草地站,
+黑河流域,中游干旱区水文试验区,临泽草地加密观测区,
 时间关键词:
 2008-06-29,
 学科关键词:
@@ -26,15 +30,15 @@ WATER: Simultaneous Airborne WiDAS-Ground Observation Dataset at Linze Grassland
 3. 本数据的引用
 ====================
 中文引用：
-黄春林,曹永攀,盖春梅,胡晓利,王树果,王静.黑河综合遥感联合试验:临泽草地站机载WiDAS同步观测数据集(2008年6月29日),中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0070.db
+黄春林, 王维真, 曹永攀, 盖春梅, 胡晓利, 王树果, 王静. 黑河综合遥感联合试验：临泽草地加密观测区机载WiDAS地面同步观测数据集（2008年6月29日）. 中国科学院寒区旱区环境与工程研究所; 中国气象局兰州干旱气象研究所. 2008. doi:10.3972/water973.0070.db 
 
 英文引用：
-Huang Chunlin,Cao Yongpan,Ge Chunmei,Hu Xiaoli,Wang Shuguo,Wang Jing.WATER: Simultaneous Airborne WiDAS-Ground Observation Dataset at Linze Grassland Station on June 29, 2008,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0070.db
+Huang Chunlin, Wang Weizhen, Cao Yongpan, Ge Chunmei, Hu Xiaoli, Wang Shuguo, Wang Jing. WATER: Dataset of ground truth measurements synchronizing with airborne WiDAS mission in the Linze grassland foci experimental area on Jun. 29, 2008. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences; Lanzhou Institute of Arid Meteorology, China Meteorological Administration. 2008. doi:10.3972/water973.0070.db
 
 4.	数据调查者
 ==================
 
-+ 姓名：曹永攀,盖春梅,胡晓利,黄春林,王树果
++ 姓名：曹永攀, 盖春梅, 胡晓利, 黄春林, 王树果
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
@@ -75,6 +79,14 @@ Huang Chunlin,Cao Yongpan,Ge Chunmei,Hu Xiaoli,Wang Shuguo,Wang Jing.WATER: Simu
 + 电子邮件：wulizong@lzb.ac.cn
 + 电话：0931-4967298
 
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
 8.	数据分发者
 ======================
 
@@ -85,6 +97,15 @@ Huang Chunlin,Cao Yongpan,Ge Chunmei,Hu Xiaoli,Wang Shuguo,Wang Jing.WATER: Simu
 + 电子邮件：westdc@lzb.ac.cn
 + 电话：0931-4967287
 + 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
 
 9.	地理范围
 =========================
@@ -97,19 +118,44 @@ Huang Chunlin,Cao Yongpan,Ge Chunmei,Hu Xiaoli,Wang Shuguo,Wang Jing.WATER: Simu
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持: 
+本试验的开展及数据的管理与发布获得了以下项目的支持：
 
- 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
 
- 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
 11. 文件清单 
 =========================
 
-文件路径: :file:`/data/WATER/Level_1/Linze_Grass/Linze_Grass_Sync_2008-6-29_TIR&CCD`
+文件路径: :file:`/data/WATER/Level_1/Linze_Grass/Linze_Grass_Sync_2008-6-29_WIDAS`
 ::
-	1./临泽草地站_地表温度_多角度红外航空同步_20080629_B样区.xls
-	2./临泽草地站_地表温度_多角度红外航空同步_20080629_C样区.xls
-	3./临泽草地站_地表温度_多角度红外航空同步_20080629_A样区.xls
-	4./uuid.txt
-	5./临泽草地站_地表温度_多角度红外航空同步_20080629_E样区.xls
+	1./CCD航空影像数据/
+	2./CCD航空影像数据/bandnum.txt
+	3./CCD航空影像数据/CCD3_0629113628_frameimage.bsq.hdr
+	4./CCD航空影像数据/CCD3_0629113628_frameimage.bsq.img
+	5./CCD航空影像数据/CCD3_0629114443_frameimage.bsq.hdr
+	6./CCD航空影像数据/CCD3_0629114443_frameimage.bsq.img
+	7./CCD航空影像数据/CCD3_0629115322_frameimage.bsq.hdr
+	8./CCD航空影像数据/CCD3_0629115322_frameimage.bsq.img
+	9./CCD航空影像数据/CCD3_0629120450_frameimage.bsq.hdr
+	10./CCD航空影像数据/CCD3_0629120450_frameimage.bsq.img
+	11./CCD航空影像数据/CCD3_0629121648_frameimage.bsq.hdr
+	12./CCD航空影像数据/CCD3_0629121648_frameimage.bsq.img
+	13./CCD航空影像数据/CCD3_0629122633_frameimage.bsq.hdr
+	14./CCD航空影像数据/CCD3_0629122633_frameimage.bsq.img
+	15./CCD航空影像数据/CCD3_0629123804_frameimage.bsq.hdr
+	16./CCD航空影像数据/CCD3_0629123804_frameimage.bsq.img
+	17./CCD航空影像数据/CCD3_0629124955_frameimage.bsq.hdr
+	18./CCD航空影像数据/CCD3_0629124955_frameimage.bsq.img
+	19./uuid.txt
+	20./WIDAS和OMIS2描述文档/
+	21./WIDAS和OMIS2描述文档/张掖飞行航线_6月LIDAR.doc
+	22./WIDAS和OMIS2描述文档/张掖飞行航线设计_0524微波.xls
+	23./WIDAS和OMIS2描述文档/张掖飞行航线设计_0702微波.xls
+	24./WIDAS和OMIS2描述文档/张掖飞行航线设计_0708微波.xls
+	25./WIDAS和OMIS2描述文档/张掖飞行航线设计3月飞行.xls
+	26./WIDAS和OMIS2描述文档/张掖飞行航线设计_WiDAS和OMIS2.xls
+	27./临泽草地站_地表温度_多角度红外航空同步_20080629_A样区.xls
+	28./临泽草地站_地表温度_多角度红外航空同步_20080629_B样区.xls
+	29./临泽草地站_地表温度_多角度红外航空同步_20080629_C样区.xls
+	30./临泽草地站_地表温度_多角度红外航空同步_20080629_E样区.xls

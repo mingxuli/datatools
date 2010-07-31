@@ -1,48 +1,28 @@
 .. _e479498d-1d07-4a88-b05e-b6b093d2658d:
 
-****************************************************
-黑河综合遥感联合试验:IKONOS遥感数据集
-****************************************************
+******************************************************
+黑河综合遥感联合试验：IKONOS遥感数据集
+******************************************************
 
 **英文标题:**
 WATER: IKONOS Dataset
 
 1. 摘要
 ============
-黑河流域祁连县IKONOS-2影像一景，影像采集日期为2005年11月5日。本数据集包括文件po_242249_pan_0000000.tif，po_242249_red_0000000.tif，po_242249_grn_0000000.tif，po_242249_blu_0000000.tif，po_242249_nir_0000000.tif。
-其中全色影像分辨率为1m，多光谱影像分辨率为4m。
-影像经过标准几何校正，投影信息为：
-PROJCS["WGS 84 / UTM zone 47N",
-    GEOGCS["WGS 84",
-        DATUM["WGS_1984",
-            SPHEROID["WGS 84",6378137,298.2572235630016,
-                AUTHORITY["EPSG","7030"]],
-            AUTHORITY["EPSG","6326"]],
-        PRIMEM["Greenwich",0],
-        UNIT["degree",0.0174532925199433],
-        AUTHORITY["EPSG","4326"]],
-    PROJECTION["Transverse_Mercator"],
-    PARAMETER["latitude_of_origin",0],
-    PARAMETER["central_meridian",99],
-    PARAMETER["scale_factor",0.9996],
-    PARAMETER["false_easting",500000],
-    PARAMETER["false_northing",0],
-    UNIT["metre",1,
-        AUTHORITY["EPSG","9001"]],
-    AUTHORITY["EPSG","32647"]]
-Corner Coordinates:
-Upper Left  (  604527.705, 4216595.505) (100d11'31.24"E, 38d 5'28.02"N)
-Lower Left  (  604527.705, 4207703.505) (100d11'26.57"E, 38d 0'39.57"N)
-Upper Right (  613859.705, 4216595.505) (100d17'54.27"E, 38d 5'23.96"N)
-Lower Right (  613859.705, 4207703.505) (100d17'49.18"E, 38d 0'35.52"N)
-Center      (  609193.705, 4212149.505) (100d14'40.32"E, 38d 3'1.81"N)
+2005年IKONOS数据1景。
+
+获取时间为2005-11-05，覆盖范围为冰沟流域。影像包括空间分辨率为1m的全色影像和空间分辨率为4m的多光谱影像。
+
+产品级别为L2级，经过几何校正。IKONOS数据主要用作于黑河试验中高分辨率背景数据。
+
+黑河综合遥感联合试验IKONOS数据通过购买获得。
 
 2. 关键词
 ==============
 主题关键词:
-IKONOS,遥感数据,
+卫星遥感,IKONOS,
 位置关键词:
-祁连县,黑河流域,
+黑河流域,上游寒区水文试验区,冰沟流域加密观测区,
 时间关键词:
 2005-11-05,
 学科关键词:
@@ -50,32 +30,32 @@ IKONOS,遥感数据,
 3. 本数据的引用
 ====================
 中文引用：
-黑河综合遥感联合试验:IKONOS遥感数据集,中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0181.db
+黑河综合遥感联合试验：IKONOS遥感数据集. 中国西部环境与生态科学数据中心. 2008. doi:10.3972/water973.0181.db 
 
 英文引用：
-.WATER: IKONOS Dataset,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0181.db
+WATER: IKONOS dataset. Environmental and Ecological Science Data Center for West China. 2008. doi:10.3972/water973.0181.db
 
 4.	数据调查者
 ==================
 5. 数据联系人
 =====================
 
-+ 姓名：冉有华
++ 姓名：李弘毅
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
-+ 电子邮件：ranyh@lzb.ac.cn
-+ 电话：0931-4967259
++ 电子邮件：lihongyi@lzb.ac.cn
++ 电话：0931-4967973
 
 6. 元数据作者
 ======================
 
-+ 姓名：盖春梅
++ 姓名：胡宁科
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
-+ 电子邮件：gechm@lzb.ac.cn
-+ 电话：0931-4967298
++ 电子邮件：changsheng0909@126.com
++ 电话：0931-4967971
 
 7.	元数据发布者
 ======================
@@ -86,6 +66,14 @@ IKONOS,遥感数据,
 + 邮编：730000
 + 电子邮件：wulizong@lzb.ac.cn
 + 电话：0931-4967298
+
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
 
 8.	数据分发者
 ======================
@@ -98,22 +86,31 @@ IKONOS,遥感数据,
 + 电话：0931-4967287
 + 传真：0931-8279161
 
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
 9.	地理范围
 =========================
 
-+ 北：42.685
-+ 南：37.868
-+ 西：97.399
-+ 东：102.125
++ 北：38.091
++ 南：38.009
++ 西：100.191
++ 东：100.298
 
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持:            
+本试验的开展及数据的管理与发布获得了以下项目的支持：
 
- 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）
 
- 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
 11. 文件清单 
 =========================
@@ -121,42 +118,42 @@ IKONOS,遥感数据,
 文件路径: :file:`/data/WATER/Level_1/Satellite/IKONOS`
 ::
 	1./IKONOS-20051105/
-	2./uuid.txt
-	3./IKONOS-20051105/geoeye_logo.tif
-	4./IKONOS-20051105/po_242249_grn_0000000.tif
-	5./IKONOS-20051105/po_242249_image.shp
-	6./IKONOS-20051105/po_242249_pan_0000000_rpc.txt
-	7./IKONOS-20051105/po_242249_component.shp
-	8./IKONOS-20051105/po_242249_image.prj
-	9./IKONOS-20051105/po_242249_grn_0000000.hdr
-	10./IKONOS-20051105/po_242249_nir_0000000.hdr
-	11./IKONOS-20051105/po_242249_aoi.shp
-	12./IKONOS-20051105/po_242249_red_0000000.tfw
-	13./IKONOS-20051105/singleorganization_license.txt
-	14./IKONOS-20051105/po_242249_image.dbf
-	15./IKONOS-20051105/po_242249_grn_0000000.tfw
-	16./IKONOS-20051105/po_242249_image.shx
-	17./IKONOS-20051105/po_242249_blu_0000000.tfw
-	18./IKONOS-20051105/po_242249_red_0000000_rpc.txt
-	19./IKONOS-20051105/po_242249_rgb_0000000_ovr.jgw
-	20./IKONOS-20051105/po_242249_nir_0000000_rpc.txt
-	21./IKONOS-20051105/po_242249_metadata.txt
-	22./IKONOS-20051105/po_242249_pan_0000000.hdr
-	23./IKONOS-20051105/po_242249_pan_0000000.tfw
-	24./IKONOS-20051105/po_242249_component.prj
-	25./IKONOS-20051105/po_242249_blu_0000000_rpc.txt
-	26./IKONOS-20051105/po_242249_component.dbf
-	27./IKONOS-20051105/po_242249_pan_0000000.tif
-	28./IKONOS-20051105/metadata.txt
-	29./IKONOS-20051105/po_242249_blu_0000000.tif
-	30./IKONOS-20051105/po_242249_aoi.dbf
-	31./IKONOS-20051105/po_242249_aoi.prj
-	32./IKONOS-20051105/po_242249_rgb_0000000_ovr.jpg
-	33./IKONOS-20051105/po_242249_nir_0000000.tfw
-	34./IKONOS-20051105/po_242249_red_0000000.hdr
-	35./IKONOS-20051105/po_242249_nir_0000000.tif
-	36./IKONOS-20051105/po_242249_aoi.shx
-	37./IKONOS-20051105/po_242249_grn_0000000_rpc.txt
-	38./IKONOS-20051105/po_242249_red_0000000.tif
-	39./IKONOS-20051105/po_242249_blu_0000000.hdr
-	40./IKONOS-20051105/po_242249_component.shx
+	2./IKONOS-20051105/geoeye_logo.tif
+	3./IKONOS-20051105/metadata.txt
+	4./IKONOS-20051105/po_242249_aoi.dbf
+	5./IKONOS-20051105/po_242249_aoi.prj
+	6./IKONOS-20051105/po_242249_aoi.shp
+	7./IKONOS-20051105/po_242249_aoi.shx
+	8./IKONOS-20051105/po_242249_blu_0000000.hdr
+	9./IKONOS-20051105/po_242249_blu_0000000_rpc.txt
+	10./IKONOS-20051105/po_242249_blu_0000000.tfw
+	11./IKONOS-20051105/po_242249_blu_0000000.tif
+	12./IKONOS-20051105/po_242249_component.dbf
+	13./IKONOS-20051105/po_242249_component.prj
+	14./IKONOS-20051105/po_242249_component.shp
+	15./IKONOS-20051105/po_242249_component.shx
+	16./IKONOS-20051105/po_242249_grn_0000000.hdr
+	17./IKONOS-20051105/po_242249_grn_0000000_rpc.txt
+	18./IKONOS-20051105/po_242249_grn_0000000.tfw
+	19./IKONOS-20051105/po_242249_grn_0000000.tif
+	20./IKONOS-20051105/po_242249_image.dbf
+	21./IKONOS-20051105/po_242249_image.prj
+	22./IKONOS-20051105/po_242249_image.shp
+	23./IKONOS-20051105/po_242249_image.shx
+	24./IKONOS-20051105/po_242249_metadata.txt
+	25./IKONOS-20051105/po_242249_nir_0000000.hdr
+	26./IKONOS-20051105/po_242249_nir_0000000_rpc.txt
+	27./IKONOS-20051105/po_242249_nir_0000000.tfw
+	28./IKONOS-20051105/po_242249_nir_0000000.tif
+	29./IKONOS-20051105/po_242249_pan_0000000.hdr
+	30./IKONOS-20051105/po_242249_pan_0000000_rpc.txt
+	31./IKONOS-20051105/po_242249_pan_0000000.tfw
+	32./IKONOS-20051105/po_242249_pan_0000000.tif
+	33./IKONOS-20051105/po_242249_red_0000000.hdr
+	34./IKONOS-20051105/po_242249_red_0000000_rpc.txt
+	35./IKONOS-20051105/po_242249_red_0000000.tfw
+	36./IKONOS-20051105/po_242249_red_0000000.tif
+	37./IKONOS-20051105/po_242249_rgb_0000000_ovr.jgw
+	38./IKONOS-20051105/po_242249_rgb_0000000_ovr.jpg
+	39./IKONOS-20051105/singleorganization_license.txt
+	40./uuid.txt

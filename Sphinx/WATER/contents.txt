@@ -9,7 +9,7 @@
 目 录
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    
    foreword
    exp_aims

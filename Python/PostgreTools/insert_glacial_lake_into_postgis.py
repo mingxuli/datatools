@@ -33,6 +33,7 @@ def insert_polygon(host,dbname,user,password,kml_file,table_name,srid='4326'):
         max_gid=0
         gid_list=[]
     max_gid_old=max_gid
+    print max_gid_old
     dom=minidom.parse(kml_file)
     root=dom.documentElement
     Placemark_List=root.getElementsByTagName('Placemark')
@@ -88,7 +89,7 @@ def insert_polygon(host,dbname,user,password,kml_file,table_name,srid='4326'):
 
                     curs.execute(sql_insert)
                     max_gid=max_gid+1
-    print max_gid-max_gid_old
+    print max_gid-max_gid_old, 'have added into database'
     conn.commit() 
     curs.close()
     conn.close()
@@ -102,12 +103,11 @@ if __name__=='__main__':
     dbname="GGLIS"
     user='postgres'
     password='postgres'
-    basin_code='In96'
     table_name="\"HKH_Glacial_Lakes_final\""
     gid='gid'
     ##define the geosystem code,default value is 4326 (=WGS84)
     srid='4326'
-    kml_file='C:\\gl_class\\gl_In96_new.kml'
+    kml_file='C:\\gl_class\\gl_br61_new.kml'
     insert_polygon(host,dbname,user,password,kml_file,table_name)
 
 

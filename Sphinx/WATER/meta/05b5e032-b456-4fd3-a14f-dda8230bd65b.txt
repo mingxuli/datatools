@@ -1,45 +1,62 @@
 .. _05b5e032-b456-4fd3-a14f-dda8230bd65b:
 
-**********************************************************************
-黑河综合遥感联合试验:阿柔试验区地表粗糙度数据集
-**********************************************************************
+******************************************************************************
+黑河综合遥感联合试验：阿柔加密观测区地表粗糙度数据集
+******************************************************************************
 
 **英文标题:**
-WATER: Surface Roughness Dataset in A'rou Experimental Area
+WATER: Dateset of surface roughness measurements in the A'rou foci experimental area
 
 1. 摘要
 ============
-本数据包括上游寒区试验中阿柔样方1，阿柔样方2，阿柔样方3，阿柔样带1，阿柔样带2，阿柔样带3，阿柔样带4，阿柔样带5和阿柔样带6中各采样点的粗糙度测量原始照片，及地表高度均方根离差（cm）和相关长度（cm）的计算结果。每个采样点均按照南北向和东西向分别测量1次，粗糙度板长110cm，测量点间距1cm。阿柔各样方均为4 Grid×4 Grid，每个Grid为30m×30m；阿柔各样带为南北向朝向，样带上各采样点间距为100m。相片命名规则如下，以A3-1EW为例，表示阿柔样方3（A3）中的1号采样点东西向的粗糙度板测量照片。本数据可为发展和验证微波遥感算法提供基本的地面数据集。
-粗糙度数据通过数码照相采集，然后在ArcView软件下，对照片中每根辐条的顶端以及板子的四角做手工数字化采样，获得其图像坐标值，经过几何校正后，计算得到每根辐条的高度，然后按公式计算得到最终结果。
-粗糙度数据如下所示。首先是样点名称，之后数据正文包括5列。每一个文件名，即txt文件对应一张采样照片，“标准离差”与“相关长度”即代表了粗糙度，因为计算过程中的离散化处理，“距1/e”这一列在一定程度上代表了计算结果的精度。之后是每张照片中101根辐条的长度，属于中间结果，用以检查校正，并不重要。
+本数据包括上游寒区水文试验中阿柔样方1（A1），阿柔样方2（A2），阿柔样方3（A3），阿柔样带1（L1），阿柔样带2（L2），阿柔样带3（L3），阿柔样带4（L4），阿柔样带5（L5）和阿柔样带6（L6）中各采样点的粗糙度测量原始照片，及表面高度标准离差（cm）和相关长度（cm）的计算结果。每个采样点均按照南北向和东西向分别测量1次，粗糙度板长110cm，测量点间距1cm。阿柔各样方在预实验期时为3 Grid×3 Grid，加强实验期时扩展为4 Grid×4 Grid，每个Grid均为30 m×30 m；阿柔各样带为南北向朝向，样带上各采样点间距为100m。相片命名规则如下，以A3-1EW为例，表示阿柔样方3（A3）中的1号采样点东西向的粗糙度板测量照片。本数据可为发展和验证微波遥感算法提供基本的地面数据集。
+
+粗糙度数据通过数码照相采集，然后在ArcView软件下，对照片中每根辐条的顶端以及板子的四角做手工数字化采样，获得其图像坐标值，经过几何校正后，计算得到每根辐条的高度，然后按公式计算表面高度标准离差和表面相关长度。其计算公式见《微波遥感》第二卷234-236页。
+
+粗糙度数据如下所示。首先是样点名称，之后数据正文包括4列（编号、文件名、标准离差、相关长度）。每一个文件名，即txt文件对应一张采样照片，标准离差（cm）与相关长度（cm）即代表了粗糙度。之后是每张照片中101根辐条的长度，属于中间结果，用以检查校正。
 
 数据示例：
-**********************************
-草地站b样方
-**********************************
-编号	文件名	标准离差	相关长度	距1/e
+
+
+
+阿柔样方3
+
+
+
+编号 文件名 标准离差 相关长度
+
 -------------------------------------------------------------------------
-1		dsc02314.txt		1.42755			64			0.00295717
-2		dsc02315.txt		1.46424			64			0.00180128
-3		dsc02316.txt		1.46444			67			0.00380194
-4		dsc02317.txt		1.3713			66			0.00136882
+
+1 A3-1EW.txt 1.42755 64
+
+2 A3-1NS.txt 1.46424 64
+
+3 A3-2EW.txt 1.46444 67
+
+4 A3-2NS.txt 1.3713 66
 
 
-*************************************************************************
-以下是dsc02314.txt中101根辐条的长度，单位为cm
-*************************************************************************
-0	10.4353
-1	10.1514
-2	10.0254
-3	9.91914
-本数据集包括9个文件，分别为：阿柔样方1测量数据，阿柔样方2测量数据，阿柔样方3测量数据，阿柔样带1测量数据，阿柔样带2测量数据，阿柔样带3测量数据，阿柔样带4测量数据，阿柔样带5测量数据和阿柔样带6测量数据。
+
+以下是A3-1EW.txt中101根辐条的长度，单位为cm
+
+
+
+0 10.4353
+
+1 10.1514
+
+2 10.0254
+
+3 9.91914
+
+本数据集按照每个样方和样带分别组织，共包括9个文件夹，分别为：ARou_SampleArea1，ARou_SampleArea2，ARou_SampleArea3，ARou_SampleLine1，ARou_SampleLine2，ARou_SampleLine3，ARou_SampleLine4，ARou_SampleLine5和ARou_SampleLine6。
 
 2. 关键词
 ==============
 主题关键词:
-地表高度均方根离差,微波,相关长度,粗糙度,
+地表粗糙度,表面高度标准离差,相关长度,微波,
 位置关键词:
-黑河流域,上游寒区水文试验区,阿柔试验区,
+黑河流域,上游寒区水文试验区,阿柔加密观测区,
 时间关键词:
 2008-03-12,
 学科关键词:
@@ -47,15 +64,15 @@ WATER: Surface Roughness Dataset in A'rou Experimental Area
 3. 本数据的引用
 ====================
 中文引用：
-晋锐, 车涛, 曹永攀, 韩旭军, 李新, 李哲, 王树果. 黑河综合遥感联合试验:阿柔试验区地表粗糙度数据集,中国西部环境与生态科学数据中心, 2008. doi:10.3972/water973.0022.db 
+晋锐, 车涛, 曹永攀, 韩旭军, 李新, 李哲, 王树果. 黑河综合遥感联合试验：阿柔加密观测区地表粗糙度数据集. 中国科学院寒区旱区环境与工程研究所. 2008. doi:10.3972/water973.0022.db 
 
 英文引用：
-Jin Rui, Che Tao, Cao Yongpan, Han Xujun, Li Xin, Li Zhe, Wang Shuguo. WATER: Surface Roughness Dataset in A'rou Foci Experimental Area, Environmental and Ecological Science Data Center for West China, 2008. doi:10.3972/water973.0022.db
+Jin Rui, Che Tao, Cao Yongpan, Han Xujun, Li Xin, Li Zhe, Wang Shuguo. WATER: Dateset of surface roughness measurements in the A'rou foci experimental area. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences. 2008. doi:10.3972/water973.0022.db
 
 4.	数据调查者
 ==================
 
-+ 姓名：曹永攀,车涛,韩旭军,晋锐,李新,李哲,王树果
++ 姓名：曹永攀, 车涛, 韩旭军, 晋锐, 李新, 李哲, 王树果
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
@@ -90,6 +107,14 @@ Jin Rui, Che Tao, Cao Yongpan, Han Xujun, Li Xin, Li Zhe, Wang Shuguo. WATER: Su
 + 电子邮件：wulizong@lzb.ac.cn
 + 电话：0931-4967298
 
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
 8.	数据分发者
 ======================
 
@@ -100,6 +125,15 @@ Jin Rui, Che Tao, Cao Yongpan, Han Xujun, Li Xin, Li Zhe, Wang Shuguo. WATER: Su
 + 电子邮件：westdc@lzb.ac.cn
 + 电话：0931-4967287
 + 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
 
 9.	地理范围
 =========================
@@ -112,413 +146,413 @@ Jin Rui, Che Tao, Cao Yongpan, Han Xujun, Li Xin, Li Zhe, Wang Shuguo. WATER: Su
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持: 
+本试验的开展及数据的管理与发布获得了以下项目的支持：
 
- 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）
 
- 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
 11. 文件清单 
 =========================
 
 文件路径: :file:`/data/WATER/Level_1/Arou/ARou_Roughness`
 ::
-	1./ARou_SampleLine3/
-	2./ARou_SampleArea1/
-	3./ARou_SampleArea3/
-	4./uuid.txt
-	5./ARou_SampleLine2/
-	6./ARou_SampleLine6/
-	7./ARou_SampleLine1/
-	8./ARou_SampleLine5/
-	9./ARou_SampleArea2/
-	10./ARou_SampleLine4/
-	11./ARou_SampleLine3/L3-18WE.jpg
-	12./ARou_SampleLine3/L3-11NS.jpg
-	13./ARou_SampleLine3/L3-17NS.jpg
-	14./ARou_SampleLine3/L3-4WE.jpg
-	15./ARou_SampleLine3/L3-14WE.jpg
-	16./ARou_SampleLine3/L3-16WE.jpg
-	17./ARou_SampleLine3/L3-9NS.jpg
-	18./ARou_SampleLine3/L3-8NS.jpg
-	19./ARou_SampleLine3/L3-15WE.jpg
-	20./ARou_SampleLine3/L3-3WE.jpg
-	21./ARou_SampleLine3/L3-18NS.jpg
-	22./ARou_SampleLine3/L3-13NS.jpg
-	23./ARou_SampleLine3/L3-15NS.jpg
-	24./ARou_SampleLine3/L3-8WE.jpg
-	25./ARou_SampleLine3/L3-16NS.jpg
-	26./ARou_SampleLine3/L3-9WE.jpg
-	27./ARou_SampleLine3/L3-12WE.jpg
-	28./ARou_SampleLine3/L3-13WE.jpg
-	29./ARou_SampleLine3/L3-19WE.jpg
-	30./ARou_SampleLine3/L3-2WE.jpg
-	31./ARou_SampleLine3/L3-14NS.jpg
-	32./ARou_SampleLine3/L3-7WE.jpg
-	33./ARou_SampleLine3/L3-17WE.jpg
-	34./ARou_SampleLine3/L3-1WE.jpg
-	35./ARou_SampleLine3/L3-5WE.jpg
-	36./ARou_SampleLine3/L3-3NS.jpg
-	37./ARou_SampleLine3/L3-6WE.jpg
-	38./ARou_SampleLine3/l3-6NS.jpg
-	39./ARou_SampleLine3/L3-7NS.jpg
-	40./ARou_SampleLine3/L3-4NS.jpg
-	41./ARou_SampleLine3/L3-1NS.jpg
-	42./ARou_SampleLine3/L3-5NS.jpg
-	43./ARou_SampleLine3/L3-2NS.jpg
-	44./ARou_SampleLine3/L3-11WE.jpg
-	45./ARou_SampleLine3/L3-10NS.jpg
-	46./ARou_SampleLine3/L3-19NS.jpg
-	47./ARou_SampleLine3/L3-10WE.jpg
-	48./ARou_SampleLine3/L3-12NS.jpg
-	49./ARou_SampleArea1/A1-21NS.JPG
-	50./ARou_SampleArea1/A1-15WE.JPG
-	51./ARou_SampleArea1/A1-6WE.JPG
-	52./ARou_SampleArea1/A1-24NS.JPG
-	53./ARou_SampleArea1/A1-13WE.JPG
-	54./ARou_SampleArea1/A1-4WE.JPG
-	55./ARou_SampleArea1/A1-8WE.JPG
-	56./ARou_SampleArea1/A1-24WE.JPG
-	57./ARou_SampleArea1/A1-13NS.JPG
-	58./ARou_SampleArea1/A1-4NS.JPG
-	59./ARou_SampleArea1/A1-16WE.JPG
-	60./ARou_SampleArea1/A1-25WE.JPG
-	61./ARou_SampleArea1/A1-10NS.JPG
-	62./ARou_SampleArea1/A1-17WE.JPG
-	63./ARou_SampleArea1/A1-1WE.JPG
-	64./ARou_SampleArea1/A1-16NS.JPG
-	65./ARou_SampleArea1/A1-6NS.JPG
-	66./ARou_SampleArea1/A1-11NS.JPG
-	67./ARou_SampleArea1/A1-9WE.JPG
-	68./ARou_SampleArea1/A1-19NS.JPG
-	69./ARou_SampleArea1/A1-3NS.JPG
-	70./ARou_SampleArea1/A1-2WE.JPG
-	71./ARou_SampleArea1/A1-5WE.JPG
-	72./ARou_SampleArea1/A1-2NS.JPG
-	73./ARou_SampleArea1/A1-5NS.JPG
-	74./ARou_SampleArea1/A1-9NS.JPG
-	75./ARou_SampleArea1/A1-18NS.JPG
-	76./ARou_SampleArea1/A1-23NS.JPG
-	77./ARou_SampleArea1/A1-10WE.JPG
-	78./ARou_SampleArea1/A1-15NS.JPG
-	79./ARou_SampleArea1/A1-19WE.JPG
-	80./ARou_SampleArea1/样方编号对应关系.xls
-	81./ARou_SampleArea1/A1-1NS.JPG
-	82./ARou_SampleArea1/A1-20WE.JPG
-	83./ARou_SampleArea1/A1-18WE.JPG
-	84./ARou_SampleArea1/A1-11WE.JPG
-	85./ARou_SampleArea1/A1-14NS.JPG
-	86./ARou_SampleArea1/A1-20NS.JPG
-	87./ARou_SampleArea1/A1-8NS.JPG
-	88./ARou_SampleArea1/A1-17NS.JPG
-	89./ARou_SampleArea1/A1-21WE.JPG
-	90./ARou_SampleArea1/A1-14WE.JPG
-	91./ARou_SampleArea1/A1-22WE.JPG
-	92./ARou_SampleArea1/A1-12WE.JPG
-	93./ARou_SampleArea1/A1-25NS.JPG
-	94./ARou_SampleArea1/A1-23WE.JPG
-	95./ARou_SampleArea1/A1-3WE.JPG
-	96./ARou_SampleArea1/A1-12NS.JPG
-	97./ARou_SampleArea1/A1-7WE.JPG
-	98./ARou_SampleArea1/A1-22NS.JPG
-	99./ARou_SampleArea1/A1-7NS.JPG
-	100./ARou_SampleArea3/A3-37EW.jpg
-	101./ARou_SampleArea3/A3-4NS.jpg
-	102./ARou_SampleArea3/A3-16NS.jpg
-	103./ARou_SampleArea3/A3-7NS.jpg
-	104./ARou_SampleArea3/A3-38EW.jpg
-	105./ARou_SampleArea3/A3-4EW.jpg
-	106./ARou_SampleArea3/A3-14EW.jpg
-	107./ARou_SampleArea3/A3-18NS.jpg
+	1./ARou_SampleArea1/
+	2./ARou_SampleArea1/A1-10NS.JPG
+	3./ARou_SampleArea1/A1-10WE.JPG
+	4./ARou_SampleArea1/A1-11NS.JPG
+	5./ARou_SampleArea1/A1-11WE.JPG
+	6./ARou_SampleArea1/A1-12NS.JPG
+	7./ARou_SampleArea1/A1-12WE.JPG
+	8./ARou_SampleArea1/A1-13NS.JPG
+	9./ARou_SampleArea1/A1-13WE.JPG
+	10./ARou_SampleArea1/A1-14NS.JPG
+	11./ARou_SampleArea1/A1-14WE.JPG
+	12./ARou_SampleArea1/A1-15NS.JPG
+	13./ARou_SampleArea1/A1-15WE.JPG
+	14./ARou_SampleArea1/A1-16NS.JPG
+	15./ARou_SampleArea1/A1-16WE.JPG
+	16./ARou_SampleArea1/A1-17NS.JPG
+	17./ARou_SampleArea1/A1-17WE.JPG
+	18./ARou_SampleArea1/A1-18NS.JPG
+	19./ARou_SampleArea1/A1-18WE.JPG
+	20./ARou_SampleArea1/A1-19NS.JPG
+	21./ARou_SampleArea1/A1-19WE.JPG
+	22./ARou_SampleArea1/A1-1NS.JPG
+	23./ARou_SampleArea1/A1-1WE.JPG
+	24./ARou_SampleArea1/A1-20NS.JPG
+	25./ARou_SampleArea1/A1-20WE.JPG
+	26./ARou_SampleArea1/A1-21NS.JPG
+	27./ARou_SampleArea1/A1-21WE.JPG
+	28./ARou_SampleArea1/A1-22NS.JPG
+	29./ARou_SampleArea1/A1-22WE.JPG
+	30./ARou_SampleArea1/A1-23NS.JPG
+	31./ARou_SampleArea1/A1-23WE.JPG
+	32./ARou_SampleArea1/A1-24NS.JPG
+	33./ARou_SampleArea1/A1-24WE.JPG
+	34./ARou_SampleArea1/A1-25NS.JPG
+	35./ARou_SampleArea1/A1-25WE.JPG
+	36./ARou_SampleArea1/A1-2NS.JPG
+	37./ARou_SampleArea1/A1-2WE.JPG
+	38./ARou_SampleArea1/A1-3NS.JPG
+	39./ARou_SampleArea1/A1-3WE.JPG
+	40./ARou_SampleArea1/A1-4NS.JPG
+	41./ARou_SampleArea1/A1-4WE.JPG
+	42./ARou_SampleArea1/A1-5NS.JPG
+	43./ARou_SampleArea1/A1-5WE.JPG
+	44./ARou_SampleArea1/A1-6NS.JPG
+	45./ARou_SampleArea1/A1-6WE.JPG
+	46./ARou_SampleArea1/A1-7NS.JPG
+	47./ARou_SampleArea1/A1-7WE.JPG
+	48./ARou_SampleArea1/A1-8NS.JPG
+	49./ARou_SampleArea1/A1-8WE.JPG
+	50./ARou_SampleArea1/A1-9NS.JPG
+	51./ARou_SampleArea1/A1-9WE.JPG
+	52./ARou_SampleArea1/样方编号对应关系.xls
+	53./ARou_SampleArea2/
+	54./ARou_SampleArea2/A2-10NS.JPG
+	55./ARou_SampleArea2/A2-10WE.JPG
+	56./ARou_SampleArea2/A2-11NS.JPG
+	57./ARou_SampleArea2/A2-11WE.JPG
+	58./ARou_SampleArea2/A2-12NS.JPG
+	59./ARou_SampleArea2/A2-12WE.JPG
+	60./ARou_SampleArea2/A2-13NS.JPG
+	61./ARou_SampleArea2/A2-13WE.JPG
+	62./ARou_SampleArea2/A2-14NS.JPG
+	63./ARou_SampleArea2/A2-14WE.JPG
+	64./ARou_SampleArea2/A2-15NS.JPG
+	65./ARou_SampleArea2/A2-15WE.JPG
+	66./ARou_SampleArea2/A2-16NS.JPG
+	67./ARou_SampleArea2/A2-16WE.JPG
+	68./ARou_SampleArea2/A2-17NS.JPG
+	69./ARou_SampleArea2/A2-17WE.JPG
+	70./ARou_SampleArea2/A2-18NS.JPG
+	71./ARou_SampleArea2/A2-18WE.JPG
+	72./ARou_SampleArea2/A2-19NS.JPG
+	73./ARou_SampleArea2/A2-19WE.JPG
+	74./ARou_SampleArea2/A2-1NS.JPG
+	75./ARou_SampleArea2/A2-1WE.JPG
+	76./ARou_SampleArea2/A2-20NS.JPG
+	77./ARou_SampleArea2/A2-20WE.JPG
+	78./ARou_SampleArea2/A2-21NS.JPG
+	79./ARou_SampleArea2/A2-21WE.JPG
+	80./ARou_SampleArea2/A2-22NS.JPG
+	81./ARou_SampleArea2/A2-22WE.JPG
+	82./ARou_SampleArea2/A2-23NS.JPG
+	83./ARou_SampleArea2/A2-23WE.JPG
+	84./ARou_SampleArea2/A2-24NS.JPG
+	85./ARou_SampleArea2/A2-24WE.JPG
+	86./ARou_SampleArea2/A2-25NS.JPG
+	87./ARou_SampleArea2/A2-25WE.JPG
+	88./ARou_SampleArea2/A2-2NS.JPG
+	89./ARou_SampleArea2/A2-2WE.JPG
+	90./ARou_SampleArea2/A2-3NS.JPG
+	91./ARou_SampleArea2/A2-3WE.JPG
+	92./ARou_SampleArea2/A2-4NS.JPG
+	93./ARou_SampleArea2/A2-4WE.JPG
+	94./ARou_SampleArea2/A2-5NS.JPG
+	95./ARou_SampleArea2/A2-5WE.JPG
+	96./ARou_SampleArea2/A2-6NS.JPG
+	97./ARou_SampleArea2/A2-6WE.JPG
+	98./ARou_SampleArea2/A2-7NS.JPG
+	99./ARou_SampleArea2/A2-7WE.JPG
+	100./ARou_SampleArea2/A2-8NS.JPG
+	101./ARou_SampleArea2/A2-8WE.JPG
+	102./ARou_SampleArea2/A2-9NS.JPG
+	103./ARou_SampleArea2/A2-9WE.JPG
+	104./ARou_SampleArea2/样方编号对应关系.xls
+	105./ARou_SampleArea3/
+	106./ARou_SampleArea3/A3-10EW.jpg
+	107./ARou_SampleArea3/A3-10NS.jpg
 	108./ARou_SampleArea3/A3-11EW.jpg
-	109./ARou_SampleArea3/A3-41NS.jpg
-	110./ARou_SampleArea3/A3-6NS.jpg
-	111./ARou_SampleArea3/A3-15EW.jpg
-	112./ARou_SampleArea3/A3-40EW.jpg
-	113./ARou_SampleArea3/A3-17EW.jpg
-	114./ARou_SampleArea3/A3-38NS.jpg
-	115./ARou_SampleArea3/A3-1NS.jpg
-	116./ARou_SampleArea3/A3-8NS.jpg
-	117./ARou_SampleArea3/A3-39EW.jpg
-	118./ARou_SampleArea3/A3-37NS.jpg
-	119./ARou_SampleArea3/A3-12NS.jpg
-	120./ARou_SampleArea3/A3-10NS.jpg
-	121./ARou_SampleArea3/A3-9EW.jpg
+	109./ARou_SampleArea3/A3-11NS.jpg
+	110./ARou_SampleArea3/A3-12EW.jpg
+	111./ARou_SampleArea3/A3-12NS.jpg
+	112./ARou_SampleArea3/A3-13EW.jpg
+	113./ARou_SampleArea3/A3-13NS.jpg
+	114./ARou_SampleArea3/A3-14EW.jpg
+	115./ARou_SampleArea3/A3-14NS.jpg
+	116./ARou_SampleArea3/A3-15EW.jpg
+	117./ARou_SampleArea3/A3-15NS.jpg
+	118./ARou_SampleArea3/A3-16EW.jpg
+	119./ARou_SampleArea3/A3-16NS.jpg
+	120./ARou_SampleArea3/A3-17EW.jpg
+	121./ARou_SampleArea3/A3-17NS.jpg
 	122./ARou_SampleArea3/A3-18EW.jpg
-	123./ARou_SampleArea3/A3-3NS.jpg
-	124./ARou_SampleArea3/A3-10EW.jpg
-	125./ARou_SampleArea3/A3-13NS.jpg
-	126./ARou_SampleArea3/A3-17NS.jpg
-	127./ARou_SampleArea3/A3-11NS.jpg
-	128./ARou_SampleArea3/A3-2NS.jpg
-	129./ARou_SampleArea3/A3-3EW.jpg
-	130./ARou_SampleArea3/A3-39NS.jpg
-	131./ARou_SampleArea3/A3-40NS.jpg
-	132./ARou_SampleArea3/A3-7EW.jpg
-	133./ARou_SampleArea3/A3-1EW.jpg
-	134./ARou_SampleArea3/A3-6EW.jpg
-	135./ARou_SampleArea3/A3-14NS.jpg
-	136./ARou_SampleArea3/A3-5EW.jpg
-	137./ARou_SampleArea3/A3-15NS.jpg
-	138./ARou_SampleArea3/A3-8EW.jpg
-	139./ARou_SampleArea3/A3-9NS.jpg
-	140./ARou_SampleArea3/A3-41EW.jpg
-	141./ARou_SampleArea3/A3-16EW.jpg
-	142./ARou_SampleArea3/A3-12EW.jpg
+	123./ARou_SampleArea3/A3-18NS.jpg
+	124./ARou_SampleArea3/A3-1EW.jpg
+	125./ARou_SampleArea3/A3-1NS.jpg
+	126./ARou_SampleArea3/A3-2EW.jpg
+	127./ARou_SampleArea3/A3-2NS.jpg
+	128./ARou_SampleArea3/A3-37EW.jpg
+	129./ARou_SampleArea3/A3-37NS.jpg
+	130./ARou_SampleArea3/A3-38EW.jpg
+	131./ARou_SampleArea3/A3-38NS.jpg
+	132./ARou_SampleArea3/A3-39EW.jpg
+	133./ARou_SampleArea3/A3-39NS.jpg
+	134./ARou_SampleArea3/A3-3EW.jpg
+	135./ARou_SampleArea3/A3-3NS.jpg
+	136./ARou_SampleArea3/A3-40EW.jpg
+	137./ARou_SampleArea3/A3-40NS.jpg
+	138./ARou_SampleArea3/A3-41EW.jpg
+	139./ARou_SampleArea3/A3-41NS.jpg
+	140./ARou_SampleArea3/A3-4EW.jpg
+	141./ARou_SampleArea3/A3-4NS.jpg
+	142./ARou_SampleArea3/A3-5EW.jpg
 	143./ARou_SampleArea3/A3-5NS.jpg
-	144./ARou_SampleArea3/A3-13EW.jpg
-	145./ARou_SampleArea3/A3-2EW.jpg
-	146./ARou_SampleLine2/L2-17WE.JPG
-	147./ARou_SampleLine2/L2-3NS.JPG
-	148./ARou_SampleLine2/L2-11WE.JPG
-	149./ARou_SampleLine2/L2-20WE-b.JPG
-	150./ARou_SampleLine2/L2-10NS.JPG
-	151./ARou_SampleLine2/L2-20NS-a.JPG
-	152./ARou_SampleLine2/L2-7WE.JPG
-	153./ARou_SampleLine2/L2-4WE-b.JPG
-	154./ARou_SampleLine2/L2-16WE.JPG
-	155./ARou_SampleLine2/L2-12NS.JPG
-	156./ARou_SampleLine2/L2-4NS-a.JPG
-	157./ARou_SampleLine2/L2-15WE.JPG
-	158./ARou_SampleLine2/L2-18NS.JPG
-	159./ARou_SampleLine2/L2-6WE.JPG
-	160./ARou_SampleLine2/L2-10WE.JPG
-	161./ARou_SampleLine2/L2-16NS.JPG
-	162./ARou_SampleLine2/L2-14WE.JPG
-	163./ARou_SampleLine2/L2-1WE.JPG
-	164./ARou_SampleLine2/L2-9WE.JPG
-	165./ARou_SampleLine2/L2-13NS.JPG
-	166./ARou_SampleLine2/L2-6NS.JPG
-	167./ARou_SampleLine2/L2-11NS.JPG
-	168./ARou_SampleLine2/L2-2NS.JPG
-	169./ARou_SampleLine2/L2-4WE-a.JPG
-	170./ARou_SampleLine2/L2-13WE.JPG
-	171./ARou_SampleLine2/L2-15NS.JPG
-	172./ARou_SampleLine2/L2-12WE.JPG
-	173./ARou_SampleLine2/L2-8WE.JPG
-	174./ARou_SampleLine2/L2-17NS.JPG
-	175./ARou_SampleLine2/L2-19NS.JPG
-	176./ARou_SampleLine2/L2-7NS.JPG
-	177./ARou_SampleLine2/L2-3WE.JPG
-	178./ARou_SampleLine2/L2-8NS.JPG
-	179./ARou_SampleLine2/L2-5NS.JPG
-	180./ARou_SampleLine2/L2-20NS-b.JPG
-	181./ARou_SampleLine2/L2-9NS.JPG
-	182./ARou_SampleLine2/L2-4NS-b.JPG
-	183./ARou_SampleLine2/L2-19WE.JPG
-	184./ARou_SampleLine2/L2-20WE-a.JPG
-	185./ARou_SampleLine2/L2-2WE.JPG
-	186./ARou_SampleLine2/L2-14NS.JPG
-	187./ARou_SampleLine2/L2-5WE.JPG
-	188./ARou_SampleLine2/L2-18WE.JPG
-	189./ARou_SampleLine2/l2-1NS.JPG
-	190./ARou_SampleLine6/L6-1WE.jpg
-	191./ARou_SampleLine6/L6-3北侧5米石堤.jpg
-	192./ARou_SampleLine6/L6-16WE.jpg
-	193./ARou_SampleLine6/L6-16NS.jpg
-	194./ARou_SampleLine6/L6-14WE.jpg
-	195./ARou_SampleLine6/L6-9NS.jpg
-	196./ARou_SampleLine6/L6-15WE.jpg
-	197./ARou_SampleLine6/L6-5NS.jpg
-	198./ARou_SampleLine6/L6-3NS.jpg
-	199./ARou_SampleLine6/L6-9WE.jpg
-	200./ARou_SampleLine6/L6-13WE.jpg
-	201./ARou_SampleLine6/L6-1NS.jpg
-	202./ARou_SampleLine6/L6-10NS.jpg
-	203./ARou_SampleLine6/L6-11WE.jpg
-	204./ARou_SampleLine6/L6-4NS.jpg
-	205./ARou_SampleLine6/L6-12WE.jpg
-	206./ARou_SampleLine6/L6-5WE.jpg
-	207./ARou_SampleLine6/L6-8WE.jpg
-	208./ARou_SampleLine6/L6-2NS.jpg
-	209./ARou_SampleLine6/L6-12NS.jpg
-	210./ARou_SampleLine6/L6-13NS.jpg
-	211./ARou_SampleLine6/L6-3WE.jpg
-	212./ARou_SampleLine6/L6-15NS.jpg
-	213./ARou_SampleLine6/L6-7NS.jpg
-	214./ARou_SampleLine6/L6-2WE.jpg
-	215./ARou_SampleLine6/L6-1.jpg
-	216./ARou_SampleLine6/L6-4WE.jpg
-	217./ARou_SampleLine6/L6-14NS.jpg
-	218./ARou_SampleLine6/L6-6NS.jpg
-	219./ARou_SampleLine6/L6-6WE.jpg
-	220./ARou_SampleLine6/L6-7WE.jpg
-	221./ARou_SampleLine6/L6-10WE.jpg
-	222./ARou_SampleLine6/L6-11NS.jpg
-	223./ARou_SampleLine6/L6-8NS.jpg
-	224./ARou_SampleLine6/L6-15附近halin（鼹鼠）土包.jpg
-	225./ARou_SampleLine1/L1-11NS.JPG
-	226./ARou_SampleLine1/L1-1NS.JPG
-	227./ARou_SampleLine1/L1-9WE.JPG
-	228./ARou_SampleLine1/L1-10WE.JPG
-	229./ARou_SampleLine1/L1-7NS.JPG
-	230./ARou_SampleLine1/L1-4NS.JPG
-	231./ARou_SampleLine1/L1-8WE.JPG
-	232./ARou_SampleLine1/L1-2WE.JPG
-	233./ARou_SampleLine1/L1-8NS.JPG
-	234./ARou_SampleLine1/L1-15NS.JPG
-	235./ARou_SampleLine1/L1-10NS.JPG
-	236./ARou_SampleLine1/L1-11WE.JPG
-	237./ARou_SampleLine1/L1-13WE.JPG
-	238./ARou_SampleLine1/L1-3WE.JPG
-	239./ARou_SampleLine1/L1-13NS.JPG
-	240./ARou_SampleLine1/L1-12WE.JPG
-	241./ARou_SampleLine1/L1-1WE.JPG
-	242./ARou_SampleLine1/L1-6WE.JPG
-	243./ARou_SampleLine1/L1-12NS.JPG
-	244./ARou_SampleLine1/L1-14NS.JPG
-	245./ARou_SampleLine1/L1-5WE.JPG
-	246./ARou_SampleLine1/L1-2NS.JPG
-	247./ARou_SampleLine1/L1-15WE.JPG
-	248./ARou_SampleLine1/L1-14WE.JPG
-	249./ARou_SampleLine1/L1-4WE.JPG
-	250./ARou_SampleLine1/L1-6NS.JPG
-	251./ARou_SampleLine1/L1-3NS.JPG
-	252./ARou_SampleLine1/L1-7WE.JPG
-	253./ARou_SampleLine1/L1-5NS.JPG
-	254./ARou_SampleLine1/L1-9NS.JPG
-	255./ARou_SampleLine5/L5-23NS.jpg
-	256./ARou_SampleLine5/L5-4WE.jpg
-	257./ARou_SampleLine5/L5-12WE.jpg
-	258./ARou_SampleLine5/L5-10NS.jpg
-	259./ARou_SampleLine5/L5-19WE.jpg
-	260./ARou_SampleLine5/L5-10WE.jpg
-	261./ARou_SampleLine5/L5-11WE.jpg
-	262./ARou_SampleLine5/L5-16NS.jpg
-	263./ARou_SampleLine5/L5-2WE.jpg
-	264./ARou_SampleLine5/L5-21NS.jpg
-	265./ARou_SampleLine5/L5-18NS.jpg
-	266./ARou_SampleLine5/L5-3NS.jpg
-	267./ARou_SampleLine5/L5-17WE.jpg
-	268./ARou_SampleLine5/L5-15NS.jpg
-	269./ARou_SampleLine5/L5-1WE.jpg
-	270./ARou_SampleLine5/L5-1NS.jpg
-	271./ARou_SampleLine5/L5-2NS.jpg
-	272./ARou_SampleLine5/L5-9WE.jpg
-	273./ARou_SampleLine5/L5-5NS.jpg
-	274./ARou_SampleLine5/L5-12NS.jpg
-	275./ARou_SampleLine5/L5-20WE.jpg
-	276./ARou_SampleLine5/L5-8WE.jpg
-	277./ARou_SampleLine5/L5-17NS.jpg
-	278./ARou_SampleLine5/L5-5WE.jpg
-	279./ARou_SampleLine5/L5-13WE.jpg
-	280./ARou_SampleLine5/L5-4NS.jpg
-	281./ARou_SampleLine5/L5-20NS.jpg
-	282./ARou_SampleLine5/L5-18WE.jpg
-	283./ARou_SampleLine5/L5-22NS.jpg
-	284./ARou_SampleLine5/L5-14WE.jpg
-	285./ARou_SampleLine5/L5-22WE.jpg
-	286./ARou_SampleLine5/L5-7WE.jpg
-	287./ARou_SampleLine5/L5-8NS.jpg
-	288./ARou_SampleLine5/L5-7NS.jpg
-	289./ARou_SampleLine5/L5-4小河谷，砾石1.jpg
-	290./ARou_SampleLine5/L5-4小河谷，砾石2.jpg
-	291./ARou_SampleLine5/L5-13NS.jpg
-	292./ARou_SampleLine5/L5-6NS.jpg
-	293./ARou_SampleLine5/L5-9NS.jpg
-	294./ARou_SampleLine5/L5-11NS.jpg
-	295./ARou_SampleLine5/L5-14NS.jpg
-	296./ARou_SampleLine5/L5-21WE.jpg
-	297./ARou_SampleLine5/L5-16WE.jpg
-	298./ARou_SampleLine5/L5-23WE.jpg
-	299./ARou_SampleLine5/L5-15WE.jpg
-	300./ARou_SampleLine5/L5-3WE.jpg
-	301./ARou_SampleLine5/L5-19NS.jpg
-	302./ARou_SampleLine5/L5-6WE.jpg
-	303./ARou_SampleArea2/A2-9WE.JPG
-	304./ARou_SampleArea2/A2-6WE.JPG
-	305./ARou_SampleArea2/A2-12NS.JPG
-	306./ARou_SampleArea2/A2-10NS.JPG
-	307./ARou_SampleArea2/A2-3WE.JPG
-	308./ARou_SampleArea2/A2-1WE.JPG
-	309./ARou_SampleArea2/A2-23WE.JPG
-	310./ARou_SampleArea2/A2-15NS.JPG
-	311./ARou_SampleArea2/A2-14WE.JPG
-	312./ARou_SampleArea2/A2-3NS.JPG
-	313./ARou_SampleArea2/A2-8NS.JPG
-	314./ARou_SampleArea2/A2-1NS.JPG
-	315./ARou_SampleArea2/A2-7NS.JPG
-	316./ARou_SampleArea2/A2-22WE.JPG
-	317./ARou_SampleArea2/A2-7WE.JPG
-	318./ARou_SampleArea2/A2-6NS.JPG
-	319./ARou_SampleArea2/A2-4WE.JPG
-	320./ARou_SampleArea2/A2-21WE.JPG
-	321./ARou_SampleArea2/A2-17WE.JPG
-	322./ARou_SampleArea2/A2-24NS.JPG
-	323./ARou_SampleArea2/A2-11NS.JPG
-	324./ARou_SampleArea2/A2-18WE.JPG
-	325./ARou_SampleArea2/A2-4NS.JPG
-	326./ARou_SampleArea2/A2-20WE.JPG
-	327./ARou_SampleArea2/A2-17NS.JPG
-	328./ARou_SampleArea2/A2-25WE.JPG
-	329./ARou_SampleArea2/A2-20NS.JPG
-	330./ARou_SampleArea2/样方编号对应关系.xls
-	331./ARou_SampleArea2/A2-19WE.JPG
-	332./ARou_SampleArea2/A2-11WE.JPG
-	333./ARou_SampleArea2/A2-19NS.JPG
-	334./ARou_SampleArea2/A2-15WE.JPG
-	335./ARou_SampleArea2/A2-13WE.JPG
-	336./ARou_SampleArea2/A2-12WE.JPG
-	337./ARou_SampleArea2/A2-2NS.JPG
-	338./ARou_SampleArea2/A2-5NS.JPG
-	339./ARou_SampleArea2/A2-18NS.JPG
-	340./ARou_SampleArea2/A2-22NS.JPG
-	341./ARou_SampleArea2/A2-13NS.JPG
-	342./ARou_SampleArea2/A2-10WE.JPG
-	343./ARou_SampleArea2/A2-2WE.JPG
-	344./ARou_SampleArea2/A2-8WE.JPG
-	345./ARou_SampleArea2/A2-21NS.JPG
-	346./ARou_SampleArea2/A2-16NS.JPG
-	347./ARou_SampleArea2/A2-16WE.JPG
-	348./ARou_SampleArea2/A2-5WE.JPG
-	349./ARou_SampleArea2/A2-14NS.JPG
-	350./ARou_SampleArea2/A2-24WE.JPG
-	351./ARou_SampleArea2/A2-25NS.JPG
-	352./ARou_SampleArea2/A2-23NS.JPG
-	353./ARou_SampleArea2/A2-9NS.JPG
-	354./ARou_SampleLine4/L4-19WE.jpg
-	355./ARou_SampleLine4/L4-11NS.jpg
-	356./ARou_SampleLine4/L4-20NS.jpg
-	357./ARou_SampleLine4/L4-12WE.jpg
-	358./ARou_SampleLine4/L4-2WE-b.JPG
-	359./ARou_SampleLine4/L4-16NS.jpg
-	360./ARou_SampleLine4/L4-16WE.jpg
-	361./ARou_SampleLine4/L4-9WE.jpg
-	362./ARou_SampleLine4/L4-14WE.jpg
-	363./ARou_SampleLine4/L4-1WE.JPG
-	364./ARou_SampleLine4/L4-22WE.jpg
-	365./ARou_SampleLine4/L4-11WE.jpg
-	366./ARou_SampleLine4/L4-17NS.jpg
-	367./ARou_SampleLine4/L4-4NS.jpg
-	368./ARou_SampleLine4/L4-22NS.jpg
-	369./ARou_SampleLine4/L4-3WE.jpg
-	370./ARou_SampleLine4/L4-18NS.jpg
-	371./ARou_SampleLine4/L4-6WE.jpg
-	372./ARou_SampleLine4/L4-21NS.jpg
-	373./ARou_SampleLine4/L4-17WE.jpg
-	374./ARou_SampleLine4/L4-14NS.jpg
-	375./ARou_SampleLine4/L4-5NS.jpg
-	376./ARou_SampleLine4/L4-8WE.jpg
-	377./ARou_SampleLine4/L4-18WE.jpg
-	378./ARou_SampleLine4/L4-9NS.jpg
-	379./ARou_SampleLine4/L4-15NS.jpg
-	380./ARou_SampleLine4/L4-2WE_a.jpg
-	381./ARou_SampleLine4/L4-13NS.jpg
-	382./ARou_SampleLine4/L4-10NS.jpg
-	383./ARou_SampleLine4/L4-12NS.jpg
-	384./ARou_SampleLine4/L4-10WE.jpg
-	385./ARou_SampleLine4/L4-7NS.jpg
-	386./ARou_SampleLine4/L4-6NS.jpg
-	387./ARou_SampleLine4/L4-4WE.jpg
-	388./ARou_SampleLine4/l4-2NS-b.JPG
-	389./ARou_SampleLine4/L4-20WE.jpg
-	390./ARou_SampleLine4/L4-15WE.jpg
-	391./ARou_SampleLine4/L4-1NS.JPG
-	392./ARou_SampleLine4/L4-7WE.jpg
-	393./ARou_SampleLine4/L4-2NS_a.jpg
-	394./ARou_SampleLine4/L4-19NS.jpg
-	395./ARou_SampleLine4/L4-13WE.jpg
-	396./ARou_SampleLine4/L4-21WE.jpg
-	397./ARou_SampleLine4/L4-3NS.jpg
-	398./ARou_SampleLine4/L4-8NS.jpg
-	399./ARou_SampleLine4/L4-5WE.jpg
+	144./ARou_SampleArea3/A3-6EW.jpg
+	145./ARou_SampleArea3/A3-6NS.jpg
+	146./ARou_SampleArea3/A3-7EW.jpg
+	147./ARou_SampleArea3/A3-7NS.jpg
+	148./ARou_SampleArea3/A3-8EW.jpg
+	149./ARou_SampleArea3/A3-8NS.jpg
+	150./ARou_SampleArea3/A3-9EW.jpg
+	151./ARou_SampleArea3/A3-9NS.jpg
+	152./ARou_SampleLine1/
+	153./ARou_SampleLine1/L1-10NS.JPG
+	154./ARou_SampleLine1/L1-10WE.JPG
+	155./ARou_SampleLine1/L1-11NS.JPG
+	156./ARou_SampleLine1/L1-11WE.JPG
+	157./ARou_SampleLine1/L1-12NS.JPG
+	158./ARou_SampleLine1/L1-12WE.JPG
+	159./ARou_SampleLine1/L1-13NS.JPG
+	160./ARou_SampleLine1/L1-13WE.JPG
+	161./ARou_SampleLine1/L1-14NS.JPG
+	162./ARou_SampleLine1/L1-14WE.JPG
+	163./ARou_SampleLine1/L1-15NS.JPG
+	164./ARou_SampleLine1/L1-15WE.JPG
+	165./ARou_SampleLine1/L1-1NS.JPG
+	166./ARou_SampleLine1/L1-1WE.JPG
+	167./ARou_SampleLine1/L1-2NS.JPG
+	168./ARou_SampleLine1/L1-2WE.JPG
+	169./ARou_SampleLine1/L1-3NS.JPG
+	170./ARou_SampleLine1/L1-3WE.JPG
+	171./ARou_SampleLine1/L1-4NS.JPG
+	172./ARou_SampleLine1/L1-4WE.JPG
+	173./ARou_SampleLine1/L1-5NS.JPG
+	174./ARou_SampleLine1/L1-5WE.JPG
+	175./ARou_SampleLine1/L1-6NS.JPG
+	176./ARou_SampleLine1/L1-6WE.JPG
+	177./ARou_SampleLine1/L1-7NS.JPG
+	178./ARou_SampleLine1/L1-7WE.JPG
+	179./ARou_SampleLine1/L1-8NS.JPG
+	180./ARou_SampleLine1/L1-8WE.JPG
+	181./ARou_SampleLine1/L1-9NS.JPG
+	182./ARou_SampleLine1/L1-9WE.JPG
+	183./ARou_SampleLine2/
+	184./ARou_SampleLine2/L2-10NS.JPG
+	185./ARou_SampleLine2/L2-10WE.JPG
+	186./ARou_SampleLine2/L2-11NS.JPG
+	187./ARou_SampleLine2/L2-11WE.JPG
+	188./ARou_SampleLine2/L2-12NS.JPG
+	189./ARou_SampleLine2/L2-12WE.JPG
+	190./ARou_SampleLine2/L2-13NS.JPG
+	191./ARou_SampleLine2/L2-13WE.JPG
+	192./ARou_SampleLine2/L2-14NS.JPG
+	193./ARou_SampleLine2/L2-14WE.JPG
+	194./ARou_SampleLine2/L2-15NS.JPG
+	195./ARou_SampleLine2/L2-15WE.JPG
+	196./ARou_SampleLine2/L2-16NS.JPG
+	197./ARou_SampleLine2/L2-16WE.JPG
+	198./ARou_SampleLine2/L2-17NS.JPG
+	199./ARou_SampleLine2/L2-17WE.JPG
+	200./ARou_SampleLine2/L2-18NS.JPG
+	201./ARou_SampleLine2/L2-18WE.JPG
+	202./ARou_SampleLine2/L2-19NS.JPG
+	203./ARou_SampleLine2/L2-19WE.JPG
+	204./ARou_SampleLine2/l2-1NS.JPG
+	205./ARou_SampleLine2/L2-1WE.JPG
+	206./ARou_SampleLine2/L2-20NS-a.JPG
+	207./ARou_SampleLine2/L2-20NS-b.JPG
+	208./ARou_SampleLine2/L2-20WE-a.JPG
+	209./ARou_SampleLine2/L2-20WE-b.JPG
+	210./ARou_SampleLine2/L2-2NS.JPG
+	211./ARou_SampleLine2/L2-2WE.JPG
+	212./ARou_SampleLine2/L2-3NS.JPG
+	213./ARou_SampleLine2/L2-3WE.JPG
+	214./ARou_SampleLine2/L2-4NS-a.JPG
+	215./ARou_SampleLine2/L2-4NS-b.JPG
+	216./ARou_SampleLine2/L2-4WE-a.JPG
+	217./ARou_SampleLine2/L2-4WE-b.JPG
+	218./ARou_SampleLine2/L2-5NS.JPG
+	219./ARou_SampleLine2/L2-5WE.JPG
+	220./ARou_SampleLine2/L2-6NS.JPG
+	221./ARou_SampleLine2/L2-6WE.JPG
+	222./ARou_SampleLine2/L2-7NS.JPG
+	223./ARou_SampleLine2/L2-7WE.JPG
+	224./ARou_SampleLine2/L2-8NS.JPG
+	225./ARou_SampleLine2/L2-8WE.JPG
+	226./ARou_SampleLine2/L2-9NS.JPG
+	227./ARou_SampleLine2/L2-9WE.JPG
+	228./ARou_SampleLine3/
+	229./ARou_SampleLine3/L3-10NS.jpg
+	230./ARou_SampleLine3/L3-10WE.jpg
+	231./ARou_SampleLine3/L3-11NS.jpg
+	232./ARou_SampleLine3/L3-11WE.jpg
+	233./ARou_SampleLine3/L3-12NS.jpg
+	234./ARou_SampleLine3/L3-12WE.jpg
+	235./ARou_SampleLine3/L3-13NS.jpg
+	236./ARou_SampleLine3/L3-13WE.jpg
+	237./ARou_SampleLine3/L3-14NS.jpg
+	238./ARou_SampleLine3/L3-14WE.jpg
+	239./ARou_SampleLine3/L3-15NS.jpg
+	240./ARou_SampleLine3/L3-15WE.jpg
+	241./ARou_SampleLine3/L3-16NS.jpg
+	242./ARou_SampleLine3/L3-16WE.jpg
+	243./ARou_SampleLine3/L3-17NS.jpg
+	244./ARou_SampleLine3/L3-17WE.jpg
+	245./ARou_SampleLine3/L3-18NS.jpg
+	246./ARou_SampleLine3/L3-18WE.jpg
+	247./ARou_SampleLine3/L3-19NS.jpg
+	248./ARou_SampleLine3/L3-19WE.jpg
+	249./ARou_SampleLine3/L3-1NS.jpg
+	250./ARou_SampleLine3/L3-1WE.jpg
+	251./ARou_SampleLine3/L3-2NS.jpg
+	252./ARou_SampleLine3/L3-2WE.jpg
+	253./ARou_SampleLine3/L3-3NS.jpg
+	254./ARou_SampleLine3/L3-3WE.jpg
+	255./ARou_SampleLine3/L3-4NS.jpg
+	256./ARou_SampleLine3/L3-4WE.jpg
+	257./ARou_SampleLine3/L3-5NS.jpg
+	258./ARou_SampleLine3/L3-5WE.jpg
+	259./ARou_SampleLine3/l3-6NS.jpg
+	260./ARou_SampleLine3/L3-6WE.jpg
+	261./ARou_SampleLine3/L3-7NS.jpg
+	262./ARou_SampleLine3/L3-7WE.jpg
+	263./ARou_SampleLine3/L3-8NS.jpg
+	264./ARou_SampleLine3/L3-8WE.jpg
+	265./ARou_SampleLine3/L3-9NS.jpg
+	266./ARou_SampleLine3/L3-9WE.jpg
+	267./ARou_SampleLine4/
+	268./ARou_SampleLine4/L4-10NS.jpg
+	269./ARou_SampleLine4/L4-10WE.jpg
+	270./ARou_SampleLine4/L4-11NS.jpg
+	271./ARou_SampleLine4/L4-11WE.jpg
+	272./ARou_SampleLine4/L4-12NS.jpg
+	273./ARou_SampleLine4/L4-12WE.jpg
+	274./ARou_SampleLine4/L4-13NS.jpg
+	275./ARou_SampleLine4/L4-13WE.jpg
+	276./ARou_SampleLine4/L4-14NS.jpg
+	277./ARou_SampleLine4/L4-14WE.jpg
+	278./ARou_SampleLine4/L4-15NS.jpg
+	279./ARou_SampleLine4/L4-15WE.jpg
+	280./ARou_SampleLine4/L4-16NS.jpg
+	281./ARou_SampleLine4/L4-16WE.jpg
+	282./ARou_SampleLine4/L4-17NS.jpg
+	283./ARou_SampleLine4/L4-17WE.jpg
+	284./ARou_SampleLine4/L4-18NS.jpg
+	285./ARou_SampleLine4/L4-18WE.jpg
+	286./ARou_SampleLine4/L4-19NS.jpg
+	287./ARou_SampleLine4/L4-19WE.jpg
+	288./ARou_SampleLine4/L4-1NS.JPG
+	289./ARou_SampleLine4/L4-1WE.JPG
+	290./ARou_SampleLine4/L4-20NS.jpg
+	291./ARou_SampleLine4/L4-20WE.jpg
+	292./ARou_SampleLine4/L4-21NS.jpg
+	293./ARou_SampleLine4/L4-21WE.jpg
+	294./ARou_SampleLine4/L4-22NS.jpg
+	295./ARou_SampleLine4/L4-22WE.jpg
+	296./ARou_SampleLine4/L4-2NS_a.jpg
+	297./ARou_SampleLine4/l4-2NS-b.JPG
+	298./ARou_SampleLine4/L4-2WE_a.jpg
+	299./ARou_SampleLine4/L4-2WE-b.JPG
+	300./ARou_SampleLine4/L4-3NS.jpg
+	301./ARou_SampleLine4/L4-3WE.jpg
+	302./ARou_SampleLine4/L4-4NS.jpg
+	303./ARou_SampleLine4/L4-4WE.jpg
+	304./ARou_SampleLine4/L4-5NS.jpg
+	305./ARou_SampleLine4/L4-5WE.jpg
+	306./ARou_SampleLine4/L4-6NS.jpg
+	307./ARou_SampleLine4/L4-6WE.jpg
+	308./ARou_SampleLine4/L4-7NS.jpg
+	309./ARou_SampleLine4/L4-7WE.jpg
+	310./ARou_SampleLine4/L4-8NS.jpg
+	311./ARou_SampleLine4/L4-8WE.jpg
+	312./ARou_SampleLine4/L4-9NS.jpg
+	313./ARou_SampleLine4/L4-9WE.jpg
+	314./ARou_SampleLine5/
+	315./ARou_SampleLine5/L5-10NS.jpg
+	316./ARou_SampleLine5/L5-10WE.jpg
+	317./ARou_SampleLine5/L5-11NS.jpg
+	318./ARou_SampleLine5/L5-11WE.jpg
+	319./ARou_SampleLine5/L5-12NS.jpg
+	320./ARou_SampleLine5/L5-12WE.jpg
+	321./ARou_SampleLine5/L5-13NS.jpg
+	322./ARou_SampleLine5/L5-13WE.jpg
+	323./ARou_SampleLine5/L5-14NS.jpg
+	324./ARou_SampleLine5/L5-14WE.jpg
+	325./ARou_SampleLine5/L5-15NS.jpg
+	326./ARou_SampleLine5/L5-15WE.jpg
+	327./ARou_SampleLine5/L5-16NS.jpg
+	328./ARou_SampleLine5/L5-16WE.jpg
+	329./ARou_SampleLine5/L5-17NS.jpg
+	330./ARou_SampleLine5/L5-17WE.jpg
+	331./ARou_SampleLine5/L5-18NS.jpg
+	332./ARou_SampleLine5/L5-18WE.jpg
+	333./ARou_SampleLine5/L5-19NS.jpg
+	334./ARou_SampleLine5/L5-19WE.jpg
+	335./ARou_SampleLine5/L5-1NS.jpg
+	336./ARou_SampleLine5/L5-1WE.jpg
+	337./ARou_SampleLine5/L5-20NS.jpg
+	338./ARou_SampleLine5/L5-20WE.jpg
+	339./ARou_SampleLine5/L5-21NS.jpg
+	340./ARou_SampleLine5/L5-21WE.jpg
+	341./ARou_SampleLine5/L5-22NS.jpg
+	342./ARou_SampleLine5/L5-22WE.jpg
+	343./ARou_SampleLine5/L5-23NS.jpg
+	344./ARou_SampleLine5/L5-23WE.jpg
+	345./ARou_SampleLine5/L5-2NS.jpg
+	346./ARou_SampleLine5/L5-2WE.jpg
+	347./ARou_SampleLine5/L5-3NS.jpg
+	348./ARou_SampleLine5/L5-3WE.jpg
+	349./ARou_SampleLine5/L5-4NS.jpg
+	350./ARou_SampleLine5/L5-4WE.jpg
+	351./ARou_SampleLine5/L5-4小河谷，砾石1.jpg
+	352./ARou_SampleLine5/L5-4小河谷，砾石2.jpg
+	353./ARou_SampleLine5/L5-5NS.jpg
+	354./ARou_SampleLine5/L5-5WE.jpg
+	355./ARou_SampleLine5/L5-6NS.jpg
+	356./ARou_SampleLine5/L5-6WE.jpg
+	357./ARou_SampleLine5/L5-7NS.jpg
+	358./ARou_SampleLine5/L5-7WE.jpg
+	359./ARou_SampleLine5/L5-8NS.jpg
+	360./ARou_SampleLine5/L5-8WE.jpg
+	361./ARou_SampleLine5/L5-9NS.jpg
+	362./ARou_SampleLine5/L5-9WE.jpg
+	363./ARou_SampleLine6/
+	364./ARou_SampleLine6/L6-10NS.jpg
+	365./ARou_SampleLine6/L6-10WE.jpg
+	366./ARou_SampleLine6/L6-11NS.jpg
+	367./ARou_SampleLine6/L6-11WE.jpg
+	368./ARou_SampleLine6/L6-12NS.jpg
+	369./ARou_SampleLine6/L6-12WE.jpg
+	370./ARou_SampleLine6/L6-13NS.jpg
+	371./ARou_SampleLine6/L6-13WE.jpg
+	372./ARou_SampleLine6/L6-14NS.jpg
+	373./ARou_SampleLine6/L6-14WE.jpg
+	374./ARou_SampleLine6/L6-15NS.jpg
+	375./ARou_SampleLine6/L6-15WE.jpg
+	376./ARou_SampleLine6/L6-15附近halin（鼹鼠）土包.jpg
+	377./ARou_SampleLine6/L6-16NS.jpg
+	378./ARou_SampleLine6/L6-16WE.jpg
+	379./ARou_SampleLine6/L6-1.jpg
+	380./ARou_SampleLine6/L6-1NS.jpg
+	381./ARou_SampleLine6/L6-1WE.jpg
+	382./ARou_SampleLine6/L6-2NS.jpg
+	383./ARou_SampleLine6/L6-2WE.jpg
+	384./ARou_SampleLine6/L6-3NS.jpg
+	385./ARou_SampleLine6/L6-3WE.jpg
+	386./ARou_SampleLine6/L6-3北侧5米石堤.jpg
+	387./ARou_SampleLine6/L6-4NS.jpg
+	388./ARou_SampleLine6/L6-4WE.jpg
+	389./ARou_SampleLine6/L6-5NS.jpg
+	390./ARou_SampleLine6/L6-5WE.jpg
+	391./ARou_SampleLine6/L6-6NS.jpg
+	392./ARou_SampleLine6/L6-6WE.jpg
+	393./ARou_SampleLine6/L6-7NS.jpg
+	394./ARou_SampleLine6/L6-7WE.jpg
+	395./ARou_SampleLine6/L6-8NS.jpg
+	396./ARou_SampleLine6/L6-8WE.jpg
+	397./ARou_SampleLine6/L6-9NS.jpg
+	398./ARou_SampleLine6/L6-9WE.jpg
+	399./uuid.txt

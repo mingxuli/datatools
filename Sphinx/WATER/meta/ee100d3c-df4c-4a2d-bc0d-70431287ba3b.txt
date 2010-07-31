@@ -1,17 +1,20 @@
 .. _ee100d3c-df4c-4a2d-bc0d-70431287ba3b:
 
-**************************************************************************
-黑河综合遥感联合试验: 大野口流域临时样地调查数据集
-**************************************************************************
+******************************************************************************************
+黑河综合遥感联合试验：大野口流域加密观测区临时样地调查数据集
+******************************************************************************************
 
 **英文标题:**
-Field survey dataset of temporary forest plots over the Dayekou drainage area
+WATER: Dataset of forest structure parameter survey at the temporary forest sampling plot in the Dayekou watershed foci experimental area
 
 1. 摘要
 ============
-黑河综合遥感联合试验的森林水文试验区确定为大野口流域。排露沟子流域只是大野口流域的一个很小的区域。由于固定样地集中分布在排露沟流域，这些样地缺乏对整个大野口流域森林的代表性，因此2008年6月在整个大野口流域布设了43块临时森林样地。该数据集就是这43块临时样地的地面观测数据。除了对样地每木检测测量和记录林分状态、立地因子外，还进行了样地LAI的观测。
-样地每木测量采用的仪器主要为皮尺，胸径尺，花杆，测树仪，罗盘仪。每木测量了胸径，树高，枝下高，横坡方向冠幅宽，顺坡方向冠幅宽，单木生长状况。利用不同手持GPS测量了样地中心点的WGS84经纬度坐标，定位误差在5-30m左右。其他样地观测因子包括：所属林场，坡向，坡位，坡度，土壤厚度，乔层郁闭度等。这些临时样地测树工作的执行时间为2008年6月2日至30日。为了后续补测LAI的需要，对每个临时样地的位置和边界用油漆进行了标识。
+黑河综合遥感联合试验的森林水文试验区包括大野口流域加密观测区和排露沟流域加密观测区。由于固定样地集中分布在排露沟流域，这些样地缺乏对整个大野口流域森林的代表性，因此2008年6月在整个大野口流域布设了43块临时森林样地。该数据集就是这43块临时样地的地面观测数据。除了对样地每木检测测量和记录林分状态、立地因子外，还进行了样地LAI的观测。
+
+样地每木测量采用的仪器主要为皮尺、胸径尺、花杆、测树仪、罗盘仪。每木测量了胸径、树高、枝下高、横坡方向冠幅宽、顺坡方向冠幅宽、单木生长状况。利用不同手持GPS测量了样地中心点的WGS84经纬度坐标，定位误差在5-30m左右。其他样地观测因子包括：所属林场、坡向、坡位、坡度、土壤厚度、乔层郁闭度等。这些临时样地测树工作的执行时间为2008年6月2日至30日。
+
 LAI的补充测量时间为2008年8月24日至9月2日。测量采用的仪器为HemiVeiw鱼眼相机和LAI-2000冠层分析仪，两台仪器同时测量。需要指出的是本次测量仅用一台LAI-2000冠层分析仪进行测量。测量时每个样地测5个点，分别为中心点，正北、东、南、西。样地的LAI为5个点的均值。
+
 该数据集可以为发展森林结构参数遥感反演算法提供地面实况数据。
 
 2. 关键词
@@ -19,7 +22,7 @@ LAI的补充测量时间为2008年8月24日至9月2日。测量采用的仪器�
 主题关键词:
 冠幅,枝下高,树高,郁闭度,森林结构参数,叶面积指数,胸径,青海云杉,
 位置关键词:
-黑河流域,上游寒区水文试验区,大野口试验区,
+黑河流域,森林水文试验区,大野口流域加密观测区,
 时间关键词:
 
 学科关键词:
@@ -27,16 +30,16 @@ LAI的补充测量时间为2008年8月24日至9月2日。测量采用的仪器�
 3. 本数据的引用
 ====================
 中文引用：
-陈尔学,过志峰,金铭. 黑河综合遥感联合试验: 大野口流域临时样地测树调查数据集. 中国林业科学院资源信息研究所,中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0054.db
+陈尔学, 过志峰, 金铭. 黑河综合遥感联合试验：大野口流域加密观测区临时样地调查数据集. 中国林业科学院资源信息研究所; 中国科学院遥感应用研究所; 甘肃省祁连山水源涵养林研究院. 2008. doi:10.3972/water973.0054.db 
 
 英文引用：
-Chen Erxue,Guo Zhifeng,Jin Ming. WATER: Field survey dataset of temporary forest plots over the Dayekou drainage area. Institute of Forest Resources Information Technique, Chinese Academy of Forestry,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0054.db
+Chen Erxue, Guo Zhifeng, Jin Ming. WATER: Dataset of forest structure parameter survey at the temporary forest sampling plot in the Dayekou watershed foci experimental area. Institute of Forest Resource Information Techniques, Chinese Academy of Forestry; Institute of Remote Sensing Applications, Chinese Academy of Sciences; Academy of Water Resources Conservation Forests in Qilian Mountain of Gansu Province. 2008. doi:10.3972/water973.0054.db
 
 4.	数据调查者
 ==================
 
 + 姓名：凌飞龙
-+ 单位：中国林业科学研究院
++ 单位：中国林业科学院资源信息研究所
 + 通讯地址：--北京市--北京--北京市海淀区颐和园后中国林业科学研究院
 + 邮编：100091
 
@@ -47,7 +50,7 @@ Chen Erxue,Guo Zhifeng,Jin Ming. WATER: Field survey dataset of temporary forest
 + 邮编：1001013
 
 
-+ 姓名：张学龙,王顺利,赵明,雷军,牛云,罗龙发
++ 姓名：张学龙, 王顺利, 赵明, 雷军, 牛云, 罗龙发
 + 单位：甘肃省祁连山水源涵养林研究院
 + 通讯地址：--甘肃省--张掖--甘肃省张掖市东环路
 + 邮编：734000
@@ -101,6 +104,15 @@ Chen Erxue,Guo Zhifeng,Jin Ming. WATER: Field survey dataset of temporary forest
 8.	数据分发者
 ======================
 
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
+
 + 姓名：李红星
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃--兰州--兰州市东岗西路320号
@@ -112,19 +124,19 @@ Chen Erxue,Guo Zhifeng,Jin Ming. WATER: Field survey dataset of temporary forest
 9.	地理范围
 =========================
 
-+ 北：38.577
-+ 南：38.438
-+ 西：100.215
-+ 东：100.302
++ 北：38.5765
++ 南：38.4382
++ 西：100.2158
++ 东：100.30698
 
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持: 
+本试验的开展及数据的管理与发布获得了以下项目的支持：
 
- 1.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400) 
+ 1. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
- 2.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）
+ 2. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）
 
 11. 文件清单 
 =========================
@@ -132,5 +144,5 @@ Chen Erxue,Guo Zhifeng,Jin Ming. WATER: Field survey dataset of temporary forest
 文件路径: :file:`/data/WATER/Level_1/Dayekou/DaYeKou_Three Dimensional Forest Structure Parameters Dataset on Temporary Sampling Plots in Dayekou Experimental Area`
 ::
 	1./uuid.txt
-	2./大野口流域临时森林样地调查数据说明.doc
-	3./大野口流域临时森林样地调查数据集.xls
+	2./大野口流域临时森林样地调查数据集.xls
+	3./大野口流域临时森林样地调查数据说明.doc

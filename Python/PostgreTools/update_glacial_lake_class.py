@@ -199,10 +199,10 @@ def update_by_name(kml_file):
 if __name__=='__main__':
        
     table_name="\"HKH_Glacial_Lakes_final\""
-    kml_file='C:\\gl_class\\gl_In96_p_new.kml'
-    out_kml_file='C:\\gl_class\\gl_In96_p_other.kml'
+    kml_file='C:\\gl_class\\gl_Br62_p_new.kml'
+    out_kml_file='C:\\gl_class\\gl_Br62_p_other.kml'
     gl_type='E(c)'
-    basin_code='In96'
+    basin_code='Br62'
     outpath='C:\\gl_class\\'    
     
     update_by_name(kml_file)
