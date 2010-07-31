@@ -1,24 +1,28 @@
 .. _5640f39d-b77f-4526-9395-5a40ad8c8c1d:
 
 *****************************************************************************************************************
-黑河综合遥感联合试验:临泽草地站机载微波辐射计(L+K波段)地面同步观测数据集(2008年7月4日)
+黑河综合遥感联合试验：临泽草地加密观测区L&K波段机载微波辐射计地面同步观测数据集（2008年7月4日）
 *****************************************************************************************************************
 
 **英文标题:**
-WATER: Simultaneous Airborne Microwave Radiometer (L&K-band)-Ground Observation Dataset at Linze Grassland Station on July 4, 2008
+WATER: Dataset of ground truth measurements synchronizing with the airborne microwave radiometers (L&K bands) mission in the Linze grassland foci experimental area on Jul. 4, 2008
 
 1. 摘要
 ============
-2008年7月4日，在临泽草地站开展了L+K波段机载微波辐射计的航空飞行。地面同步观测在临泽草地站微波同步新样带newL1-newL12展开。主要观测变量为地表温度、土壤温度和土壤水分。本数据可为发展和验证主动微波遥感反演土壤水分和土壤盐分算法提供基本的地面数据集。
+2008年7月4日，在临泽草地加密观测区开展了L&K波段机载微波辐射计的航空飞行。地面同步观测在临泽草地加密观测区微波同步新样带newL1-newL12展开。主要观测变量为地表温度、土壤温度和土壤水分。本数据可为发展和验证主动微波遥感反演土壤水分和土壤盐分算法提供基本的地面数据集。
+
 各条样带均垂直于航线方向布置，每条样带上共有5个采样点。在newL1-newL12各条样带的每个采样点，采用环刀取土经烘干获得重量含水量、体积含水量及土壤容重；针式温度计获得0-5cm平均土壤温度；手持式红外温度计获得冠顶温度和地表温度。
+
 本数据集包括4个样带测量的土壤水分和温度数据表格，一个表格包括4个样带数据，地表温度、冠层温度、土壤温度和土壤水分在一个数据表格中存储。
+
+样方样带的分布信息请参见元数据“黑河综合遥感联合试验:临泽草地加密观测区样方样带布置”。
 
 2. 关键词
 ==============
 主题关键词:
-土壤温度,环刀,土壤水分,地表温度,地面同步观测,冠顶温度,机载微波辐射计,L波段,K波段,针式温度计,手持式红外温度计,
+L波段机载微波辐射计,K波段机载微波辐射计,地面同步观测,土壤温度,环刀,土壤水分,地表温度,冠顶温度,针式温度计,手持式红外温度计,
 位置关键词:
-黑河流域,中游干旱区水文试验区,临泽草地站,
+黑河流域,中游干旱区水文试验区,临泽草地加密观测区,
 时间关键词:
 2008-07-04,
 学科关键词:
@@ -26,15 +30,15 @@ WATER: Simultaneous Airborne Microwave Radiometer (L&K-band)-Ground Observation 
 3. 本数据的引用
 ====================
 中文引用：
-黄春林,盖春梅,胡晓利,李红星,王旭峰,王静,朱仕杰.黑河综合遥感联合试验:临泽草地站机载微波辐射计(L+K波段)地面同步观测数据集(2008年7月4日),中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0071.db
+黄春林, 王维真, 盖春梅, 胡晓利, 李红星, 王旭峰, 王静, 朱仕杰. 黑河综合遥感联合试验：临泽草地加密观测区L&K波段机载微波辐射计地面同步观测数据集（2008年7月4日）. 中国科学院寒区旱区环境与工程研究所; 中国气象局兰州气象干旱研究所. 2008. doi:10.3972/water973.0071.db 
 
 英文引用：
-Huang Chunlin,Ge Chunmei,Hu Xiaoli,Li Hongxing,Wang Xufeng,Wang Jing,Zhu Shijie.WATER: Simultaneous Airborne Microwave Radiometer (L&K-band)-Ground Observation Dataset at Linze Grassland Station on July 4, 2008,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0071.db
+Huang Chunlin, Wang Weizhen, Ge Chunmei, Hu Xiaoli, Li Hongxing, Wang Xufeng, Wang Jing, Zhu Shijie. WATER: Dataset of ground truth measurements synchronizing with the airborne microwave radiometers (L&K bands) mission in the Linze grassland foci experimental area on Jul. 4, 2008. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences; Lanzhou Institute of Arid Meteorology, China Meteorological Administration. 2008. doi:10.3972/water973.0071.db
 
 4.	数据调查者
 ==================
 
-+ 姓名：盖春梅,胡晓利,黄春林,李红星,王旭峰,朱仕杰
++ 姓名：盖春梅, 胡晓利, 黄春林, 李红星, 王旭峰, 朱仕杰
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
@@ -75,6 +79,14 @@ Huang Chunlin,Ge Chunmei,Hu Xiaoli,Li Hongxing,Wang Xufeng,Wang Jing,Zhu Shijie.
 + 电子邮件：wulizong@lzb.ac.cn
 + 电话：0931-4967298
 
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
 8.	数据分发者
 ======================
 
@@ -85,6 +97,15 @@ Huang Chunlin,Ge Chunmei,Hu Xiaoli,Li Hongxing,Wang Xufeng,Wang Jing,Zhu Shijie.
 + 电子邮件：westdc@lzb.ac.cn
 + 电话：0931-4967287
 + 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
 
 9.	地理范围
 =========================
@@ -97,18 +118,39 @@ Huang Chunlin,Ge Chunmei,Hu Xiaoli,Li Hongxing,Wang Xufeng,Wang Jing,Zhu Shijie.
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持:            
+本试验的开展及数据的管理与发布获得了以下项目的支持：
 
- 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）
 
- 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
 11. 文件清单 
 =========================
 
 文件路径: :file:`/data/WATER/Level_1/Linze_Grass/Linze_Grass_Sync_2008-7-4_L+K`
 ::
-	1./临泽草地站_土壤水分_微波同步_20080704_新样带(5-8).xls
-	2./uuid.txt
-	3./临泽草地站_土壤水分_微波同步_20080704_新样带(1-4).xls
-	4./临泽草地站_土壤水分_微波同步_20080704_新样带(9-12).xls
+	1./L&K波段航空遥感影像/
+	2./L&K波段航空遥感影像/GPS/
+	3./L&K波段航空遥感影像/GPS/GPS0704095337.txt
+	4./L&K波段航空遥感影像/GPS/GPS0704103300.txt
+	5./L&K波段航空遥感影像/GPS/GPS0704111300.txt
+	6./L&K波段航空遥感影像/GPS/GPS0704115300.txt
+	7./L&K波段航空遥感影像/GPS/GPS0704123300.txt
+	8./L&K波段航空遥感影像/GPS/GPS0704131300.txt
+	9./L&K波段航空遥感影像/GPS/GPS0704135300.txt
+	10./L&K波段航空遥感影像/K波段/
+	11./L&K波段航空遥感影像/K波段/测量亮温值/
+	12./L&K波段航空遥感影像/K波段/测量亮温值/KTB2008-07-04-0953.dat
+	13./L&K波段航空遥感影像/K波段/测量亮温值/KTB2008-07-04-1522.dat
+	14./L&K波段航空遥感影像/K波段/测量数码值/
+	15./L&K波段航空遥感影像/K波段/测量数码值/KDATA2008-07-04-0953.dat
+	16./L&K波段航空遥感影像/K波段/测量数码值/KDATA2008-07-04-1522.dat
+	17./L&K波段航空遥感影像/L波段/
+	18./L&K波段航空遥感影像/L波段/2008-07-04-0954.dat
+	19./L&K波段航空遥感影像/L波段/2008-07-04-0954.txt
+	20./L&K波段航空遥感影像/L波段/2008-07-04-1516.dat
+	21./L&K波段航空遥感影像/L波段/2008-07-04-1516.txt
+	22./uuid.txt
+	23./临泽草地站_土壤水分_微波同步_20080704_新样带(1-4).xls
+	24./临泽草地站_土壤水分_微波同步_20080704_新样带(5-8).xls
+	25./临泽草地站_土壤水分_微波同步_20080704_新样带(9-12).xls

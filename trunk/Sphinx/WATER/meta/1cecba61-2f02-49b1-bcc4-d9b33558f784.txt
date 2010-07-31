@@ -1,38 +1,38 @@
 .. _1cecba61-2f02-49b1-bcc4-d9b33558f784:
 
-****************************************************************
-黑河综合遥感联合试验:GPS无线电探空观测数据集
-****************************************************************
+******************************************************************
+黑河综合遥感联合试验：GPS无线电探空观测数据集
+******************************************************************
 
 **英文标题:**
-WATER: GPS Radiosonde Dataset
+WATER: Dataset of GPS Radiosonde observations
 
 1. 摘要
 ============
-GPS探空数据，用来获取边界层乃至整个对流层内的风温湿分布廓线； 观测时间和地点: 2008年3月上游试验，2008年5-7月中游试验 观测仪器: Vaisala Inc. GPS 无线电探空系统
+本数据集包含了2008年3月上游寒区水文试验和2008年5至7月中游干旱区水文试验期间观测的无线探空数据。观测仪器为GPS 无线电探空系统（Vaisala Inc.）。采样频率为2秒一次。每次释放探空仪的时间和卫星或者飞机过境时间基本对应，上游试验期间，释放探空仪的日期和对应的地点分别为：3月14日，冰沟流域加密观测区；3月15日，阿柔加密观测区；3月17日，扁都口加密观测区；3月22日，冰沟流域加密观测区；3月15日，冰沟流域加密观测区；3月15日，冰沟流域加密观测区；3月29日，冰沟流域加密观测区；4月1日，阿柔加密观测区。中游试验期间，释放探空仪的日期和对应的地点分别为：5月30日，临泽草地加密观测区；6月6日，临泽草地加密观测区；6月5日，临泽草地加密观测区；7月11日，临泽草地加密观测区；6月1日，盈科绿洲加密观测区，6月29日，盈科绿洲加密观测区；7月7日，盈科绿洲加密观测区；6月4日，花寨子荒漠加密观测区；6月16日，花寨子荒漠加密观测区；7月5日，扁都口加密观测区；7月14日0时、4时10分、8时9分、12时9分，盈科绿洲加密观测区。
 
 2. 关键词
 ==============
 主题关键词:
-GPS无线电探空,风温湿廓线,
+气象水文,大气廓线,探空观测,温度,压强,湿度,GPS,风速风向,
 位置关键词:
-上游寒区水文试验区,中游干旱区水文试验区,黑河流域,
+黑河流域,上游寒区水文试验区,中游干旱区水文试验区,花寨子荒漠加密观测区,扁都口加密观测区,盈科绿洲加密观测区,临泽草地加密观测区,冰沟流域加密观测区,阿柔加密观测区,
 时间关键词:
-2008-03,
+2008-03-14,2008-07-14,
 学科关键词:
 
 3. 本数据的引用
 ====================
 中文引用：
-谷良雷,胡泽勇,李茂善,马伟强,孙方林.黑河综合遥感联合试验:GPS无线电探空观测数据集,中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0149.db
+谷良雷, 胡泽勇, 李茂善, 马伟强, 孙方林. 黑河综合遥感联合试验：GPS无线电探空观测数据集. 中国科学院寒区旱区环境与工程研究所. 2008. doi:10.3972/water973.0149.db 
 
 英文引用：
-Gu Lianglei,Hu Zeyong,Li Maoshan,Ma Weiqiang,Sun Fanglin.WATER: GPS Radiosonde Dataset,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0149.db
+Gu Lianglei, Hu Zeyong, Li Maoshan, Ma Weiqiang, Sun Fanglin. WATER: Dataset of GPS Radiosonde observations. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences. 2008. doi:10.3972/water973.0149.db
 
 4.	数据调查者
 ==================
 
-+ 姓名：谷良雷,胡泽勇,李茂善,马伟强,孙方林
++ 姓名：谷良雷, 胡泽勇, 李茂善, 马伟强, 孙方林
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
@@ -83,6 +83,14 @@ Gu Lianglei,Hu Zeyong,Li Maoshan,Ma Weiqiang,Sun Fanglin.WATER: GPS Radiosonde D
 + 电子邮件：wulizong@lzb.ac.cn
 + 电话：0931-4967298
 
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
 8.	数据分发者
 ======================
 
@@ -94,58 +102,67 @@ Gu Lianglei,Hu Zeyong,Li Maoshan,Ma Weiqiang,Sun Fanglin.WATER: GPS Radiosonde D
 + 电话：0931-4967287
 + 传真：0931-8279161
 
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
 9.	地理范围
 =========================
 
-+ 北：38.880
-+ 南：38.812
-+ 西：100.370
-+ 东：100.460
++ 北：39.24
++ 南：38.06
++ 西：100.06
++ 东：100.96
 
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持:            
+本试验的开展及数据的管理与发布获由以下项目所支持：           
 
- 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
 
- 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
 11. 文件清单 
 =========================
 
 文件路径: :file:`/data/WATER/Level_1/Meteorology/WATER_GPS_Sonde`
 ::
-	1./WATER_GPS_Sonde_CDZ_20080711T174500.csv
-	2./WATER_GPS_Sonde_BDK_20080317T114600.csv
-	3./WATER_GPS_Sonde_BG_20080314T121900.csv
-	4./uuid.txt
-	5./WATER_GPS_Sonde_BG_20080322T112100.csv
-	6./water_gps_sonde_release.shp
-	7./WATER_GPS_Sonde_BG_20080324T093300.csv
-	8./WATER_GPS_Sonde_AR_20080401T164200.csv
-	9./WATER_GPS_Sonde_BYSC_20080616T174900.csv
-	10./WATER_GPS_Sonde_YK_20080714T160400.csv
-	11./WATER_GPS_Sonde_AR_20080315T111000.csv
-	12./Readme_cn.txt
-	13./WATER_GPS_Sonde_BG_20080324T130300.csv
-	14./WATER_GPS_Sonde_HZZ_20080604T134200.csv
-	15./WATER_GPS_Sonde_BG_20080329T122100.csv
-	16./WATER_GPS_Sonde_YK_20080630T160000.csv
-	17./water_gps_sonde_release_info.xls
-	18./WATER_GPS_Sonde_Release.kml
-	19./WATER_GPS_Sonde_BDK_20080705T121400.csv
-	20./WATER_GPS_Sonde_YK_20080707T124100.csv
-	21./WATER_GPS_Sonde_CDZ_20080530T133600.csv
-	22./WATER_GPS_Sonde_YK_20080714T080900.csv
-	23./WATER_GPS_Sonde_YK_20080714T195600.csv
-	24./WATER_GPS_Sonde_AR_20080401T113500.csv
-	25./water_gps_sonde_release.prj
-	26./water_gps_sonde_release.dbf
-	27./water_gps_sonde_release.sbx
-	28./water_gps_sonde_release.sbn
-	29./WATER_GPS_Sonde_CDZ_20080615T145500.csv
-	30./WATER_GPS_Sonde_YK_20080714T120900.csv
-	31./WATER_GPS_Sonde_CDZ_20080606T135800.csv
-	32./water_gps_sonde_release.shx
-	33./WATER_GPS_Sonde_YK_20080601T163000.csv
+	1./Readme_cn.txt
+	2./uuid.txt
+	3./WATER_GPS_Sonde_AR_20080315T111000.csv
+	4./WATER_GPS_Sonde_AR_20080401T113500.csv
+	5./WATER_GPS_Sonde_AR_20080401T164200.csv
+	6./WATER_GPS_Sonde_BDK_20080317T114600.csv
+	7./WATER_GPS_Sonde_BDK_20080705T121400.csv
+	8./WATER_GPS_Sonde_BG_20080314T121900.csv
+	9./WATER_GPS_Sonde_BG_20080322T112100.csv
+	10./WATER_GPS_Sonde_BG_20080324T093300.csv
+	11./WATER_GPS_Sonde_BG_20080324T130300.csv
+	12./WATER_GPS_Sonde_BG_20080329T122100.csv
+	13./WATER_GPS_Sonde_BYSC_20080616T174900.csv
+	14./WATER_GPS_Sonde_CDZ_20080530T133600.csv
+	15./WATER_GPS_Sonde_CDZ_20080606T135800.csv
+	16./WATER_GPS_Sonde_CDZ_20080615T145500.csv
+	17./WATER_GPS_Sonde_CDZ_20080711T174500.csv
+	18./WATER_GPS_Sonde_HZZ_20080604T134200.csv
+	19./water_gps_sonde_release.dbf
+	20./water_gps_sonde_release_info.xls
+	21./WATER_GPS_Sonde_Release.kml
+	22./water_gps_sonde_release.prj
+	23./water_gps_sonde_release.sbn
+	24./water_gps_sonde_release.sbx
+	25./water_gps_sonde_release.shp
+	26./water_gps_sonde_release.shx
+	27./WATER_GPS_Sonde_YK_20080601T163000.csv
+	28./WATER_GPS_Sonde_YK_20080630T160000.csv
+	29./WATER_GPS_Sonde_YK_20080707T124100.csv
+	30./WATER_GPS_Sonde_YK_20080714T080900.csv
+	31./WATER_GPS_Sonde_YK_20080714T120900.csv
+	32./WATER_GPS_Sonde_YK_20080714T160400.csv
+	33./WATER_GPS_Sonde_YK_20080714T195600.csv

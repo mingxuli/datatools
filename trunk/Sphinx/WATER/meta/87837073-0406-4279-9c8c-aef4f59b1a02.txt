@@ -1,25 +1,40 @@
 .. _87837073-0406-4279-9c8c-aef4f59b1a02:
 
-***************************************************************************************************************
-黑河综合遥感联合试验:预试验期西部行动计划临泽站TM同步观测数据集(2007年9月23日)
-***************************************************************************************************************
+*****************************************************************************************************************
+黑河综合遥感联合试验：预试验期临泽草地和临泽站加密观测区Landsat TM地面同步观测数据集（2007年9月23日）
+*****************************************************************************************************************
 
 **英文标题:**
-WATER: Simultaneous TM Satellite-Ground Observation Dataset by CAS Action Plan for West Development Program at Linze Station on Sep. 23, 2007 in the Pre-observation Period
+WATER: Dataset of ground truth measurements synchronizing with Landsat TM in the Linze grassland and  Linze station foci experimental area on Sep. 23, 2007 during the pre-observation period
 
 1. 摘要
 ============
-2007年9月23日预试验期间，在临泽站开展了TM卫星地面同步观测试验，2007年9月23日成功获得了一景TM影像。该数据集可为发展和验证TM地表温度反演提供基本的地面数据集。
+2007年9月23日预试验期间，在临泽草地和临泽站开展了Landsat TM卫星地面同步观测试验，2007年9月23日成功获得了一景Landsat TM影像。该数据集可为发展和验证Landsat TM地表温度反演提供基本的地面数据集。
+
 观测内容包括：
-1.地表温度（寒旱所手持式红外温度计，仪器均经过标定）。2.GPS位置信息(GARMIN GPS 76测量)。
-3.太阳分光光度计测量仪器：遥感所的法国CIMEL公司生产CE318太阳分光光度计。测量目标：利用太阳分光光度计测量得到的大气参数。测量地点：大满水管所。测量内容：CE318太阳分光光度计通过直接太阳辐射测量数据，可以反演出非水汽通道的光学厚度、瑞利散射、气溶胶光学厚度，水汽通道936nm测量数据可以获得大气气柱的水汽含量，水平能见度也可从CE318数据导出。本次测量采用了北京师范大学的CE318，其可提供1020nm、936nm、870nm、670nm和440nm共5个波段的光学厚度，可以利用936nm测量数据反演大气柱水汽含量。数据存储：本数据包括原始数据和处理后的大气数据。原始数据以CE318特有文件格式*.k7存储，可用ASTPWin软件打开，并附带说明文件ReadMe.txt ；处理后文件包括利用原始数据反演获得光学厚度、瑞利散射、气溶胶光学厚度、水平能见度和近地表大气温度，以及参与计算的太阳方位角、天顶角、日地距离修正因子和大气柱质量数。
+
+1. 地表温度（寒旱所手持式红外温度计，仪器均经过标定）；
+
+2. GPS位置信息（GARMIN GPS 76测量）；
+
+2007年9月23日预试验期间，在盈科绿洲加密观测区开展了TM卫星地面同步观测试验，2007年9月23日成功获得了一景TM影像。
+
+测量目标：大气参数
+
+测量地点：大满水管所
+
+观测仪器：遥感所法国CIMEL公司生产CE318太阳分光光度计。
+
+测量内容：CE318太阳分光光度计通过直接太阳辐射测量数据，可以反演出非水汽通道的光学厚度、瑞利散射、气溶胶光学厚度，水汽通道936nm测量数据可以获得大气气柱的水汽含量，水平能见度也可从CE318数据导出。本次测量采用了北京师范大学的CE318，其可提供1020nm、936nm、870nm、670nm和440nm共5个波段的光学厚度，可以利用936nm测量数据反演大气柱水汽含量。数据存储：本数据包括原始数据和处理后的大气数据。原始数据以CE318特有文件格式.k7存储，可用ASTPWin软件打开，并附带说明文件ReadMe.txt；处理后文件包括利用原始数据反演获得光学厚度、瑞利散射、气溶胶光学厚度、水平能见度和近地表大气温度，以及参与计算的太阳方位角、天顶角、日地距离修正因子和大气柱质量数。
+
+3. 在张掖城西黑河戈壁滩上开展地表温度同步测量，测量仪器主要为热像仪。
 
 2. 关键词
 ==============
 主题关键词:
-TM,预试验,地表温度,手持式红外温度计,CE318太阳分光光度计,气溶胶光学厚度,
+TM,地面同步观测,预试验,地表温度,气溶胶光学厚度,手持式红外温度计,热像仪,CE318太阳分光光度计,
 位置关键词:
-黑河流域,中游干旱区水文试验区,临泽草地站,临泽站,
+黑河流域,中游干旱区水文试验区,临泽草地加密观测区,临泽站加密观测区,
 时间关键词:
 2007-9-23,
 学科关键词:
@@ -27,27 +42,27 @@ TM,预试验,地表温度,手持式红外温度计,CE318太阳分光光度计,�
 3. 本数据的引用
 ====================
 中文引用：
-车涛,白云洁,丁松爽,方莉,高松,韩旭军,郝晓华,晋锐,李弘毅,李新,李哲,梁继,历华,刘强,马宏伟,潘小多,秦春,冉有华,王旭峰,吴月茹,闻建光,严巧娣,闫业庆,袁小龙,张岭梅.黑河综合遥感联合试验:预试验期西部行动计划临泽站TM同步观测数据集(2007年9月23日),中国西部环境与生态科学数据中心,2009.doi:10.3972/water973.0193.db
+车涛, 刘强, 李新, 苏陪玺, 白云洁, 丁松爽, 高松, 韩旭军, 郝晓华, 晋锐, 李弘毅, 李新, 李哲, 梁继, 潘小多, 秦春, 冉有华, 王旭峰, 吴月茹, 严巧娣, 张岭梅, 方莉, 历华, 闻建光, 马宏伟, 闫业庆, 袁小龙. 黑河综合遥感联合试验：预试验期临泽草地和临泽站加密观测区Landsat TM地面同步观测数据集（2007年9月23日）. 中国科学院寒区旱区环境与工程研究所; 中国科学院遥感应用研究所; 兰州大学. 2008. doi:10.3972/water973.0193.db 
 
 英文引用：
-Che Tao,Bai Yunjie,Ding Songshuang,Fang Li,Gao Song,Han Xujun,Hao Xiaohua,Jin Rui,Li Hongyi,Li Xin,Li Zhe,Liang Ji,Li Hua,Liu Qiang,Ma Hongwei,Pan Xiaoduo,Qin Chun,Ran Youhua,Wang Xufeng,Wu Yueru,Wen Jianguang,Yan Qiaodi,Yan Yeqing,Yuan Xiaolong,Zhang Lingmei.WATER: Simultaneous TM Satellite-Ground Observation Dataset by CAS Action Plan for West Development Program at Linze Station on Sep. 23, 2007 in the Pre-observation Period,Environmental and Ecological Science Data Center for West China,2009.doi:10.3972/water973.0193.db
+Che Tao, Liu Qiang, Li Xin, Su Peixi, Bai Yunjie, Ding Songshuang, Gao Song, Han Xujun, Hao Xiaohua, Jin Rui, Li Hongyi, Li Xin, Li Zhe, Liang Ji, Pan Xiaoduo, Qin Chun, Ran Youhua, Wang Xufeng, Wu Yueru, Yan Qiaodi, Zhang Lingmei, Fang Li, Li Hua, Wen Jianguang, Ma Hongwei, Yan Yeqing, Yuan Xiaolong. WATER: Dataset of ground truth measurements synchronizing with Landsat TM in the Linze grassland and  Linze station foci experimental area on Sep. 23, 2007 during the pre-observation period. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences; Institute of Remote Sensing Applications, Chinese Academy of Sciences; Lanzhou University. 2008. doi:10.3972/water973.0193.db
 
 4.	数据调查者
 ==================
 
-+ 姓名：白云洁,车涛,丁松爽,高松,韩旭军,郝晓华,晋锐,李弘毅,李新,李哲,梁继,潘小多,秦春,冉有华,王旭峰,吴月茹,严巧娣,张岭梅
++ 姓名：车涛, 白云洁, 丁松爽, 高松, 韩旭军, 郝晓华, 晋锐, 李弘毅, 李新, 李哲, 梁继, 潘小多, 秦春, 冉有华, 王旭峰, 吴月茹, 严巧娣, 张岭梅
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
 
 
-+ 姓名：方莉,历华,刘强,闻建光
++ 姓名：方莉, 历华, 刘强, 闻建光
 + 单位：中国科学院遥感应用研究所
-+ 通讯地址：--北京市--兰州--北京市朝阳区大屯路中国科学院奥运村科学园区
++ 通讯地址：--北京市--北京--北京市朝阳区大屯路中国科学院奥运村科学园区
 + 邮编：100101
 
 
-+ 姓名：马宏伟,闫业庆,袁小龙
++ 姓名：马宏伟, 闫业庆, 袁小龙
 + 单位：兰州大学
 + 通讯地址：--甘肃省--兰州--兰州市天水北路210号
 + 邮编：730000
@@ -82,6 +97,14 @@ Che Tao,Bai Yunjie,Ding Songshuang,Fang Li,Gao Song,Han Xujun,Hao Xiaohua,Jin Ru
 + 电子邮件：wulizong@lzb.ac.cn
 + 电话：0931-4967298
 
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
 8.	数据分发者
 ======================
 
@@ -93,33 +116,56 @@ Che Tao,Bai Yunjie,Ding Songshuang,Fang Li,Gao Song,Han Xujun,Hao Xiaohua,Jin Ru
 + 电话：0931-4967287
 + 传真：0931-8279161
 
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
 9.	地理范围
 =========================
 
-+ 北：39.379
-+ 南：39.311
-+ 西：100.110
-+ 东：100.201
++ 北：39.379496
++ 南：39.311923
++ 西：100.110909
++ 东：100.201591
 
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持:            
+本试验的开展及数据的管理与发布获得了以下项目的支持：
 
- 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）
 
- 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
 11. 文件清单 
 =========================
 
 文件路径: :file:`/data/WATER/Level_1/Preliminary Experiment/Linze_Sync_2007-9-23_TM`
 ::
-	1./uuid.txt
-	2./20070923-TM同步测量.xls
-	3./车涛组.pdf
-	4./gps坐标/
-	5./秦春、梁继组扫描原始数据.pdf
-	6./gps坐标/GPS2#.mps
-	7./gps坐标/GPS1#.mps
-	8./gps坐标/GPS3#.mps
+	1./20070923-TM同步测量.xls
+	2./gps坐标/
+	3./gps坐标/GPS1#.mps
+	4./gps坐标/GPS2#.mps
+	5./gps坐标/GPS3#.mps
+	6./TM遥感数据/
+	7./TM遥感数据/band1.dat
+	8./TM遥感数据/band2.dat
+	9./TM遥感数据/band3.dat
+	10./TM遥感数据/band4.dat
+	11./TM遥感数据/band5.dat
+	12./TM遥感数据/band6.dat
+	13./TM遥感数据/band7.dat
+	14./TM遥感数据/header.dat
+	15./TM遥感数据/SCENE01.LBL
+	16./TM遥感数据/SCENE01_ProductDescription.self
+	17./uuid.txt
+	18./车涛组.pdf
+	19./分光光度计/
+	20./分光光度计/heihe.K7
+	21./分光光度计/heihe.SUN
+	22./秦春、梁继组扫描原始数据.pdf

@@ -1,24 +1,26 @@
 .. _36c3207f-b972-421a-9bdd-db7afcd44d6e:
 
-************************************************************************************************************
-黑河综合遥感联合试验:预试验期俄堡试验区ASAR地面同步观测数据集(2007年10月17日)
-************************************************************************************************************
+*****************************************************************************************************************
+黑河综合遥感联合试验：预试验期峨堡加密观测区Envisat ASAR地面同步观测数据集（2007年10月17日）
+*****************************************************************************************************************
 
 **英文标题:**
-WATER: Simultaneous ASAR Satellite-Ground Observation Dataset in E'pu Experimental Area on Oct. 17, 2007 in the Pre-observation Period
+WATER: Dataset of ground truth measurements synchronizing with Envisat ASAR in the E'bao foci experimental area on Oct. 17, 2007 during the pre-observation period
 
 1. 摘要
 ============
-2007年10月17日，在俄堡样方1和俄堡样方2开展了ASAR数据的地面同步观测试验。本数据可为发展和验证主动微波遥感反演土壤水分及冻融状态算法及正向模型提供基本的地面数据集。
-ASAR数据为AP模式，VV/VH极化组合方式，过境时间约为11：17。俄堡样方1和俄堡样方2均为3 Grid*3Gid，90m长*90m宽正方形，共计25个采样点（包含中心点和角点）。与卫星过境同步在每个采样点，采用WET土壤水分速测仪测量的土壤体积含水量，土壤电导率、土壤温度及土壤复介电常数实部；采用手持式红外温度计获得地表辐射温度；并用环刀取土经烘干获得重量含水量、土壤容重及体积含水量。
-具体数据见文件夹：ASAR地面同步观测数据集(2007-10-17&18)。
+2007年10月17日夜间，在峨堡样方1和峨堡样方2开展了Envisat ASAR数据的地面同步观测试验。
+
+Envisat ASAR数据为AP模式，VV/VH极化组合方式，过境时间约为23:04BJT。峨堡样方1和峨堡样方2均为3 Grid×3 Grid，每个Grid为30 m×30 m正方形，共计25个采样点（包含中心点和角点）。与卫星过境同步在每个采样点，采用WET土壤水分速测仪测量的土壤体积含水量、土壤电导率、土壤温度及土壤复介电常数实部；采用手持式红外温度计获得地表辐射温度；并用环刀取土经烘干获得重量含水量、土壤容重及体积含水量。同时还对植被一些参数进行了相关调查，主要包括植被高度、覆盖度、植被含水量。
+
+本数据可为发展和验证主动微波遥感反演土壤水分及冻融状态算法及正向模型提供地面数据集。
 
 2. 关键词
 ==============
 主题关键词:
-ASAR,地面同步观测,上游预试验,土壤水分,手持式红外温度计,地表温度,WET土壤水分速测仪,环刀,土壤温度,
+ASAR,地面同步观测,预试验,土壤水分,地表温度,土壤温度,WET土壤水分速测仪,手持式红外温度计,环刀,
 位置关键词:
-上游寒区水文试验区,黑河流域,俄堡试验区,
+黑河流域,上游寒区水文试验区,峨堡加密观测区,
 时间关键词:
 2007-10-17,
 学科关键词:
@@ -26,15 +28,15 @@ ASAR,地面同步观测,上游预试验,土壤水分,手持式红外温度计,�
 3. 本数据的引用
 ====================
 中文引用：
-车涛,晋锐,钞振华,秦春,吴月茹.黑河综合遥感联合试验:预试验期俄堡试验区ASAR地面同步观测数据集(2007年10月17日),中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0188.db
+晋锐, 车涛, 钞振华, 秦春, 吴月茹. 黑河综合遥感联合试验：预试验期峨堡加密观测区Envisat ASAR地面同步观测数据集（2007年10月17日）. 中国科学院寒区旱区环境与工程研究所. 2008. doi:10.3972/water973.0188.db 
 
 英文引用：
-Chao Zhenhua,Che Tao,Qin Chun,Wu Yueru.WATER: Simultaneous ASAR Satellite-Ground Observation Dataset in E'pu Experimental Area on Oct. 17, 2007 in the Pre-observation Period,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0188.db
+Jin Rui, Che Tao, Chao Zhenhua, Qin Chun, Wu Yueru. WATER: Dataset of ground truth measurements synchronizing with Envisat ASAR in the E'bao foci experimental area on Oct. 17, 2007 during the pre-observation period. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Science. 2008. doi:10.3972/water973.0188.db
 
 4.	数据调查者
 ==================
 
-+ 姓名：钞振华,车涛,秦春,吴月茹
++ 姓名：钞振华, 车涛, 秦春, 吴月茹
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
@@ -69,6 +71,14 @@ Chao Zhenhua,Che Tao,Qin Chun,Wu Yueru.WATER: Simultaneous ASAR Satellite-Ground
 + 电子邮件：wulizong@lzb.ac.cn
 + 电话：0931-4967298
 
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
 8.	数据分发者
 ======================
 
@@ -79,6 +89,15 @@ Chao Zhenhua,Che Tao,Qin Chun,Wu Yueru.WATER: Simultaneous ASAR Satellite-Ground
 + 电子邮件：westdc@lzb.ac.cn
 + 电话：0931-4967287
 + 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
 
 9.	地理范围
 =========================
@@ -91,19 +110,19 @@ Chao Zhenhua,Che Tao,Qin Chun,Wu Yueru.WATER: Simultaneous ASAR Satellite-Ground
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持:            
+本试验的开展及数据的管理与发布获得了以下项目的支持：
 
- 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）
 
- 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
 11. 文件清单 
 =========================
 
 文件路径: :file:`/data/WATER/Level_1/Preliminary Experiment/Sync_2007-10-17_ASAR(including 3 places)/俄堡`
 ::
-	1./俄堡ASAR过境土壤水分同步记录表（10月17日晚）.xls
-	2./uuid.txt
-	3./俄堡草场样方GPS点.xls
+	1./uuid.txt
+	2./补充说明.txt
+	3./俄堡ASAR过境土壤水分同步记录表（10月17日晚）.xls
 	4./俄堡ASAR过境土壤水分同步记录表（10月18日）.xls
-	5./补充说明.txt
+	5./俄堡草场样方GPS点.xls

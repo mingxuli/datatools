@@ -1,49 +1,24 @@
 ﻿{% extends "!layout.html" %}
 
+{% block extrahead %}
+{{ super() }}
+{%- if not embedded %}
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+</style>
+{%- endif %}
+{% endblock %}
 
 {% block rootrellink %}
         <li><a href="{{ pathto('index') }}">首页</a>|&nbsp;</li>
-        <li><a href="{{ pathto('search') }}">搜索</a>|&nbsp;</li>
-       <li><a href="{{ pathto('contents') }}">文档 </a> &raquo;</li>
+        <li><a href="{{ pathto('contents') }}">文档 </a> &raquo;</li>
 {% endblock %}
 
 
-{% block relbar1 %}
-
+{% block header %}
 <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<a href="{{ pathto('index') }}"><img src="{{
-pathto("_static/logo.png", 1) }}" border="0" alt="py4sci"/></a>
-</div>
-{{ super() }}
-{% endblock %}
-
-{# put the sidebar before the body #}
-{% block sidebar1 %}{{ sidebar() }}{% endblock %}
-{% block sidebar2 %}{% endblock %}
-
-{%- block extrahead %}
-
-{{ super() }}
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'XXX account number XXX']);
-  _gaq.push(['_trackPageview']);
-</script>
-{% endblock %}
-
-{% block footer %}
-{{ super() }}
-<div class="footer">This page uses <a href="http://analytics.google.com/">
-Google Analytics</a> to collect statistics. You can disable it by blocking
-the JavaScript coming from www.google-analytics.com.
-<script type="text/javascript">
-  (function() {
-    var ga = document.createElement('script');
-    ga.src = ('https:' == document.location.protocol ?
-              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    ga.setAttribute('async', 'true');
-    document.documentElement.firstChild.appendChild(ga);
-  })();
-</script>
+<img src="{{ pathto("_static/westdc-banner.jpg", 1) }}" alt="Westdc Logo" />
 </div>
 {% endblock %}
+

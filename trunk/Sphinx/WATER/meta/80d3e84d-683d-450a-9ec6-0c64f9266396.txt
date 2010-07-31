@@ -1,24 +1,28 @@
 .. _80d3e84d-683d-450a-9ec6-0c64f9266396:
 
-************************************************************************************************
-黑河综合遥感联合试验:临泽草地站MODIS地面同步观测数据集(2008年6月22日)
-************************************************************************************************
+*****************************************************************************************************************
+黑河综合遥感联合试验：临泽草地加密观测区MODIS地面同步观测数据集（2008年6月22日）
+*****************************************************************************************************************
 
 **英文标题:**
-WATER: Simultaneous MODIS-Ground Observation Dataset at Linze Grassland Station on June 22, 2008
+WATER: Dataset of ground truth measurement synchronizing with MODIS in the Linze grassland foci experimental area on Jun. 22, 2008
 
 1. 摘要
 ============
-2008年6月22日，在临泽草地站MODIS同步样方(2km×2km)开展了MODIS的地面同步观测试验。分别测量了8个微波同步样带的冠层温度和地表温度。本数据可为机载－星载遥感数据的地表温度反演和验证提供基本的数据集。
-测量内容为：在临泽草地站微波同步样带1（H01-H08）、临泽草地站微波同步样带2（H09-H16）、临泽草地站微波同步样带3（H17-H24）、临泽草地站微波同步样带4（H25-H32）、临泽草地站微波同步样带5（H33-H40）、临泽草地站微波同步样带6（H41-H48）、临泽草地站微波同步样带7（H49-H56）及临泽草地站微波同步样带8（H57-H64）沿东西向进行了往返两遍测量，各测量点间距离为125m。在各测量点采用手持式红外温度计获得冠顶温度、半高温度以及地表热辐射温度。
+2008年6月22日，在临泽草地加密观测区MODIS同步样方（2km×2km）开展了MODIS的地面同步观测试验。分别测量了8个MODIS样方中的同步样带的冠层温度和地表温度。本数据可为机载－星载遥感数据的地表温度反演和验证提供基本的数据集。
+
+测量内容为：在临泽草地加密观测区MODIS样方中的同步样带1（H01-H08）、临泽草地加密观测区MODIS样方中的同步样带2（H09-H16）、临泽草地加密观测区MODIS样方中的同步样带3（H17-H24）、临泽草地加密观测区MODIS样方中的同步样带4（H25-H32）、临泽草地加密观测区MODIS样方中的同步样带5（H33-H40）、临泽草地加密观测区MODIS样方中的同步样带6（H41-H48）、临泽草地加密观测区MODIS样方中的同步样带7（H49-H56）及临泽草地加密观测区MODIS样方中的同步样带8（H57-H64）沿东西向进行了往返两遍测量，各测量点间距离为125m。在各测量点采用手持式红外温度计获得冠顶温度、半高温度以及地表热辐射温度。
+
 本数据集包括2个样带测量的冠层温度和地表温度数据excel表格，每个表格中包括4个样带测量数据。
+
+样方样带的分布信息请参见元数据“黑河综合遥感联合试验：临泽草地加密观测区样方样带布置”。
 
 2. 关键词
 ==============
 主题关键词:
-手持式红外温度计,地表温度,冠顶温度,半高温度,MODIS,地面同步观测,
+手持式红外温度计,地表温度,冠顶温度,MODIS,
 位置关键词:
-黑河流域,中游干旱区水文试验区,临泽草地站,
+黑河流域,中游干旱区水文试验区,临泽草地加密观测区,
 时间关键词:
 2008-06-22,
 学科关键词:
@@ -26,15 +30,15 @@ WATER: Simultaneous MODIS-Ground Observation Dataset at Linze Grassland Station 
 3. 本数据的引用
 ====================
 中文引用：
-黄春林,钞振华,梁文广,年雁云,王旭峰.黑河综合遥感联合试验:临泽草地站MODIS地面同步观测数据集(2008年6月22日),中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0068.db
+黄春林, 王维真, 钞振华, 梁文广, 年雁云, 王旭峰. 黑河综合遥感联合试验：临泽草地加密观测区MODIS地面同步观测数据集（2008年6月22日）. 中国科学院寒区旱区环境与工程研究所; 中国科学院研究生院. 2008. doi:10.3972/water973.0068.db 
 
 英文引用：
-Huang Chunlin,Chao Zhenhua,Liang Wenguang,Nian Yanyun,Wang Xufeng.WATER: Simultaneous MODIS-Ground Observation Dataset at Linze Grassland Station on June 22, 2008,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0068.db
+Huang Chunlin, Wang Weizhen, Chao Zhenhua, Liang Wenguang, Nian Yanyun, Wang Xufeng. WATER: Dataset of ground truth measurement synchronizing with MODIS in the Linze grassland foci experimental area on Jun. 22, 2008. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences; Graduate University of Chinese Academy of Sciences. 2008. doi:10.3972/water973.0068.db
 
 4.	数据调查者
 ==================
 
-+ 姓名：钞振华,年雁云,王旭峰
++ 姓名：钞振华, 年雁云, 王旭峰
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
@@ -42,8 +46,8 @@ Huang Chunlin,Chao Zhenhua,Liang Wenguang,Nian Yanyun,Wang Xufeng.WATER: Simulta
 
 + 姓名：梁文广
 + 单位：中国科学院研究生院
-+ 通讯地址：--北京市--兰州--北京市石景山区玉泉路甲11号
-+ 邮编：100101
++ 通讯地址：--北京市--北京--北京市石景山区玉泉路19号甲
++ 邮编：100049
 
 5. 数据联系人
 =====================
@@ -75,6 +79,14 @@ Huang Chunlin,Chao Zhenhua,Liang Wenguang,Nian Yanyun,Wang Xufeng.WATER: Simulta
 + 电子邮件：wulizong@lzb.ac.cn
 + 电话：0931-4967298
 
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
 8.	数据分发者
 ======================
 
@@ -85,6 +97,15 @@ Huang Chunlin,Chao Zhenhua,Liang Wenguang,Nian Yanyun,Wang Xufeng.WATER: Simulta
 + 电子邮件：westdc@lzb.ac.cn
 + 电话：0931-4967287
 + 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
 
 9.	地理范围
 =========================
@@ -97,11 +118,11 @@ Huang Chunlin,Chao Zhenhua,Liang Wenguang,Nian Yanyun,Wang Xufeng.WATER: Simulta
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持:           
+本试验的开展及数据的管理与发布获得了以下项目的支持：          
 
- 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）    
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）    
 
- 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
 11. 文件清单 
 =========================

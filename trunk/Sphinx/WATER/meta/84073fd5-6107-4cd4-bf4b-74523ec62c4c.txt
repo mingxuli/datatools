@@ -1,64 +1,46 @@
 .. _84073fd5-6107-4cd4-bf4b-74523ec62c4c:
 
-**********************************************************
-黑河综合遥感联合试验:移动气象观测数据集
-**********************************************************
+*********************************************************
+黑河综合遥感联合试验：移动气象站数据集
+*********************************************************
 
 **英文标题:**
-WATER: Mobile Weather Observation Dataset
+WATER: Dataset of mobile meteorological station observations
 
 1. 摘要
 ============
-数据包括，黑河上游试验移动气象观测数据，
-1、字段头说明
-    ID,序号
-    Observ_Date,观测日期,格式为yyyy-mm-dd
-    Observ_Time,观测时间,格式为hh:mm:ss
-    GPS_Time,GPS记录时间,格式为hh:mm:ss
-    Interv,GPS记录时间与观测仪器记录时间的间隔,单位second
-    Longitude,GPS记录的观测点经度,单位度
-    Latitude,GPS记录的观测点纬度,单位度
-    Elevation,GPS记录的观测点海拔高度,单位米
-    Temp_1,温度1,单位？
-    Temp_2,温度2,单位？
-    Temp_3,温度3,单位？
-    WS_Avg,平均风速,单位m/s
-    WS,风速,单位m/s
-    WS_Max,最大风速,单位m/s
-    WS_Min,最小风速,单位m/s
-    WD,风向,单位度
-    Tg,??温度,单位？
-    Tg_Max,??最高温度,单位？
-    Tg_Min,??最低温度,单位？
-    Ta,气温,单位℃
-    Ta_Max,最高气温,单位℃
-    Ta_Min,最低气温,单位℃
-    RH,相对湿度,单位%
-    Pa,气压,单位hPa
-    RS,？？,单位
-    RS_Max,？？,单位
-    RS_Min,？？,单位
-    T_logger,？？,单位
-    Voltage,电池电压,单位伏特
-    Flag,数据标识,0表示观测点位置信息来源于GPS,1表示GPS观测的观测点经纬度信息缺失,经过其他方法补测而来.
-2、文件命名规则
-    WATER_Mobil_AWS_yyyymmdd.csv
-    其中:WATER_Mobil_AWS代表黑河综合遥感试验移动观测数据,
-    yyyymmdd为观测日期;
-    csv为数据格式,可用文本浏览器打开,也可用MS Excel打开;
-3.文件格式说明
-    为便于数据发布,统一采用.zip格式对文件进行了压缩,可用常见的解压缩软件如WinZIP,WinRAR或7z等软件解压;
-    观测数据采用文本方式存取,utf8编码,为了便于浏览,数据间隔采用逗号(,)间隔,采用扩展名.csv,也可用MS Excel打开,同时也可用文本浏览器打开.
-    缺值数据统一采用字符串None表示.
-4、气象观测记录与GPS记录的关联
-	移动气象观测系统由气象观测系统和GPS观测系统两大部分组中,其中GPS系统记录位置信息，气象观测系统记录气象观测数据,两者记录的文件是分别存储的。两者之间通过观测时间进行关联，但两个系统的观测时间存在微小的差异,无法严格的进行匹配。在实际的数据处理中，通过首先搜索气象观测系统观测时间前后10秒对用的GPS观测记录，在这些记录中取与气象观测时间间隔最小的时间最为对应气象观测数据的GPS观测时间。
+为配合航空遥感试验和地面同步观测试验，在寒区水文试验加强观测期间（2008年3月至4月），在冰沟、阿柔和扁都口三个试验区开展了11次移动气象观测。本移动气象观测系统由气象观测系统和GPS观测系统两大部分组成，其中GPS系统记录位置信息，气象观测系统记录气象观测数据。由于两者记录是分别存储的，因此两者之间通过观测时间进行关联。观测数据主要包括：3.03米（车高1.84米+风杯高1.19米）的风速风向3.04米（车高1.84米+温湿高1.2米）的温湿度、地表温度（观测高度：车高1.84米+地表温度高1.06米）和总辐射（观测高度车高1.84米+总辐射高1.39米）。数据的观测时间和地点如下：
+
+2008-3-15，大冬树山垭口--阿柔
+
+2008-3-18，扁都口--祁连县
+
+2008-3-19，阿柔--扁都口
+
+2008-3-20，祁连--民乐
+
+2008-3-21，民乐--张掖
+
+2008-3-22，冰沟--大冬树山垭口
+
+2008-3-24，冰沟--大冬树山垭口
+
+2008-3-29，冰沟--大冬树山垭口
+
+2008-3-30，冰沟--大冬树山垭口
+
+2008-3-31，祁连县--阿柔乡
+
+2008-4-01，阿柔
+
+数据按日期存储，文件命名规则WATER_Mobile_ AWS_yyyymmdd（yyyymmdd为观测日期）。
 
 2. 关键词
 ==============
 主题关键词:
-气象数据,
+气象水文,移动气象观测,温度,湿度,总辐射,风速风向,
 位置关键词:
-大冬树垭口-阿柔,阿柔--扁都口,扁都口--祁连县,祁连--民乐,民乐--张掖,冰沟--大冬树山垭口,祁连县--阿柔乡,
+黑河流域,上游寒区水文试验区,中游干旱区水文试验区,阿柔加密观测区,冰沟流域加密观测区,扁都口加密观测区,花寨子荒漠加密观测区,
 时间关键词:
 2008-03-15,2008-03-18,2008-03-19,2008-03-20,2008-03-21,2008-03-22,2008-03-24,2008-03-29,2008-03-30,2008-03-31,2008-04-01,
 学科关键词:
@@ -66,15 +48,15 @@ WATER: Mobile Weather Observation Dataset
 3. 本数据的引用
 ====================
 中文引用：
-高洪春,谷良雷,侯旭宏,胡泽勇,李茂善,马伟强,马晓伟,任燕霞,孙方林,周秀云.黑河综合遥感联合试验:移动气象观测数据集,中国西部环境与生态科学数据中心,2008.doi:10.3972/water973.0158.db
+高洪春, 谷良雷, 侯旭宏, 胡泽勇, 李茂善, 马伟强, 马晓伟, 任燕霞, 孙方林, 周秀云. 黑河综合遥感联合试验：移动气象站数据集. 中国科学院寒区旱区环境与工程研究所. 2008. doi:10.3972/water973.0158.db 
 
 英文引用：
-Gao Hongchun,Gu Lianglei,Hou Xuhong,Hu Zeyong,Li Maoshan,Ma Weiqiang,Ma Xiaowei,Ren Yanxia,Sun Fanglin,Zhou Xiuyun.WATER: Mobile Weather Observation Dataset,Environmental and Ecological Science Data Center for West China,2008.doi:10.3972/water973.0158.db
+Gao Hongchun, Gu Lianglei, Hou Xuhong, Hu Zeyong, Li Maoshan, Ma Weiqiang, Ma Xiaowei, Ren Yanxia, Sun Fanglin, Zhou Xiuyun. WATER: Dataset of mobile meteorological station observations. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences. 2008. doi:10.3972/water973.0158.db
 
 4.	数据调查者
 ==================
 
-+ 姓名：胡泽勇,谷良雷,孙方林,高洪春,马伟强,李茂善,周秀云,候旭红,任艳霞,马晓伟
++ 姓名：胡泽勇, 谷良雷, 孙方林, 高洪春, 马伟强, 李茂善, 周秀云, 候旭红, 任艳霞, 马晓伟
 + 单位：中国科学院寒区旱区环境与工程研究所
 + 通讯地址：--甘肃省--兰州--兰州市东岗西路320号
 + 邮编：730000
@@ -109,6 +91,14 @@ Gao Hongchun,Gu Lianglei,Hou Xuhong,Hu Zeyong,Li Maoshan,Ma Weiqiang,Ma Xiaowei,
 + 电子邮件：wulizong@lzb.ac.cn
 + 电话：0931-4967298
 
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
 8.	数据分发者
 ======================
 
@@ -120,27 +110,57 @@ Gao Hongchun,Gu Lianglei,Hou Xuhong,Hu Zeyong,Li Maoshan,Ma Weiqiang,Ma Xiaowei,
 + 电话：0931-4967287
 + 传真：0931-8279161
 
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
 9.	地理范围
 =========================
 
-+ 北：42.685
-+ 南：37.868
-+ 西：97.399
-+ 东：102.125
++ 北：38.93
++ 南：38.1
++ 西：100.13
++ 东：101.07
 
 10.	项目支持信息
 =========================
 
-本试验的开展及数据的管理与发布获得了以下项目的支持:            
- 1.中国科学院西部行动计划（二期）项目:黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
- 2.国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法(项目编号:2007CB714400)
+本试验的开展及数据的管理与发布由以下项目所支持：            
+
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
 
 11. 文件清单 
 =========================
 
 文件路径: :file:`/data/WATER/Level_1/Meteorology/WATER_Mobile_AWS`
 ::
-	1./uuid.txt
-	2./Readme_cn.txt
-	3./WATER_Mobile_AWS_track.zip
-	4./WATER_Mobile_AWS.zip
+	1./Readme_cn.txt
+	2./uuid.txt
+	3./WATER_Mobile_AWS_20080315.csv
+	4./WATER_Mobile_AWS_20080318.csv
+	5./WATER_Mobile_AWS_20080319.csv
+	6./WATER_Mobile_AWS_20080320.csv
+	7./WATER_Mobile_AWS_20080321.csv
+	8./WATER_Mobile_AWS_20080322.csv
+	9./WATER_Mobile_AWS_20080324.csv
+	10./WATER_Mobile_AWS_20080329.csv
+	11./WATER_Mobile_AWS_20080330.csv
+	12./WATER_Mobile_AWS_20080331.csv
+	13./WATER_Mobile_AWS_20080401.csv
+	14./water_mobile_aws_Readme_cn.txt
+	15./water_mobile_aws_track.avl
+	16./water_mobile_aws_track.dbf
+	17./water_mobile_aws_track.prj
+	18./water_mobile_aws_track.sbn
+	19./water_mobile_aws_track.sbx
+	20./water_mobile_aws_track.shp
+	21./water_mobile_aws_track.shx
+	22./WATER_Mobile_AWS_track.zip
+	23./WATER_Mobile_AWS.zip

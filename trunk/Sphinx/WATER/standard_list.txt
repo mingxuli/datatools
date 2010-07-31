@@ -1,4 +1,6 @@
 ﻿.. _standard_list:
+.. sectnum::
+   :start: 1
 
 ***********
 观测规范
