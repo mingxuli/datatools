@@ -25,9 +25,11 @@ class AttributeDialog(QDialog, Ui_AttributeDialog):
         self.connect(self.pushButton, SIGNAL("clicked()"), self.search)
 
     def search(self):
+        self.disconnect(self.thread, SIGNAL("afterLoadingData"), self.addItems)
         value = self.lineEdit.displayText()
         column = self.comboBox.currentText()
-        compositor = AttributeSearchCompositor(self.parent.currentLayer().name(),(column,value))
+        compare = self.compareComboBox.currentText()
+        compositor = AttributeSearchCompositor(self.parent.currentLayer().name(),(column,value,compare))
         self.thread.compositor = compositor
         self.thread.start()
 
@@ -44,6 +46,10 @@ class AttributeDialog(QDialog, Ui_AttributeDialog):
         self.model = AttributeModel(fields, datas)
         self.tableView.setModel(self.model)
         self.tableView.resizeColumnsToContents()
+
+    def closeEvent(self, e):
+        if not self.thread.isFinished():
+            e.ignore()
 
 if __name__ =="__main__":
     import sys

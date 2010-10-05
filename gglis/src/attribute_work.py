@@ -3,13 +3,14 @@
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from pysqlite2 import dbapi2 as sqlite3
+from version import DEFAULT_DATABASE
+
 class AttributeWork(QThread):
 
     def __init__(self, parent=None):
         super(AttributeWork, self).__init__(parent)
         self.exiting = False
-        settings = QSettings()
-        self.dataFile = settings.value("Application/database", "").toString()
+        self.dataFile = DEFAULT_DATABASE
 
     def __del__(self):
         self.exiting = True

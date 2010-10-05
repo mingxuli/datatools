@@ -9,6 +9,6 @@ class AttributePointCompositor(AttributeLoadCompositor):
 
     def getDatas(self,cur,columns):
         names = ','.join(columns)
-        cur.execute("select %s from %s where MbrWithin(MakePoint(%f, %f,4326),Geometry)" % (names, self.name, self.x, self.y))
+        cur.execute("select %s from %s where MbrWithin(MakePoint(%f, %f,4326),geometry)" % (names, self.name, self.x, self.y))
         return cur.fetchone()
 

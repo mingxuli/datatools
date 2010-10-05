@@ -20,8 +20,15 @@ class Ui_LayersDialog(object):
         self.layersWidget = LayersWidget(LayersDialog)
         self.layersWidget.setObjectName("layersWidget")
         self.verticalLayout.addWidget(self.layersWidget)
+        self.buttonBox = QtGui.QDialogButtonBox(LayersDialog)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName("buttonBox")	
+        self.verticalLayout.addWidget(self.buttonBox)
 
         self.retranslateUi(LayersDialog)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("accepted()"), LayersDialog.accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("rejected()"), LayersDialog.reject)        		
         QtCore.QMetaObject.connectSlotsByName(LayersDialog)
 
     def retranslateUi(self, LayersDialog):
