@@ -16,14 +16,12 @@ class LayersWidget(QListWidget):
         super(LayersWidget, self).__init__(parent)
         self.parent = parent
 
-    def initItems(self, layers):
-        for layer in layers:
-            item = QListWidgetItem(layer.name())
-            item.setSizeHint(QSize(-1, 25))
-            typeOfIcon = self.getIconByGeometry(layer)
-            item.setIcon(QIcon(typeOfIcon))
-            self.addItem(item)
-        self.setCurrentRow(0)
+    def initItems(self, layers,displayedLayers):
+        for layer in layers:            
+            item = QListWidgetItem(layer)
+            item.setSizeHint(QSize(-1, 25))           
+            item.setCheckState(self.isDisplay(layer,displayedLayers))
+            self.addItem(item)        
 
     def getIconByGeometry(self, layer):
         if not isinstance(layer,QgsVectorLayer): return ""
@@ -32,6 +30,27 @@ class LayersWidget(QListWidget):
         elif type == 1: return ":/default/images/line.png"
         elif type == 2: return ":/default/images/polygon.png"
         else: return ""
+    
+    def isDisplay(self,layer,displayedLayers):
+        checked = False
+        for d in displayedLayers:            
+            if not layer.compare(d): 
+                checked = True               
+        if checked:
+            return Qt.Checked 
+        else:
+            return Qt.Unchecked
+         
+        
+    def getCheckedNames(self):
+        names = [] 
+        for index in range(self.count()):
+            item = self.item(index)
+            if item.checkState():
+                name = item.text()
+                names.append(name)
+        return names
+        
 
 if __name__ == "__main__":
     import sys

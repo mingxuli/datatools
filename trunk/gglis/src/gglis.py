@@ -2,32 +2,36 @@
 # and open the template in the editor.
 import sys
 
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt4.QtGui import QApplication
+from PyQt4.QtCore import QString
 from default_main_window import MainWindow
+from default_splash_screen import SplashScreen
 import os
-from qgis.core import *
-from qgis.gui import *
+from qgis.core import QgsApplication
+from version import homeDir
+from version import LAYERS
 
-def  homeDir():
-    path = sys.path[0]
-    if os.path.isdir(path):
-        return path
-    elif os.path.isfile(path):
-        return os.path.dirname(path)
 
-def main(argv):
-    qgisPrefix =  homeDir()
+def main(argv):    
+    names = []
+    for n in LAYERS:
+        names.append(QString(n))
+    qgisPrefix =  homeDir()        
     QApplication.setOrganizationName("ICIMOD");
     QApplication.setOrganizationDomain("icimod.org");
-    QApplication.setApplicationName("GGLis");
+    QApplication.setApplicationName("Glacial Lakes Viewer");
 
     app = QApplication(argv, True)
+    splash = SplashScreen(qgisPrefix)
+    splash.showMessage(unicode("starting..."))
     QgsApplication.setPrefixPath(qgisPrefix, True)
-    QgsApplication.initQgis()
-
-    window = MainWindow()
-    window.show()
+    QgsApplication.initQgis()        
+    window = MainWindow(splash)
+    window.mapCanvas.loadInitialLayers(splash)
+    layers,rLayers = window.mapCanvas.getMapLayers(names)       
+    window.show()    
+    window.mapCanvas.refreshCanvas(splash,layers,rLayers)
+    del splash
 
     app.exec_()
     QgsApplication.exitQgis()

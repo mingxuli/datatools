@@ -12,7 +12,7 @@ from PyQt4 import QtCore, QtGui
 class Ui_TraceDialog(object):
     def setupUi(self, TraceDialog):
         TraceDialog.setObjectName("TraceDialog")
-        TraceDialog.resize(814, 434)
+        TraceDialog.resize(300, 434)
         self.horizontalLayout = QtGui.QHBoxLayout(TraceDialog)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.attributeTableWidget = QtGui.QTableWidget(TraceDialog)
@@ -31,19 +31,6 @@ class Ui_TraceDialog(object):
         item = QtGui.QTableWidgetItem()
         self.attributeTableWidget.setHorizontalHeaderItem(1, item)
         self.horizontalLayout.addWidget(self.attributeTableWidget)
-        self.widgetPlot = QtGui.QWidget(TraceDialog)
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.widgetPlot.sizePolicy().hasHeightForWidth())
-        self.widgetPlot.setSizePolicy(sizePolicy)
-        self.widgetPlot.setMinimumSize(QtCore.QSize(340, 330))
-        self.widgetPlot.setObjectName("widgetPlot")
-        self.verticalLayout = QtGui.QVBoxLayout(self.widgetPlot)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.layoutPlot = QtGui.QVBoxLayout()
-        self.layoutPlot.setObjectName("layoutPlot")        
-        self.horizontalLayout.addWidget(self.widgetPlot)
 
         self.retranslateUi(TraceDialog)
         QtCore.QMetaObject.connectSlotsByName(TraceDialog)

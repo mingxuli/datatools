@@ -6,27 +6,33 @@ from PyQt4.QtGui import *
 from qgis.core import *
 from qgis.gui import *
 from ui_layers_dialog import Ui_LayersDialog
+from version import LAYERS
 
 class LayersDialog(QDialog, Ui_LayersDialog):
-    def __init__(self, parent=None):
+    def __init__(self, mapVectorLayer,mapRasterLayer,parent=None):
         super(LayersDialog, self).__init__(parent)
         self.setupUi(self)
-        self.parent = parent
-        self.initItems(parent)
-        self.connect(self.layersWidget, SIGNAL("currentRowChanged(int)"), self.changeCurrentLayer)
+        self.parent = parent        
+        self.initItems()      
+        self.connect(self.layersWidget, SIGNAL("itemClicked(QListWidgetItem *)"), self.processItemclick)
 
-    def changeCurrentLayer(self):
-        index = self.layersWidget.currentRow()
-        print "current row changed", index
-        if index not in range(self.parent.layerCount()):
-            return
-        self.parent.setCurrentLayerByIndex(index)
-        self.layersWidget.setCurrentRow(index)
-
-    def initItems(self,mapCanvas):
-        count = mapCanvas.layerCount()
+    def initItems(self):
         layers = []
-        for index in range(count):
-            layers.append(mapCanvas.layer(index))
-        self.layersWidget.initItems(layers[0:-1])
+        for l in LAYERS:
+            layers.append(QString(l))
+        displayedLayers = self.parent.getDisplayedLayers()
+        self.layersWidget.initItems(layers,displayedLayers)
+        
+    def processItemclick(self,item):
+        if item.checkState() == Qt.Checked:
+            item.setCheckState(Qt.Unchecked)
+        else:
+            item.setCheckState(Qt.Checked)            
+        
+    def accept(self):
+        vLayers, rasterLayer = [],None
+        names = self.layersWidget.getCheckedNames()
+        vLayers,rLayers = self.parent.getMapLayers(names)
+        self.parent.refreshCanvas(None,vLayers,rLayers)                            
+        QDialog.accept(self)
     

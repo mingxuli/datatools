@@ -7,9 +7,9 @@ class AttributeLoadCompositor:
     def getColumns(self,cur):
         cur.execute("PRAGMA table_info(%s)" % (self.name))
         columns = cur.fetchall()
-        return [column[1] for column in columns if column[1] != 'Geometry']
+        return [column[1] for column in columns if column[1] != 'geometry']
 
     def getDatas(self,cur,columns):
         names = ",".join(columns)
-        cur.execute("select %s from %s order by gid" % (names, self.name))
+        cur.execute("select %s from %s order by id" % (names, self.name))
         return cur.fetchall()
