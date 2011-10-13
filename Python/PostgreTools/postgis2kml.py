@@ -108,12 +108,12 @@ relname='"""+table_name+"""') and attnum >-1 and atttypid >0 order by attnum;"""
 if __name__=='__main__':
     ## variale for connect postgre
     host='localhost'
-    dbname=r"GLOF"
+    dbname=r"WestDC"
     user='postgres'
-    password='welcome'
-    table_name='Nepal_Glacial_Lake_2009_CD'
-    field_name='"Gl_Code"'
-    kmlfile='D:\\sharedata\\Nepal_Glacial_Lake_2009.kml'
+    password='postgres'
+    table_name='heihe_reservoirs'
+    field_name='name'
+    kmlfile='d:\\heihe\\heihe_reservoirs.kml'
     
     result=postgis2kml(host,dbname,user,password,table_name,kmlfile,field_name)
     print 'end'

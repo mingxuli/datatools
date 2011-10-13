@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-4.6.dtd">
 <!-- eric4 project file for project python -->
-<!-- Saved: 2010-07-28, 20:38:48 -->
+<!-- Saved: 2010-08-06, 08:53:49 -->
 <!-- Copyright (C) 2010 ,  -->
 <Project version="4.6">
   <Language>en</Language>
@@ -12,43 +12,8 @@
   <Author></Author>
   <Email></Email>
   <Sources>
-    <Source>GeoMetadata/GeoMetadata.pyw</Source>
     <Source>boundary.py</Source>
     <Source>DEM/profile.py</Source>
-    <Source>GeoMetadata/doc/conf.py</Source>
-    <Source>GeoMetadata/GeoMetadata_rc.py</Source>
-    <Source>GeoMetadata/lib/crawler.py</Source>
-    <Source>GeoMetadata/lib/formats/ali_hyperion.py</Source>
-    <Source>GeoMetadata/lib/formats/alos.py</Source>
-    <Source>GeoMetadata/lib/formats/aster.py</Source>
-    <Source>GeoMetadata/lib/formats/ccrs.py</Source>
-    <Source>GeoMetadata/lib/formats/digitalglobe.py</Source>
-    <Source>GeoMetadata/lib/formats/ecw.py</Source>
-    <Source>GeoMetadata/lib/formats/ecwp.py</Source>
-    <Source>GeoMetadata/lib/formats/envi.py</Source>
-    <Source>GeoMetadata/lib/formats/esribil.py</Source>
-    <Source>GeoMetadata/lib/formats/esrigrid.py</Source>
-    <Source>GeoMetadata/lib/formats/fast_l7a.py</Source>
-    <Source>GeoMetadata/lib/formats/jp2.py</Source>
-    <Source>GeoMetadata/lib/formats/netcdf.py</Source>
-    <Source>GeoMetadata/lib/formats/nitf.py</Source>
-    <Source>GeoMetadata/lib/formats/spot_cap.py</Source>
-    <Source>GeoMetadata/lib/formats/spot_dimap.py</Source>
-    <Source>GeoMetadata/lib/formats/__dataset__.py</Source>
-    <Source>GeoMetadata/lib/formats/__default__.py</Source>
-    <Source>GeoMetadata/lib/formats/__fields__.py</Source>
-    <Source>GeoMetadata/lib/formats/__init__.py</Source>
-    <Source>GeoMetadata/lib/geometry.py</Source>
-    <Source>GeoMetadata/lib/getargs.py</Source>
-    <Source>GeoMetadata/lib/icons.py</Source>
-    <Source>GeoMetadata/lib/overviews.py</Source>
-    <Source>GeoMetadata/lib/progresslogger.py</Source>
-    <Source>GeoMetadata/lib/spatialreferences.py</Source>
-    <Source>GeoMetadata/lib/splashscreen.py</Source>
-    <Source>GeoMetadata/lib/transforms/__init__.py</Source>
-    <Source>GeoMetadata/lib/utilities.py</Source>
-    <Source>GeoMetadata/runcrawler.py</Source>
-    <Source>GeoMetadata/runtransform.py</Source>
     <Source>Geonames/transfer.py</Source>
     <Source>GoogleTools/kml2shp.py</Source>
     <Source>GoogleTools/Picture2KMZ.py</Source>
@@ -114,14 +79,13 @@
     <Source>ZipTools/unzip_tar.py</Source>
     <Source>test.py</Source>
     <Source>PostgreTools/gl_class_from_old2new.py</Source>
+    <Source>PostgreTools/glacial_lake_attribute.py</Source>
   </Sources>
   <Forms>
-    <Form>GeoMetadata/Metagata_GUI.ui</Form>
   </Forms>
   <Translations>
   </Translations>
   <Resources>
-    <Resource>GeoMetadata/GeoMetadata.qrc</Resource>
   </Resources>
   <Interfaces>
   </Interfaces>

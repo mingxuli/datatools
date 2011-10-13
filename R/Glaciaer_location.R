@@ -8,6 +8,7 @@ data_e <- dbGetQuery(con,statement=paste(
 	"select gid,\"Gl_Area\",\"Elevation\",st_x(centroid(the_geom))",
 	"from \"Nepal_Glacial_Lake_2009_final\"",
 	"where \"Gl_Class\"='E(c)' or \"Gl_Class\"='E(v)' or \"Gl_Class\"='E(o)'"))
+
 data_m <- dbGetQuery(con,statement=paste(
 	"select gid,\"Gl_Area\",\"Elevation\",st_x(centroid(the_geom))",
 	"from \"Nepal_Glacial_Lake_2009_final\"",
@@ -41,12 +42,14 @@ data_ele <- dbGetQuery(con,statement=paste(
 	"from \"Nepal_Glacial_Lake_2009_final\"",
 	"group by round((\"Elevation\")/100)",
 	"order by round((\"Elevation\")/100)"))
+
 data_ele_g <- dbGetQuery(con,statement=paste(
 	"select round((\"Elevation\")/100),sum(\"Gl_Area\")",
 	"from \"Nepal_Glacial_Lake_2009_final\"",
 	"where \"Gl_Class\" <> 'O'",
 	"group by round((\"Elevation\")/100)",
 	"order by round((\"Elevation\")/100)"))
+
 data_danger<- dbGetQuery(con,statement=paste(
 	"select gid,\"Gl_Area\",\"Elevation\",st_x(centroid(the_geom))",
 	"from \"Nepal_Glacial_Lake_2009_final\"",

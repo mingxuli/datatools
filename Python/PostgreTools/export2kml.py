@@ -86,8 +86,8 @@ def export_gl_centroid(basin_code,outpath):
     conn=connect("host=localhost dbname=GGLIS user=postgres password=postgres")
     curs=conn.cursor()
 
-    sql_str="select a.gid,askml(centroid(a.the_geom)) from \"HKH_Glacial_Lakes_final\" a, \"HKH_Basin_Pfaf_v3_poly\" b "\
-            "where st_within(centroid(a.the_geom),b.the_geom) and b.lv3_code='"+basin_code+"' and \"Gl_Class\" is null order by a.gid;"
+    sql_str="select a.\"Gl_Class\",askml(centroid(a.the_geom)) from \"HKH_Glacial_Lakes_final\" a, \"HKH_Basin_Pfaf_v3_poly\" b "\
+            "where st_within(centroid(a.the_geom),b.the_geom) and b.lv3_code='"+basin_code+"' order by a.gid;"
 
     curs.execute(sql_str)
     rows=curs.fetchall()
@@ -156,7 +156,7 @@ def export_gl_centroid(basin_code,outpath):
     conn.close()
     print '---glacial lake centroid exported!----'
 if __name__=='__main__':
-    basin_code='Br63'
+    basin_code='Ir91'
     outpath='C:\\gl_class\\'
     export_gl_outline(basin_code,outpath)
     export_gl_centroid(basin_code,outpath)
