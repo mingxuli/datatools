@@ -2,6 +2,7 @@
 import string
 import tarfile
 import glob
+
 filelist=glob.glob("D:\\Python\\GLOF\\landsat\\*.tar.gz")
 for filename in filelist:
     tar = tarfile.open(filename, 'r:gz')

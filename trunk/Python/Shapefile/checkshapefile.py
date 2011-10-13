@@ -92,8 +92,8 @@ def shp2shp(shapefile,outfile):
     print shapefile+' OK!'
 
 if __name__=='__main__':
-    inpath='E://Indus4Anuja//'
-    outpath='D://workspace//'
+    inpath='E://check//in//'
+    outpath='e://check//out//'
     filelist=glob.glob(inpath+'*.shp')
     for shapefile in filelist:        
         outfile=outpath+os.path.basename(shapefile)

@@ -84,11 +84,11 @@ if __name__=='__main__':
     dbname="GGLIS"
     user='postgres'
     password='postgres'    
-    table_name="\"HKH_Basin_Boundary_v4_line\""
+    table_name="\"HKH_Major_Rivers\""
     gid='gid'
     ##define the geosystem code,default value is 4326 (=WGS84)
     srid='4326'
-    kml_file='C:\\gl_class\\bound_line_new.kml'
+    kml_file='c:\\gl_class\\hkh_major_river.kml'
     insert_polyline(host,dbname,user,password,kml_file,table_name)
 
 

@@ -137,10 +137,10 @@ def insert_polygon(host,dbname,user,password,kmlfile,table_name,srid='4326'):
 if __name__=='__main__':
     ## variale for connect postgre
     host='localhost'
-    dbname='GGLIS'
+    dbname='heihe'
     user='postgres'
     password='postgres'    
-    table_name='HKH_Glacial_Lakes_final'
+    table_name='Heihe_Basin_Boundary_line'
     gid='gid'
     ##define the geosystem code,default value is 4326 (=WGS84)
     srid='4326'
