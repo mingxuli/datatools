@@ -1,0 +1,475 @@
+.. _32a29c2c-3e80-47ce-8c35-1375aef4086f:
+
+************************************************************************
+黑河综合遥感联合试验：临泽草地站自动气象站数据集
+************************************************************************
+
+**英文标题:**
+WATER: Dataset of automatic meteorological observations at the Linze grassland station
+
+1. 摘要
+============
+本数据集主要指临泽草地中日联合观测站的观测数据，此站点设在兰州大学草地农业科技学院临泽草地生态试验站周边。周围的景观以湿地、盐碱地为主。观测场的经纬度是E100 °04'/N39 °15'，海拔高度为1394m。观测时间段为2007年10月1号至2008年10月27号，数据质量较高。
+
+观测项目主要有：风速风向、空气温湿度（3m和10m）、气压、降水、辐射四分量、地表温度、土壤温度（5cm、10cm、20cm和40cm）、土壤湿度（10cm）和土壤热通量（5cm）。
+
+原始观测数据由黄广辉、马明国等整理后分级发布：对原始数据进行格式等转换后以.csv逐月存储的为Level1级数据；经初步数据分析，错误纠正，质量控制后存档的为Level2级数据。详细信息请参见“气象水文通量数据使用指南”。
+
+2. 关键词
+==============
+主题关键词:
+气象水文,气象观测,风速,风向,空气温度,空气湿度,气压,降水,地表温度,总辐射,反射辐射,下行长波辐射,向上长波辐射,土壤温度,土壤水分,土壤热通量,
+位置关键词:
+黑河流域,中游干旱区水文试验区,临泽草地加密观测区,
+时间关键词:
+2007-10-01,2008-10-27,
+学科关键词:
+
+3. 本数据的引用
+====================
+中文引用：
+马明国, 王维真, 谭俊磊, 黄广辉, 张智慧. 黑河综合遥感联合试验：临泽草地站自动气象站数据集. 中国科学院寒区旱区环境与工程研究所. 2008. doi:10.3972/water973.0283.db 
+
+英文引用：
+Ma Mingguo, Wang Weizhen, Tan Junlei, Huang Guanghui, Zhang Zhihui. WATER: Dataset of automatic meteorological observations at the Linze grassland station. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences. 2008. doi:10.3972/water973.0283.db
+
+4.	数据调查者
+==================
+
++ 姓名：吴锦奎, 胡泽勇, 马明国, 王维真, 谭俊磊, 黄广辉, 张智慧
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
+
+5. 数据联系人
+=====================
+
++ 姓名：马明国
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：mmg@lzb.ac.cn
++ 电话：0931-4967250
+
+6. 元数据作者
+======================
+
++ 姓名：黄广辉
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：luckhgh@lzb.ac.cn
++ 电话：0931-4967973
+
+7.	元数据发布者
+======================
+
++ 姓名：吴立宗
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：wulizong@lzb.ac.cn
++ 电话：0931-4967298
++ 传真：0931-8279161
+
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
+8.	数据分发者
+======================
+
++ 姓名：李红星
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：westdc@lzb.ac.cn
++ 电话：0931-4967287
++ 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
+9.	地理范围
+=========================
+
++ 北：39.25
++ 南：39.25
++ 西：100.07
++ 东：100.07
+
+10.	项目支持信息
+=========================
+
+本试验的开展及数据的管理与发布获由以下项目所支持：           
+
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
+
+11. 文件清单 
+=========================
+
+文件路径: :file:`/data/WATER/Level_1/Meteorology/WATER_AWS/Linze_grass`
+::
+	1./infraredTemperature/
+	2./infraredTemperature/onesec/
+	3./infraredTemperature/onesec/20071218-20080415/
+	4./infraredTemperature/onesec/20071218-20080415/2007-12-18.csv
+	5./infraredTemperature/onesec/20071218-20080415/2007-12-19.csv
+	6./infraredTemperature/onesec/20071218-20080415/2007-12-20.csv
+	7./infraredTemperature/onesec/20071218-20080415/2007-12-21.csv
+	8./infraredTemperature/onesec/20071218-20080415/2007-12-22.csv
+	9./infraredTemperature/onesec/20071218-20080415/2007-12-23.csv
+	10./infraredTemperature/onesec/20071218-20080415/2007-12-24.csv
+	11./infraredTemperature/onesec/20071218-20080415/2007-12-25.csv
+	12./infraredTemperature/onesec/20071218-20080415/2007-12-26.csv
+	13./infraredTemperature/onesec/20071218-20080415/2007-12-27.csv
+	14./infraredTemperature/onesec/20071218-20080415/2007-12-28.csv
+	15./infraredTemperature/onesec/20071218-20080415/2007-12-29.csv
+	16./infraredTemperature/onesec/20071218-20080415/2007-12-30.csv
+	17./infraredTemperature/onesec/20071218-20080415/2007-12-31.csv
+	18./infraredTemperature/onesec/20071218-20080415/2008-01-01.csv
+	19./infraredTemperature/onesec/20071218-20080415/2008-01-02.csv
+	20./infraredTemperature/onesec/20071218-20080415/2008-01-03.csv
+	21./infraredTemperature/onesec/20071218-20080415/2008-01-04.csv
+	22./infraredTemperature/onesec/20071218-20080415/2008-01-05.csv
+	23./infraredTemperature/onesec/20071218-20080415/2008-01-06.csv
+	24./infraredTemperature/onesec/20071218-20080415/2008-01-07.csv
+	25./infraredTemperature/onesec/20071218-20080415/2008-01-08.csv
+	26./infraredTemperature/onesec/20071218-20080415/2008-01-09.csv
+	27./infraredTemperature/onesec/20071218-20080415/2008-01-10.csv
+	28./infraredTemperature/onesec/20071218-20080415/2008-01-11.csv
+	29./infraredTemperature/onesec/20071218-20080415/2008-01-12.csv
+	30./infraredTemperature/onesec/20071218-20080415/2008-01-13.csv
+	31./infraredTemperature/onesec/20071218-20080415/2008-01-14.csv
+	32./infraredTemperature/onesec/20071218-20080415/2008-01-15.csv
+	33./infraredTemperature/onesec/20071218-20080415/2008-01-16.csv
+	34./infraredTemperature/onesec/20071218-20080415/2008-01-17.csv
+	35./infraredTemperature/onesec/20071218-20080415/2008-01-18.csv
+	36./infraredTemperature/onesec/20071218-20080415/2008-01-19.csv
+	37./infraredTemperature/onesec/20071218-20080415/2008-01-20.csv
+	38./infraredTemperature/onesec/20071218-20080415/2008-01-21.csv
+	39./infraredTemperature/onesec/20071218-20080415/2008-01-22.csv
+	40./infraredTemperature/onesec/20071218-20080415/2008-01-23.csv
+	41./infraredTemperature/onesec/20071218-20080415/2008-01-24.csv
+	42./infraredTemperature/onesec/20071218-20080415/2008-01-25.csv
+	43./infraredTemperature/onesec/20071218-20080415/2008-01-26.csv
+	44./infraredTemperature/onesec/20071218-20080415/2008-01-27.csv
+	45./infraredTemperature/onesec/20071218-20080415/2008-01-28.csv
+	46./infraredTemperature/onesec/20071218-20080415/2008-01-29.csv
+	47./infraredTemperature/onesec/20071218-20080415/2008-01-30.csv
+	48./infraredTemperature/onesec/20071218-20080415/2008-01-31.csv
+	49./infraredTemperature/onesec/20071218-20080415/2008-02-01.csv
+	50./infraredTemperature/onesec/20071218-20080415/2008-02-02.csv
+	51./infraredTemperature/onesec/20071218-20080415/2008-02-03.csv
+	52./infraredTemperature/onesec/20071218-20080415/2008-02-04.csv
+	53./infraredTemperature/onesec/20071218-20080415/2008-02-05.csv
+	54./infraredTemperature/onesec/20071218-20080415/2008-02-06.csv
+	55./infraredTemperature/onesec/20071218-20080415/2008-02-07.csv
+	56./infraredTemperature/onesec/20071218-20080415/2008-02-08.csv
+	57./infraredTemperature/onesec/20071218-20080415/2008-02-09.csv
+	58./infraredTemperature/onesec/20071218-20080415/2008-02-10.csv
+	59./infraredTemperature/onesec/20071218-20080415/2008-02-11.csv
+	60./infraredTemperature/onesec/20071218-20080415/2008-02-12.csv
+	61./infraredTemperature/onesec/20071218-20080415/2008-02-13.csv
+	62./infraredTemperature/onesec/20071218-20080415/2008-02-14.csv
+	63./infraredTemperature/onesec/20071218-20080415/2008-02-15.csv
+	64./infraredTemperature/onesec/20071218-20080415/2008-02-16.csv
+	65./infraredTemperature/onesec/20071218-20080415/2008-02-17.csv
+	66./infraredTemperature/onesec/20071218-20080415/2008-02-18.csv
+	67./infraredTemperature/onesec/20071218-20080415/2008-02-19.csv
+	68./infraredTemperature/onesec/20071218-20080415/2008-02-20.csv
+	69./infraredTemperature/onesec/20071218-20080415/2008-02-21.csv
+	70./infraredTemperature/onesec/20071218-20080415/2008-02-22.csv
+	71./infraredTemperature/onesec/20071218-20080415/2008-02-23.csv
+	72./infraredTemperature/onesec/20071218-20080415/2008-02-24.csv
+	73./infraredTemperature/onesec/20071218-20080415/2008-02-25.csv
+	74./infraredTemperature/onesec/20071218-20080415/2008-02-26.csv
+	75./infraredTemperature/onesec/20071218-20080415/2008-02-27.csv
+	76./infraredTemperature/onesec/20071218-20080415/2008-02-28.csv
+	77./infraredTemperature/onesec/20071218-20080415/2008-02-29.csv
+	78./infraredTemperature/onesec/20071218-20080415/2008-03-01.csv
+	79./infraredTemperature/onesec/20071218-20080415/2008-03-02.csv
+	80./infraredTemperature/onesec/20071218-20080415/2008-03-03.csv
+	81./infraredTemperature/onesec/20071218-20080415/2008-03-04.csv
+	82./infraredTemperature/onesec/20071218-20080415/2008-03-05.csv
+	83./infraredTemperature/onesec/20071218-20080415/2008-03-06.csv
+	84./infraredTemperature/onesec/20071218-20080415/2008-03-07.csv
+	85./infraredTemperature/onesec/20071218-20080415/2008-03-08.csv
+	86./infraredTemperature/onesec/20071218-20080415/2008-03-09.csv
+	87./infraredTemperature/onesec/20071218-20080415/2008-03-10.csv
+	88./infraredTemperature/onesec/20071218-20080415/2008-03-11.csv
+	89./infraredTemperature/onesec/20071218-20080415/2008-03-12.csv
+	90./infraredTemperature/onesec/20071218-20080415/2008-03-13.csv
+	91./infraredTemperature/onesec/20071218-20080415/2008-03-14.csv
+	92./infraredTemperature/onesec/20071218-20080415/2008-03-15.csv
+	93./infraredTemperature/onesec/20071218-20080415/2008-03-16.csv
+	94./infraredTemperature/onesec/20071218-20080415/2008-03-17.csv
+	95./infraredTemperature/onesec/20071218-20080415/2008-03-18.csv
+	96./infraredTemperature/onesec/20071218-20080415/2008-03-19.csv
+	97./infraredTemperature/onesec/20071218-20080415/2008-03-20.csv
+	98./infraredTemperature/onesec/20071218-20080415/2008-03-21.csv
+	99./infraredTemperature/onesec/20071218-20080415/2008-03-22.csv
+	100./infraredTemperature/onesec/20071218-20080415/2008-03-23.csv
+	101./infraredTemperature/onesec/20071218-20080415/2008-03-24.csv
+	102./infraredTemperature/onesec/20071218-20080415/2008-03-25.csv
+	103./infraredTemperature/onesec/20071218-20080415/2008-03-26.csv
+	104./infraredTemperature/onesec/20071218-20080415/2008-03-27.csv
+	105./infraredTemperature/onesec/20071218-20080415/2008-03-28.csv
+	106./infraredTemperature/onesec/20071218-20080415/2008-03-29.csv
+	107./infraredTemperature/onesec/20071218-20080415/2008-03-30.csv
+	108./infraredTemperature/onesec/20071218-20080415/2008-03-31.csv
+	109./infraredTemperature/onesec/20071218-20080415/2008-04-01.csv
+	110./infraredTemperature/onesec/20071218-20080415/2008-04-02.csv
+	111./infraredTemperature/onesec/20071218-20080415/2008-04-03.csv
+	112./infraredTemperature/onesec/20071218-20080415/2008-04-04.csv
+	113./infraredTemperature/onesec/20071218-20080415/2008-04-05.csv
+	114./infraredTemperature/onesec/20071218-20080415/2008-04-06.csv
+	115./infraredTemperature/onesec/20071218-20080415/2008-04-07.csv
+	116./infraredTemperature/onesec/20071218-20080415/2008-04-08.csv
+	117./infraredTemperature/onesec/20071218-20080415/2008-04-09.csv
+	118./infraredTemperature/onesec/20071218-20080415/2008-04-10.csv
+	119./infraredTemperature/onesec/20071218-20080415/2008-04-11.csv
+	120./infraredTemperature/onesec/20071218-20080415/2008-04-12.csv
+	121./infraredTemperature/onesec/20071218-20080415/2008-04-13.csv
+	122./infraredTemperature/onesec/20071218-20080415/2008-04-14.csv
+	123./infraredTemperature/onesec/20071218-20080415/2008-04-15.csv
+	124./infraredTemperature/onesec/20071218-20080415/Readme.txt
+	125./infraredTemperature/onesec/20080523-20080822/
+	126./infraredTemperature/onesec/20080523-20080822/2008-05-23.csv
+	127./infraredTemperature/onesec/20080523-20080822/2008-05-24.csv
+	128./infraredTemperature/onesec/20080523-20080822/2008-05-25.csv
+	129./infraredTemperature/onesec/20080523-20080822/2008-05-26.csv
+	130./infraredTemperature/onesec/20080523-20080822/2008-05-27.csv
+	131./infraredTemperature/onesec/20080523-20080822/2008-05-28.csv
+	132./infraredTemperature/onesec/20080523-20080822/2008-05-29.csv
+	133./infraredTemperature/onesec/20080523-20080822/2008-05-30.csv
+	134./infraredTemperature/onesec/20080523-20080822/2008-05-31.csv
+	135./infraredTemperature/onesec/20080523-20080822/2008-06-01.csv
+	136./infraredTemperature/onesec/20080523-20080822/2008-06-02.csv
+	137./infraredTemperature/onesec/20080523-20080822/2008-06-03.csv
+	138./infraredTemperature/onesec/20080523-20080822/2008-06-04.csv
+	139./infraredTemperature/onesec/20080523-20080822/2008-06-05.csv
+	140./infraredTemperature/onesec/20080523-20080822/2008-06-06.csv
+	141./infraredTemperature/onesec/20080523-20080822/2008-06-07.csv
+	142./infraredTemperature/onesec/20080523-20080822/2008-06-08.csv
+	143./infraredTemperature/onesec/20080523-20080822/2008-06-09.csv
+	144./infraredTemperature/onesec/20080523-20080822/2008-06-10.csv
+	145./infraredTemperature/onesec/20080523-20080822/2008-06-11.csv
+	146./infraredTemperature/onesec/20080523-20080822/2008-06-12.csv
+	147./infraredTemperature/onesec/20080523-20080822/2008-06-13.csv
+	148./infraredTemperature/onesec/20080523-20080822/2008-06-14.csv
+	149./infraredTemperature/onesec/20080523-20080822/2008-06-15.csv
+	150./infraredTemperature/onesec/20080523-20080822/2008-06-16.csv
+	151./infraredTemperature/onesec/20080523-20080822/2008-06-17.csv
+	152./infraredTemperature/onesec/20080523-20080822/2008-06-18.csv
+	153./infraredTemperature/onesec/20080523-20080822/2008-06-19.csv
+	154./infraredTemperature/onesec/20080523-20080822/2008-06-20.csv
+	155./infraredTemperature/onesec/20080523-20080822/2008-06-21.csv
+	156./infraredTemperature/onesec/20080523-20080822/2008-06-22.csv
+	157./infraredTemperature/onesec/20080523-20080822/2008-06-23.csv
+	158./infraredTemperature/onesec/20080523-20080822/2008-06-24.csv
+	159./infraredTemperature/onesec/20080523-20080822/2008-06-25.csv
+	160./infraredTemperature/onesec/20080523-20080822/2008-06-26.csv
+	161./infraredTemperature/onesec/20080523-20080822/2008-06-27.csv
+	162./infraredTemperature/onesec/20080523-20080822/2008-06-28.csv
+	163./infraredTemperature/onesec/20080523-20080822/2008-06-29.csv
+	164./infraredTemperature/onesec/20080523-20080822/2008-06-30.csv
+	165./infraredTemperature/onesec/20080523-20080822/2008-07-01.csv
+	166./infraredTemperature/onesec/20080523-20080822/2008-07-02.csv
+	167./infraredTemperature/onesec/20080523-20080822/2008-07-03.csv
+	168./infraredTemperature/onesec/20080523-20080822/2008-07-04.csv
+	169./infraredTemperature/onesec/20080523-20080822/2008-07-05.csv
+	170./infraredTemperature/onesec/20080523-20080822/2008-07-06.csv
+	171./infraredTemperature/onesec/20080523-20080822/2008-07-07.csv
+	172./infraredTemperature/onesec/20080523-20080822/2008-07-08.csv
+	173./infraredTemperature/onesec/20080523-20080822/2008-07-09.csv
+	174./infraredTemperature/onesec/20080523-20080822/2008-07-10.csv
+	175./infraredTemperature/onesec/20080523-20080822/2008-07-11.csv
+	176./infraredTemperature/onesec/20080523-20080822/2008-07-12.csv
+	177./infraredTemperature/onesec/20080523-20080822/2008-07-13.csv
+	178./infraredTemperature/onesec/20080523-20080822/2008-07-14.csv
+	179./infraredTemperature/onesec/20080523-20080822/2008-07-15.csv
+	180./infraredTemperature/onesec/20080523-20080822/2008-07-16.csv
+	181./infraredTemperature/onesec/20080523-20080822/2008-07-17.csv
+	182./infraredTemperature/onesec/20080523-20080822/2008-07-18.csv
+	183./infraredTemperature/onesec/20080523-20080822/2008-07-19.csv
+	184./infraredTemperature/onesec/20080523-20080822/2008-07-20.csv
+	185./infraredTemperature/onesec/20080523-20080822/2008-07-21.csv
+	186./infraredTemperature/onesec/20080523-20080822/2008-07-22.csv
+	187./infraredTemperature/onesec/20080523-20080822/2008-07-23.csv
+	188./infraredTemperature/onesec/20080523-20080822/2008-07-24.csv
+	189./infraredTemperature/onesec/20080523-20080822/2008-07-25.csv
+	190./infraredTemperature/onesec/20080523-20080822/2008-07-26.csv
+	191./infraredTemperature/onesec/20080523-20080822/2008-07-27.csv
+	192./infraredTemperature/onesec/20080523-20080822/2008-07-28.csv
+	193./infraredTemperature/onesec/20080523-20080822/2008-07-29.csv
+	194./infraredTemperature/onesec/20080523-20080822/2008-07-30.csv
+	195./infraredTemperature/onesec/20080523-20080822/2008-07-31.csv
+	196./infraredTemperature/onesec/20080523-20080822/2008-08-01.csv
+	197./infraredTemperature/onesec/20080523-20080822/2008-08-02.csv
+	198./infraredTemperature/onesec/20080523-20080822/2008-08-03.csv
+	199./infraredTemperature/onesec/20080523-20080822/2008-08-04.csv
+	200./infraredTemperature/onesec/20080523-20080822/2008-08-05.csv
+	201./infraredTemperature/onesec/20080523-20080822/2008-08-06.csv
+	202./infraredTemperature/onesec/20080523-20080822/2008-08-07.csv
+	203./infraredTemperature/onesec/20080523-20080822/2008-08-08.csv
+	204./infraredTemperature/onesec/20080523-20080822/2008-08-09.csv
+	205./infraredTemperature/onesec/20080523-20080822/2008-08-10.csv
+	206./infraredTemperature/onesec/20080523-20080822/2008-08-11.csv
+	207./infraredTemperature/onesec/20080523-20080822/2008-08-12.csv
+	208./infraredTemperature/onesec/20080523-20080822/2008-08-13.csv
+	209./infraredTemperature/onesec/20080523-20080822/2008-08-14.csv
+	210./infraredTemperature/onesec/20080523-20080822/2008-08-15.csv
+	211./infraredTemperature/onesec/20080523-20080822/2008-08-16.csv
+	212./infraredTemperature/onesec/20080523-20080822/2008-08-17.csv
+	213./infraredTemperature/onesec/20080523-20080822/2008-08-18.csv
+	214./infraredTemperature/onesec/20080523-20080822/2008-08-19.csv
+	215./infraredTemperature/onesec/20080523-20080822/2008-08-20.csv
+	216./infraredTemperature/onesec/20080523-20080822/2008-08-21.csv
+	217./infraredTemperature/onesec/20080523-20080822/Readme.txt
+	218./infraredTemperature/onesec/20080823-20081028/
+	219./infraredTemperature/onesec/20080823-20081028/2008-08-23.csv
+	220./infraredTemperature/onesec/20080823-20081028/2008-08-24.csv
+	221./infraredTemperature/onesec/20080823-20081028/2008-08-25.csv
+	222./infraredTemperature/onesec/20080823-20081028/2008-08-26.csv
+	223./infraredTemperature/onesec/20080823-20081028/2008-08-27.csv
+	224./infraredTemperature/onesec/20080823-20081028/2008-08-28.csv
+	225./infraredTemperature/onesec/20080823-20081028/2008-08-29.csv
+	226./infraredTemperature/onesec/20080823-20081028/2008-08-30.csv
+	227./infraredTemperature/onesec/20080823-20081028/2008-08-31.csv
+	228./infraredTemperature/onesec/20080823-20081028/2008-09-01.csv
+	229./infraredTemperature/onesec/20080823-20081028/2008-09-02.csv
+	230./infraredTemperature/onesec/20080823-20081028/2008-09-03.csv
+	231./infraredTemperature/onesec/20080823-20081028/2008-09-04.csv
+	232./infraredTemperature/onesec/20080823-20081028/2008-09-05.csv
+	233./infraredTemperature/onesec/20080823-20081028/2008-09-06.csv
+	234./infraredTemperature/onesec/20080823-20081028/2008-09-07.csv
+	235./infraredTemperature/onesec/20080823-20081028/2008-09-08.csv
+	236./infraredTemperature/onesec/20080823-20081028/2008-09-09.csv
+	237./infraredTemperature/onesec/20080823-20081028/2008-09-10.csv
+	238./infraredTemperature/onesec/20080823-20081028/2008-09-11.csv
+	239./infraredTemperature/onesec/20080823-20081028/2008-09-12.csv
+	240./infraredTemperature/onesec/20080823-20081028/2008-09-13.csv
+	241./infraredTemperature/onesec/20080823-20081028/2008-09-14.csv
+	242./infraredTemperature/onesec/20080823-20081028/2008-09-15.csv
+	243./infraredTemperature/onesec/20080823-20081028/2008-09-16.csv
+	244./infraredTemperature/onesec/20080823-20081028/2008-09-17.csv
+	245./infraredTemperature/onesec/20080823-20081028/2008-09-18.csv
+	246./infraredTemperature/onesec/20080823-20081028/2008-09-19.csv
+	247./infraredTemperature/onesec/20080823-20081028/2008-09-20.csv
+	248./infraredTemperature/onesec/20080823-20081028/2008-09-21.csv
+	249./infraredTemperature/onesec/20080823-20081028/2008-09-22.csv
+	250./infraredTemperature/onesec/20080823-20081028/2008-09-23.csv
+	251./infraredTemperature/onesec/20080823-20081028/2008-09-24.csv
+	252./infraredTemperature/onesec/20080823-20081028/2008-09-25.csv
+	253./infraredTemperature/onesec/20080823-20081028/2008-09-26.csv
+	254./infraredTemperature/onesec/20080823-20081028/2008-09-27.csv
+	255./infraredTemperature/onesec/20080823-20081028/2008-09-28.csv
+	256./infraredTemperature/onesec/20080823-20081028/2008-09-29.csv
+	257./infraredTemperature/onesec/20080823-20081028/2008-09-30.csv
+	258./infraredTemperature/onesec/20080823-20081028/2008-10-01.csv
+	259./infraredTemperature/onesec/20080823-20081028/2008-10-02.csv
+	260./infraredTemperature/onesec/20080823-20081028/2008-10-03.csv
+	261./infraredTemperature/onesec/20080823-20081028/2008-10-04.csv
+	262./infraredTemperature/onesec/20080823-20081028/2008-10-05.csv
+	263./infraredTemperature/onesec/20080823-20081028/2008-10-06.csv
+	264./infraredTemperature/onesec/20080823-20081028/2008-10-07.csv
+	265./infraredTemperature/onesec/20080823-20081028/2008-10-08.csv
+	266./infraredTemperature/onesec/20080823-20081028/2008-10-09.csv
+	267./infraredTemperature/onesec/20080823-20081028/2008-10-10.csv
+	268./infraredTemperature/onesec/20080823-20081028/2008-10-11.csv
+	269./infraredTemperature/onesec/20080823-20081028/2008-10-12.csv
+	270./infraredTemperature/onesec/20080823-20081028/2008-10-13.csv
+	271./infraredTemperature/onesec/20080823-20081028/2008-10-14.csv
+	272./infraredTemperature/onesec/20080823-20081028/2008-10-15.csv
+	273./infraredTemperature/onesec/20080823-20081028/2008-10-16.csv
+	274./infraredTemperature/onesec/20080823-20081028/2008-10-17.csv
+	275./infraredTemperature/onesec/20080823-20081028/2008-10-18.csv
+	276./infraredTemperature/onesec/20080823-20081028/2008-10-19.csv
+	277./infraredTemperature/onesec/20080823-20081028/2008-10-20.csv
+	278./infraredTemperature/onesec/20080823-20081028/2008-10-21.csv
+	279./infraredTemperature/onesec/20080823-20081028/2008-10-22.csv
+	280./infraredTemperature/onesec/20080823-20081028/2008-10-23.csv
+	281./infraredTemperature/onesec/20080823-20081028/2008-10-24.csv
+	282./infraredTemperature/onesec/20080823-20081028/2008-10-25.csv
+	283./infraredTemperature/onesec/20080823-20081028/2008-10-26.csv
+	284./infraredTemperature/onesec/20080823-20081028/2008-10-27.csv
+	285./infraredTemperature/onesec/20080823-20081028/2008-10-28.csv
+	286./infraredTemperature/onesec/20080823-20081028/Readme.txt
+	287./infraredTemperature/other/
+	288./infraredTemperature/other/20080524-20080822_oneday.csv
+	289./infraredTemperature/other/20080715-20080822_tenmin.csv
+	290./infraredTemperature/other/20080822-20081028_tenmin.csv
+	291./infraredTemperature/other/20080823-20081028_oneday.csv
+	292./infraredTemperature/other/20091219-20080415_oneday.csv
+	293./infraredTemperature/other/readme.txt
+	294./Level1/
+	295./Level1/Linze_Level1_10Min_AWS_200710.csv
+	296./Level1/Linze_Level1_10Min_AWS_200710_Introduction.txt
+	297./Level1/Linze_Level1_10Min_AWS_200711.csv
+	298./Level1/Linze_Level1_10Min_AWS_200711_Introduction.txt
+	299./Level1/Linze_Level1_10Min_AWS_200712.csv
+	300./Level1/Linze_Level1_10Min_AWS_200712_Introduction.txt
+	301./Level1/Linze_Level1_10Min_AWS_200801.csv
+	302./Level1/Linze_Level1_10Min_AWS_200801_Introduction.txt
+	303./Level1/Linze_Level1_10Min_AWS_200802.csv
+	304./Level1/Linze_Level1_10Min_AWS_200802_Introduction.txt
+	305./Level1/Linze_Level1_10Min_AWS_200803.csv
+	306./Level1/Linze_Level1_10Min_AWS_200803_Introduction.txt
+	307./Level1/Linze_Level1_10Min_AWS_200804.csv
+	308./Level1/Linze_Level1_10Min_AWS_200804_Introduction.txt
+	309./Level1/Linze_Level1_10Min_AWS_200805.csv
+	310./Level1/Linze_Level1_10Min_AWS_200805_Introduction.txt
+	311./Level1/Linze_Level1_10Min_AWS_200806.csv
+	312./Level1/Linze_Level1_10Min_AWS_200806_Introduction.txt
+	313./Level1/Linze_Level1_10Min_AWS_200807.csv
+	314./Level1/Linze_Level1_10Min_AWS_200807_Introduction.txt
+	315./Level1/Linze_Level1_10Min_AWS_200808.csv
+	316./Level1/Linze_Level1_10Min_AWS_200808_Introduction.txt
+	317./Level1/Linze_Level1_10Min_AWS_200809.csv
+	318./Level1/Linze_Level1_10Min_AWS_200809_Introduction.txt
+	319./Level1/Linze_Level1_10Min_AWS_200810.csv
+	320./Level1/Linze_Level1_10Min_AWS_200810_Introduction.txt
+	321./Level2/
+	322./Level2/Linze_Level2_30Min_AWS_200710.csv
+	323./Level2/Linze_Level2_30Min_AWS_200710_Introduction.txt
+	324./Level2/Linze_Level2_30Min_AWS_200711.csv
+	325./Level2/Linze_Level2_30Min_AWS_200711_Introduction.txt
+	326./Level2/Linze_Level2_30Min_AWS_200712.csv
+	327./Level2/Linze_Level2_30Min_AWS_200712_Introduction.txt
+	328./Level2/Linze_Level2_30Min_AWS_200801.csv
+	329./Level2/Linze_Level2_30Min_AWS_200801_Introduction.txt
+	330./Level2/Linze_Level2_30Min_AWS_200802.csv
+	331./Level2/Linze_Level2_30Min_AWS_200802_Introduction.txt
+	332./Level2/Linze_Level2_30Min_AWS_200803.csv
+	333./Level2/Linze_Level2_30Min_AWS_200803_Introduction.txt
+	334./Level2/Linze_Level2_30Min_AWS_200804.csv
+	335./Level2/Linze_Level2_30Min_AWS_200804_Introduction.txt
+	336./Level2/Linze_Level2_30Min_AWS_200805.csv
+	337./Level2/Linze_Level2_30Min_AWS_200805_Introduction.txt
+	338./Level2/Linze_Level2_30Min_AWS_200806.csv
+	339./Level2/Linze_Level2_30Min_AWS_200806_Introduction.txt
+	340./Level2/Linze_Level2_30Min_AWS_200807.csv
+	341./Level2/Linze_Level2_30Min_AWS_200807_Introduction.txt
+	342./Level2/Linze_Level2_30Min_AWS_200808.csv
+	343./Level2/Linze_Level2_30Min_AWS_200808_Introduction.txt
+	344./Level2/Linze_Level2_30Min_AWS_200809.csv
+	345./Level2/Linze_Level2_30Min_AWS_200809_Introduction.txt
+	346./Level2/Linze_Level2_30Min_AWS_200810.csv
+	347./Level2/Linze_Level2_30Min_AWS_200810_Introduction.txt
+	348./TemporaryAWS/
+	349./TemporaryAWS/Linzecaodi_SAWS.txt
+	350./TemporaryAWS/Linzecaodi_SAWS.xls
+	351./uuid.txt

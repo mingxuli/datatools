@@ -1,0 +1,27 @@
+<h3>下载</h3>
+{% if version.endswith('(hg)') %}
+<p>该文档是针对Sphinx <b>{{ version }}</b> 版的, 尚未正式发布</p>
+<p>You can use it from the
+  <a href="http://bitbucket.org/birkenfeld/sphinx/">Mercurial repo</a> or look for
+  released versions in the <a href="http://pypi.python.org/pypi/Sphinx">Python
+    Package Index</a>.</p>
+{% else %}
+<p>当前版本: <b>{{ version }}</b></p>
+<p>你可以从 <a href="http://pypi.python.org/pypi/Sphinx">Python Package
+Index</a>下载Sphinx安装包, 也可以直接用easy-install安装:</p>
+<pre>easy_install -U Sphinx</pre>
+<p>最新开发版文档可从 <a href="http://sphinx.pocoo.org/latest/"></a>
+获得.</p>
+{% endif %}
+
+<h3>问题? 建议?</h3>
+
+<p>加入<a href="http://groups.google.com/group/sphinx-dev">Google group</a>:</p>
+<form action="http://groups.google.com/group/sphinx-dev/boxsubscribe"
+      style="padding-left: 1em">
+  <input type="text" name="email" value="your@email"/>
+  <input type="submit" name="sub" value="Subscribe" />
+</form>
+<p>或者参加 <tt>#python-docs</tt>位于FreeNode的频道.</p>
+<p>You can also open an issue at the
+  <a href="http://www.bitbucket.org/birkenfeld/sphinx/issues/">tracker</a>.</p>

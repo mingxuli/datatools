@@ -1,0 +1,241 @@
+.. _30617ca4-f46e-4254-a40a-5d0fbea58ed2:
+
+******************************************************************************************
+黑河综合遥感联合试验：冰沟寒区水文气象观测站自动气象站数据集
+******************************************************************************************
+
+**英文标题:**
+WATER: Dataset of automatic meteorological observations at the Binggou cold region hydrometerological station
+
+1. 摘要
+============
+该数据集包含了冰沟寒区水文气象观测站所有的自动气象站观测数据。站点位于青海省祁连县南部，处于黑河上游冰沟子流域的河谷谷地内，东西两侧是连绵的山丘和高山，场地四周相对较为平坦，地表为稀疏草地和河床碎石的混合。观测点的经纬度为N38°04′/E100°13′。
+
+    该站点是典型高山草甸（河滩地），观测项目有：大气风温湿梯度观测（2m和10m）、气压、降水、辐射四分量、多层土壤温度（5cm、10cm、20cm、40cm、80cm和120cm）、土壤水分（5cm、10cm、20cm、40cm、80cm和120cm）及土壤热通量（5cm和15cm）。
+
+   原始的采集器输出数据为0级；初步整理后，没有任何的删除，但是标出疑似有问题的数据为1级；统一整理成30分钟采样周期并经过质量控制的为2级。整理后的将数据逐月存储，命名规则为：站点名+数据级别+ AMS(自动气象站) +数据日期。建议普通用户用2级以上的数据。
+
+  自动气象站的观测分两个时段：2007年9月25日至2008年3月12号为初步的预观测阶段；2008年3月12号之后才是规范化的观测阶段。前一个时段观测的是逐时的气压降雨数据（残缺严重）和土壤温湿度数据。后一个时段观测较详细。详细信息请参见“气象水文通量数据使用指南”。
+
+2. 关键词
+==============
+主题关键词:
+气象水文,气象观测,风速,风向,空气温度,空气湿度,气压,降水,总辐射,反射辐射,下行长波辐射,向上长波辐射,土壤温度,土壤水分,土壤热通量,
+位置关键词:
+黑河流域,上游寒区水文试验区,冰沟流域加密观测区,冰沟寒区水文气象观测站,
+时间关键词:
+2007-09-25,
+学科关键词:
+
+3. 本数据的引用
+====================
+中文引用：
+王建, 车涛, 马明国, 王维真, 李弘毅, 郝晓华, 黄广辉, 张智慧, 谭俊磊. 黑河综合遥感联合试验：冰沟寒区水文气象观测站自动气象站数据集. 2008. doi:10.3972/water973.0291.db 
+
+英文引用：
+Wan Jian, Che Tao, Ma Mingguo, Wang Weizhen, Li Hongyi, Hao Xiaohua, Huang Guanghui, Zhang Zhihui, Tan Junlei. WATER: Dataset of automatic meteorological observations at the Binggou cold region hydrometerological station. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences. 2008. doi:10.3972/water973.0291.db
+
+4.	数据调查者
+==================
+
++ 姓名：王建, 车涛, 马明国, 王维真, 李弘毅, 郝晓华, 黄广辉, 张智慧, 谭俊磊
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
+
+5. 数据联系人
+=====================
+
++ 姓名：马明国
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：mmg@lzb.ac.cn
++ 电话：0931-4967250
+
+6. 元数据作者
+======================
+
++ 姓名：黄广辉
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：luckhgh@lzb.ac.cn
++ 电话：0931-4967973
+
+7.	元数据发布者
+======================
+
++ 姓名：吴立宗
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：wulizong@lzb.ac.cn
++ 电话：0931-4967298
++ 传真：0931-8279161
+
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
+8.	数据分发者
+======================
+
++ 姓名：李红星
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：westdc@lzb.ac.cn
++ 电话：0931-4967287
++ 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
+9.	地理范围
+=========================
+
++ 北：38.07
++ 南：38.07
++ 西：100.22
++ 东：100.22
+
+10.	项目支持信息
+=========================
+
+本试验的开展及数据的管理与发布获由以下项目所支持：           
+
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
+
+11. 文件清单 
+=========================
+
+文件路径: :file:`/data/WATER/Level_1/Meteorology/WATER_AWS/Binggou`
+::
+	1./level1/
+	2./level1/2007/
+	3./level1/2007/BingGou_Level1_10Min_AMS_200709.csv
+	4./level1/2007/BingGou_Level1_10Min_AMS_200709_Introduction.txt
+	5./level1/2007/BingGou_Level1_10Min_AMS_200710.csv
+	6./level1/2007/BingGou_Level1_10Min_AMS_200710_Introduction.txt
+	7./level1/2007/BingGou_Level1_10Min_AMS_200711.csv
+	8./level1/2007/BingGou_Level1_10Min_AMS_200711_Introduction.txt
+	9./level1/2007/BingGou_Level1_10Min_AMS_200712.csv
+	10./level1/2007/BingGou_Level1_10Min_AMS_200712_Introduction.txt
+	11./level1/2007/BingGou_Level1_1Hour_AMS_200710.csv
+	12./level1/2007/BingGou_Level1_1Hour_AMS_200710_Introduction.txt
+	13./level1/2008/
+	14./level1/2008/BingGou_Level1_10Min_AMS_200803.csv
+	15./level1/2008/BingGou_Level1_10Min_AMS_200803_Introduction.txt
+	16./level1/2008/BingGou_Level1_10Min_AMS_200804.csv
+	17./level1/2008/BingGou_Level1_10Min_AMS_200804_Introduction.txt
+	18./level1/2008/BingGou_Level1_10Min_AMS_200805.csv
+	19./level1/2008/BingGou_Level1_10Min_AMS_200805_Introduction.txt
+	20./level1/2008/BingGou_Level1_10Min_AMS_200806.csv
+	21./level1/2008/BingGou_Level1_10Min_AMS_200806_Introduction.txt
+	22./level1/2008/BingGou_Level1_10Min_AMS_200807.csv
+	23./level1/2008/BingGou_Level1_10Min_AMS_200807_Introduction.txt
+	24./level1/2008/BingGou_Level1_10Min_AMS_200808.csv
+	25./level1/2008/BingGou_Level1_10Min_AMS_200808_Introduction.txt
+	26./level1/2008/BingGou_Level1_10Min_AMS_200809.csv
+	27./level1/2008/BingGou_Level1_10Min_AMS_200809_Introduction.txt
+	28./level1/2008/BingGou_Level1_10Min_AMS_200810.csv
+	29./level1/2008/BingGou_Level1_10Min_AMS_200810_Introduction.txt
+	30./level1/2008/BingGou_Level1_10Min_AMS_200811.csv
+	31./level1/2008/BingGou_Level1_10Min_AMS_200811_Introduction.txt
+	32./level1/2008/BingGou_Level1_10Min_AMS_200812.csv
+	33./level1/2008/BingGou_Level1_10Min_AMS_200812_Introduction.txt
+	34./level1/2009/
+	35./level1/2009/BingGou_Level1_10Min_AMS_200901.csv
+	36./level1/2009/BingGou_Level1_10Min_AMS_200901_Introduction.txt
+	37./level1/2009/BingGou_Level1_10Min_AMS_200902.csv
+	38./level1/2009/BingGou_Level1_10Min_AMS_200902_Introduction.txt
+	39./level1/2009/BingGou_Level1_10Min_AMS_200903.csv
+	40./level1/2009/BingGou_Level1_10Min_AMS_200903_Introduction.txt
+	41./level1/2009/BingGou_Level1_10Min_AMS_200904.csv
+	42./level1/2009/BingGou_Level1_10Min_AMS_200904_Introduction.txt
+	43./level1/2009/BingGou_Level1_10Min_AMS_200905.csv
+	44./level1/2009/BingGou_Level1_10Min_AMS_200905_Introduction.txt
+	45./level1/2009/BingGou_Level1_10Min_AMS_200906.csv
+	46./level1/2009/BingGou_Level1_10Min_AMS_200906_Introduction.txt
+	47./level1/2009/BingGou_Level1_10Min_AMS_200907.csv
+	48./level1/2009/BingGou_Level1_10Min_AMS_200907_Introduction.txt
+	49./level1/2009/BingGou_Level1_10Min_AMS_200908.csv
+	50./level1/2009/BingGou_Level1_10Min_AMS_200908_Introduction.txt
+	51./level2/
+	52./level2/2007/
+	53./level2/2007/BingGou_Level2_1Hour_AMS_2007.csv
+	54./level2/2007/BingGou_Level2_1Hour_AMS_2007_Introduction.txt
+	55./level2/2007/BingGou_Level2_30Min_AMS_200709.csv
+	56./level2/2007/BingGou_Level2_30Min_AMS_200709_Introduction.txt
+	57./level2/2007/BingGou_Level2_30Min_AMS_200710.csv
+	58./level2/2007/BingGou_Level2_30Min_AMS_200710_Introduction.txt
+	59./level2/2007/BingGou_Level2_30Min_AMS_200711.csv
+	60./level2/2007/BingGou_Level2_30Min_AMS_200711_Introduction.txt
+	61./level2/2007/BingGou_Level2_30Min_AMS_200712.csv
+	62./level2/2007/BingGou_Level2_30Min_AMS_200712_Introduction.txt
+	63./level2/2008/
+	64./level2/2008/BingGou_Level2_30Min_AMS_200803.csv
+	65./level2/2008/BingGou_Level2_30Min_AMS_200803_Introduction.txt
+	66./level2/2008/BingGou_Level2_30Min_AMS_200804.csv
+	67./level2/2008/BingGou_Level2_30Min_AMS_200804_Introduction.txt
+	68./level2/2008/BingGou_Level2_30Min_AMS_200805.csv
+	69./level2/2008/BingGou_Level2_30Min_AMS_200805_Introduction.txt
+	70./level2/2008/BingGou_Level2_30Min_AMS_200806.csv
+	71./level2/2008/BingGou_Level2_30Min_AMS_200806_Introduction.txt
+	72./level2/2008/BingGou_Level2_30Min_AMS_200807.csv
+	73./level2/2008/BingGou_Level2_30Min_AMS_200807_Introduction.txt
+	74./level2/2008/BingGou_Level2_30Min_AMS_200808.csv
+	75./level2/2008/BingGou_Level2_30Min_AMS_200808_Introduction.txt
+	76./level2/2008/BingGou_Level2_30Min_AMS_200809.csv
+	77./level2/2008/BingGou_Level2_30Min_AMS_200809_Introduction.txt
+	78./level2/2008/BingGou_Level2_30Min_AMS_200810.csv
+	79./level2/2008/BingGou_Level2_30Min_AMS_200810_Introduction.txt
+	80./level2/2008/BingGou_Level2_30Min_AMS_200811.csv
+	81./level2/2008/BingGou_Level2_30Min_AMS_200811_Introduction.txt
+	82./level2/2008/BingGou_Level2_30Min_AMS_200812.csv
+	83./level2/2008/BingGou_Level2_30Min_AMS_200812_Introduction.txt
+	84./level2/2009/
+	85./level2/2009/BingGou_Level2_30Min_AMS_200901.csv
+	86./level2/2009/BingGou_Level2_30Min_AMS_200901_Introduction.txt
+	87./level2/2009/BingGou_Level2_30Min_AMS_200902.csv
+	88./level2/2009/BingGou_Level2_30Min_AMS_200902_Introduction.txt
+	89./level2/2009/BingGou_Level2_30Min_AMS_200903.csv
+	90./level2/2009/BingGou_Level2_30Min_AMS_200903_Introduction.txt
+	91./level2/2009/BingGou_Level2_30Min_AMS_200904.csv
+	92./level2/2009/BingGou_Level2_30Min_AMS_200904_Introduction.txt
+	93./level2/2009/BingGou_Level2_30Min_AMS_200905.csv
+	94./level2/2009/BingGou_Level2_30Min_AMS_200905_Introduction.txt
+	95./level2/2009/BingGou_Level2_30Min_AMS_200906.csv
+	96./level2/2009/BingGou_Level2_30Min_AMS_200906_Introduction.txt
+	97./level2/2009/BingGou_Level2_30Min_AMS_200907.csv
+	98./level2/2009/BingGou_Level2_30Min_AMS_200907_Introduction.txt
+	99./level2/2009/BingGou_Level2_30Min_AMS_200908.csv
+	100./level2/2009/BingGou_Level2_30Min_AMS_200908_Introduction.txt
+	101./Operation status of AMS/
+	102./Operation status of AMS/BingGou_Level1_1Day_AMS_2008AllYear.csv
+	103./Operation status of AMS/BingGou_Level1_1Day_AMS_2008AllYear_数据说明.txt
+	104./Operation status of AMS/BingGou_Level1_1Day_AMS_2009AllYear.csv
+	105./Operation status of AMS/BingGou_Level1_1Day_AMS_2009AllYear_数据说明.txt
+	106./Operation status of AMS/BingGouZhongjianzhan_Level1_10Min_Soil_2007allyear.csv
+	107./Operation status of AMS/BingGouZhongjianzhan_Level1_10Min_Soil_2007allyear_数据说明.txt
+	108./Operation status of AMS/BingGouZhongjianzhan_Level1_10Min_Soil_2008allyear.csv
+	109./Operation status of AMS/BingGouZhongjianzhan_Level1_10Min_Soil_2008allyear_数据说明.txt
+	110./uuid.txt
+	111./冰沟寒区水文气象观测站.xls
+	112./冰沟寒区水文气象站介绍.doc
+	113./土壤温湿度中间站/
+	114./土壤温湿度中间站/0710-0808.csv
+	115./土壤温湿度中间站/0710-0808_Doc.txt
