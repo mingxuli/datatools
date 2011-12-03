@@ -1,0 +1,309 @@
+.. _50a8fe84-deeb-49b0-b8d8-8f784bc27a89:
+
+******************************************************************************
+黑河综合遥感联合试验：阿柔冻融观测站自动气象站数据集
+******************************************************************************
+
+**英文标题:**
+WATER: Dataset of automatic meteorological observations at the A'rou freeze/thaw observation station
+
+1. 摘要
+============
+此数据集包含了阿柔冻融观测站建站以来的所有自动气象站的观测数据，站点位于青海省祁连县中东部地区的阿柔乡草大板村瓦王滩牧场。经纬度分别为E100°28′/N38°03′，海拔高度为3032.8m。试验场建在黑河上游支流八宝河南侧的河谷高地上，周围地势相对平坦开阔，自东南向西北略有倾斜下降，南北两侧约3km外是连绵的山丘和高山，符合大气边界层近地层理论中水平均匀下垫面的要求。瓦王滩牧场是当地牧民的冬季牧场，夏季牧草长势良好，植被高度在20-30cm之间。
+
+观测项目有：大气风温湿梯度观测（2m和10 m）、气压、降水、辐射四分量、多层土壤温度（10cm、20cm、40cm、80cm、120cm和160cm）、湿度（10cm、20cm、40cm、80cm、120cm和160cm）及土壤热通量（5cm和15cm）。
+
+原始的采集器输出数据为0级；初步整理后，没有任何的删除，但是标出疑似有问题的数据为1级；统一整理成30分钟采样周期并经过质量控制的为2级。整理后的将数据逐月存储，命名规则为：站点名+数据级别+AMS（自动气象站）+数据日期。建议普通用户用2级以上的数据。
+
+数据观测起始于2007年7月25日，观测至今。详细信息请参见“气象水文通量数据使用指南”。
+
+2. 关键词
+==============
+主题关键词:
+气象水文,气象观测,风速,风向,空气温度,空气湿度,气压,降水,总辐射,反射辐射,下行长波辐射,向上长波辐射,地表温度,土壤温度,土壤水分,土壤热通量,
+位置关键词:
+黑河流域,上游寒区水文试验区,阿柔加密观测区,阿柔冻融观测站,
+时间关键词:
+2008-07-25,
+学科关键词:
+
+3. 本数据的引用
+====================
+中文引用：
+胡泽勇, 马明国, 晋锐, 王维真, 黄广辉, 张智慧, 谭俊磊. 黑河综合遥感联合试验：阿柔冻融观测站自动气象站数据集. 中国科学院寒区旱区环境与工程研究所. 2008. doi:10.3972/water973.0279.db 
+
+英文引用：
+Hu Zeyong, Ma Mingguo, Jin Rui, Wang Weizhen, Huang Guanghui, Zhang Zhihui, Tan Junlei. WATER: Dataset of automatic meteorological observations at the A'rou freeze/thaw observation station.  Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences. 2008. doi:10.3972/water973.0279.db
+
+4.	数据调查者
+==================
+
++ 姓名：胡泽勇, 马明国, 王维真, 晋锐, 黄广辉, 张智慧, 谭俊磊
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
+
+5. 数据联系人
+=====================
+
++ 姓名：马明国
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：mmg@lzb.ac.cn
++ 电话：0931-4967250
+
+6. 元数据作者
+======================
+
++ 姓名：黄广辉
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：luckhgh@lzb.ac.cn
++ 电话：0931-4967973
+
+7.	元数据发布者
+======================
+
++ 姓名：吴立宗
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：wulizong@lzb.ac.cn
++ 电话：0931-4967298
++ 传真：0931-8279161
+
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
+8.	数据分发者
+======================
+
++ 姓名：李红星
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：westdc@lzb.ac.cn
++ 电话：0931-4967287
++ 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
+9.	地理范围
+=========================
+
++ 北：38.04
++ 南：38.04
++ 西：100.46
++ 东：100.46
+
+10.	项目支持信息
+=========================
+
+本试验的开展及数据的管理与发布获由以下项目所支持：           
+
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
+
+11. 文件清单 
+=========================
+
+文件路径: :file:`/data/WATER/Level_1/Meteorology/WATER_AWS/Arou`
+::
+	1./Level1/
+	2./Level1/2007/
+	3./Level1/2007/Arou_Level1_10Min_AMS_200707.csv
+	4./Level1/2007/Arou_Level1_10Min_AMS_200707_Introduction.txt
+	5./Level1/2007/Arou_Level1_10Min_AMS_200708.csv
+	6./Level1/2007/Arou_Level1_10Min_AMS_200708_Introduction.txt
+	7./Level1/2007/Arou_Level1_10Min_AMS_200709.csv
+	8./Level1/2007/Arou_Level1_10Min_AMS_200709_Introduction.txt
+	9./Level1/2007/Arou_Level1_10Min_AMS_200710.csv
+	10./Level1/2007/Arou_Level1_10Min_AMS_200710_Introduction.txt
+	11./Level1/2007/Arou_Level1_10Min_AMS_200711.csv
+	12./Level1/2007/Arou_Level1_10Min_AMS_200711_Introduction.txt
+	13./Level1/2007/Arou_Level1_10Min_AMS_200712.csv
+	14./Level1/2007/Arou_Level1_10Min_AMS_200712_Introduction.txt
+	15./Level1/2007/Arou_Level1_1Hour_AMS_200707.csv
+	16./Level1/2007/Arou_Level1_1Hour_AMS_200707_Introduction.txt
+	17./Level1/2007/Arou_Level1_1Hour_AMS_200708.csv
+	18./Level1/2007/Arou_Level1_1Hour_AMS_200708_Introduction.txt
+	19./Level1/2007/Arou_Level1_1Hour_AMS_200709.csv
+	20./Level1/2007/Arou_Level1_1Hour_AMS_200709_Introduction.txt
+	21./Level1/2007/Arou_Level1_1Hour_AMS_200710.csv
+	22./Level1/2007/Arou_Level1_1Hour_AMS_200710_Introduction.txt
+	23./Level1/2007/Arou_Level1_1Hour_AMS_200711.csv
+	24./Level1/2007/Arou_Level1_1Hour_AMS_200711_Introduction.txt
+	25./Level1/2007/Arou_Level1_1Hour_AMS_200712.csv
+	26./Level1/2007/Arou_Level1_1Hour_AMS_200712_Introduction.txt
+	27./Level1/2008/
+	28./Level1/2008/Arou_Level1_10Min_AMS_200801.csv
+	29./Level1/2008/Arou_Level1_10Min_AMS_200801_Introduction.txt
+	30./Level1/2008/Arou_Level1_10Min_AMS_200802.csv
+	31./Level1/2008/Arou_Level1_10Min_AMS_200802_Introduction.txt
+	32./Level1/2008/Arou_Level1_10Min_AMS_200803.csv
+	33./Level1/2008/Arou_Level1_10Min_AMS_200803_Introduction.txt
+	34./Level1/2008/Arou_Level1_10Min_AMS_200804.csv
+	35./Level1/2008/Arou_Level1_10Min_AMS_200804_Introduction.txt
+	36./Level1/2008/Arou_Level1_10Min_AMS_200805.csv
+	37./Level1/2008/Arou_Level1_10Min_AMS_200805_Introduction.txt
+	38./Level1/2008/Arou_Level1_10Min_AMS_200806.csv
+	39./Level1/2008/Arou_Level1_10Min_AMS_200806_Introduction.txt
+	40./Level1/2008/Arou_Level1_10Min_AMS_200807.csv
+	41./Level1/2008/Arou_Level1_10Min_AMS_200807_Introduction.txt
+	42./Level1/2008/Arou_Level1_10Min_AMS_200808.csv
+	43./Level1/2008/Arou_Level1_10Min_AMS_200808_Introduction.txt
+	44./Level1/2008/Arou_Level1_10Min_AMS_200809.csv
+	45./Level1/2008/Arou_Level1_10Min_AMS_200809_Introduction.txt
+	46./Level1/2008/Arou_Level1_10Min_AMS_200810.csv
+	47./Level1/2008/Arou_Level1_10Min_AMS_200810_Introduction.txt
+	48./Level1/2008/Arou_Level1_10Min_AMS_200811.csv
+	49./Level1/2008/Arou_Level1_10Min_AMS_200811_Introduction.txt
+	50./Level1/2008/Arou_Level1_10Min_AMS_200812.csv
+	51./Level1/2008/Arou_Level1_10Min_AMS_200812_Introduction.txt
+	52./Level1/2008/Arou_Level1_1Hour_AMS_200801.csv
+	53./Level1/2008/Arou_Level1_1Hour_AMS_200801_Introduction.txt
+	54./Level1/2008/Arou_Level1_1Hour_AMS_200802.csv
+	55./Level1/2008/Arou_Level1_1Hour_AMS_200802_Introduction.txt
+	56./Level1/2008/Arou_Level1_1Hour_AMS_200803.csv
+	57./Level1/2008/Arou_Level1_1Hour_AMS_200803_Introduction.txt
+	58./Level1/2008/Arou_Level1_1Hour_AMS_200804.csv
+	59./Level1/2008/Arou_Level1_1Hour_AMS_200804_Introduction.txt
+	60./Level1/2008/Arou_Level1_1Hour_AMS_200805.csv
+	61./Level1/2008/Arou_Level1_1Hour_AMS_200805_Introduction.txt
+	62./Level1/2008/Arou_Level1_1Hour_AMS_200806.csv
+	63./Level1/2008/Arou_Level1_1Hour_AMS_200806_Introduction.txt
+	64./Level1/2008/Arou_Level1_1Hour_AMS_200807.csv
+	65./Level1/2008/Arou_Level1_1Hour_AMS_200807_Introduction.txt
+	66./Level1/2008/Arou_Level1_1Hour_AMS_200808.csv
+	67./Level1/2008/Arou_Level1_1Hour_AMS_200808_Introduction.txt
+	68./Level1/2008/Arou_Level1_1Hour_AMS_200809.csv
+	69./Level1/2008/Arou_Level1_1Hour_AMS_200809_Introduction.txt
+	70./Level1/2008/Arou_Level1_1Hour_AMS_200810.csv
+	71./Level1/2008/Arou_Level1_1Hour_AMS_200810_Introduction.txt
+	72./Level1/2008/Arou_Level1_1Hour_AMS_200811.csv
+	73./Level1/2008/Arou_Level1_1Hour_AMS_200811_Introduction.txt
+	74./Level1/2008/Arou_Level1_1Hour_AMS_200812.csv
+	75./Level1/2008/Arou_Level1_1Hour_AMS_200812_Introduction.txt
+	76./Level1/2009/
+	77./Level1/2009/Arou_Level1_10Min_AMS_200901.csv
+	78./Level1/2009/Arou_Level1_10Min_AMS_200901_Introduction.txt
+	79./Level1/2009/Arou_Level1_10Min_AMS_200902.csv
+	80./Level1/2009/Arou_Level1_10Min_AMS_200902_Introduction.txt
+	81./Level1/2009/Arou_Level1_10Min_AMS_200903.csv
+	82./Level1/2009/Arou_Level1_10Min_AMS_200903_Introduction.txt
+	83./Level1/2009/Arou_Level1_10Min_AMS_200904.csv
+	84./Level1/2009/Arou_Level1_10Min_AMS_200904_Introduction.txt
+	85./Level1/2009/Arou_Level1_10Min_AMS_200905.csv
+	86./Level1/2009/Arou_Level1_10Min_AMS_200905_Introduction.txt
+	87./Level1/2009/Arou_Level1_10Min_AMS_200906.csv
+	88./Level1/2009/Arou_Level1_10Min_AMS_200906_Introduction.txt
+	89./Level1/2009/Arou_Level1_10Min_AMS_200907.csv
+	90./Level1/2009/Arou_Level1_10Min_AMS_200907_Introduction.txt
+	91./Level1/2009/Arou_Level1_10Min_AMS_200908.csv
+	92./Level1/2009/Arou_Level1_10Min_AMS_200908_Introduction.txt
+	93./Level1/2009/Arou_Level1_1Hour_AMS_200901.csv
+	94./Level1/2009/Arou_Level1_1Hour_AMS_200901_Introduction.txt
+	95./Level1/2009/Arou_Level1_1Hour_AMS_200902.csv
+	96./Level1/2009/Arou_Level1_1Hour_AMS_200902_Introduction.txt
+	97./Level1/2009/Arou_Level1_1Hour_AMS_200903.csv
+	98./Level1/2009/Arou_Level1_1Hour_AMS_200903_Introduction.txt
+	99./Level1/2009/Arou_Level1_1Hour_AMS_200904.csv
+	100./Level1/2009/Arou_Level1_1Hour_AMS_200904_Introduction.txt
+	101./Level1/2009/Arou_Level1_1Hour_AMS_200905.csv
+	102./Level1/2009/Arou_Level1_1Hour_AMS_200905_Introduction.txt
+	103./Level1/2009/Arou_Level1_1Hour_AMS_200906.csv
+	104./Level1/2009/Arou_Level1_1Hour_AMS_200906_Introduction.txt
+	105./Level1/2009/Arou_Level1_1Hour_AMS_200907.csv
+	106./Level1/2009/Arou_Level1_1Hour_AMS_200907_Introduction.txt
+	107./Level1/2009/Arou_Level1_1Hour_AMS_200908.csv
+	108./Level1/2009/Arou_Level1_1Hour_AMS_200908_Introduction.txt
+	109./Level2/
+	110./Level2/2007/
+	111./Level2/2007/Arou-Airpressure-2007.JPG
+	112./Level2/2007/Arou_Level2_1Hour_AMS_2007.csv
+	113./Level2/2007/Arou_Level2_1Hour_AMS_2007_Introduction.txt
+	114./Level2/2007/Arou_Level2_30Min_AMS_200707.csv
+	115./Level2/2007/Arou_Level2_30Min_AMS_200707_Introduction.txt
+	116./Level2/2007/Arou_Level2_30Min_AMS_200708.csv
+	117./Level2/2007/Arou_Level2_30Min_AMS_200708_Introduction.txt
+	118./Level2/2007/Arou_Level2_30Min_AMS_200709.csv
+	119./Level2/2007/Arou_Level2_30Min_AMS_200709_Introduction.txt
+	120./Level2/2007/Arou_Level2_30Min_AMS_200710.csv
+	121./Level2/2007/Arou_Level2_30Min_AMS_200710_Introduction.txt
+	122./Level2/2007/Arou_Level2_30Min_AMS_200711.csv
+	123./Level2/2007/Arou_Level2_30Min_AMS_200711_Introduction.txt
+	124./Level2/2007/Arou_Level2_30Min_AMS_200712.csv
+	125./Level2/2007/Arou_Level2_30Min_AMS_200712_Introduction.txt
+	126./Level2/2007/Arou-Rain-2007.JPG
+	127./Level2/2008/
+	128./Level2/2008/Arou_Level2_1Hour_AMS_2008.csv
+	129./Level2/2008/Arou_Level2_1Hour_AMS_2008_Introduction.txt
+	130./Level2/2008/Arou_Level2_30Min_AMS_200801.csv
+	131./Level2/2008/Arou_Level2_30Min_AMS_200801_Introduction.txt
+	132./Level2/2008/Arou_Level2_30Min_AMS_200802.csv
+	133./Level2/2008/Arou_Level2_30Min_AMS_200802_Introduction.txt
+	134./Level2/2008/Arou_Level2_30Min_AMS_200803.csv
+	135./Level2/2008/Arou_Level2_30Min_AMS_200803_Introduction.txt
+	136./Level2/2008/Arou_Level2_30Min_AMS_200804.csv
+	137./Level2/2008/Arou_Level2_30Min_AMS_200804_Introduction.txt
+	138./Level2/2008/Arou_Level2_30Min_AMS_200805.csv
+	139./Level2/2008/Arou_Level2_30Min_AMS_200805_Introduction.txt
+	140./Level2/2008/Arou_Level2_30Min_AMS_200806.csv
+	141./Level2/2008/Arou_Level2_30Min_AMS_200806_Introduction.txt
+	142./Level2/2008/Arou_Level2_30Min_AMS_200807.csv
+	143./Level2/2008/Arou_Level2_30Min_AMS_200807_Introduction.txt
+	144./Level2/2008/Arou_Level2_30Min_AMS_200808.csv
+	145./Level2/2008/Arou_Level2_30Min_AMS_200808_Introduction.txt
+	146./Level2/2008/Arou_Level2_30Min_AMS_200809.csv
+	147./Level2/2008/Arou_Level2_30Min_AMS_200809_Introduction.txt
+	148./Level2/2008/Arou_Level2_30Min_AMS_200810.csv
+	149./Level2/2008/Arou_Level2_30Min_AMS_200810_Introduction.txt
+	150./Level2/2008/Arou_Level2_30Min_AMS_200811.csv
+	151./Level2/2008/Arou_Level2_30Min_AMS_200811_Introduction.txt
+	152./Level2/2008/Arou_Level2_30Min_AMS_200812.csv
+	153./Level2/2008/Arou_Level2_30Min_AMS_200812_Introduction.txt
+	154./Level2/2009/
+	155./Level2/2009/Arou_Level2_1Hour_AMS_2009.csv
+	156./Level2/2009/Arou_Level2_1Hour_AMS_2009_Introduction.txt
+	157./Level2/2009/Arou_Level2_30Min_AMS_200901.csv
+	158./Level2/2009/Arou_Level2_30Min_AMS_200901_Introduction.txt
+	159./Level2/2009/Arou_Level2_30Min_AMS_200902.csv
+	160./Level2/2009/Arou_Level2_30Min_AMS_200902_Introduction.txt
+	161./Level2/2009/Arou_Level2_30Min_AMS_200903.csv
+	162./Level2/2009/Arou_Level2_30Min_AMS_200903_Introduction.txt
+	163./Level2/2009/Arou_Level2_30Min_AMS_200904.csv
+	164./Level2/2009/Arou_Level2_30Min_AMS_200904_Introduction.txt
+	165./Level2/2009/Arou_Level2_30Min_AMS_200905.csv
+	166./Level2/2009/Arou_Level2_30Min_AMS_200905_Introduction.txt
+	167./Level2/2009/Arou_Level2_30Min_AMS_200906.csv
+	168./Level2/2009/Arou_Level2_30Min_AMS_200906_Introduction.txt
+	169./Level2/2009/Arou_Level2_30Min_AMS_200907.csv
+	170./Level2/2009/Arou_Level2_30Min_AMS_200907_Introduction.txt
+	171./Level2/2009/Arou_Level2_30Min_AMS_200908.csv
+	172./Level2/2009/Arou_Level2_30Min_AMS_200908_Introduction.txt
+	173./Level2/readme.txt
+	174./Operation status of AMS/
+	175./Operation status of AMS/Arou_Level1_1Day_AMS_2008(01-12).csv
+	176./Operation status of AMS/Arou_Level1_1Day_AMS_2008(01-12)_Introduction.txt
+	177./Operation status of AMS/Arou_Level1_1Day_AMS_2009(01-08).csv
+	178./Operation status of AMS/Arou_Level1_1Day_AMS_2009(01-08)_Introduction.txt
+	179./uuid.txt
+	180./阿柔冻融观测站.xls
+	181./阿柔冻融站介绍.doc
+	182./阿柔土壤.JPG
+	183./观测站介绍_阿柔冻融站.doc

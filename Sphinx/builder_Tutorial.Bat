@@ -1,0 +1,1 @@
+sphinx-build -b html -w D:\Sphinx_Out\Tutorial_log.txt Sphinx_Tutorial D:\Sphinx_Out\Sphinx_Tutorial

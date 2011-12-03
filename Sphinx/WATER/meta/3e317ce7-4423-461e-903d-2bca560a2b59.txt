@@ -1,0 +1,228 @@
+.. _3e317ce7-4423-461e-903d-2bca560a2b59:
+
+************************************************************************************
+黑河综合遥感联合试验：大野口马莲滩草地站自动气象站数据集
+************************************************************************************
+
+**英文标题:**
+WATER: Dataset of automatic meteorological observations at the Dayekou Maliantan grassland station in the Dayekou watershed
+
+1. 摘要
+============
+该数据集包含了所有大野口马莲滩草地站的自动气象站观测数据。站点位于甘肃省张掖市南部的大野口马莲滩。观测点的经纬度为E100°18′/N38°33′，海拔高度为2817m。试验场位于黑河上游大野口子流域，试验场周围地势相对平坦开阔，地势自东南向西北略有倾斜下降。马莲滩的地表为高山草地，主要生长植物是马莲，植被高度0.2-0.5m。
+
+该站点是典型的草地下垫面，观测项目有：大气风温湿梯度观测（2m和10m）、气压、降水、辐射四分量、多层土壤温度（5cm、10cm、20cm、40cm、80cm和120cm）、湿度（5cm、10cm、20cm、40cm、80cm和120cm）及土壤热通量（5cm和15cm）。
+
+原始的采集器输出数据为0级；初步整理后，没有任何的删除，但是标出疑似有问题的数据为1级；统一整理成30分钟采样周期并经过质量控制的为2级。整理后的将数据逐月存储，命名规则为：站点名+数据级别+AMS(自动气象站) +数据日期。建议普通用户用2级以上的数据。
+
+  数据采集起始日期是2007年11月2日，观测至今。详细信息请参见“气象水文通量数据使用指南”。
+
+2. 关键词
+==============
+主题关键词:
+气象水文,气象观测,风速,风向,空气温度,空气湿度,气压,降水,总辐射,反射辐射,下行长波辐射,向上长波辐射,土壤温度,土壤水分,土壤热通量,
+位置关键词:
+黑河流域,森林水文试验区,大野口流域加密观测区,大野口马莲滩草地站,
+时间关键词:
+2007-11-02,
+学科关键词:
+
+3. 本数据的引用
+====================
+中文引用：
+马明国, 王维真, 黄广辉, 张智慧, 谭俊磊. 黑河综合遥感联合试验：大野口马莲滩草地站自动气象站数据集. 2008. doi:10.3972/water973.0289.db 
+
+英文引用：
+Ma Mingguo, Wang Weizhen, Huang Guanghui, Zhang Zhihui, Tan Junlei. WATER: Dataset of automatic meteorological observations at the Dayekou Maliantan grassland station in the Dayekou watershed. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences. 2008. doi:10.3972/water973.0289.db
+
+4.	数据调查者
+==================
+
++ 姓名：马明国, 王维真, 谭俊磊, 黄广辉, 张智慧
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
+
+5. 数据联系人
+=====================
+
++ 姓名：马明国
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：mmg@lzb.ac.cn
++ 电话：0931-4967250
+
+6. 元数据作者
+======================
+
++ 姓名：黄广辉
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：luckhgh@lzb.ac.cn
++ 电话：0931-4967973
+
+7.	元数据发布者
+======================
+
++ 姓名：吴立宗
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：wulizong@lzb.ac.cn
++ 电话：0931-4967298
++ 传真：0931-8279161
+
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
+8.	数据分发者
+======================
+
++ 姓名：李红星
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：westdc@lzb.ac.cn
++ 电话：0931-4967287
++ 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
+9.	地理范围
+=========================
+
++ 北：38.548
++ 南：38.548
++ 西：100.296
++ 东：100.296
+
+10.	项目支持信息
+=========================
+
+本试验的开展及数据的管理与发布获由以下项目所支持：            
+
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
+
+11. 文件清单 
+=========================
+
+文件路径: :file:`/data/WATER/Level_1/Meteorology/WATER_AWS/MaLianTan`
+::
+	1./Level1/
+	2./Level1/2007/
+	3./Level1/2007/MaLianTan_Level1_10Min_AMS_200711.csv
+	4./Level1/2007/MaLianTan_Level1_10Min_AMS_200711_Introduction.txt
+	5./Level1/2007/MaLianTan_Level1_10Min_AMS_200712.csv
+	6./Level1/2007/MaLianTan_Level1_10Min_AMS_200712_Introduction.txt
+	7./Level1/2008/
+	8./Level1/2008/MaLianTan_Level1_10Min_AMS_200801.csv
+	9./Level1/2008/MaLianTan_Level1_10Min_AMS_200801_Introduction.txt
+	10./Level1/2008/MaLianTan_Level1_10Min_AMS_200802.csv
+	11./Level1/2008/MaLianTan_Level1_10Min_AMS_200802_Introduction.txt
+	12./Level1/2008/MaLianTan_Level1_10Min_AMS_200803.csv
+	13./Level1/2008/MaLianTan_Level1_10Min_AMS_200803_Introduction.txt
+	14./Level1/2008/MaLianTan_Level1_10Min_AMS_200804.csv
+	15./Level1/2008/MaLianTan_Level1_10Min_AMS_200804_Introduction.txt
+	16./Level1/2008/MaLianTan_Level1_10Min_AMS_200805.csv
+	17./Level1/2008/MaLianTan_Level1_10Min_AMS_200805_Introduction.txt
+	18./Level1/2008/MaLianTan_Level1_10Min_AMS_200806.csv
+	19./Level1/2008/MaLianTan_Level1_10Min_AMS_200806_Introduction.txt
+	20./Level1/2008/MaLianTan_Level1_10Min_AMS_200807.csv
+	21./Level1/2008/MaLianTan_Level1_10Min_AMS_200807_Introduction.txt
+	22./Level1/2008/MaLianTan_Level1_10Min_AMS_200808.csv
+	23./Level1/2008/MaLianTan_Level1_10Min_AMS_200808_Introduction.txt
+	24./Level1/2008/MaLianTan_Level1_10Min_AMS_200809.csv
+	25./Level1/2008/MaLianTan_Level1_10Min_AMS_200809_Introduction.txt
+	26./Level1/2008/MaLianTan_Level1_10Min_AMS_200810.csv
+	27./Level1/2008/MaLianTan_Level1_10Min_AMS_200810_Introduction.txt
+	28./Level1/2008/MaLianTan_Level1_10Min_AMS_200811.csv
+	29./Level1/2008/MaLianTan_Level1_10Min_AMS_200811_Introduction.txt
+	30./Level1/2008/MaLianTan_Level1_10Min_AMS_200812.csv
+	31./Level1/2008/MaLianTan_Level1_10Min_AMS_200812_Introduction.txt
+	32./Level1/2009/
+	33./Level1/2009/MaLianTan_Level1_10Min_AMS_200901.csv
+	34./Level1/2009/MaLianTan_Level1_10Min_AMS_200901_Introduction.txt
+	35./Level1/2009/MaLianTan_Level1_10Min_AMS_200902.csv
+	36./Level1/2009/MaLianTan_Level1_10Min_AMS_200902_Introduction.txt
+	37./Level1/2009/MaLianTan_Level1_10Min_AMS_200903.csv
+	38./Level1/2009/MaLianTan_Level1_10Min_AMS_200903_Introduction.txt
+	39./Level1/2009/MaLianTan_Level1_10Min_AMS_200904.csv
+	40./Level1/2009/MaLianTan_Level1_10Min_AMS_200904_Introduction.txt
+	41./Level1/2009/MaLianTan_Level1_10Min_AMS_200905.csv
+	42./Level1/2009/MaLianTan_Level1_10Min_AMS_200905_Introduction.txt
+	43./Level1/2009/MaLianTan_Level1_10Min_AMS_200906.csv
+	44./Level1/2009/MaLianTan_Level1_10Min_AMS_200906_Introduction.txt
+	45./Level1/2009/MaLianTan_Level1_10Min_AMS_200907.csv
+	46./Level1/2009/MaLianTan_Level1_10Min_AMS_200907_Introduction.txt
+	47./Level2/
+	48./Level2/2007/
+	49./Level2/2007/MaLianTan_Level2_30Min_AMS_200711.csv
+	50./Level2/2007/MaLianTan_Level2_30Min_AMS_200711_Introduction.txt
+	51./Level2/2007/MaLianTan_Level2_30Min_AMS_200712.csv
+	52./Level2/2007/MaLianTan_Level2_30Min_AMS_200712_Introduction.txt
+	53./Level2/2008/
+	54./Level2/2008/MaLianTan_Level2_30Min_AMS_200801.csv
+	55./Level2/2008/MaLianTan_Level2_30Min_AMS_200801_Introduction.txt
+	56./Level2/2008/MaLianTan_Level2_30Min_AMS_200802.csv
+	57./Level2/2008/MaLianTan_Level2_30Min_AMS_200802_Introduction.txt
+	58./Level2/2008/MaLianTan_Level2_30Min_AMS_200803.csv
+	59./Level2/2008/MaLianTan_Level2_30Min_AMS_200803_Introduction.txt
+	60./Level2/2008/MaLianTan_Level2_30Min_AMS_200804.csv
+	61./Level2/2008/MaLianTan_Level2_30Min_AMS_200804_Introduction.txt
+	62./Level2/2008/MaLianTan_Level2_30Min_AMS_200805.csv
+	63./Level2/2008/MaLianTan_Level2_30Min_AMS_200805_Introduction.txt
+	64./Level2/2008/MaLianTan_Level2_30Min_AMS_200806.csv
+	65./Level2/2008/MaLianTan_Level2_30Min_AMS_200806_Introduction.txt
+	66./Level2/2008/MaLianTan_Level2_30Min_AMS_200807.csv
+	67./Level2/2008/MaLianTan_Level2_30Min_AMS_200807_Introduction.txt
+	68./Level2/2008/MaLianTan_Level2_30Min_AMS_200808.csv
+	69./Level2/2008/MaLianTan_Level2_30Min_AMS_200808_Introduction.txt
+	70./Level2/2008/MaLianTan_Level2_30Min_AMS_200809.csv
+	71./Level2/2008/MaLianTan_Level2_30Min_AMS_200809_Introduction.txt
+	72./Level2/2008/MaLianTan_Level2_30Min_AMS_200810.csv
+	73./Level2/2008/MaLianTan_Level2_30Min_AMS_200810_Introduction.txt
+	74./Level2/2008/MaLianTan_Level2_30Min_AMS_200811.csv
+	75./Level2/2008/MaLianTan_Level2_30Min_AMS_200811_Introduction.txt
+	76./Level2/2008/MaLianTan_Level2_30Min_AMS_200812.csv
+	77./Level2/2008/MaLianTan_Level2_30Min_AMS_200812_Introduction.txt
+	78./Level2/2009/
+	79./Level2/2009/MaLianTan_Level2_30Min_AMS_200901.csv
+	80./Level2/2009/MaLianTan_Level2_30Min_AMS_200901_Introduction.txt
+	81./Level2/2009/MaLianTan_Level2_30Min_AMS_200902.csv
+	82./Level2/2009/MaLianTan_Level2_30Min_AMS_200902_Introduction.txt
+	83./Level2/2009/MaLianTan_Level2_30Min_AMS_200903.csv
+	84./Level2/2009/MaLianTan_Level2_30Min_AMS_200903_Introduction.txt
+	85./Level2/2009/MaLianTan_Level2_30Min_AMS_200904.csv
+	86./Level2/2009/MaLianTan_Level2_30Min_AMS_200904_Introduction.txt
+	87./Level2/2009/MaLianTan_Level2_30Min_AMS_200905.csv
+	88./Level2/2009/MaLianTan_Level2_30Min_AMS_200905_Introduction.txt
+	89./Level2/2009/MaLianTan_Level2_30Min_AMS_200906.csv
+	90./Level2/2009/MaLianTan_Level2_30Min_AMS_200906_Introduction.txt
+	91./Level2/2009/MaLianTan_Level2_30Min_AMS_200907.csv
+	92./Level2/2009/MaLianTan_Level2_30Min_AMS_200907_Introduction.txt
+	93./Operation status of AMS/
+	94./Operation status of AMS/MaLianTan_Level2_1Day_AMS_2007allyear.csv
+	95./Operation status of AMS/MaLianTan_Level2_1Day_AMS_2007allyear_Introduction.txt
+	96./Operation status of AMS/MaLianTan_Level2_1Hour_AMS_2008allyear.csv
+	97./Operation status of AMS/MaLianTan_Level2_1Hour_AMS_2008allyear_Introduction.txt
+	98./Operation status of AMS/MaLianTan_Level2_1Hour_AMS_2009allyear.csv
+	99./Operation status of AMS/MaLianTan_Level2_1Hour_AMS_2009allyear_Introduction.txt
+	100./uuid.txt
+	101./大野口马莲滩草地站.xls
+	102./大野口马莲滩草地站介绍.doc

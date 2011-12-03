@@ -1,0 +1,1 @@
+sphinx-build -b html -w D:\Sphinx_Out\WATER_log.txt WATER D:\Sphinx_Out\WATER

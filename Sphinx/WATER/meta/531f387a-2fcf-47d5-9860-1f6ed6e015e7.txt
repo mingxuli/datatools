@@ -1,0 +1,321 @@
+.. _531f387a-2fcf-47d5-9860-1f6ed6e015e7:
+
+*********************************************************************************
+黑河综合遥感联合试验：大野口关滩森林站自动气象站数据集
+*********************************************************************************
+
+**英文标题:**
+WATER: Dataset of automatic meteorological observations at the Dayekou Guantan forest station in the Dayekou watershed
+
+1. 摘要
+============
+该数据集包含了大野口关滩森林站的涡动观测数据，站点位于甘肃省张掖市南部的大野口关滩。观测点的经纬度为E100°15′/N38°32′，海拔高度为2835m。观测场处在黑河上游大野口子流域关滩阴坡的森林内，林内主要是高约15-20m的云杉，地面覆盖有厚约10cm的苔藓，植被生长情况良好。
+
+观测项目有：大气风温湿梯度观测（2m和10m）、气压、雨雪量计、雪深、光合有效辐射、两层辐射四分量（1.68m和19.75 m）、树干液流、地表温度、多层土壤温度（5cm、10cm、20cm、40cm、80cm和120cm）、湿度（5cm、10cm、20cm、40cm、80cm和120cm）及土壤热通量（5cm和15cm）。
+
+2007年10月，观测至今。详细信息请参见“气象水文通量数据使用指南”。
+
+2. 关键词
+==============
+主题关键词:
+气象水文,气象观测,风速,风向,光合有效辐射,空气温度,空气湿度,气压,降水,地表温度,总辐射,反射辐射,下行长波辐射,向上长波辐射,土壤温度,土壤水分,土壤热通量,
+位置关键词:
+黑河流域,森林水文试验区,大野口流域加密观测区,大野口关滩森林站,
+时间关键词:
+2007-10-01,
+学科关键词:
+
+3. 本数据的引用
+====================
+中文引用：
+马明国, 王维真, 谭俊磊, 黄广辉, 张智慧. 黑河综合遥感联合试验：大野口关滩森林站自动气象站数据集. 2008. doi:10.3972/water973.0287.db 
+
+英文引用：
+Ma Mingguo, Wang Weizhen, Tan Junlei, Huang Guanghui, Zhang Zhihui. WATER: Dataset of automatic meteorological observations at the Dayekou Guantan forest station in the Dayekou watershed. Cold and Arid Regions Environmental and Engineering Research Institute, Chinese Academy of Sciences. 2008. doi:10.3972/water973.0287.db
+
+4.	数据调查者
+==================
+
++ 姓名：马明国,王维真,谭俊磊,黄广辉,张智慧
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
+
+5. 数据联系人
+=====================
+
++ 姓名：马明国
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：mmg@lzb.ac.cn
++ 电话：0931-4967250
+
+6. 元数据作者
+======================
+
++ 姓名：黄广辉
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州--东岗西路320号
++ 邮编：730000
++ 电子邮件：luckhgh@lzb.ac.cn
++ 电话：0931-4967973
+
+7.	元数据发布者
+======================
+
++ 姓名：吴立宗
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：wulizong@lzb.ac.cn
++ 电话：0931-4967298
++ 传真：0931-8279161
+
+
++ 姓名：屈永华
++ 单位：北京师范大学
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：qyh@bnu.edu.cn
++ 电话：010-58802041
+
+8.	数据分发者
+======================
+
++ 姓名：李红星
++ 单位：中国科学院寒区旱区环境与工程研究所
++ 通讯地址：--甘肃省--兰州市--兰州市东岗西路320号 中国科学院寒区旱区环境与工程研究所
++ 邮编：730000
++ 电子邮件：westdc@lzb.ac.cn
++ 电话：0931-4967287
++ 传真：0931-8279161
+
+
++ 姓名：周红敏
++ 单位：北京师范大学地理学与遥感科学学院
++ 通讯地址：--北京市--北京--北京市新街口外大街19号
++ 邮编：100875
++ 电子邮件：zhouhm@bnu.edu.cn
++ 电话：010-58804233
++ 传真：010-58805274
+
+9.	地理范围
+=========================
+
++ 北：38.53
++ 南：38.53
++ 西：100.25
++ 东：100.25
+
+10.	项目支持信息
+=========================
+
+本试验的开展及数据的管理与发布获由以下项目所支持：            
+
+ 1. 中国科学院西部行动计划（二期）项目：黑河流域遥感－地面观测同步试验与综合模拟平台建设（项目编号:KZCX2-XB2-09）     
+
+ 2. 国家重点基础研究发展规划（973）项目：陆表生态环境要素主被动遥感协同反演理论与方法（项目编号:2007CB714400）
+
+11. 文件清单 
+=========================
+
+文件路径: :file:`/data/WATER/Level_1/Meteorology/WATER_AWS/Guantan`
+::
+	1./Level1/
+	2./Level1/2007/
+	3./Level1/2007/GuanTan_Level1_10Min_AMS_200712.csv
+	4./Level1/2007/GuanTan_Level1_10Min_AMS_200712_Introduction.txt
+	5./Level1/2007/GuanTan_Level1_30Min_AMS_200710.csv
+	6./Level1/2007/GuanTan_Level1_30Min_AMS_200710_Introduction.txt
+	7./Level1/2007/GuanTan_Level1_30Min_AMS_200711.csv
+	8./Level1/2007/GuanTan_Level1_30Min_AMS_200711_Introduction.txt
+	9./Level1/2007/GuanTan_Level1_30Min_AMS_200712.csv
+	10./Level1/2007/GuanTan_Level1_30Min_AMS_200712_Introduction.txt
+	11./Level1/2008/
+	12./Level1/2008/GuanTan_Level1_10Min_AMS_200801.csv
+	13./Level1/2008/GuanTan_Level1_10Min_AMS_200801_Introduction.txt
+	14./Level1/2008/GuanTan_Level1_10Min_AMS_200802.csv
+	15./Level1/2008/GuanTan_Level1_10Min_AMS_200802_Introduction.txt
+	16./Level1/2008/GuanTan_Level1_10Min_AMS_200803.csv
+	17./Level1/2008/GuanTan_Level1_10Min_AMS_200803_Introduction.txt
+	18./Level1/2008/GuanTan_Level1_10Min_AMS_200804.csv
+	19./Level1/2008/GuanTan_Level1_10Min_AMS_200804_Introduction.txt
+	20./Level1/2008/GuanTan_Level1_10Min_AMS_200805a.csv
+	21./Level1/2008/GuanTan_Level1_10Min_AMS_200805a_Introduction.txt
+	22./Level1/2008/GuanTan_Level1_10Min_AMS_200805b.csv
+	23./Level1/2008/GuanTan_Level1_10Min_AMS_200805b_Introduction.txt
+	24./Level1/2008/GuanTan_Level1_10Min_AMS_200806.csv
+	25./Level1/2008/GuanTan_Level1_10Min_AMS_200806_Introduction.txt
+	26./Level1/2008/GuanTan_Level1_10Min_AMS_200807.csv
+	27./Level1/2008/GuanTan_Level1_10Min_AMS_200807_Introduction.txt
+	28./Level1/2008/GuanTan_Level1_10Min_AMS_200808.csv
+	29./Level1/2008/GuanTan_Level1_10Min_AMS_200808_Introduction.txt
+	30./Level1/2008/GuanTan_Level1_10Min_AMS_200809.csv
+	31./Level1/2008/GuanTan_Level1_10Min_AMS_200809_Introduction.txt
+	32./Level1/2008/GuanTan_Level1_10Min_AMS_200810.csv
+	33./Level1/2008/GuanTan_Level1_10Min_AMS_200810_Introduction.txt
+	34./Level1/2008/GuanTan_Level1_10Min_AMS_200811.csv
+	35./Level1/2008/GuanTan_Level1_10Min_AMS_200811_Introduction.txt
+	36./Level1/2008/GuanTan_Level1_10Min_AMS_200812.csv
+	37./Level1/2008/GuanTan_Level1_10Min_AMS_200812_Introduction.txt
+	38./Level1/2008/GuanTan_Level1_30Min_AMS_200801.csv
+	39./Level1/2008/GuanTan_Level1_30Min_AMS_200801_Introduction.txt
+	40./Level1/2008/GuanTan_Level1_30Min_AMS_200802.csv
+	41./Level1/2008/GuanTan_Level1_30Min_AMS_200802_Introduction.txt
+	42./Level1/2008/GuanTan_Level1_30Min_AMS_200803.csv
+	43./Level1/2008/GuanTan_Level1_30Min_AMS_200803_Introduction.txt
+	44./Level1/2008/GuanTan_Level1_30Min_AMS_200804.csv
+	45./Level1/2008/GuanTan_Level1_30Min_AMS_200804_Introduction.txt
+	46./Level1/2008/GuanTan_Level1_30Min_AMS_200805.csv
+	47./Level1/2008/GuanTan_Level1_30Min_AMS_200805_Introduction.txt
+	48./Level1/2008/GuanTan_Level1_30Min_AMS_200806.csv
+	49./Level1/2008/GuanTan_Level1_30Min_AMS_200806_Introduction.txt
+	50./Level1/2008/GuanTan_Level1_30Min_AMS_200807.csv
+	51./Level1/2008/GuanTan_Level1_30Min_AMS_200807_Introduction.txt
+	52./Level1/2008/GuanTan_Level1_30Min_AMS_200808.csv
+	53./Level1/2008/GuanTan_Level1_30Min_AMS_200808_Introduction.txt
+	54./Level1/2008/GuanTan_Level1_30Min_AMS_200809.csv
+	55./Level1/2008/GuanTan_Level1_30Min_AMS_200809_Introduction.txt
+	56./Level1/2008/GuanTan_Level1_30Min_AMS_200810.csv
+	57./Level1/2008/GuanTan_Level1_30Min_AMS_200810_Introduction.txt
+	58./Level1/2008/GuanTan_Level1_30Min_AMS_200811.csv
+	59./Level1/2008/GuanTan_Level1_30Min_AMS_200811_Introduction.txt
+	60./Level1/2008/GuanTan_Level1_30Min_AMS_200812.csv
+	61./Level1/2008/GuanTan_Level1_30Min_AMS_200812_Introduction.txt
+	62./Level1/2009/
+	63./Level1/2009/GuanTan_Level1_10Min_AMS_200901.csv
+	64./Level1/2009/GuanTan_Level1_10Min_AMS_200901_Introduction.txt
+	65./Level1/2009/GuanTan_Level1_10Min_AMS_200902.csv
+	66./Level1/2009/GuanTan_Level1_10Min_AMS_200902_Introduction.txt
+	67./Level1/2009/GuanTan_Level1_10Min_AMS_200903.csv
+	68./Level1/2009/GuanTan_Level1_10Min_AMS_200903_Introduction.txt
+	69./Level1/2009/GuanTan_Level1_10Min_AMS_200904.csv
+	70./Level1/2009/GuanTan_Level1_10Min_AMS_200904_Introduction.txt
+	71./Level1/2009/GuanTan_Level1_10Min_AMS_200905.csv
+	72./Level1/2009/GuanTan_Level1_10Min_AMS_200905_Introduction.txt
+	73./Level1/2009/GuanTan_Level1_10Min_AMS_200906.csv
+	74./Level1/2009/GuanTan_Level1_10Min_AMS_200906_Introduction.txt
+	75./Level1/2009/GuanTan_Level1_10Min_AMS_200907.csv
+	76./Level1/2009/GuanTan_Level1_10Min_AMS_200907_Introduction.txt
+	77./Level1/2009/GuanTan_Level1_10Min_AMS_200908.csv
+	78./Level1/2009/GuanTan_Level1_10Min_AMS_200908_Introduction.txt
+	79./Level1/2009/GuanTan_Level1_30Min_AMS_200901.csv
+	80./Level1/2009/GuanTan_Level1_30Min_AMS_200901_Introduction.txt
+	81./Level1/2009/GuanTan_Level1_30Min_AMS_200902.csv
+	82./Level1/2009/GuanTan_Level1_30Min_AMS_200902_Introduction.txt
+	83./Level1/2009/GuanTan_Level1_30Min_AMS_200903.csv
+	84./Level1/2009/GuanTan_Level1_30Min_AMS_200903_Introduction.txt
+	85./Level1/2009/GuanTan_Level1_30Min_AMS_200904.csv
+	86./Level1/2009/GuanTan_Level1_30Min_AMS_200904_Introduction.txt
+	87./Level1/2009/GuanTan_Level1_30Min_AMS_200905.csv
+	88./Level1/2009/GuanTan_Level1_30Min_AMS_200905_Introduction.txt
+	89./Level1/2009/GuanTan_Level1_30Min_AMS_200906.csv
+	90./Level1/2009/GuanTan_Level1_30Min_AMS_200906_Introduction.txt
+	91./Level1/2009/GuanTan_Level1_30Min_AMS_200907.csv
+	92./Level1/2009/GuanTan_Level1_30Min_AMS_200907_Introduction.txt
+	93./Level1/2009/GuanTan_Level1_30Min_AMS_200908.csv
+	94./Level1/2009/GuanTan_Level1_30Min_AMS_200908_Introduction.txt
+	95./Level2/
+	96./Level2/Part1/
+	97./Level2/Part1/2008/
+	98./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200801.csv
+	99./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200801_Introduction.txt
+	100./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200802.csv
+	101./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200802_Introduction.txt
+	102./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200803.csv
+	103./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200803_Introduction.txt
+	104./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200804.csv
+	105./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200804_Introduction.txt
+	106./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200805.csv
+	107./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200805_Introduction.txt
+	108./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200806.csv
+	109./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200806_Introduction.txt
+	110./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200807.csv
+	111./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200807_Introduction.txt
+	112./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200808.csv
+	113./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200808_Introduction.txt
+	114./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200809.csv
+	115./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200809_Introduction.txt
+	116./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200810.csv
+	117./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200810_Introduction.txt
+	118./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200811.csv
+	119./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200811_Introduction.txt
+	120./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200812.csv
+	121./Level2/Part1/2008/GuanTan_Level2_30Min_AMS_200812_Introduction.txt
+	122./Level2/Part1/2009/
+	123./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200901.csv
+	124./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200901_Introduction.txt
+	125./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200902.csv
+	126./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200902_Introduction.txt
+	127./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200903.csv
+	128./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200903_Introduction.txt
+	129./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200904.csv
+	130./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200904_Introduction.txt
+	131./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200905.csv
+	132./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200905_Introduction.txt
+	133./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200906.csv
+	134./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200906_Introduction.txt
+	135./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200907.csv
+	136./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200907_Introduction.txt
+	137./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200908.csv
+	138./Level2/Part1/2009/GuanTan_Level2_30Min_AMS_200908_Introduction.txt
+	139./Level2/Part2/
+	140./Level2/Part2/2007/
+	141./Level2/Part2/2007/GuanTan_Level2_30Min_AMS_200710.csv
+	142./Level2/Part2/2007/GuanTan_Level2_30Min_AMS_200710_Introduction.txt
+	143./Level2/Part2/2007/GuanTan_Level2_30Min_AMS_200711.csv
+	144./Level2/Part2/2007/GuanTan_Level2_30Min_AMS_200711_Introduction.txt
+	145./Level2/Part2/2007/GuanTan_Level2_30Min_AMS_200712.csv
+	146./Level2/Part2/2007/GuanTan_Level2_30Min_AMS_200712_Introduction.txt
+	147./Level2/Part2/2008/
+	148./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200801.csv
+	149./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200801_Introduction.txt
+	150./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200802.csv
+	151./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200802_Introduction.txt
+	152./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200803.csv
+	153./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200803_Introduction.txt
+	154./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200804.csv
+	155./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200804_Introduction.txt
+	156./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200805a.csv
+	157./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200805a_Introduction.txt
+	158./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200805b.csv
+	159./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200805b_Introduction.txt
+	160./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200806.csv
+	161./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200806_Introduction.txt
+	162./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200807.csv
+	163./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200807_Introduction.txt
+	164./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200808.csv
+	165./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200808_Introduction.txt
+	166./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200809.csv
+	167./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200809_Introduction.txt
+	168./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200810.csv
+	169./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200810_Introduction.txt
+	170./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200811.csv
+	171./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200811_Introduction.txt
+	172./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200812.csv
+	173./Level2/Part2/2008/GuanTan_Level2_30Min_AMS_200812_Introduction.txt
+	174./Level2/Part2/2009/
+	175./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200901.csv
+	176./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200901_Introduction.txt
+	177./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200902.csv
+	178./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200902_Introduction.txt
+	179./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200903.csv
+	180./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200903_Introduction.txt
+	181./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200904.csv
+	182./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200904_Introduction.txt
+	183./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200905.csv
+	184./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200905_Introduction.txt
+	185./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200906.csv
+	186./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200906_Introduction.txt
+	187./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200907.csv
+	188./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200907_Introduction.txt
+	189./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200908.csv
+	190./Level2/Part2/2009/GuanTan_Level2_30Min_AMS_200908_Introduction.txt
+	191./Operation status of AMS/
+	192./Operation status of AMS/Guantan_Level1_1Day_AMS_2007AllYear.csv
+	193./Operation status of AMS/Guantan_Level1_1Day_AMS_2008AllYear.csv
+	194./Operation status of AMS/Guantan_Level1_1Day_AMS_2009AllYear.csv
+	195./uuid.txt
+	196./大野口关滩森林站.xls
+	197./大野口关滩森林站介绍.doc
